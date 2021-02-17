@@ -1,0 +1,29 @@
+
+// #header-secondary {
+//     display:none;
+// }
+
+// @include media('>desktopxxl') {
+//     #header-secondary {
+//         display:block;
+//         position: absolute;
+//         right: 10px;
+//         bottom: 30px;
+//         z-index: 9;
+//         color: var(--white);
+//         writing-mode: vertical-rl;
+//         transform: rotate(180deg);
+//         font-size: 12px;
+//         .module.social {
+//             display: flex;
+//         }
+//         a {
+//             color: var(--white);
+//             margin-top: 10px;;
+//         }
+//         .social-icons {
+//             display: flex;
+//             margin-top: 10px;;
+//         }
+//     }
+// }

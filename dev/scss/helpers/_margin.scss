@@ -1,0 +1,411 @@
+//  #### rem unit
+//  m  - margin all         : m-x    
+//  mt - margin top         : mt-x    
+//  mr - margin right       : mr-x        
+//  mb - margin bottom      : mb-x        
+//  ml - margin left        : ml-x    
+//  mx - margin top bottom  : my-x            
+//  my - margin left right  : mx-x       
+
+/* 
+-------------------------------------------
+Margins
+-------------------------------------------
+*/
+
+//  Custom Padding unit (Adjust to match your design)
+
+$marinCounter : 10;
+
+$marginCustom : .3rem;
+$marginRem    : 1rem;
+$marginPX     : 10px;
+$marginP      : 10%;
+$marginVW     : 10vw;
+$marginVH     : 10vh;
+
+// :root{ --spacer: 1.5rem; }
+
+// .m-1x { margin-top:0; }
+// .mt-1x { margin-top:0; }
+// .mr-1x { margin-right:0; }
+// .mb-1x { margin-bottom:0; }
+// .ml-1x { margin-left:0; }
+// .mx-1x { margin-left:0;  margin-right:0; }
+// .my-1x { margin-top:0;  margin-bottom:0; }
+// .mt-minus-1x { margin-top: -0; }
+// .mb-minus-1x { margin-bottom:-0; }
+
+.m-a { margin:auto; }
+.mt-a { margin-top:auto; }
+.mr-a { margin-right:auto; }
+.mb-a { margin-bottom:auto; }
+.ml-a { margin-left:auto; }
+.mx-a { margin-left:auto;  margin-right:auto; }
+.my-a { margin-top:auto;  margin-bottom:auto; }
+
+
+//  Custom
+@for $i from 0 through $marinCounter {.m-#{$i} { margin:( $marginCustom * $i );}}
+@for $i from 2 through $marinCounter {.m-#{$i*10} { margin:( $marginCustom * $i*10 );}}
+
+@for $i from 0 through $marinCounter {.mt-#{$i} { margin-top:( $marginCustom * $i ); }}
+@for $i from 2 through $marinCounter {.mt-#{$i*10} { margin-top:( $marginCustom * $i*10 ); }}
+
+@for $i from 0 through $marinCounter {.mr-#{$i} { margin-right:( $marginCustom * $i ); }}
+@for $i from 2 through $marinCounter {.mr-#{$i*10} { margin-right:( $marginCustom * $i*10 ); }}
+
+@for $i from 0 through $marinCounter {.mb-#{$i} { margin-bottom:( $marginCustom * $i ); }}
+@for $i from 2 through $marinCounter {.mb-#{$i*10} { margin-bottom:( $marginCustom * $i*10 ); }}
+
+@for $i from 0 through $marinCounter {.ml-#{$i} { margin-left:( $marginCustom * $i ); }}
+@for $i from 2 through $marinCounter {.ml-#{$i*10} { margin-left:( $marginCustom * $i*10 ); }}
+
+@for $i from 0 through $marinCounter {.mx-#{$i} { margin-left:( $marginCustom * $i ); margin-right:( $marginCustom * $i ); }}
+@for $i from 2 through $marinCounter {.mx-#{$i*10} { margin-left:( $marginCustom * $i*10 ); margin-right:( $marginCustom * $i*10 ); }}
+
+@for $i from 0 through $marinCounter {.my-#{$i} { margin-top:( $marginCustom * $i ); margin-bottom:( $marginCustom * $i ); }}
+@for $i from 2 through $marinCounter {.my-#{$i*10} { margin-top:( $marginCustom * $i*10 ); margin-bottom:( $marginCustom * $i*10 ); }}
+
+@for $i from 1 through $marinCounter {.mt-minus-#{$i} { margin-top: -( $marginCustom * $i ); }}
+@for $i from 1 through $marinCounter {.mr-minus-#{$i} { margin-right: -( $marginCustom * $i ); }}
+@for $i from 1 through $marinCounter {.mb-minus-#{$i} { margin-bottom: -( $marginCustom * $i ); }}
+@for $i from 1 through $marinCounter {.ml-minus-#{$i} { margin-left: -( $marginCustom * $i ); }}
+
+// //  Rem
+// @for $i from 1 through $marinCounter {.m-#{$i*1rem} { margin:( $marginRem * $i );}}
+// @for $i from 1 through $marinCounter {.mt-#{$i*1rem} { margin-top:( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.mr-#{$i*1rem} { margin-right:( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.mb-#{$i*1rem} { margin-bottom:( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.ml-#{$i*1rem} { margin-left:( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.mx-#{$i*1rem} { margin-left:( $marginRem * $i ); margin-right:( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.my-#{$i*1rem} { margin-top:( $marginRem * $i ); margin-bottom:( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.mt-minus-#{$i*1rem} { margin-top: -( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.mr-minus-#{$i*1rem} { margin-right: -( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.mb-minus-#{$i*1rem} { margin-bottom: -( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.ml-minus-#{$i*1rem} { margin-left: -( $marginRem * $i ); }}
+
+// //  PX
+// @for $i from 1 through $marinCounter {.m-#{$i*10px} { margin:( $marginPX * $i );}}
+// @for $i from 1 through $marinCounter {.mt-#{$i*10px} { margin-top:( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.mr-#{$i*10px} { margin-right:( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.mb-#{$i*10px} { margin-bottom:( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.ml-#{$i*10px} { margin-left:( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.mx-#{$i*10px} { margin-left:( $marginPX * $i ); margin-right:( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.my-#{$i*10px} { margin-top:( $marginPX * $i ); margin-bottom:( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.mt-minus-#{$i*10px} { margin-top: -( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.mr-minus-#{$i*10px} { margin-right: -( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.mb-minus-#{$i*10px} { margin-bottom: -( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.ml-minus-#{$i*10px} { margin-left: -( $marginPX * $i ); }}
+
+// //  P
+// @for $i from 1 through $marinCounter {.m-#{$i*10p} { margin:( $marginP * $i );}}
+// @for $i from 1 through $marinCounter {.mt-#{$i*10p} { margin-top:( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.mr-#{$i*10p} { margin-right:( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.mb-#{$i*10p} { margin-bottom:( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.ml-#{$i*10p} { margin-left:( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.mx-#{$i*10p} { margin-left:( $marginP * $i ); margin-right:( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.my-#{$i*10p} { margin-top:( $marginP * $i ); margin-bottom:( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.mt-minus-#{$i*10p} { margin-top: -( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.mr-minus-#{$i*10p} { margin-right: -( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.mb-minus-#{$i*10p} { margin-bottom: -( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.ml-minus-#{$i*10p} { margin-left: -( $marginP * $i ); }}
+
+//  VW
+// @for $i from 1 through $marinCounter {.m-#{$i*10vw} { margin:( $marginVW * $i );}}
+// @for $i from 1 through $marinCounter {.mt-#{$i*10vw} { margin-top:( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.mr-#{$i*10vw} { margin-right:( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.mb-#{$i*10vw} { margin-bottom:( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.ml-#{$i*10vw} { margin-left:( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.mx-#{$i*10vw} { margin-left:( $marginVW * $i ); margin-right:( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.my-#{$i*10vw} { margin-top:( $marginVW * $i ); margin-bottom:( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.mt-minus-#{$i*10vw} { margin-top: -( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.mr-minus-#{$i*10vw} { margin-right: -( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.mb-minus-#{$i*10vw} { margin-bottom: -( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.ml-minus-#{$i*10vw} { margin-left: -( $marginVW * $i ); }}
+
+//  VH
+// @for $i from 1 through $marinCounter {.m-#{$i*10vh} { margin:( $marginVH * $i );}}
+// @for $i from 1 through $marinCounter {.mt-#{$i*10vh} { margin-top:( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.mr-#{$i*10vh} { margin-right:( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.mb-#{$i*10vh} { margin-bottom:( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.ml-#{$i*10vh} { margin-left:( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.mx-#{$i*10vh} { margin-left:( $marginVH * $i ); margin-right:( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.my-#{$i*10vh} { margin-top:( $marginVH * $i ); margin-bottom:( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.mt-minus-#{$i*10vh} { margin-top: -( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.mr-minus-#{$i*10vh} { margin-right: -( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.mb-minus-#{$i*10vh} { margin-bottom: -( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.ml-minus-#{$i*10vh} { margin-left: -( $marginVH * $i ); }}
+
+
+
+@include media('>=sm') {
+    
+    .sm-m-a { margin:auto; }
+    .sm-mt-a { margin-top:auto; }
+    .sm-mr-a { margin-right:auto; }
+    .sm-mb-a { margin-bottom:auto; }
+    .sm-ml-a { margin-left:auto; }
+    .sm-mx-a { margin-left:auto;  margin-right:auto; }
+    .sm-my-a { margin-top:auto;  margin-bottom:auto; }
+
+
+    //  Custom
+@for $i from 0 through $marinCounter {.sm-m-#{$i} { margin:( $marginCustom * $i );}}
+@for $i from 0 through $marinCounter {.sm-mt-#{$i} { margin-top:( $marginCustom * $i ); }}
+@for $i from 0 through $marinCounter {.sm-mr-#{$i} { margin-right:( $marginCustom * $i ); }}
+@for $i from 0 through $marinCounter {.sm-mb-#{$i} { margin-bottom:( $marginCustom * $i ); }}
+@for $i from 0 through $marinCounter {.sm-ml-#{$i} { margin-left:( $marginCustom * $i ); }}
+@for $i from 0 through $marinCounter {.sm-mx-#{$i} { margin-left:( $marginCustom * $i ); margin-right:( $marginCustom * $i ); }}
+@for $i from 0 through $marinCounter {.sm-my-#{$i} { margin-top:( $marginCustom * $i ); margin-bottom:( $marginCustom * $i ); }}
+@for $i from 1 through $marinCounter {.sm-mt-minus-#{$i} { margin-top: -( $marginCustom * $i ); }}
+@for $i from 1 through $marinCounter {.sm-mr-minus-#{$i} { margin-right: -( $marginCustom * $i ); }}
+@for $i from 1 through $marinCounter {.sm-mb-minus-#{$i} { margin-bottom: -( $marginCustom * $i ); }}
+@for $i from 1 through $marinCounter {.sm-ml-minus-#{$i} { margin-left: -( $marginCustom * $i ); }}
+
+//  Rem
+// @for $i from 1 through $marinCounter {.sm-m-#{$i*1rem} { margin:( $marginRem * $i );}}
+// @for $i from 1 through $marinCounter {.sm-mt-#{$i*1rem} { margin-top:( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mr-#{$i*1rem} { margin-right:( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mb-#{$i*1rem} { margin-bottom:( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-ml-#{$i*1rem} { margin-left:( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mx-#{$i*1rem} { margin-left:( $marginRem * $i ); margin-right:( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-my-#{$i*1rem} { margin-top:( $marginRem * $i ); margin-bottom:( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mt-minus-#{$i*1rem} { margin-top: -( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mr-minus-#{$i*1rem} { margin-right: -( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mb-minus-#{$i*1rem} { margin-bottom: -( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-ml-minus-#{$i*1rem} { margin-left: -( $marginRem * $i ); }}
+
+// //  PX
+// @for $i from 1 through $marinCounter {.sm-m-#{$i*10px} { margin:( $marginPX * $i );}}
+// @for $i from 1 through $marinCounter {.sm-mt-#{$i*10px} { margin-top:( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mr-#{$i*10px} { margin-right:( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mb-#{$i*10px} { margin-bottom:( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-ml-#{$i*10px} { margin-left:( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mx-#{$i*10px} { margin-left:( $marginPX * $i ); margin-right:( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-my-#{$i*10px} { margin-top:( $marginPX * $i ); margin-bottom:( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mt-minus-#{$i*10px} { margin-top: -( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mr-minus-#{$i*10px} { margin-right: -( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mb-minus-#{$i*10px} { margin-bottom: -( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-ml-minus-#{$i*10px} { margin-left: -( $marginPX * $i ); }}
+
+// //  P
+// @for $i from 1 through $marinCounter {.sm-m-#{$i*10p} { margin:( $marginP * $i );}}
+// @for $i from 1 through $marinCounter {.sm-mt-#{$i*10p} { margin-top:( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mr-#{$i*10p} { margin-right:( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mb-#{$i*10p} { margin-bottom:( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-ml-#{$i*10p} { margin-left:( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mx-#{$i*10p} { margin-left:( $marginP * $i ); margin-right:( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-my-#{$i*10p} { margin-top:( $marginP * $i ); margin-bottom:( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mt-minus-#{$i*10p} { margin-top: -( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mr-minus-#{$i*10p} { margin-right: -( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mb-minus-#{$i*10p} { margin-bottom: -( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-ml-minus-#{$i*10p} { margin-left: -( $marginP * $i ); }}
+
+//  VW
+// @for $i from 1 through $marinCounter {.sm-m-#{$i*10vw} { margin:( $marginVW * $i );}}
+// @for $i from 1 through $marinCounter {.sm-mt-#{$i*10vw} { margin-top:( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mr-#{$i*10vw} { margin-right:( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mb-#{$i*10vw} { margin-bottom:( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-ml-#{$i*10vw} { margin-left:( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mx-#{$i*10vw} { margin-left:( $marginVW * $i ); margin-right:( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-my-#{$i*10vw} { margin-top:( $marginVW * $i ); margin-bottom:( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mt-minus-#{$i*10vw} { margin-top: -( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mr-minus-#{$i*10vw} { margin-right: -( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mb-minus-#{$i*10vw} { margin-bottom: -( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-ml-minus-#{$i*10vw} { margin-left: -( $marginVW * $i ); }}
+
+//  VH
+// @for $i from 1 through $marinCounter {.sm-m-#{$i*10vh} { margin:( $marginVH * $i );}}
+// @for $i from 1 through $marinCounter {.sm-mt-#{$i*10vh} { margin-top:( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mr-#{$i*10vh} { margin-right:( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mb-#{$i*10vh} { margin-bottom:( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-ml-#{$i*10vh} { margin-left:( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mx-#{$i*10vh} { margin-left:( $marginVH * $i ); margin-right:( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-my-#{$i*10vh} { margin-top:( $marginVH * $i ); margin-bottom:( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mt-minus-#{$i*10vh} { margin-top: -( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mr-minus-#{$i*10vh} { margin-right: -( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-mb-minus-#{$i*10vh} { margin-bottom: -( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.sm-ml-minus-#{$i*10vh} { margin-left: -( $marginVH * $i ); }}
+
+    
+}
+
+@include media('>=md') {
+    .md-m-a { margin:auto; }
+    .md-mt-a { margin-top:auto; }
+    .md-mr-a { margin-right:auto; }
+    .md-mb-a { margin-bottom:auto; }
+    .md-ml-a { margin-left:auto; }
+    .md-mx-a { margin-left:auto;  margin-right:auto; }
+    .md-my-a { margin-top:auto;  margin-bottom:auto; }
+
+
+
+//  Custom
+@for $i from 0 through $marinCounter {.md-m-#{$i} { margin:( $marginCustom * $i );}}
+@for $i from 0 through $marinCounter {.md-mt-#{$i} { margin-top:( $marginCustom * $i ); }}
+@for $i from 0 through $marinCounter {.md-mr-#{$i} { margin-right:( $marginCustom * $i ); }}
+@for $i from 0 through $marinCounter {.md-mb-#{$i} { margin-bottom:( $marginCustom * $i ); }}
+@for $i from 0 through $marinCounter {.md-ml-#{$i} { margin-left:( $marginCustom * $i ); }}
+@for $i from 0 through $marinCounter {.md-mx-#{$i} { margin-left:( $marginCustom * $i ); margin-right:( $marginCustom * $i ); }}
+@for $i from 0 through $marinCounter {.md-my-#{$i} { margin-top:( $marginCustom * $i ); margin-bottom:( $marginCustom * $i ); }}
+@for $i from 1 through $marinCounter {.md-mt-minus-#{$i} { margin-top: -( $marginCustom * $i ); }}
+@for $i from 1 through $marinCounter {.md-mr-minus-#{$i} { margin-right: -( $marginCustom * $i ); }}
+@for $i from 1 through $marinCounter {.md-mb-minus-#{$i} { margin-bottom: -( $marginCustom * $i ); }}
+@for $i from 1 through $marinCounter {.md-ml-minus-#{$i} { margin-left: -( $marginCustom * $i ); }}
+
+//  Rem
+// @for $i from 1 through $marinCounter {.md-m-#{$i*1rem} { margin:( $marginRem * $i );}}
+// @for $i from 1 through $marinCounter {.md-mt-#{$i*1rem} { margin-top:( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mr-#{$i*1rem} { margin-right:( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mb-#{$i*1rem} { margin-bottom:( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.md-ml-#{$i*1rem} { margin-left:( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mx-#{$i*1rem} { margin-left:( $marginRem * $i ); margin-right:( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.md-my-#{$i*1rem} { margin-top:( $marginRem * $i ); margin-bottom:( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mt-minus-#{$i*1rem} { margin-top: -( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mr-minus-#{$i*1rem} { margin-right: -( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mb-minus-#{$i*1rem} { margin-bottom: -( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.md-ml-minus-#{$i*1rem} { margin-left: -( $marginRem * $i ); }}
+
+// //  PX
+// @for $i from 1 through $marinCounter {.md-m-#{$i*10px} { margin:( $marginPX * $i );}}
+// @for $i from 1 through $marinCounter {.md-mt-#{$i*10px} { margin-top:( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mr-#{$i*10px} { margin-right:( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mb-#{$i*10px} { margin-bottom:( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.md-ml-#{$i*10px} { margin-left:( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mx-#{$i*10px} { margin-left:( $marginPX * $i ); margin-right:( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.md-my-#{$i*10px} { margin-top:( $marginPX * $i ); margin-bottom:( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mt-minus-#{$i*10px} { margin-top: -( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mr-minus-#{$i*10px} { margin-right: -( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mb-minus-#{$i*10px} { margin-bottom: -( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.md-ml-minus-#{$i*10px} { margin-left: -( $marginPX * $i ); }}
+
+// //  P
+// @for $i from 1 through $marinCounter {.md-m-#{$i*10p} { margin:( $marginP * $i );}}
+// @for $i from 1 through $marinCounter {.md-mt-#{$i*10p} { margin-top:( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mr-#{$i*10p} { margin-right:( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mb-#{$i*10p} { margin-bottom:( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.md-ml-#{$i*10p} { margin-left:( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mx-#{$i*10p} { margin-left:( $marginP * $i ); margin-right:( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.md-my-#{$i*10p} { margin-top:( $marginP * $i ); margin-bottom:( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mt-minus-#{$i*10p} { margin-top: -( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mr-minus-#{$i*10p} { margin-right: -( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mb-minus-#{$i*10p} { margin-bottom: -( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.md-ml-minus-#{$i*10p} { margin-left: -( $marginP * $i ); }}
+
+//  VW
+// @for $i from 1 through $marinCounter {.md-m-#{$i*10vw} { margin:( $marginVW * $i );}}
+// @for $i from 1 through $marinCounter {.md-mt-#{$i*10vw} { margin-top:( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mr-#{$i*10vw} { margin-right:( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mb-#{$i*10vw} { margin-bottom:( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.md-ml-#{$i*10vw} { margin-left:( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mx-#{$i*10vw} { margin-left:( $marginVW * $i ); margin-right:( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.md-my-#{$i*10vw} { margin-top:( $marginVW * $i ); margin-bottom:( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mt-minus-#{$i*10vw} { margin-top: -( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mr-minus-#{$i*10vw} { margin-right: -( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mb-minus-#{$i*10vw} { margin-bottom: -( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.md-ml-minus-#{$i*10vw} { margin-left: -( $marginVW * $i ); }}
+
+//  VH
+// @for $i from 1 through $marinCounter {.md-m-#{$i*10vh} { margin:( $marginVH * $i );}}
+// @for $i from 1 through $marinCounter {.md-mt-#{$i*10vh} { margin-top:( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mr-#{$i*10vh} { margin-right:( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mb-#{$i*10vh} { margin-bottom:( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.md-ml-#{$i*10vh} { margin-left:( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mx-#{$i*10vh} { margin-left:( $marginVH * $i ); margin-right:( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.md-my-#{$i*10vh} { margin-top:( $marginVH * $i ); margin-bottom:( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mt-minus-#{$i*10vh} { margin-top: -( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mr-minus-#{$i*10vh} { margin-right: -( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.md-mb-minus-#{$i*10vh} { margin-bottom: -( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.md-ml-minus-#{$i*10vh} { margin-left: -( $marginVH * $i ); }}
+}
+
+@include media('>=xl') {
+    .xl-m-a { margin:auto; }
+    .xl-mt-a { margin-top:auto; }
+    .xl-mr-a { margin-right:auto; }
+    .xl-mb-a { margin-bottom:auto; }
+    .xl-ml-a { margin-left:auto; }
+    .xl-mx-a { margin-left:auto;  margin-right:auto; }
+    .xl-my-a { margin-top:auto;  margin-bottom:auto; }
+
+
+//  Custom
+@for $i from 0 through $marinCounter {.xl-m-#{$i} { margin:( $marginCustom * $i );}}
+@for $i from 0 through $marinCounter {.xl-mt-#{$i} { margin-top:( $marginCustom * $i ); }}
+@for $i from 0 through $marinCounter {.xl-mr-#{$i} { margin-right:( $marginCustom * $i ); }}
+@for $i from 0 through $marinCounter {.xl-mb-#{$i} { margin-bottom:( $marginCustom * $i ); }}
+@for $i from 0 through $marinCounter {.xl-ml-#{$i} { margin-left:( $marginCustom * $i ); }}
+@for $i from 0 through $marinCounter {.xl-mx-#{$i} { margin-left:( $marginCustom * $i ); margin-right:( $marginCustom * $i ); }}
+@for $i from 0 through $marinCounter {.xl-my-#{$i} { margin-top:( $marginCustom * $i ); margin-bottom:( $marginCustom * $i ); }}
+@for $i from 1 through $marinCounter {.xl-mt-minus-#{$i} { margin-top: -( $marginCustom * $i ); }}
+@for $i from 1 through $marinCounter {.xl-mr-minus-#{$i} { margin-right: -( $marginCustom * $i ); }}
+@for $i from 1 through $marinCounter {.xl-mb-minus-#{$i} { margin-bottom: -( $marginCustom * $i ); }}
+@for $i from 1 through $marinCounter {.xl-ml-minus-#{$i} { margin-left: -( $marginCustom * $i ); }}
+
+// //  Rem
+// @for $i from 1 through $marinCounter {.xl-m-#{$i*1rem} { margin:( $marginRem * $i );}}
+// @for $i from 1 through $marinCounter {.xl-mt-#{$i*1rem} { margin-top:( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mr-#{$i*1rem} { margin-right:( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mb-#{$i*1rem} { margin-bottom:( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-ml-#{$i*1rem} { margin-left:( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mx-#{$i*1rem} { margin-left:( $marginRem * $i ); margin-right:( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-my-#{$i*1rem} { margin-top:( $marginRem * $i ); margin-bottom:( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mt-minus-#{$i*1rem} { margin-top: -( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mr-minus-#{$i*1rem} { margin-right: -( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mb-minus-#{$i*1rem} { margin-bottom: -( $marginRem * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-ml-minus-#{$i*1rem} { margin-left: -( $marginRem * $i ); }}
+
+// //  PX
+// @for $i from 1 through $marinCounter {.xl-m-#{$i*10px} { margin:( $marginPX * $i );}}
+// @for $i from 1 through $marinCounter {.xl-mt-#{$i*10px} { margin-top:( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mr-#{$i*10px} { margin-right:( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mb-#{$i*10px} { margin-bottom:( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-ml-#{$i*10px} { margin-left:( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mx-#{$i*10px} { margin-left:( $marginPX * $i ); margin-right:( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-my-#{$i*10px} { margin-top:( $marginPX * $i ); margin-bottom:( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mt-minus-#{$i*10px} { margin-top: -( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mr-minus-#{$i*10px} { margin-right: -( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mb-minus-#{$i*10px} { margin-bottom: -( $marginPX * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-ml-minus-#{$i*10px} { margin-left: -( $marginPX * $i ); }}
+
+//  P
+// @for $i from 1 through $marinCounter {.xl-m-#{$i*10p} { margin:( $marginP * $i );}}
+// @for $i from 1 through $marinCounter {.xl-mt-#{$i*10p} { margin-top:( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mr-#{$i*10p} { margin-right:( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mb-#{$i*10p} { margin-bottom:( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-ml-#{$i*10p} { margin-left:( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mx-#{$i*10p} { margin-left:( $marginP * $i ); margin-right:( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-my-#{$i*10p} { margin-top:( $marginP * $i ); margin-bottom:( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mt-minus-#{$i*10p} { margin-top: -( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mr-minus-#{$i*10p} { margin-right: -( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mb-minus-#{$i*10p} { margin-bottom: -( $marginP * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-ml-minus-#{$i*10p} { margin-left: -( $marginP * $i ); }}
+
+//  VW
+// @for $i from 1 through $marinCounter {.xl-m-#{$i*10vw} { margin:( $marginVW * $i );}}
+// @for $i from 1 through $marinCounter {.xl-mt-#{$i*10vw} { margin-top:( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mr-#{$i*10vw} { margin-right:( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mb-#{$i*10vw} { margin-bottom:( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-ml-#{$i*10vw} { margin-left:( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mx-#{$i*10vw} { margin-left:( $marginVW * $i ); margin-right:( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-my-#{$i*10vw} { margin-top:( $marginVW * $i ); margin-bottom:( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mt-minus-#{$i*10vw} { margin-top: -( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mr-minus-#{$i*10vw} { margin-right: -( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mb-minus-#{$i*10vw} { margin-bottom: -( $marginVW * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-ml-minus-#{$i*10vw} { margin-left: -( $marginVW * $i ); }}
+
+//  VH
+// @for $i from 1 through $marinCounter {.xl-m-#{$i*10vh} { margin:( $marginVH * $i );}}
+// @for $i from 1 through $marinCounter {.xl-mt-#{$i*10vh} { margin-top:( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mr-#{$i*10vh} { margin-right:( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mb-#{$i*10vh} { margin-bottom:( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-ml-#{$i*10vh} { margin-left:( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mx-#{$i*10vh} { margin-left:( $marginVH * $i ); margin-right:( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-my-#{$i*10vh} { margin-top:( $marginVH * $i ); margin-bottom:( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mt-minus-#{$i*10vh} { margin-top: -( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mr-minus-#{$i*10vh} { margin-right: -( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-mb-minus-#{$i*10vh} { margin-bottom: -( $marginVH * $i ); }}
+// @for $i from 1 through $marinCounter {.xl-ml-minus-#{$i*10vh} { margin-left: -( $marginVH * $i ); }}
+}

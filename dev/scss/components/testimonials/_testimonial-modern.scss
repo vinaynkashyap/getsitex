@@ -1,0 +1,122 @@
+/* 
+-------------------------------------------
+Testimonial
+-------------------------------------------
+*/
+
+// .testimonial-slider {
+// // overflow: visible;
+// .swiper-slide {
+//     border: 2rem solid transparent;
+// }
+
+// .swiper-slide::before {
+//                 content:""; 
+//                 position:absolute;
+//                 top: -2rem;
+//                 left: -2rem;
+//                 width: 40%;
+//                 max-width: 8rem;
+//                 height: 30%;
+//                 background: var(--accent);
+//                 z-index:-1;
+//             }
+//     .name,
+//     .job-title {
+//         font-size: 14px;
+//         line-height: 30px;
+//         color: var(--dark-3x);
+//     }
+
+//     .description {
+//         font-size:rem(21); 
+//         line-height: rem(30);
+//         font-weight: 400;
+//         position: relative;
+//         color: var(--white);
+//         margin: 1rem 0rem;
+//     }
+//     .description:before {
+//         content:" ❝ ";
+//         position: absolute;
+//         top:0px;
+//         left: 0;
+//         font-size: 2rem;
+//         color: var(--accent);
+//         transform: translateX(-125%);
+//     }
+//     .testimonial-img {
+//         position: relative;
+//     }
+//     .testimonial-img:before {
+//         content:"";
+//         width: 100%;
+//         height: 100%;
+//         top: 0;
+//         left: 0;
+//         position: absolute;
+//         background: rgba(0,0,0,.45);
+//     }
+//     /* Progress bar*/ 
+//     .swiper-pagination-progressbar-fill {
+//         background: var(--base);
+//     }
+//     .swiper-pagination-progressbar {
+//         background: var(--dark-2x);
+//     }
+
+//     .swiper-pagination {
+//                 display: block;
+//                 position: absolute !important;
+//                 max-width: 580px;
+//                 width: calc(100% - 4rem);
+//                 left:2rem;
+//                 top: 2rem;
+//                 height: 3px;
+//             }
+            
+//     .testimonial-img{
+//         z-index: 1;
+//         position: relative;
+//         max-width: 580px;
+//         box-sizing: border-box;
+//         img {
+//             object-fit: contain; 
+//         }
+//     }
+
+
+// }
+
+
+
+
+
+// Desktop Styles
+
+// @include media('>=laptop') {
+//     .testimonial-slider {
+//         overflow: hidden;
+//     }
+// }
+// @include media('>=desktop') {
+//     .testimonial-slider {
+//         padding-bottom: 3rem;
+        
+//         .testimonial-content {
+//             position: absolute;
+//             bottom: 3rem;
+//             right: 3rem;
+//             max-width: 45%;
+//             width: 100%;
+//             z-index: 9;
+//         }
+//         .description {
+//             font-size:rem(24); 
+//             line-height: rem(34);
+//             color: var(--base);
+//         }
+
+//     }
+
+//     }

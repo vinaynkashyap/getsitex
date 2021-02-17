@@ -1,0 +1,34 @@
+
+// ===========================
+// Overlap Sections
+// ===========================
+
+// overlap-10p
+// overlap-20p
+// overlap-30p
+// overlap-40p
+// overlap-50p
+
+
+// :root {
+//     --offsetY : 3rem;
+//     --offsetX : 3rem;
+//     --TotalPadding : calc(var(--lgSectionPaddingY) * 2);
+//     }
+
+ 
+
+// @include media('>=laptop') {
+//     .offsetY-bottom {
+//         margin-bottom: calc( -1 * var(--TotalPadding) );
+//         z-index: 99;
+//     }
+    
+//     #offset-section {
+//         .container{
+//             padding-top: var(--offsetY);
+//             padding-top: var(--offsetX);
+//         }
+//     }
+//     }
+

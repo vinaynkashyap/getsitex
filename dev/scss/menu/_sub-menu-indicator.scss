@@ -1,0 +1,55 @@
+/* // Subnav indicator
+// // -------------------------*/
+
+.parent-menu>a {
+    position: relative;
+}
+
+@mixin indicator {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    /* Fontawesom Free requirement */
+    font-weight: 900;
+    text-rendering: auto;
+    font-variant: normal;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: inherit;
+}
+
+.parent-menu>a::after {
+    position: absolute;
+    font-size: 70%;
+    margin-left: .65rem;
+    text-indent: 0;
+    @include indicator;
+}
+
+.parent-menu.active>a::after {
+    transform: rotate(90deg);
+}
+
+// .parent-menu-active > a:after {
+//     content: var(--icon-chevron-right) !important;
+//     transform: rotate(90deg);
+//     text-indent: 0!important;
+//     @include indicator;
+// }
+
+/* //  Custom indicator
+// // --------------------------------------- */
+
+// @mixin custom-indicator {
+//         .parent-menu-active > a:after {
+//         display: none;
+//     }
+//     .parent-menu-active > a:before {
+//         transition: transform .45s cubic-bezier(1,0,0,1) .5s;
+//         font-size: .55em;
+//         content: var(--icon-chevron-right) !important;
+//         transform: rotate(0deg);
+//         text-indent: -16px!important;
+//         @include indicator;
+//     }
+// }

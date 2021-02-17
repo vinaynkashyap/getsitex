@@ -1,0 +1,73 @@
+    @mixin menu-fullscreen {
+        .menu-primary {
+            position: fixed;
+            top: 110%;
+            left: 0;
+            bottom: auto;
+            height: 100%;
+            width: 100%;
+            min-height: 100vh;
+            z-index: 99;
+            overflow-y: auto;
+            background: var(--accent);
+            transition: transform 0.65s cubic-bezier(1, 0, 0, 1);
+            .menu-inner {
+                transition: transform 0.65s cubic-bezier(1, 0, 0, 1);
+                padding: 4em;
+                background: var(--dark);
+                min-height: 100%;
+                //     display: flex;
+                //     ul {
+                //         max-width: 200px;
+                //     }
+                // display: flex;
+                // justify-content: center;
+                // align-items: flex-start;
+                display: grid;
+                justify-content: center;
+                .menu-bar {
+                    // background: aqua;
+                    // padding: 12vh 10vh;
+                    // width: min-content;
+                    // height: min-content;
+                    display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                    flex-direction: column;
+                    //     .parent-menu {
+                    //         position: relative;
+                    //     }
+                }
+            }
+        }
+    }
+    
+    @include media('<md') {
+        .sm-menu-fullscreen {
+            @include menu-fullscreen;
+        }
+    }
+    
+    @include media('>=md', '<=xl') {
+        .md-menu-fullscreen {
+            @include menu-fullscreen;
+        }
+    }
+    
+    @include media('>xl') {
+        .xl-menu-fullscreen {
+            @include menu-fullscreen;
+        }
+    }
+    
+    .sm-menu-fullscreen,
+    .md-menu-fullscreen,
+    .xl-menu-fullscreen {
+        .menu-primary.active {
+            top: 0
+        }
+    }
+    
+    // @include media('<md'){ #header-main.sm-menfullscreen:after { content:"SM FS"; }}
+    // @include media('>md','<xl'){ #header-main.-menu-fullscreen:after { content:"MD FS"; }}
+    // @include media('>xl'){ #header-main.xl-menfullscreen:after { content:"xl FS"; }}

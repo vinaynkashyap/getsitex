@@ -1,0 +1,1 @@
+A Simple folderstructure to organize your projects easily with some starter files in it.

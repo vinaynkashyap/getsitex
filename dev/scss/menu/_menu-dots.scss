@@ -1,0 +1,17 @@
+@include media('<md') {
+    #header-main.sm-menu-dots:after {
+        content: "SM DOT";
+    }
+}
+
+@include media('>=md', '<=xl') {
+    #header-main.md-menu-dots:after {
+        content: "MD DOT";
+    }
+}
+
+@include media('>xl') {
+    #header-main.xl-menu-dots:after {
+        content: "xl DOT";
+    }
+}

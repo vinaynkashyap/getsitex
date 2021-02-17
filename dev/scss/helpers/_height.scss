@@ -1,0 +1,27 @@
+
+$hCount14: 14;
+$hCount10: 10;
+
+// $hCustom  : .3rem;
+// $hRem     : 1rem;
+$h10PX    : 10px;
+$hPX      : 100px;
+$hP       : 10%;
+$hVH      : 10vh;
+
+/* heightt */
+
+.h-0 { height: 0; }
+.h-a { height: auto; }
+@for $i from 1 through $hCount14 {.h-#{($i*10px)} { height: ($i*$h10PX) }}
+@for $i from 1 through $hCount14 {.h-#{($i*100px)} { height: ($i*$hPX) }}
+@for $i from 1 through $hCount10 {.h-#{($i*10p)} { height: ($i*$hP) }}
+@for $i from 1 through $hCount10 {.h-#{($i*10vh)} { height: ($i*$hVH) }}
+@for $i from 1 through $hCount14 {.min-h-#{($i*100px)} { min-height: ($i*$hPX) }}
+@for $i from 1 through $hCount10 {.min-h-#{($i*10p)} { min-height: ($i*$hP) }}
+@for $i from 1 through $hCount10 {.min-h-#{($i*10vh)} { min-height: ($i*$hVH) }}
+@for $i from 1 through $hCount14 {.max-h-#{($i*100px)} { max-height: ($i*$hPX) }}
+@for $i from 1 through $hCount10 {.max-h-#{($i*10p)} { max-height: ($i*$hP) }}
+@for $i from 1 through $hCount10 {.max-h-#{($i*10vh)} { max-height: ($i*$hVH) }}
+
+

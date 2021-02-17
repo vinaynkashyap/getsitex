@@ -1,0 +1,87 @@
+
+
+// input,
+// select,
+// textarea {
+//   display: block;
+//   font-family: inherit;
+//   width: 100%;
+// }
+// input[type="radio"] {
+//   display: inline-block;
+//   width: auto;
+// }
+// input:disabled {
+//   background: #ccc;
+// }
+// form,
+// fieldset {
+//   margin: 0;
+//   padding: 0;
+//   border: none;
+//   position: relative;
+// }
+
+// form,
+// fieldset {
+//   &:before,
+//   &:after {
+//     display: block;
+//     font-weight: bold;
+//   }
+//   // Error
+//   &:before {
+//     color: var(--dark);
+//     margin: 0 0 1em;
+//   }
+//   // Thanks
+//   &:after {
+//     color: var(--dark);
+//     margin: 1em 0 0;
+//   }
+//   &:invalid {
+//     // border: dashed .2em #fcc;
+//     &:before {
+//       // content: "You've still got some form fields to complete here."
+//     }
+//   }
+//   &:valid {
+//     // border: solid .2em #9c9;
+//     &:after {
+//       // content: "Good job, buddy! I promise I won't misuse this information."
+//     }
+//   }
+// }
+
+// fieldset {
+//   &:invalid {
+//     border: dashed 0 transparent;
+//     &:before {
+//       // content: "Fields to complete.";
+//     }
+//   }
+//   // Added to the bottom of a valid <fieldset/>
+//   &:valid {
+//     &:before {
+//       color: var(--light);
+//       left: 0;
+//       pointer-events: none;
+//     }
+//     &:after {
+//       content: "Thanks! Now do the next section.";
+//     }
+//   }
+//   // This is added to the last <fieldset/>, when that fieldset is valid
+//   // Note that if earlier fieldsets are invalid, this content will still appear
+//   &:last-of-type:valid:after {
+//     content: "Please complete the form and we will get back to you soon!";
+//   }
+// }
+
+
+// //  Placeholder text color in chrome
+// input::-webkit-input-placeholder { 
+//    color: var(--dark) !important; 
+//   }
+
+ 

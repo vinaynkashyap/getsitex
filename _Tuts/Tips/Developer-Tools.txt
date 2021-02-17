@@ -1,0 +1,2 @@
+Take screenshots from Google chrome browser using the dev tools.
+

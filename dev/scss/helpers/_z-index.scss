@@ -1,0 +1,24 @@
+/* 
+-------------------------------------------
+z-index
+-------------------------------------------
+
+preloader
+menu overlay
+modal
+
+
+
+
+*/
+
+
+
+
+
+$zCount: 10;
+
+.z-minus-1 {z-index: -1;}
+.z-1 {z-index: 1;}
+@for $i from 0 through $zCount {.z-#{($i*10)} { z-index: ($i*10) }}
+

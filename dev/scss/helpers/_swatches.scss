@@ -1,0 +1,66 @@
+
+
+/* 
+-------------------------------------------
+Swatches
+-------------------------------------------
+*/
+
+$colors: (
+  white   var(--white  ),
+  black   var(--black  ),
+  transparent var(--transparent),
+
+  warning  var(--warning),
+  success  var(--success),
+  info     var(--info   ),
+  error    var(--error  ),
+  
+  light  var(--light),
+  light-1  var(--light-1),
+  light-2  var(--light-2),
+  light-3  var(--light-3),
+  light-4  var(--light-4),
+  light-5  var(--light-5),
+  
+  dark  var(--dark),
+  dark-1  var(--dark-1),
+  dark-2  var(--dark-2),
+  dark-3  var(--dark-3),
+  dark-4  var(--dark-4),
+  dark-5  var(--dark-5),
+  
+  accent  var(--accent),
+  accent-1  var(--accent-1),
+  accent-2  var(--accent-2),
+  accent-3  var(--accent-3),
+  accent-4  var(--accent-4),
+  accent-5  var(--accent-5),
+  
+  base    var(--base  ),
+  base-1    var(--base-1  ),
+  base-2    var(--base-2  ),
+  base-3    var(--base-3  ),
+  base-4    var(--base-4  ),
+  base-5    var(--base-5  ),
+  
+  highlight    var(--highlight  ),
+  highlight-1    var(--highlight-1  ),
+  highlight-2    var(--highlight-2  ),
+  highlight-3    var(--highlight-3  ),
+  highlight-4    var(--highlight-4  ),
+  highlight-5    var(--highlight-5  ),
+
+);
+
+/* 
+-------------------------------------------
+Background Colors
+-------------------------------------------
+*/ 
+
+@each $i in $colors {.bg-#{nth($i, 1)} {background: #{nth($i, 2)};}}
+@include media('>=sm') {@each $i in $colors {.sm-bg-#{nth($i, 1)} {background: #{nth($i, 2)};}}}
+@include media('>=md') {@each $i in $colors {.md-bg-#{nth($i, 1)} {background: #{nth($i, 2)};}}}
+@include media('>=xl') {@each $i in $colors {.xl-bg-#{nth($i, 1)} {background: #{nth($i, 2)};}}}
+

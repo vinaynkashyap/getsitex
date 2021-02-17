@@ -1,0 +1,95 @@
+@import 'rotate'
+
+
+// /* Remove all animations */
+// @media (prefers-reduced-motion: reduce) {
+//   body.no-animation * {
+//     animation-duration: 0.01ms !important;
+//     animation-iteration-count: 1 !important;
+//     transition-duration: 0.01ms !important;
+//     scroll-behavior: auto !important;
+//   }
+// }
+
+
+// /* Animation scale Menu 
+// /* ------------------------------------ */
+
+// @keyframes scaleMenu {
+//   0% {
+//       opacity: 0;
+//   }
+//   1% {
+//       opacity: 0;
+//       transform: scale(0);
+//   }
+//   100% {
+//       opacity: 1;
+//       transform: scale(1);
+//   }
+// }
+
+// .animate-scale{
+//   animation: scaleMenu 0.15s cubic-bezier(1, 0, 0.51, 1);
+// }
+
+// /* Animation Slide up 
+// /* ------------------------------------ */
+
+// @keyframes slideUp {
+//   0% {
+//       opacity: 0;
+//   }
+//   1% {
+//       opacity: 0;
+//       margin-top: 30px;
+//   }
+//   100% {
+//       opacity: 1;
+//       margin-top: 0;
+//   }
+// }
+
+// .animate-slideup{
+//   animation: slideUp 0.15s cubic-bezier(1, 0, 0.51, 1);
+// }
+// /* Animate Opacity
+// /* ------------------------------------ */
+// @keyframes grow {
+//   0% {
+//     visibility: hidden;
+//       opacity: 0;
+//   }
+//   1% {
+//     visibility: visible;
+//       opacity: 0;
+//       max-height: 0%;
+//   }
+//   100% {
+//       opacity: 1;
+//       max-height: 100%;
+//   }
+// }
+// .animate-reveal{
+//   animation: revealMenu 0.15s cubic-bezier(1, 0, 0.51, 1);
+// }
+
+
+// //  Flip 
+// // --------------------------------------
+// @keyframes fadeOut {
+//   0% {
+//       visibility: hidden;
+//       opacity: 0;
+//   }
+//   1% {
+//       visibility: visible;
+//       opacity: 0;
+//   }
+//   100% {
+//       opacity: 1;
+//   }
+// }
+// .animate-fadeOut{
+//   animation: fadeOut 0.35s cubic-bezier(1, 0, 0, 1);
+// }

@@ -1,0 +1,53 @@
+/* 
+-------------------------------------------
+Line Height
+-------------------------------------------
+*/
+$spacer :16;
+
+.line-height-0 { line-height: 0; }
+
+
+.line-height-1em { line-height: em($spacer * 1); }
+.line-height-2em { line-height: em($spacer * 2); }
+.line-height-3em { line-height: em($spacer * 3); }
+.line-height-4em { line-height: em($spacer * 4); }
+.line-height-5em { line-height: em($spacer * 5); }
+.line-height-6em { line-height: em($spacer * 6); }
+.line-height-7em { line-height: em($spacer * 7); }
+.line-height-8em { line-height: em($spacer * 8); }
+.line-height-9em { line-height: em($spacer * 9); }
+.line-height-10em { line-height:em($spacer * 10);}
+
+.line-height-1rem { line-height: rem($spacer * 1); }
+.line-height-2rem { line-height: rem($spacer * 2); }
+.line-height-3rem { line-height: rem($spacer * 3); }
+.line-height-4rem { line-height: rem($spacer * 4); }
+.line-height-5rem { line-height: rem($spacer * 5); }
+.line-height-6rem { line-height: rem($spacer * 6); }
+.line-height-7rem { line-height: rem($spacer * 7); }
+.line-height-8rem { line-height: rem($spacer * 8); }
+.line-height-9rem { line-height: rem($spacer * 9); }
+.line-height-10rem { line-height:rem($spacer * 10);}
+
+
+
+// .line-height-1vw { line-height: 1vw; }
+// .line-height-2vw { line-height: 2vw; }
+// .line-height-3vw { line-height: 3vw; }
+// .line-height-4vw { line-height: 4vw; }
+// .line-height-5vw { line-height: 5vw; }
+// .line-height-6vw { line-height: 6vw; }
+// .line-height-7vw { line-height: 7vw; }
+// .line-height-8vw { line-height: 8vw; }
+// .line-height-9vw { line-height: 9vw; }
+// .line-height-10vw {line-height: 10vw; }
+// .line-height-20vw { line-height: 20vh }
+// .line-height-30vw { line-height: 30vh }
+// .line-height-40vw { line-height: 40vh }
+// .line-height-50vw { line-height: 50vh }
+// .line-height-60vw { line-height: 60vh }
+// .line-height-70vw { line-height: 70vh }
+// .line-height-80vw { line-height: 80vh }
+// .line-height-90vw { line-height: 90vh }
+// .line-height-100vw { line-height:100vh}

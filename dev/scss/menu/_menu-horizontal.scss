@@ -1,0 +1,43 @@
+@mixin menu-horizontal {
+    .menu-primary {
+        margin-left: auto;
+        .menu-bar {
+            >.menu-item {
+                margin-left: 2rem;
+            }
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
+
+@include media('<md') {
+    .sm-menu-horizontal {
+        @include menu-horizontal;
+        .toggle-btn-primary {
+            display: none;
+        }
+    }
+}
+
+@include media('>=md', '<=xl') {
+    .md-menu-horizontal {
+        @include menu-horizontal;
+        .toggle-btn-primary {
+            display: none;
+        }
+    }
+}
+
+@include media('>xl') {
+    .xl-menu-horizontal {
+        @include menu-horizontal;
+        .toggle-btn-primary {
+            display: none;
+        }
+    }
+}
+
+// #header-main.sm-menu-horizontal:after { content:"SM HR"; }
+// #header-main.lg-menu-horizontal:after { content:"LG HR"; }
+// #header-main.md-menu-horizontal:after { content:"MD HR"; }

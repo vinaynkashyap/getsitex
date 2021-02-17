@@ -1,0 +1,25 @@
+Fixing installation files with DISM
+To use DISM to repair corrupted system files to increase performance and stability, use these steps:
+
+Open Start.
+Search for Command Prompt, right-click the top result, and click the Run as Administrator option.
+Type the following command to repair the installation and press Enter:
+
+DISM /Online /Cleanup-image /Restorehealth
+
+
+After you complete the steps, if the repair finished successfully, then your device should start operating normally. If the scan had issues, then you should use the SFC command. (You can always learn more about this feature in our DISM walkthrough guide.)
+
+Fixing installation files with SFC
+To use SFC to repair corrupted system files on Windows 10, use these steps:
+
+Open Start.
+Search for Command Prompt, right-click the top result, and click the Run as Administrator option.
+Type the following command to repair the installation and press Enter:
+
+sfc /scannow
+
+
+Once you complete the steps, the SFC tool should be able to fix any problems affecting your system performance.
+
+You can check out this guide that also explains other aspects of the System File Checker tool, including the steps to view scan details, repair individual files, and perform an offline system repair.

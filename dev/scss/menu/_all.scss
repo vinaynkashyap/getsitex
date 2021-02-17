@@ -1,0 +1,118 @@
+// |- Menu
+// |- Width
+//    |- Auto
+//    |- Full-width
+//    |- Custom
+// |- Position
+//    |- Top
+//    |- Right
+//    |- Bottom > Overflow ( Overlap page content )
+//    |- Left
+// .li-split
+// |- Widget
+// |- Width
+//    |- Auto
+//    |- Full-width
+//    |- Custom
+// |- Position
+//    |- Fixed ( Only Widget remains fixed when user scroll the page )      
+//    |- Top
+//    |- Right
+//    |- Bottom > Overflow ( Overlap page content )
+//    |- Left
+// Alternate menu for mobile
+// .toggle-menu .drop-down .top-left 
+// .toggle-menu .drop-down .top-right 
+// .toggle-menu .upward .bottm-right
+// .toggle-menu .upward .bottom-left 
+// |-Breakpoints
+//   |- sm
+//   |- md
+//   |- xl
+//     |-toggle
+//     |-horizontal
+//     |-verticle
+//     |-dropdown
+// |-Pre-Styles
+//   |- sm
+//   |- md
+//   |- xl
+//     |-light
+//     |-dark
+// |-Fullscreen
+//   |-slide
+//   |-fade
+//   |-push
+//   |-elastic
+//   |-skew
+// |-Dots
+//   |-top
+//   |-left
+//   |-bottom
+//   |-right
+// |-Slide
+//   |-top
+//   |-left
+//   |-bottom
+//   |-right
+// |-push
+//   |-top
+//   |-left
+//   |-bottom
+//   |-right
+// sm-fullscreen
+// lg-fullscreen
+// xl-fullscreen
+// xxl-fullscreen
+// slide
+// .slide .from-top
+// .slide .from-right 
+// .slide .from-bottom
+// .slide .from-left 
+// .slide .fullscreen .from-top
+// .slide .fullscreen .from-right 
+// .slide .fullscreen .from-bottom
+// .slide .fullscreen .from-left 
+// .slide .fullscreen .fade
+//  Menu Items
+//  |- Hover 
+//     |- Change Color
+//     |- Change Link Text
+//     |- Show extra text description
+//     |- Animate
+//     |- Show arrow
+//     |- Underline
+//     |- Background Color/Image
+
+/* 
+-------------------------------------------
+Menu
+-------------------------------------------
+*/
+
+// #header-main:after {
+//     // content:"default menu"; 
+//     position: fixed;
+//     top: 20px;
+//     right: 140px;
+//     font-size: 14px !important;
+//     font-weight: bolder;
+//     padding: 20px 10px !important;
+//     line-height: 0;
+//     z-index: 999999;
+//     background: black;
+//     padding: 2rem;
+//     font-weight: 400;
+//     color: #fff;
+// }
+@import 'hamburger';
+@import 'menu-fullscreen';
+@import 'menu-horizontal';
+// @import 'menu-dots';
+// @import 'menu-push';
+// @import 'menu-slide';
+// @import 'menu-split';
+// @import 'menu-toggle';
+// @import 'menu-vertical';
+@import 'sub-menu';
+@import 'sub-menu-indicator';

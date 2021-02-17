@@ -1,0 +1,64 @@
+/* 
+------------------------------------
+Footer
+------------------------------------
+*/
+
+#footer {
+    .container {
+        justify-content: space-between;
+        align-items: center;
+     }
+    padding: 100px 30px 60px 30px;
+    .quote {
+        font-size: rem(30);
+        line-height: rem(44);
+        margin-bottom: 60px;
+        font-weight: 500;
+    }
+    .social-group-inline li,
+    .social-group-inline {
+        display: inline-block;
+        a {
+            color: var(--white);
+        }
+    }
+
+    .list-group-hr {        
+        a {
+            text-decoration: none;
+            color: var(--dark-3x);
+            margin: 0 .6rem;
+        }
+        li:last-child a {
+            margin-right: 0;
+        }
+        li:first-child a {
+            margin-left: 0;
+        }
+    }
+    .copyright {
+        font-size: 16px;
+    a {
+    text-decoration: none;
+    color: var(--dark-3x);
+    margin: 0 .6rem;
+}
+}
+
+}
+
+
+// @include media('>laptop') {
+//     #footer {
+//         .quote {
+//             margin-bottom: 0px;}
+// }
+// .module-group-2 {
+//     display:flex;
+//     justify-content: flex-end;
+//     flex-wrap: wrap;
+//   }
+
+
+// }

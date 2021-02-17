@@ -1,0 +1,40 @@
+/*
+Menu Style
+*/
+
+@mixin menu-style {
+    &.menu-bar {
+        flex-wrap: wrap;
+    }
+    .menu-item {
+        white-space: nowrap;
+        a {
+            font-size: 1rem;
+            text-decoration: none;
+            font-weight: 400;
+            color: var(--base);
+            white-space: nowrap;
+            outline: none;
+        }
+    }
+}
+
+.menu-style {
+    @include menu-style;
+}
+
+// @include media('<md') {
+//     .sm-menu-fullscreen {
+//         @include menu-fullscreen;
+//     }
+// }
+// @include media('>=md', '<=lg') {
+//     .md-menu-fullscreen {
+//         @include menu-fullscreen;
+//     }
+// }
+// @include media('>lg') {
+//     .lg-menu-fullscreen {
+//         @include menu-fullscreen;
+//     }
+// }

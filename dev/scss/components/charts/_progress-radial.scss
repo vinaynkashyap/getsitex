@@ -1,0 +1,48 @@
+/* 
+-------------------------------------------
+Radial Progress
+-------------------------------------------
+*/
+
+.progress-radial-group {
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-radial-ui {
+  display: grid;
+  position: relative;
+  place-items: center;
+  margin: 10px;
+  max-width: 220px;
+  max-width: 120px;
+}
+
+.progress-radial-bg {
+  grid-row: 1;
+  stroke: #efefef;
+  stroke-width: 2;
+  fill: none;
+}
+
+.progress-radial-ring {
+  grid-row: 1;
+  animation: radial-fill 6s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  stroke: $color-accent;
+  stroke-width: 2;
+  fill: none;
+}
+
+.progress-radial-percent {
+  position: absolute;
+  transform: translateY(-42%);
+}
+
+@keyframes radial-fill {
+  to {
+    stroke-dasharray: 0 100;
+  }
+}

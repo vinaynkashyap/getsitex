@@ -1,0 +1,25 @@
+/* 
+-------------------------------------------
+Floats
+-------------------------------------------
+*/
+
+
+$floatArray: (
+    float-l left,
+    float-r right,
+    float-0 none
+  );
+  
+
+@each $i in $floatArray {.#{nth($i, 1)} {float: #{nth($i, 2)};}}
+
+@include media('>=sm') {
+    @each $i in $floatArray {.sm-#{nth($i, 1)} {float: #{nth($i, 2)};}}
+}
+@include media('>=md') {
+    @each $i in $floatArray {.md-#{nth($i, 1)} {float: #{nth($i, 2)};}}
+}
+@include media('>=xl') {
+    @each $i in $floatArray {.xl-#{nth($i, 1)} {float: #{nth($i, 2)};}}
+}

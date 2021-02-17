@@ -1,0 +1,325 @@
+// grid-container
+
+
+
+/* FLEX */
+
+$grid: (
+
+  // //  Flex Basis
+  // flex-fill         'flex-basis' 'fill',
+  // flex-max-content  'flex-basis' 'max-content',
+  // flex-min-content  'flex-basis' 'min-content',
+  // flex-fit-content  'flex-basis' 'fit-content',
+  // flex-content      'flex-basis' 'content',
+  
+  // //  Direction
+  // flex-row	         'flex-direction' 'row',
+  // flex-row-reverse	 'flex-direction' 'row-reverse',
+  // flex-col	         'flex-direction' 'column',
+  // flex-col-reverse	 'flex-direction' 'column-reverse',
+
+  // // Wrap
+  // flex-wrap	        'flex-wrap' 'wrap',
+  // flex-nowrap	      'flex-wrap' 'nowrap',
+  // flex-wrap-reverse	'flex-wrap' 'wrap-reverse',
+
+  
+  // col-auto-200px 'grid-auto-columns' 'minmax(200px, auto)',
+
+// col-auto-fill 'grid-template-columns' 'repeat(auto-fill, 200px)',
+// col-auto-fit 'grid-template-columns' 'repeat(auto-fit, 200px)',
+// row-auto-fill 'grid-template-rows' 'repeat(auto-fill, 1fr)',
+// row-auto-fit 'grid-template-rows' 'repeat(auto-fit, 1fr)',
+
+col-min-content 'grid-template-columns' '1fr min-content',
+col-max-content 'grid-template-columns' '1fr max-content',
+
+grid-row        'grid-auto-flow' 'row',
+grid-col        'grid-auto-flow' 'column',
+grid-dense      'grid-auto-flow' 'dense',
+grid-row-dense  'grid-auto-flow' 'row dense',
+grid-col-dense  'grid-auto-flow' 'column dense',
+grid-unset      'grid-auto-flow' 'unset',
+
+justify-items-auto     'justify-items' 'auto',
+justify-items-start    'justify-items' 'start',
+justify-items-end      'justify-items' 'end',
+justify-items-center   'justify-items' 'center',
+justify-items-stretch  'justify-items' 'stretch',
+
+justify-self-auto	    'justify-self' 'auto',
+justify-self-start	  'justify-self' 'start',
+justify-self-end	    'justify-self' 'end',
+justify-self-center	  'justify-self' 'center',
+justify-self-stretch	'justify-self' 'stretch',
+
+justify-content-center	'place-content' 'center',
+justify-content-start	  'place-content' 'start',
+justify-content-end	    'place-content' 'end',
+justify-content-between	'place-content' 'space-between',
+justify-content-around	'place-content' 'space-around',
+justify-content-evenly	'place-content' 'space-evenly',
+justify-content-stretch	'place-content' 'stretch',
+
+align-items-auto     'align-items' 'auto',
+align-items-start    'align-items' 'start',
+align-items-end      'align-items' 'end',
+align-items-center   'align-items' 'center',
+align-items-stretch  'align-items' 'stretch',
+
+align-self-auto	    'align-self' 'auto',
+align-self-start	  'align-self' 'start',
+align-self-end	    'align-self' 'end',
+align-self-center	  'align-self' 'center',
+align-self-stretch	'align-self' 'stretch',
+
+align-content-center	'place-content' 'center',
+align-content-start	  'place-content' 'start',
+align-content-end	    'place-content' 'end',
+align-content-between	'place-content' 'space-between',
+align-content-around	'place-content' 'space-around',
+align-content-evenly	'place-content' 'space-evenly',
+align-content-stretch	'place-content' 'stretch',
+
+// place-content-center	'place-content' 'center',
+// place-content-start	  'place-content' 'start',
+// place-content-end	    'place-content' 'end',
+// place-content-between	'place-content' 'space-between',
+// place-content-around	'place-content' 'space-around',
+// place-content-evenly	'place-content' 'space-evenly',
+// place-content-stretch	'place-content' 'stretch',
+
+
+place-xstart          'place-content' 'start',
+place-xstart-ycenter  'place-content' 'start center',
+place-xstart-yend     'place-content' 'start end',
+place-center-start  'place-content' 'center start',
+place-center	      'place-content' 'center',
+place-center-end    'place-content' 'center end',
+place-end-start     'place-content' 'end center',
+place-end-center    'place-content' 'end center',
+place-end	          'place-content' 'end',
+
+place-items-auto	  'place-items' 'auto',
+place-items-start	  'place-items' 'start',
+place-items-end	    'place-items' 'end',
+place-items-center	'place-items' 'center',
+place-items-stretch	'place-items' 'stretch',
+
+place-self-auto	    'place-self' 'auto',
+place-self-start	  'place-self' 'start',
+place-self-end	    'place-self' 'end',
+place-self-center	  'place-self' 'center',
+place-self-stretch	'place-self' 'stretch',
+
+);
+
+
+// .span-x	grid-column: span 1 / span 1;	
+
+// ------------------------------------------------
+// ------------------------------------------------
+// ------------------------------------------------
+// ------------------------------------------------
+
+
+// grid-template-columns
+// grid-template-rows
+// grid-template-areas
+// grid-template
+// grid-auto-columns
+// grid-auto-rows
+// grid-auto-flow
+// grid
+// grid-row-start
+// grid-column-start
+// grid-row-end
+// grid-column-end
+// grid-row
+// grid-column
+// grid-area
+// row-gap
+// column-gap
+// gap
+
+
+
+// repeat()
+// minmax()
+// fit-content()
+
+
+  
+
+// .grid-cols-1	grid-template-columns: repeat(1, minmax(0, 1fr));	
+// .grid-cols-none	grid-template-columns: none;
+
+// .col-start-1	grid-column-start: 1;	
+// .col-start-auto	grid-column-start: auto;
+
+// .grid-row-none
+// .grid-rows-1	grid-template-rows: repeat(1, minmax(0, 1fr));	
+// .grid-rows-none	grid-template-rows: none;
+
+// .row-auto	grid-row: auto;	
+// .row-span-1	grid-row: span 1 / span 1;	
+
+// .row-start-1	grid-row-start: 1;	
+// .row-start-auto	grid-row-start: auto;	
+
+// .row-end-1	grid-row-end: 1;	
+// .row-end-auto	grid-row-end: auto;
+
+// .gap-0	gap: 0;	
+// .gap-px	gap: 1px;	
+
+// .row-gap-0	row-gap: 0;	
+// .row-gap-px	row-gap: 1px;	
+
+// .col-gap-0	col-gap: 0;	
+// .col-gap-px	col-gap: 1px;
+
+// // gap-1
+// // gap-2
+// // gap-3
+
+// // gap-x-1
+// // gap-x-2
+// // gap-x-3
+
+// // gap-y-1
+// // gap-y-2
+// // gap-y-3
+
+
+
+// .grid-container:after {
+  //   position: absolute;
+// }
+
+// .autofit-1col {grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));}
+// .autofit-2col {grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));}
+// .autofit-3col {grid-template-columns: repeat(auto-fit, minmax(33.33%, 1fr));}
+// .autofit-4col {grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));}
+// .autofit-5col {grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));}
+// .autofit-6col {grid-template-columns: repeat(auto-fit, minmax(16.66%, 1fr));}  
+
+/* 
+------------------------------------
+Grid 
+------------------------------------
+*/
+
+
+/* Grid Classes*/
+@each $i in $grid {.#{nth($i, 1)} { #{nth($i, 2)}:#{nth($i, 3)};}}
+
+
+
+.grid-col-fill {
+  grid-column: 1 / -1;
+}
+
+
+
+
+
+/* Grid Repeat Columns */
+
+$count14: 14;
+$count5: 5;
+$count10: 10;
+
+.grid-col-auto {grid-template-columns: auto;}
+.grid-row-auto {grid-template-rows: auto;}
+@for $i from 1 through $count14 {.repeat-col-#{$i}{grid-template-columns: repeat($i, minmax(auto, 1fr));}}
+@for $i from 1 through $count14 {.repeat-row-#{$i}{grid-template-rows: repeat($i, minmax(auto, 1fr));}}
+
+@for $i from 1 through $count14 {.grid-col-#{$i}{grid-column: $i;}}
+@for $i from 1 through $count14 {.grid-row-#{$i}{grid-row: $i;}}
+
+.col-start-auto {grid-column-start: auto;}
+.col-end-auto {grid-column-end: auto;}
+.row-start-auto {grid-row-start: auto;}
+.row-end-auto {grid-row-end: auto;}
+
+@for $i from 1 through $count14{ .col-start-#{$i}{ grid-column-start: $i;} }
+@for $i from 1 through $count14{ .col-end-#{$i}{ grid-column-end: $i;} }
+
+@for $i from 1 through $count14{ .row-start-#{$i}{ grid-row-start: $i;} }
+@for $i from 1 through $count14{ .row-end-#{$i}{ grid-row-end: $i;} }
+// span
+@for $i from 1 through $count14{ .col-span-#{$i}{ grid-column: span $i;} }
+@for $i from 1 through $count14{ .row-span-#{$i}{ grid-row: span $i;} }
+
+// Grid Cards
+$w10PX    : 10px;
+$wPX      : 100px;
+$wP       : 10%;
+$wVW      : 10vw;
+
+@for $i from 10 through 35 {.col-fit-#{$i*10px}{grid-template-columns: repeat(auto-fit, minmax($i*10px, 1fr));}}
+
+
+:root {
+  --xxs: 320px;
+  --xs: 480px;
+  --sm: 576px;
+  --md: 768px;
+  --lg: 992px;
+  --xl: 1200px;
+  --xxl: 1400px;
+}
+
+// self-center example:  https://codepen.io/Code3ater/pen/JjKBVQM?editors=0100
+.minmax-auto-xs    {grid-template-columns: minmax(auto,  var(--xs)); }
+.minmax-xs-sm   {grid-template-columns: minmax(var(--xs), var(--sm)); }
+.minmax-xs-lg   {grid-template-columns: minmax(var(--xs), var(--md)); }
+.minmax-xs-md   {grid-template-columns: minmax(var(--xs), var(--lg)); }
+.minmax-xs-xl   {grid-template-columns: minmax(var(--xs), var(--xl)); }
+.minmax-xs-2xl  {grid-template-columns: minmax(var(--xs), var(--2xl));}
+
+
+// @for $i from 1 through 50 {.col-fill-#{$i*10px}{grid-template-columns: repeat(auto-fill, minmax($i*10px, 1fr));}}
+
+// @for $i from 10 through 35 {.row-fit-#{$i*10px}{grid-template-rows: repeat(auto-fit, minmax($i*10px, 1fr));}}
+// @for $i from 1 through 50 {.row-fill-#{$i*10px}{grid-template-rows: repeat(auto-fill, minmax($i*10px, 1fr));}}
+
+
+
+// grid-column-start
+// grid-column-end
+// grid-row-start
+// grid-row-end
+
+
+
+$gCustom  : .3rem;
+$gRem     : 1rem;
+$g10PX    : 10px;
+$gPX      : 100px;
+$gP       : 10%;
+$gVW      : 10vw;
+
+.gap-auto { gap: auto; }
+@for $i from 0 through $count10 {.gap-#{($i)} { gap: ($i*$gCustom) }}
+@for $i from 1 through $count10 {.gap-#{($i*1rem)} { gap: ($i*$gRem) }}
+@for $i from 1 through $count10 {.gap-#{($i*1px)} { gap: ($i*1px) }}
+@for $i from 2 through $count10 {.gap-#{($i*10px)} { gap: ($i*$g10PX) }}
+@for $i from 1 through $count5 {.gap-#{($i*10p)} { gap: ($i*$gP) }}
+// @for $i from 1 through $count5 {.gap-#{($i*10vw)} { gap: ($i*$gVW) }}
+
+@for $i from 0 through $count10 {.gap-col-#{($i)} { column-gap: ($i*$gCustom) }}
+@for $i from 1 through $count10 {.gap-col-#{($i*1rem)} { column-gap: ($i*$gRem) }}
+@for $i from 1 through $count10 {.gap-col-#{($i*1px)} { column-gap: ($i*1px) }}
+@for $i from 2 through $count10 {.gap-col-#{($i*10px)} { column-gap: ($i*$g10PX) }}
+@for $i from 1 through $count5 {.gap-col-#{($i*10p)} { column-gap: ($i*$gP) }}
+@for $i from 1 through $count5 {.gap-col-#{($i*10vw)} { column-gap: ($i*$gVW) }}
+
+@for $i from 0 through $count10 {.gap-row-#{($i)} { row-gap: ($i*$gCustom) }}
+@for $i from 1 through $count10 {.gap-row-#{($i*1rem)} { row-gap: ($i*$gRem) }}
+@for $i from 1 through $count10 {.gap-row-#{($i*1px)} { row-gap: ($i*1px) }}
+@for $i from 2 through $count10 {.gap-row-#{($i*10px)} { row-gap: ($i*$g10PX) }}
+@for $i from 1 through $count5 {.gap-row-#{($i*10p)} { row-gap: ($i*$gP) }}
+@for $i from 1 through $count5 {.gap-row-#{($i*10vw)} { row-gap: ($i*$gVW) }}

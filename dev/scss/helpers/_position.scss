@@ -1,0 +1,117 @@
+// .inset-0	top: 0;
+// right: 0;
+// bottom: 0;
+// left: 0;
+// .inset-auto	top: auto;
+// right: auto;
+// bottom: auto;
+// left: auto;
+// .inset-y-0	top: 0;
+// bottom: 0;
+// .inset-x-0	right: 0;
+// left: 0;
+// .inset-y-auto
+// bottom
+// .inset-x-auto
+// left: 
+// .top-0	
+// .right-0	
+// .bottom-0	
+// .left-0	
+// .top-auto	
+// .right-auto	
+// .bottom-auto	
+// .left-auto	
+
+// .static
+// .fixed
+// .absolute
+// .relative
+// .sticky
+
+
+/* 
+-------------------------------------------
+Position
+-------------------------------------------
+*/
+
+.static {  position: static;}
+.sticky {  position: sticky;}
+.relative {  position: relative;}
+.absolute {  position: absolute;}
+.fixed {  position: fixed;}
+
+.top-0 {  top: 0;}
+.right-0 {  right: 0;}
+.bottom-0 {  bottom: 0;}
+.left-0 {  left: 0;}
+
+.top-50p {  top: 50%;}
+.right-50p {  right: 50%;}
+.bottom-50p {  bottom: 50%;}
+.left-50p {  left: 50%;}
+
+.top-minus-50p {  top: -50%;}
+.right-minus-50p {  right: -50%;}
+.bottom-minus-50p {  bottom: -50%;}
+.left-minus-50p {  left: -50%;}
+
+.top-50vh {  top: 50vh;}
+.right-50vw {  right: 50vw;}
+.bottom-50vh {  bottom: 50vh;}
+.left-50vw {  left: 50vw;}
+
+.top-minus-50vh {  top: -50vh;}
+.right-minus-50vw {  right: -50vw;}
+.bottom-minus-50vh {  bottom: -50vh;}
+.left-minus-50vw {  left: -50vw;}
+
+
+
+.absolute-tl, 
+.absolute-tc, 
+.absolute-tr, 
+.absolute-cl, 
+.absolute-cc,
+.absolute-cr, 
+.absolute-bl, 
+.absolute-bc, 
+.absolute-br {
+    position: absolute;
+}
+
+.absolute-tl {        
+    left: 0%; top: 0%;
+    transform: translate(-0%,-0%); 
+ }
+.absolute-tc {        
+    left: 50%; top: 0%;
+    transform: translate(-50%, 0%); 
+ }
+.absolute-tr {        
+    top: 0%; right: 0%;    
+    transform: translate(-0%,-0%); 
+ }
+.absolute-cl {        
+    left: 0%; top: 50%;
+    transform: translate(-0%,-50%); 
+ }
+.absolute-cc {         
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%); 
+}
+.absolute-cr {        
+    top: 50%; right: 0%;    
+    transform: translate(-0%,-50%); 
+ }
+.absolute-bl {        
+    left: 0%; bottom: 0%;
+ }
+.absolute-bc {        
+    left: 50%; bottom: 0%;
+    transform: translate(-50%,-0%); 
+ }
+.absolute-br {        
+    bottom: 0%; right: 0%;    
+ }

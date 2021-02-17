@@ -1,0 +1,27 @@
+/*---------------------------------
+Border
+---------------------------------*/
+
+// .border-transparent	border-color: transparent;	
+// .border-current	border-color: currentColor;	
+// .border-black	border-color: #000;	
+// .border-white
+
+
+$brCounter : 5;
+$brSpacer: .1rem;
+
+.border-solid { border-style: solid;}
+.border-dashed { border-style: dashed;}
+.border-dotted { border-style: dotted;}
+.border-double { border-style: double;}
+
+@for $i from 0 through $brCounter {    
+.border-#{$i} { border: ( $brSpacer * $i ); }
+.border-t-#{$i} { border-top: ( $brSpacer * $i ); }
+.border-r-#{$i} { border-right: ( $brSpacer * $i ); }
+.border-b-#{$i} { border-bottom: ( $brSpacer * $i ); }
+.border-l-#{$i} { border-left: ( $brSpacer * $i ); }
+}
+
+

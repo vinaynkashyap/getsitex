@@ -1,0 +1,68 @@
+/* 
+-------------------------------------------
+Tab Seaction
+-------------------------------------------
+*/
+
+// .tab-modern {
+//     margin: 1rem ;
+//     .tab-button {
+//         padding:1.25rem 0rem;        
+//         cursor: pointer;
+//     }
+//     .tab-button:not(:last-child) {
+//         border-bottom: 1px solid var(--dark-3x);
+//     }
+//     .tab-link {
+//         color: var(--dark-3x);
+//         text-decoration: none;
+//         font-size: 24px;
+//         line-height: rem(30);
+//         font-weight: 300;
+        
+//         i {
+//             margin-right: 1rem;
+//         }
+//     }
+//     .tab-button:hover .tab-link,
+//     .active .tab-link {
+//         color: var(--white);
+//         font-weight: 600;
+//     }
+
+//     .tab-content {
+//         font-size: 1.6rem;
+//         line-height: 2.6rem;
+//         display:none;        
+//         margin: 0rem;
+//         margin-top: 2rem;
+//     }
+//     .tab-content.active{
+//         display:block;
+//     }
+// }
+
+// @include media('>=800px') {
+//     .tab-modern{
+//         display: flex;
+//         flex-direction: row;
+//         flex-wrap: nowrap !important;
+//         justify-content: space-between;
+//     }
+//     .tab-button-group {
+//         flex: 1 1 260px;
+//         max-width: 260px;
+//         min-width: 230px;
+//         align-self:flex-start;
+//         top: 0;
+//         position: sticky;
+//         margin-right: 1rem;        
+//         .tab-button {
+//             padding:1.25rem 1rem;
+//         }
+//     }
+//     .tab-content {
+//         margin: 2rem;
+//         padding-left: 3rem;
+//     }
+// }

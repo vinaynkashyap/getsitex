@@ -1,0 +1,16 @@
+
+pre {
+    font-family: Operator Mono A, Operator Mono B, Source Code Pro, Menlo,
+      Consolas, Monaco, monospace;
+    tab-size: 2;
+    word-break: normal;
+    hyphens: none;
+    max-width: 100%;
+    overflow: auto;
+  }
+  
+  pre code {
+    white-space: pre;
+    -webkit-overflow-scrolling: touch;
+  }
+  

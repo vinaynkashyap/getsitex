@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>CSS Grids</title>
+    <link rel="stylesheet" href="css\main.css"></style>
+</head>
+<body>
+
+<h1>CSS Grid</h1>
+<p>
+        In this tutorial we take a bunch of divs and see how we can manuplate it using CSS Grid and also try to build some real world applications.
+</p>
+<p>
+    In simple words, CSS Grid is like an ice tray with adjustable cube size and make ice cubes of any size in one tray.
+</p>
+
+<h4>Color Code</h4>
+<ul class="color-code list li-horizontal">
+    <li class="grid-container">Grid  Container</li>
+    <li class="grid-items">Grid items</li>
+    <!-- <li class="modified-items">Modified Grid items</li>     -->
+</ul>
+
+
+<h2>A Simple Grid</h2>
+<p>When ever you add the CSS property <span class="code-tip">display:grid</span> to a container, all it's children will automatically transform into grid units.</p> 
+<p>Note: Nothing changes until you tell the grid how many rows and columns you need and that's exactly what we will do in the next step. </p>
+<section class="container simple-grid">    
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+    <div class="item item4">4</div>
+    <div class="item item5">5</div>
+</section>
+
+<h2>Grid Cell.</h2>
+<p> A grid cell is an area created when columns and rows intersect inside a grid container.</p>
+<p> <b> CSS Snippets:</b></p>
+<ul>
+    <li>Columns: <span class="code-tip">grid-template-columns </span> </li>
+    <li>Rows :<span class="code-tip"> grid-template-rows</span> </li>
+</ul>
+<code>
+    <pre>
+        .two {
+            grid-template-columns: 100px 100px 100px;
+        }
+        
+    </pre>
+</code>
+
+<p>Here, we are telling the grid container to add 3 columns and 3 rows of 100px each.</p>
+<p>Note: The grid container will automatically create the Rows if it is not defined and the height is set to fit the content inside it.</p>
+<section class="container grid-cell">
+    <div class="item">1 </div>
+    <div class="item">2 </div>
+    <div class="item">3 </div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+</section>
+    
+
+
+
+<h2>Fractional unit</h2>
+<p>If there is any space left inside the grid container after displaying the grid cells (as per the values given by the user) we can refer to this space as Fracional unit. Just like a "px" or "%" we can use "fr" to display the grid unit in the free space. 
+    </p>
+
+<code>
+    <pre> 
+        .three {
+            grid-template-columns: 1fr 1fr 3fr;
+        }
+    
+    </pre>
+</code> 
+<p>
+    In the below example we have set the 2nd column to "1fr" and  3rd col to 3fr. Which means the 3rd col will take 3 times the available space compared to the 1st col.  </p>
+<section class="container grid-fr1">
+    <div class="item">1 </div>
+    <div class="item">2 </div>
+</section>
+
+<p>
+    In the below example we have set the 2nd column to "1fr" and  3rd col to 3fr. Which means the 3rd col will take 3 times the available space compared to the 1st col.  </p>
+<section class="container grid-fr2">
+    <div class="item">1 </div>
+    <div class="item">2 </div>
+    <div class="item">3 </div>
+</section>
+
+<p>
+    In the below example we have set the 2nd column to "1fr" and  3rd col to 3fr. Which means the 3rd col will take 3 times the available space compared to the 1st col.  </p>
+<section class="container grid-fr3">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+</section>
+
+
+<h2>Default width.</h2>
+
+<p> We have set the width of col-1:50px, col-2:1fr aand col-3:3fr and did not create extra columns for the rest of the 6 child elements.</p>
+
+<section class="container grid-fr3">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+</section>
+<p>The CSS grid system will automatically place the rest of the child elements below the available grid cells to complete the grid. The child elements inherits the column width in which it is automatically placed.  </p>
+    
+        <p>
+        ex: We did not define more than 3 columns. The grid will place 4, 5,6...9 automatically under the grid units which we have defined earlier. hence 7 & 4 takes up the same width as col 1, 8 & 5 inherits the Col 2 width, and so on...</p>
+
+
+
+<h2>Grid Flow </h2>
+
+
+<p> What happens when we have more child elements than the number of columns defined in the grid container? Well, the child elements simply wrap to the next line. </p>
+
+<p>In this example we defined onl 3 col but we had 4 child elements so the 4th element wraps on to the next line.</p>
+
+<section class="container grid-flow1">
+    <div class="item">1 </div>
+    <div class="item">2 </div>
+    <div class="item">3 </div>
+    <div class="item">4</div>
+</section>
+
+<p> The grid cells can be arranged next to eachother horizontally using <span class="code-tip">grid-auto-flow: rows</span> </p>
+
+<section class="container grid-flow2">
+    <div class="item">1 </div>
+    <div class="item">2 </div>
+    <div class="item">3 </div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+</section>
+
+<p> The grid cells can be stacked on top of each other vertically using <span class="code-tip">grid-auto-flow: columns</span> </p>
+
+<section class="container grid-flow3">
+    <div class="item">1 </div>
+    <div class="item">2 </div>
+    <div class="item">3 </div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+</section>
+
+<h2>Grid gap </h2>
+
+<p>The space between the grids is called the grid gap. It is similar to margins it takes extra space as you can see int he example, the height of the container has increased. </p>
+
+<section class="container grid-gap">
+    <div class="item">1 </div>
+    <div class="item">2 </div>
+    <div class="item">3 </div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+</section> 
+
+
+<h2>Grid Span </h2>
+<p>By default, the elements are layed out from left to right inside the grid.</p>
+
+<p>Spanning can address the issue we faced during the fractional unit example where all the rows in a column has the same width. But we can change this using the span property to give each grid unit a different width. </p>
+
+<p> We can also tell the grid to start and end a cell at a specific points.</p> 
+
+<p>In the below example we span the 5th column to take up three times as much the width and twice the height of the rest of the units. </p>
+
+<code>
+    <pre>
+        .item5 {
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start:2;
+            grid-row-end:4;
+        }
+    </pre>
+</code>
+
+And the shorthand CSS for the above is:
+
+<code>
+    <pre>
+        .item5 {
+            grid-column: 2/5;
+            grid-row:2/4;
+        }
+    </pre>
+</code>
+
+<p>
+    Sometimes you may not be aware of how many rows or columns exist and ou want to span a grid item across an entire width. You can do it by using -1 as the end point.
+</p>
+
+<p>CSS to span accross entire width. -1 does not work to span the entire height. </p>
+<code>
+    <pre>
+        .item5 {
+            grid-column: 2/-1;
+            grid-row:2/-1;
+        }
+    </pre>
+</code>
+
+<section class="container grid-span1">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+    <div class="item item4">4</div>
+    <div class="item item5">5</div>
+    <div class="item item6">6</div>
+    <div class="item item7">7</div>
+    <div class="item item8">8</div>
+    <div class="item item9">9</div>
+    <div class="item item10">10</div>
+    <div class="item item11">11</div>
+    <div class="item item12">12</div>
+    <div class="item item13">13</div>
+    <div class="item item14">14</div>
+    <div class="item item15">15</div>
+</section> 
+
+
+
+
+
+
+
+
+
+<!-- 
+
+ - Css Grid Course
+
+
+
+    - Explicit and implesit Grid (start and end points).
+
+
+    // auto fit
+    // auto fill 
+    // min max
+    // fit content
+
+    // fit conent + minmax
+
+    //  step 1: define template area
+    .container{
+    grid template areas : 
+    " sidebar content sidebar"
+    }
+
+    step 2: assign template area
+    .cntent {
+        grid-area: content;
+    }
+    .footer{
+        grid-area: footer;
+    }
+
+    step 3: use in media query to change the grid area.
+    @media {
+        
+  .container{
+    grid template areas : 
+    " content sidebar sidebar"
+    }
+    }
+
+
+// Grid flow
+ - Automatically created grid cells can be placed horizontally or vertically. Using grid-auto-rows or grid-auto-columns.
+
+// repeat function
+
+
+// grid-auto-flow: dense;
+
+
+
+// Align grid items
+
+
+// Order property
+
+
+// What is a subgrid?
+
+
+
+
+Cheat sheet
+
+http://grid.malven.co/
+
+
+
+
+-->
+
+</body>
+</html>

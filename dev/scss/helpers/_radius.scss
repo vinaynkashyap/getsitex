@@ -1,0 +1,36 @@
+
+$radiusCounter : 12;
+$radiusSpacer: .25rem;
+
+.radius-0 { border-radius:0; }
+.radius-tl-0 { border-top-left-radius: 0;}
+.radius-tr-0 { border-top-right-radius: 0;}
+.radius-bl-0 { border-bottom-left-radius: 0;}
+.radius-br-0 { border-bottom-right-radius: 0;}
+.radius-t-0 { border-top-left-radius: 0; border-top-right-radius: 0; }
+.radius-r-0 { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+.radius-b-0 { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+.radius-l-0 { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+
+.radius-0 { border-radius:100%; }
+.radius-tl-100p { border-top-left-radius: 100%;}
+.radius-tr-100p { border-top-right-radius: 100%;}
+.radius-bl-100p { border-bottom-left-radius: 100%;}
+.radius-br-100p { border-bottom-right-radius: 100%;}
+.radius-t-100p { border-top-left-radius: 100%; border-top-right-radius: 100%; }
+.radius-r-100p { border-top-right-radius: 100%; border-bottom-right-radius: 100%; }
+.radius-b-100p { border-bottom-left-radius: 100%; border-bottom-right-radius: 100%; }
+.radius-l-100p { border-top-left-radius: 100%; border-bottom-left-radius: 100%; }
+
+@for $i from 1 through $radiusCounter {    
+.radius-#{$i} { border-radius:( $radiusSpacer * $i ); }
+// .radius-tl-#{$i} { border-top-left-radius: ( var(--spacer) * $i );}
+// .radius-tr-#{$i} { border-top-right-radius: ( var(--spacer) * $i );}
+// .radius-bl-#{$i} { border-bottom-left-radius: ( var(--spacer) * $i );}
+// .radius-br-#{$i} { border-bottom-right-radius: ( var(--spacer) * $i );}
+// .radius-t-#{$i} { border-top-left-radius: ( var(--spacer) * $i ); border-top-right-radius: ( var(--spacer) * $i ); }
+// .radius-r-#{$i} { border-top-right-radius: ( var(--spacer) * $i ); border-bottom-right-radius: ( var(--spacer) * $i ); }
+// .radius-b-#{$i} { border-bottom-left-radius: ( var(--spacer) * $i ); border-bottom-right-radius: ( var(--spacer) * $i ); }
+// .radius-l-#{$i} { border-top-left-radius: ( var(--spacer) * $i ); border-bottom-left-radius: ( var(--spacer) * $i ); }
+}
+    

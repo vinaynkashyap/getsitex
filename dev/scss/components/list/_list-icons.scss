@@ -1,0 +1,49 @@
+
+
+.pseudo-before li:before {
+  content: "";
+  font-family: FontAwesome;
+  display: inline-block;
+  width: 2em;
+}
+
+.pseudo-before .pseudo-tick::before {
+  content: "✔";
+}
+.pseudo-before .pseudo-facebook::before {
+  content: "\f230";
+}
+.pseudo-before .pseudo-instagram::before {
+  content: "\f16d";
+}
+.pseudo-before .pseudo-pinterest::before {
+  content: "\f0d2";
+}
+.pseudo-before .pseudo-twitter::before {
+  content: "\f099";
+}
+
+
+.pseudo-after li:after {
+  content: "";
+  font-family: FontAwesome;
+  display: inline-block;
+  width: 2em;
+}
+
+.pseudo-after .pseudo-tick::after {
+  content: "✔";
+}
+.pseudo-after .pseudo-facebook::after {
+  content: "\f230";
+}
+.pseudo-after .pseudo-instagram::after {
+  content: "\f16d";
+}
+.pseudo-after .pseudo-pinterest::after {
+  content: "\f0d2";
+}
+.pseudo-after .pseudo-twitter::after {
+  content: "\f099";
+}
+

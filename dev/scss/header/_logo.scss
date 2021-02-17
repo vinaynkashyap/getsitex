@@ -1,0 +1,141 @@
+/*
+
+
+|- Logo
+|- Width
+   |- Auto
+   |- Full-width
+   |- Custom
+|- Height
+   |- Auto
+|- Type
+   |- Text
+   |- Image
+|- Subtext       
+	  |- Position
+		 |- Top
+		 |- Right
+		 |- Bottom
+		 |- Left
+|- Logo Position
+	  |- Fixed ( Only Logo remains fixed when user scroll the page )      
+   |- Top
+   |- Right
+   |- Bottom > Overflow ( Overlap page content )
+   |- Left
+
+.logo-left
+.logo-right
+.logo-center
+
+.stack-left
+.stack-right
+.stack-center
+
+.logo-left-in-tablet
+.logo-right-in-tablet
+.logo-center-in-tablet
+
+.stack-left-in-tablet
+.stack-right-in-tablet
+.stack-center-in-tablet
+
+
+.logo-left
+.logo-right
+.logo-center
+
+.stack-left
+.stack-right
+.stack-center
+
+.logo-left-in-tablet
+.logo-right-in-tablet
+.logo-center-in-tablet
+
+.stack-left-in-tablet
+.stack-right-in-tablet
+.stack-center-in-tablet
+
+logo-default
+logo-main-page
+logo-inner-page
+
+logo-mobile
+logo-laptop
+logo-desktop
+
+logo-on-overlay-menu
+
+logo-light
+logo-dark
+logo-accent
+logo-transparent
+
+
+.brand
+.brand .spin
+.brand .fade
+.brand .flip
+// .brand .tag-animate
+
+*/
+
+
+   /* 
+-------------------------------------------
+Logo
+-------------------------------------------
+*/
+
+
+// #header-main .logo {
+//     display: flex;
+//     align-items: center;
+//     z-index: 200;
+// }
+// #header-main .logo h1 a {
+//     color: var(--white);
+//     text-decoration: none ;
+// }
+// #header-main .logo h1 {
+//     align-self: center;
+//     display: block;
+//     font-size: 30px;
+//     line-height: 2.4rem;
+//     margin-bottom: 0;
+//     text-decoration: none;
+//     font-weight: bolder;
+//     font-weight: 700;
+//     max-width: 240px;
+// }
+
+
+
+// @include media('>desktopxxl') {
+//     .logo {
+//         writing-mode: vertical-rl;
+//         transform: rotate(180deg);
+//         max-height: 300px;
+//     }
+//     .inner-page {
+//         .logo {
+//             writing-mode: unset;
+//             transform: rotate(0deg);
+//         }
+//     }
+// }
+
+
+//  logo center on mobile
+
+// Logo link
+
+.logo {
+   .logo-text {
+      margin-bottom: 0;
+   }
+   a {   
+      text-decoration: none;
+   }
+}

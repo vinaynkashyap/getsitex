@@ -1,0 +1,57 @@
+/*-------------------------------
+Single Post page
+-------------------------------*/
+// #article-hero {
+//     .featured-image {
+//         display: flex;
+//         max-height: 700px;
+//     img {
+//                 object-fit: cover; 
+//                 object-position: 0 40%;
+//             }
+//         }
+//     }
+
+
+
+// .blog-single-meta {
+//     li {
+//         margin-right: 20px;
+//         a{
+//             font-size: .8rem;
+//             color: var(--dark-3x);
+//             text-decoration: none;
+//             &:hover{
+//                 text-decoration: underline;
+//             }
+//         }
+//     }
+// }
+
+
+
+/*-------------------------------
+Desktop Single Post page
+-------------------------------*/
+
+
+// @include media('>=laptop') {
+//     section#article-hero {
+//         .featured-image {
+//             max-height: 700px;
+//             width: 100%;
+//         }
+//     }
+    
+//     section#article-gallery {
+//         z-index: 999;
+//         .photos {
+//             display: flex;
+//         }
+// }
+// }
+
+
+
+
+

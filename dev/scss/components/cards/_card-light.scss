@@ -1,0 +1,47 @@
+// .card-group-light {
+//     .card-medium {
+//         background: var(--base);
+//         transition: all 1s cubic-bezier(1, 0, 0, 1);
+//         text-align: center;
+//         &.load-more{
+//             text-align: left;
+//         }
+//     }    
+//     .count {
+//         color: var(--accent);
+//         transition: all 1s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+//     }
+//     .icon {
+//         font-size: 2rem;
+//         margin: 0 auto;
+//         margin-bottom: 1rem;
+//         color: var(--accent);
+//         background: var(--white);
+//         border-radius: 100px;
+//         transition: all 1s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+//         width: 2.5em;
+//         height: 2.5em;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//     }
+//     .title {
+//         color: var(--accent);
+//         transition: all 1s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+//     }    
+//     .info {
+//         color: var(--dark);
+//         transition: all .75s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+//     }
+//     .card-medium:hover {    
+//         background: var(--accent);
+//         transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+//         .title,
+//         .count,
+//         a ,
+//         .info {
+//             transition: all .25s cubic-bezier(0.19, 1, 0.22, 1);
+//             color: var(--white);
+//     }
+//     }        
+// }

@@ -1,0 +1,44 @@
+/* 
+-------------------------------------------
+Progress Bar
+-------------------------------------------
+*/
+
+    progress {
+    /* disable defaults */
+    -webkit-appearance: none;
+    border: none;
+    width:100%;
+    height: 4px;
+    }
+    /* background of the progress bar */
+   
+    progress::-webkit-progress-bar {
+    background: lightslategrey;
+    
+    }
+    /* Progress Meter */   
+
+    progress::-webkit-progress-value {
+        background: $color-accent; 
+    }
+     progress::-moz-progress-bar {
+        background: $color-accent; 
+        }
+
+        .progress-bar-title{            
+            margin-bottom: -20px;
+        }
+    .progress-bar-ui {
+        position: relative;
+        margin-bottom: 40px;
+    }    
+    .progress-bar-percent {
+        position: absolute;
+        right: 0;
+        top: 4px;
+    }
+
+
+
+

@@ -1,0 +1,54 @@
+/* 
+-------------------------------------------
+Infinite Scroller
+-------------------------------------------
+*/
+
+:root {
+  --loop-content-width: 100vw;
+  --loop-content-height: 190px;
+  --scroll-item-count: 6;
+  --items-displayed: 5;
+  --scroll-item-width:calc(12% * 1.5); 
+  --scroll-duration: calc(var(--scroll-item-count) * 10s);
+}
+
+.looper {
+  width: var(--loop-content-width);
+  height: var(--loop-content-height);
+  color: var(--accent);
+  overflow: hidden;
+  position: relative;
+  bottom:0px;
+  left: 50%;
+  right: 0;
+  transform: translateX(-50vw);
+}
+
+.loop-container {
+  position: absolute;
+  list-style: none;
+  height: 100%;
+  display: flex;
+  animation: scrolling var(--scroll-duration) linear infinite;
+}
+/* .marquee-content:hover {
+  animation-play-state: paused;
+} */
+@keyframes scrolling {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-1 * var(--scroll-item-width) * var(--scroll-item-count))); }
+}
+.loop-container li {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--accent); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  flex-shrink: 0;  
+  width: var(--scroll-item-width);
+  white-space: nowrap;
+}
+
+

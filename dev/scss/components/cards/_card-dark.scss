@@ -1,0 +1,52 @@
+// .card-group-dark {
+
+//     .card-medium {
+//         background: var(--dark-1x);
+//         transition: all 1s cubic-bezier(1, 0, 0, 1);
+//         position: relative;
+//         overflow: hidden;
+//     }    
+//     .count {
+//         color: var(--accent);
+//         transition: all 1s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+//     }
+//     .title {
+//         color: var(--white);
+//         transition: all 1s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+//     }    
+//     .info {
+//         color: var(--dark-3x);
+//         transition: all .75s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+//     }
+//     .hover-content {
+//         position: absolute;
+//         background: var(--accent);
+//         top: 0%;
+//         left: 0;
+//         transform: translateY(-100%);
+//         width: 100%;
+//         height: 100%;
+//         display: grid;
+//         justify-content: center;
+//         align-items: center;
+//         transition: all .85s cubic-bezier(0.19, 1, 0.22, 1);        
+//     }
+
+//     .card-medium:hover {
+//         transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+//         .hover-content {       
+//             top: 50%;
+//             transform: translateY(-50%);
+//             transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+//         }
+//         &.load-more {
+//             transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+//             background: var(--accent);
+//         }
+//         a ,
+//         .info {
+//             transition: all .25s cubic-bezier(0.19, 1, 0.22, 1);
+//         color: var(--white);
+//     }
+//     }        
+// }

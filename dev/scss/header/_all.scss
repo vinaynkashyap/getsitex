@@ -1,0 +1,322 @@
+/*
+
+
+// //   -------------------------------------------------------------
+// // 	Header
+// //   -------------------------------------------------------------
+
+
+
+.from-bottom
+.from-top
+.resize
+#mms-header .sticky-onscroll
+.onscroll .hide-show
+
+//  header structure
+#mms-header
+#mms-header .transparent
+#mms-header .sticky-top 
+#mms-header .sticky-bottom
+#mms-header .sticky-left
+#mms-header .sticky-right
+#mms-header .absolute
+#mms-header .vertical-header
+#mms-header .floating-header
+#mms-header .hero-header
+#mms-header .cover-header
+#mms-header .vertical-header 
+// #mms-header .multi-level
+// .cta-header
+
+
+
+.header-wrap
+.header-wrap.fulid 
+.header-wrap.boxed
+.header-wrap.header-secondary 
+.header-wrap.top-bar
+//  Header styles
+
+header structure
+.transparent
+.sticky-top 
+.sticky-bottom
+.sticky-left
+.sticky-right
+.absolute
+.vertical-header
+.floating-header
+.hero-header
+.cover-header
+.vertical-header 
+.multi-level
+.cta-header
+
+
+$header-padding				: 1em !default;     //define top right bottom left padding
+$header-margin				: 0 !default;
+$header-height				: auto !default;    // works best if it is set to auto
+$header-bg-color			: $blue-700 !default;
+$header-wrap-bg-color		: $blue-700 !default;
+$header-container-width		: $content-wrap-width !default;
+// $header-image				: "" !default;
+
+Header area
+|- Main Header
+   |- Widget areas
+|- Header Bar
+   |- Widget areas
+|- Notification area
+   |- Widget areas
+|- Breadcrumbs
+
+
+|- Header Dimension
+   |- Height
+      |- Full-Height
+      |- Full-Height
+      |- Auto Height
+      |- Custom Height
+   |- Width
+      |- Boxed
+      |- Full Width
+      |- Auto Width
+      |- Custom Width
+   
+
+|- Header Position
+   |- Fixed alwaya
+   |- Scroll with content 
+   |- Show when page scrolls
+   |- Display on Top of the content
+   |- Display on bottom and scroll to top with page content
+   |- Sticky 
+   |- Shrinking header
+   |- Sticky Header at the bottom 
+   |- Show above content
+   |- Show on top of the page content
+   |- Appear/Disappear after section ID
+
+
+
+|- Header Widget 
+   |- Logo
+   |- Menu
+   |- Social
+   |- Social feed
+   |- Search
+   |- Banner Ads
+   |- Images
+   |- Maps
+   |- Phone
+   |- Address
+   |- Email
+   |- Text info
+   |- Top bar
+   |- Bottom bar
+   |- CTA Buttons (Android IOS)
+   |- Tags
+   |- Forms newsletter login
+   |- Language Switcher
+   |- Widget titles
+   |- Notification Bar
+   |- Language switcher icons
+   |- Shop products
+   |- Currency switcher
+   |- Cart
+
+
+|- Header Bar
+   |- Position
+      |- Top
+      |- Bottom
+
+
+
+
+// //   -------------------------------------------------------------
+// // 	Logo
+// //   -------------------------------------------------------------
+
+$logo-font-family			: 'Roboto', sans-serif !default;
+$logo-font-size				: 2.25rem !default;
+$logo-img-width				: 120px !default;
+// $logo-image					: "" !default;
+
+
+
+// //   -------------------------------------------------------------
+// // 	Menu
+// //   -------------------------------------------------------------
+
+// // 	fonts
+$menu-font-family			: 'Roboto', sans-serif !default;
+$menu-font-size				: $body-font-size !default;
+$menu-font-color			: $base-color !default;
+$menu-font-transform		: uppercase !default;
+$menu-bar-padding			: 0 !default; //for horizontal menu bar
+$menu-bar-margin			: 0 !default; // set top, right, bottom, left margin
+
+// // 	menu background color
+$menu-bg-color				: $grey-900 !default; //for horizontal menu bar
+$horizontal-menu-bg-color	: transparent !default; 
+$vertical-menu-bg-color		: transparent !default;  
+
+// //	hamburger icon
+$hamburger-color			: $white !default;  
+$hamburger-bg-color			: $pink-500 !default; 
+$hamburger-border			: none !default;
+
+// // extras
+$seperator-color			: $accent-color !default;
+$seperator-height			: 1px !default;
+$label-font-family			: $body-font-family !default;
+$label-color				: $accent-color !default;
+
+// //	menu scroll bar
+$scrollBar-color 			: $menu-bg-color !default; 
+
+
+// //	Hamburger Icon
+$ham-button-size: 1.5rem;
+$ham-transition: 0.35s;
+$z-hamburger: 99999;
+
+// //   -------------------------------------------------------------
+// // 	Submenu
+// //   -------------------------------------------------------------
+
+// //	submenu
+$submenu-font-family		: $menu-font-family !default;
+$submenu-font-size			: $menu-font-size !default;
+$submenu-font-color			: $menu-font-color !default;
+$submenu-font-transform		: uppercase !default;
+$submenu-bg-color			: $indigo-500 !default;
+
+// //	Submenu indicators
+$indicator-icon 			: "\f054" !default; // arrow 
+$indicator-icon-active		: $fa-chevron-right !default;
+$indicator-icon-size 		: 7px !default;
+
+
+
+
+
+// //   -------------------------------------------------------------
+// // 	End of config
+// //   -------------------------------------------------------------
+
+
+
+header-mobile
+header-laptop
+header-desktop
+
+header-default
+header-main
+header-secondary
+header-vertical
+header-default
+
+reveal-after-section#ID
+hide-after-section#ID
+reveal-on-scroll-up
+
+header-light
+header-dark
+header-accent
+header-transparent
+
+
+
+|- Header
+|- Height
+   |- Auto Height
+   |- Custom Height
+|- Width
+   |- Full Width
+   |- Custom Width
+|- Background
+   |- Video
+|- Pre built header layouts
+
+Header area
+|- Main Header
+|- Header Bar
+
+|- Header Bar
+   |- Position
+      |- Top
+      |- Bottom
+
+|- Header Dimension
+   |- Height
+      |- Full-Height
+      |- Full-Height
+      |- Auto Height
+      |- Custom Height
+   |- Width
+      |- Boxed
+      |- Full Width
+      |- Auto Width
+      |- Custom Width
+ 
+
+|- Header Position
+   |- Fixed alwaya
+   |- Scroll with content 
+   |- Show when page scrolls
+   |- Display on Top of the content
+   |- Display on bottom and scroll to top with page content
+   |- Sticky 
+   |- Shrinking header
+   |- Sticky Header at the bottom 
+   |- Show above content
+   |- Show on top of the page content
+   |- Appear/Disappear after section ID
+
+
+
+|- Header Widget 
+   |- Logo
+   |- Menu
+   |- Social
+   |- Social feed
+   |- Search
+   |- Banner Ads
+   |- Images
+   |- Maps
+   |- Phone
+   |- Address
+   |- Email
+   |- Text info
+   |- Top bar
+   |- Bottom bar
+   |- CTA Buttons (Android IOS)
+   |- Tags
+   |- Forms newsletter login
+   |- Language Switcher
+   |- Widget titles
+   |- Notification Bar
+   |- Language switcher icons
+   |- Shop products
+   |- Currency switcher
+   |- Cart
+*/
+
+
+
+/* 
+-------------------------------------------
+Header
+-------------------------------------------
+*/
+
+
+@import 'logo';
+@import 'header';
+@import 'header-main';
+@import 'header-secondary';
+@import 'header-icons';
+@import 'header-inner-page';
