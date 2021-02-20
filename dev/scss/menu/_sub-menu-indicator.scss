@@ -15,14 +15,16 @@
     -webkit-font-smoothing: antialiased;
     display: inline-block;
     vertical-align: middle;
-    line-height: inherit;
 }
 
 .parent-menu>a::after {
     position: absolute;
     font-size: 70%;
-    margin-left: .65rem;
+    margin-left: .5rem;
     text-indent: 0;
+    line-height: 0;
+    top: 50%;
+    transform: translateX(-50%);
     @include indicator;
 }
 

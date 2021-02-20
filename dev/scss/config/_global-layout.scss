@@ -1,5 +1,28 @@
-.global-layout{
-    section > .container {
-        max-width: 800px;
+.global-layout {
+    section>.container {
+        // max-width: 800px;
+    }
+}
+
+#section-1 .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    .intro-message {
+        z-index: 10;
+        margin-right: -30%;
+    }
+    .intro-media {
+        height: 80vh;
+        overflow: visible;
+        display: grid;
+        place-content: center;
+        margin-left: -10%;
+        z-index: 1;
+        img {
+            object-fit: cover;
+            width: 100%;
+            max-height: 100%;
+        }
     }
 }

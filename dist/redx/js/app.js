@@ -5,23 +5,52 @@
        Preloader
 -----------------------------------------------*/
 
-window.addEventListener("load", function() {
-    const preloader = document.querySelector(".preloader")
-    preloader.className += " hide";
-});
+// window.addEventListener("load", function() {
+//     const preloader = document.querySelector(".preloader")
+//     preloader.className += " hide";
+// });
 
 // -----------------------------------------------
 // Menu Toggle
 // -----------------------------------------------
 
 
-const navMain = document.getElementById('nav-main')
-const toggleMenu = document.getElementById('toggle-menu-primary')
 
-toggleMenu.addEventListener('click', () => {
-    toggleMenu.classList.toggle('active')
+let navMain = document.getElementById('main-menu')
+let toggleButtonPrimary = document.getElementById('toggle-btn-primary')
+toggleButtonPrimary.addEventListener('click', () => {
+    toggleButtonPrimary.classList.toggle('active')
     navMain.classList.toggle('active')
 })
+
+
+// -----------------------------------------------
+// Menu Toggle
+// -----------------------------------------------
+
+// Grab menu components
+
+// let toggleBtn = document.getElementById('')
+// let mainMenu = document.getElementById('')
+// let menuItem = document.getElementById('')
+// let subMenu = document.getElementById('')
+
+// Listen to clicks on the page
+// document.addEventListener('click', (event) => {
+//     // Run when primary toggle button is clicked
+//     if (!event.target.classList.contains('toggle-btn-primary')) return; {
+//         toggleButtonPrimary.classList.toggle('active')
+//         navMain.classList.toggle('active')
+//         console.log('Toggle Menu')
+//     }
+// }, false);
+
+
+// Reset menu 
+// console.log('Reset Menu')
+// toggleButtonPrimary.classList.remove('active')
+// navMain.classList.remove('active')
+
 
 // -----------------------------------------------
 // Sub Menu

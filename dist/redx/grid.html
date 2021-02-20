@@ -17,26 +17,26 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/docs.css" />
     <style>
- 
+
     </style>
 </head>
 
-<body id="top" class="global-helpers global-margin global-layout global-fonts">
+<body id="top" class="global-layout global-fonts global-menu global-header global-helpers">
     <!-- Preloader -->
-    <div class="preloader w-100vw h-100vh z-100 bg-dark fixed ">
+    <!-- <div class="preloader w-100vw h-100vh z-100 bg-dark fixed ">
         <div class="absolute-cc">
             <div class="font-color-white font-upper absolute-cc"> Loading... </div>
             <div class="preloader-style-circle-gradient w-200px h-200px animation-rotate"></div>
         </div>
-    </div>
+    </div> -->
 
     <main id="wrap-all" class="">
         <!-- Content After Header -->
         <div class="content-wrapper">
             <section id="section-1" class="skin-dark">
                 <div class="container mx-a">
-                        <h1> Grid System</h1>
-                        <p class="h1-description"> CSS Grid options to place your content.</p>
+                    <h1> Grid System</h1>
+                    <p class="h1-description"> CSS Grid options to place your content.</p>
                 </div>
             </section>
             <!-- / Section -->
@@ -45,75 +45,75 @@
                 <div class="container mx-a ">
 
                     <h2>Grid Columns</h2>
-                    
+
                     <p> <b>Auto Width Columns:</b> Add class "grid grid-col" to the parent element. The child elements is automatically arranged next to each other in the grid system and the width is automatically assigned by the CSS grid system.</p>
-                    
+
                     <div class="example grid grid-col">
-                        <div> First Div  </div>
+                        <div> First Div </div>
                         <div> I'm another Div </div>
-                        <div> 
-                            <p> <b>Div takes the content width.</b>  </p>
-                            
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                        <div>
+                            <p> <b>Div takes the content width.</b> </p>
+
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                         </div>
                     </div>
 
                     <hr>
 
                     <h2 class="font-color-dark">Equal Width Columns</h2>
-                    
+
                     <p> Add class "grid repeat-col-(x)" to the parent element. The child elements is automatically arranged next to each other in the grid system and the width is automatically assigned by the CSS grid system.</p>
 
                     <p>The child elements will take up 3 columns and repeat itself.</p>
-                    
+
                     <div class="example grid repeat-col-3 ">
-                        <div> First Div  </div>
+                        <div> First Div </div>
                         <div> I'm another Div </div>
-                        <div> 
-                            <p> <b>Div width is same as other children.</b>  </p>
-                            
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                        <div>
+                            <p> <b>Div width is same as other children.</b> </p>
+
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                         </div>
                     </div>
 
 
 
-<hr>
+                    <hr>
                     <h2>Grid Rows</h2>
                     <p>Add class " grid grid-row" to the parent element to stack it's children.</p>
-                    
+
                     <div class="example grid grid-row">
                         <div class=""> Div </div>
                         <div class=""> Div </div>
                         <div class=""> Div </div>
                         <div class=""> Div </div>
                         <div class=""> Div </div>
-                        <div class=""> Div </div> 
+                        <div class=""> Div </div>
                     </div>
-                    <p> <b>Note:</b>  The children take full width if they are block elements.</p>
-<hr>
+                    <p> <b>Note:</b> The children take full width if they are block elements.</p>
+                    <hr>
                     <h2>Inline Grid Rows</h2>
                     <p> <b> Take Content Width :</b> Here the parent div is set to "inline-grid".</p>
-                    
+
                     <div class="example inline-grid ">
                         <div> Div </div>
                         <div> I'm another Div. </div>
                         <div class="mb-4"> Div with a margin bottom. </div>
                         <div> Third Div </div>
                         <div> Div </div>
-                        <div> Div  </div>
+                        <div> Div </div>
                     </div>
                     <p> <b> Note :</b> Grid gap dose not work with inline grid if column span is not specified.</p>
                     <hr>
-                  
 
-                      <!-- / Container -->
+
+                    <!-- / Container -->
                 </div>
             </section>
 
 
 
-   
+
 
         </div>
         <!-- / Content Wrapper -->

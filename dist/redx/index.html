@@ -20,7 +20,7 @@
 </head>
 
 
-<body id="top" class="global-layout global-fonts global-menu global-header">
+<body id="top" class="global-layout global-fonts global-menu global-header global-helpers">
     <!-- Preloader -->
     <div class="preloader bg-dark hide">
         <div class="absolute-cc">
@@ -33,25 +33,25 @@
         <!-- Header -->
         <header id="header">
             <!-- Header main -->
-            <div id="header-main" class="header-container skin-accent py-4 px-6 flex-container sm-menu-fullscreen md-menu-fullscreen xl-menu-fullscreen">
+            <div id="header-main" class="header-container skin-light py-4 px-6 flex-container justify-end sm-menu-fullscreen md-menu-fullscreen xl-menu-horizontal">
 
                 <!--  Logo -->
-                <div class="header-module logo">
-                    <h2 class="mb-0 font-w-600 logo-text"><a href="#">Red<span class="font-color-dark">X</span></a></h2>
+                <div class="header-module logo mr-a">
+                    <h2 class="mb-0 font-w-800 logo-text"><a href="#">RED<span class="font-color-accent">X</span></a></h2>
                 </div>
 
                 <!-- Hamburger -->
-                <button type="button" id="toggle-menu-primary" class="header-module toggle-btn-primary hamburger ml-a">
+                <button type="button" id="toggle-btn-primary" class="header-module toggle-btn-primary hamburger ">
                     <span class="line"></span>
                     <span class="line"></span>
                     <span class="line"></span>
                 </button>
 
                 <!-- Menu -->
-                <nav id="nav-main" role="navigation" class="header-module menu-primary sm-submenu-push md-submenu-push xl-submenu-drop ml-a">
+                <nav id="main-menu" role="navigation" class="header-module menu-primary mr-4 ">
                     <div class="menu-inner">
                         <ul class="menu-module menu-bar menu-style">
-                            <li class="menu-item"><a href="#section-5">Demos Themes </a></li>
+                            <li class="menu-item"><a href="#section-5">Demos </a></li>
                             <li class="menu-item parent-menu"><a href="#section-7">Pages </a>
                                 <ul class="sub-menu">
                                     <li class="menu-item"><a href="#">Pages</a></li>
@@ -69,7 +69,6 @@
                                                     <li class="menu-item"><a href="#">Services 5</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="menu-item"> some text here</li>
                                         </ul>
                                     </li>
                                     <li class="menu-item"><a href="#">Archive</a></li>
@@ -77,26 +76,10 @@
                                     <li class="menu-item"><a href="#">Contact</a></li>
                                 </ul>
                             </li>
-                            <li class="menu-item"><a href="#section-7">Portfolio</a></li>
                             <li class="menu-item"><a href="#section-10">Elements</a></li>
                             <li class="menu-item"><a href="#section-10">Support</a></li>
-                            <li class="menu-item parent-menu last-menu"><a href="#section-10">Contact</a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item"><a href="#">Pages</a></li>
-                                    <li class="menu-item"><a href="#">About</a></li>
-                                    <li class="menu-item parent-menu"><a href="#">Services </a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item"><a href="#">Services 1</a></li>
-                                            <li class="menu-item"><a href="#">Services 2</a></li>
-                                            <li class="menu-item"><a href="#">Services 3</a></li>
-                                            <li class="menu-item"><a href="#">Services 4</a></li>
-                                            <li class="menu-item"><a href="#">Services 5</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item"><a href="#">Archive</a></li>
-                                    <li class="menu-item"><a href="#">Review</a></li>
-                                    <li class="menu-item"><a href="#">Contact</a></li>
-                                </ul>
+                            <li class="menu-item"><a class="btn btn-rounded bg-accent font-color-light" href="#section-10">Buy Now</a>
+
                             </li>
 
                         </ul>
@@ -118,18 +101,21 @@
 
         <!-- Content After Header -->
         <div class="content-wrapper">
-            <section id="section-1" class="h-100vh skin-dark">
-                <div class="container">
+            <section id="section-1" class="h-100vh skin-dark py-6">
+                <div class="container container-boxed ">
 
                     <!-- <img src="img/hero.jpg" alt=""> -->
                     <!-- / Hero Image -->
 
-                    <div class="intro">
+                    <div class="intro-message">
                         <h4 class="font-color-accent">Welcome</h4>
-                        <h1>We help startups run the show.</h1>
+                        <h1 class=" font-w-600">We help startups run the show.</h1>
                         <div class="flex-group">
                             <span class="btn bg-accent font-color-white"><a href="#">Get Free Consultation</a></span>
                         </div>
+                    </div>
+                    <div class="intro-media">
+                        <img src="/img/bg/bg-hero.png" alt="Hero image">
                     </div>
                     <!-- / Intro -->
 
@@ -153,7 +139,7 @@
 
     <!-- Custom JS -->
     <script src="js/app.js"></script>
-    <script src="js/header.js"></script>
+    <!-- <script src="js/header.js"></script> -->
 </body>
 
 </html>

@@ -16,84 +16,63 @@
 // //     -   Submenu 				: Submenu Styles.
 // //     -   Breakpoints 			: Media Query Breakpoints.
 // //     -   Z-index 				: Manage Z-index .
-
 // //   -------------------------------------------------------------
 // //   Import fonts 
 // //   -------------------------------------------------------------
-
 // @import url(https://fonts.googleapis.com/css?family=Catamaran:400,900,200,600);
-
 // font-family: 'Catamaran', sans-serif;
 // font-family: 'Cutive Mono', sans-serif;
 // font-family: 'Roboto', sans-serif;
-
 // //   -------------------------------------------------------------
 // //   Base font settings 
 // //   -------------------------------------------------------------
-
 // $body-font-family: "Catamaran", sans-serif !default;
 // $icon-font: FontAwesome !default;
 // // $body-font-color: $grey-900 !default;
 // $body-font-size: 1.15rem !default;
 // $body-line-height: 1.85rem;
-
 // // mono font
 // $mono-font-family: ("Cutive Mono",);
 // $mono-regular: 300;
 // $mono-cap-height: 0.68;
-
 // // //   -------------------------------------------------------------
 // // //   Body copy links 
 // // //   -------------------------------------------------------------
-
 // $links-font-family: $body-font-family !default;
 // // $body-link-color: $grey-900;
 // // $body-link-hover-color: $yellow-500;
 // $body-link-decoration: none;
-
 // // //   -------------------------------------------------------------
 // // //   Paragraph
 // // //   -------------------------------------------------------------
-
 // $p-margin: 1.4007rem 0 1.43999rem 0;
 // $p-padding: 0.5993rem 0 0.6179rem 0;
 // $p-font-size: $body-font-size;
 // $p-line-height: $body-line-height;
-
 // // //   -------------------------------------------------------------
 // // //   Headings
 // // //   -------------------------------------------------------------
-
 // $heading-font-family: "Catamaran", sans-serif !default;
 // $heading-cap-height: 0.65;
 // // $headin-color: $grey-900;
 // // $caption-color: $grey-500;
-
 // // //   -------------------------------------------------------------
 // // //   Font weight
 // // //   -------------------------------------------------------------
-
 // $fontw-regular: 300;
 // $fontw-bold: 700;
-
 // // //   -------------------------------------------------------------
 // // //   Typography - View port based fluid font size.
 // // //   -------------------------------------------------------------
-
 // // //   Set min & max viewport range for font scaling
 // // //   font scaling will stop after min/max width
 // $min-width: 400;
 // $max-width: 1200;
-
 // // //   Base font-size which will proportionally scale headings and other elements.
 // $min-font: 8;
-
 // // font size at min viewport width
 // $max-font: 42;
-
 // // font size at max viewport width
-
-
 // // // 	config
 // // //   -------------------------------------------------------------
 // // //   By: Vinay Kashyap, http://www.graphitivity.com, @graphitivity
@@ -115,90 +94,66 @@
 // // //   -------------------------------------------------------------
 // // // 	Base Configuration
 // // //   -------------------------------------------------------------
-
 // // $base-color					: $grey-900 !default;
 // // $brand-color				: $white !default;
 // // $accent-color				: $grey-200 !default;
-
 // // $body-font-color			: $base-color !default;
 // // $body-bg-color				: $grey-100 !default;
-
 // $icon-font					: FontAwesome !default;
 // $body-font-family			: 'Catamaran', sans-serif !default;
 // $body-font-size				: 1.35rem !default;
 // $body-line-height			: 1.85rem;
-
 // // //   -------------------------------------------------------------
 // // // 	Link Styles
 // // //   -------------------------------------------------------------
-
 // // $body-link-color 			: $grey-200;
 // // $body-link-hover-color		: $yellow-500;
 // $body-link-decoration		: none;
-
 // // // 	fonts
 // $font-links 				: 'Catamaran', sans-serif !default;
-
-
 // // //   -------------------------------------------------------------
 // // // 	Typography - View port based fluid font size.
 // // //   -------------------------------------------------------------
-
 // // //	Set min & max viewport range for font scaling
 // // // 	font scaling will stop after min/max width
 // $min-width				: 400; 
 // $max-width				: 1200;
-
 // // //	Base font-size which will proportionally scale headings and other elements.
 // $min-font				: 16; // font size at min viewport width
 // $max-font				: 22; // font size at max viewport width
-
 // // //	Paragraph
 // $p-margin				: 1.4007rem 0 1.43999rem 0; 
 // $p-padding				: 0.5993rem 0 0.6179rem 0;
 // $p-font-size			: $body-font-size;
 // $p-line-height			: $body-line-height;
-
 // // //	Heading fonts
 // $heading-font-family	: 'Catamaran', sans-serif !default;
 // $heading-cap-height		: 0.65;
-
 // // //	Heading color
 // // $headin-color			: $grey-900;
 // // $caption-color			: $grey-500;
-
 // // //	Font weight
 // $fontw-regular			: 300;
 // $fontw-bold				: 700;
-
 // // //	mono fonts
 // $mono-font-family		: 'Cutive Mono', ;
 // $mono-regular			: 300;
 // $mono-cap-height		: 0.68;
-
-
 // // //   -------------------------------------------------------------
 // // // 	Import fonts 
 // // //   -------------------------------------------------------------
-
 // @import url(https://fonts.googleapis.com/css?family=Catamaran:300,500,700,900|Cutive+Mono|Source+Code+Pro:400,300);
-
 // // font-family: 'Catamaran', sans-serif;
 // // font-family: 'Cutive Mono', sans-serif;
 // // font-family: 'Source Code Pro', ;
-
 // // //   -------------------------------------------------------------
 // // // 	Layout 
 // // //   -------------------------------------------------------------
-
 // $content-wrap-width 		: 1200px;
 // $content-wrap-padding		: 6vh 2em;
-
-
 // // //   -------------------------------------------------------------
 // // // 	Header
 // // //   -------------------------------------------------------------
-
 // $header-padding				: 1em !default;     //define top right bottom left padding
 // $header-margin				: 0 !default;
 // $header-height				: auto !default;    // works best if it is set to auto
@@ -206,23 +161,16 @@
 // // $header-wrap-bg-color		: $blue-700 !default;
 // $header-container-width		: $content-wrap-width !default;
 // // $header-image				: "" !default;
-
-
 // // //   -------------------------------------------------------------
 // // // 	Logo
 // // //   -------------------------------------------------------------
-
 // $logo-font-family			: 'Catamaran', sans-serif !default;
 // $logo-font-size				: 2.25rem !default;
 // $logo-img-width				: 120px !default;
 // // $logo-image					: "" !default;
-
-
-
 // // //   -------------------------------------------------------------
 // // // 	Menu
 // // //   -------------------------------------------------------------
-
 // // // 	fonts
 // $menu-font-family			: 'Catamaran', sans-serif !default;
 // // $menu-font-size				: $body-font-size !default;
@@ -230,49 +178,38 @@
 // $menu-font-transform		: uppercase !default;
 // $menu-bar-padding			: 0 !default; //for horizontal menu bar
 // $menu-bar-margin			: 0 !default; // set top, right, bottom, left margin
-
 // // // 	menu background color
 // // $menu-bg-color				: $grey-900 !default; //for horizontal menu bar
 // $horizontal-menu-bg-color	: transparent !default; 
 // $vertical-menu-bg-color		: transparent !default;  
-
 // // //	hamburger icon
 // // $hamburger-color			: $white !default;  
 // // $hamburger-bg-color			: $pink-500 !default; 
 // $hamburger-border			: none !default;
-
 // // // extras
 // // $seperator-color			: $accent-color !default;
 // $seperator-height			: 1px !default;
 // // $label-font-family			: $body-font-family !default;
 // // $label-color				: $accent-color !default;
-
 // // //	menu scroll bar
 // // $scrollBar-color 			: $menu-bg-color !default; 
-
-
 // // //	Hamburger Icon
 // $ham-button-size: 1.5rem;
 // $ham-transition: 0.35s;
 // $z-hamburger: 99999;
-
 // // //   -------------------------------------------------------------
 // // // 	Submenu
 // // //   -------------------------------------------------------------
-
 // // //	submenu
 // // $submenu-font-family		: $menu-font-family !default;
 // // $submenu-font-size			: $menu-font-size !default;
 // // $submenu-font-color			: $menu-font-color !default;
 // $submenu-font-transform		: uppercase !default;
 // // $submenu-bg-color			: $indigo-500 !default;
-
 // // //	Submenu indicators
 // $indicator-icon 			: "\f054" !default; // arrow 
 // // $indicator-icon-active		: $icon-chevron-right !default;
 // $indicator-icon-size 		: 7px !default;
-
-
 // // //   -------------------------------------------------------------
 // // // 	Breakoints
 // // //   -------------------------------------------------------------
@@ -286,12 +223,9 @@
 // 		$phablet	: 580px !default;
 // // //	Styles are applyed to any screen less than 480px
 // 		$mobile		: 480px !default;
-
-
 // // //   -------------------------------------------------------------
 // // // 	 z-index
 // // //   -------------------------------------------------------------
-
 // $z-toggle-btn				: 10000 !default;
 // $z-menu                     : 9999 !default;
 // $zmodal						: 9000 !default;
@@ -299,16 +233,9 @@
 // $zsubmenu					: 7000 !default;
 // $zheader					: 6000 !default;
 // $zfooter					: 5000 !default;
-
 // // //   -------------------------------------------------------------
 // // // 	End of config
 // // //   -------------------------------------------------------------
-
-
-
-
-
-
 
 /* 
 -------------------------------------------
@@ -316,44 +243,41 @@ Colors
 -------------------------------------------
 */
 
-:root{
-  --white  :white;
-  --black  :black;
-  --transparent:transparent;
-  --warning:#febe34;
-  --success:#2a907b;
-  --info   :#deeb2b;
-  --error  :#ca0b2b;
-
-  --light :#ebebeb;
-  --light-1:#eee;
-  --light-2:#aaa;
-  --light-3:#9e9e9e;
-  // --light-4:#222;
-  // --light-5:#222;
-  --dark :#0f0f0f;
-  --dark-1:#181818;
-  --dark-2:#282828;
-  --dark-3:#9e9e9e;
-  // --dark-4:#222;
-  // --dark-5:#222;
-  --accent:#e50015;  
-  --accent-1:#e50015;  
-  --accent-2:#e50015;  
-  --accent-3:#e50015;  
-  // --accent-4:#e50015;  
-  // --accent-5:#e50015;  
-  --base  :#ebebeb;  
-  --base-1  :#ebebeb;  
-  --base-2  :#ebebeb;  
-  --base-3  :#ebebeb;  
-  // --base-4  :#ebebeb;  
-  // --base-5  :#ebebeb;  
-  --highlight  :#ebebeb;  
-  --highlight-1  :#ebebeb;  
-  --highlight-2  :#ebebeb;  
-  --highlight-3  :#ebebeb;  
-  // --highlight-4  :#ebebeb;  
-  // --highlight-5  :#ebebeb;  
-
+:root {
+    --white: white;
+    --black: black;
+    --transparent: transparent;
+    --warning: #febe34;
+    --success: #2a907b;
+    --info: #deeb2b;
+    --error: #ca0b2b;
+    --light: #ebebeb;
+    --light-1: #eee;
+    --light-2: #aaa;
+    --light-3: #9e9e9e;
+    // --light-4:#222;
+    // --light-5:#222;
+    --dark: #0f0f0f;
+    --dark-1: #181818;
+    --dark-2: #282828;
+    --dark-3: #9e9e9e;
+    // --dark-4:#222;
+    // --dark-5:#222;
+    --accent: #e50015;
+    --accent-1: #00cae5;
+    --accent-2: #0050e5;
+    --accent-3: #8900e5;
+    // --accent-4:#e50015;  
+    // --accent-5:#e50015;  
+    --base: #ebebeb;
+    --base-1: #d6d1d1;
+    --base-2: #f0eaea;
+    --base-3: #ebebebd5;
+    // --base-4  :#ebebeb;  
+    // --base-5  :#ebebeb;  
+    --highlight: #fff7df;
+    --highlight-1: #ebffdf;
+    --highlight-2: #dffff2;
+    --highlight-3: #dfe5ff;
+    // --highlight-4  :#fff7df;
 }

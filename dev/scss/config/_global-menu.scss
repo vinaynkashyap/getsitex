@@ -12,8 +12,9 @@ Menu Style
             font-size: 1rem;
             text-decoration: none;
             font-weight: 400;
-            color: var(--base);
+            // color: var(--base);
             white-space: nowrap;
+            // overflow-wrap: break-word;
             outline: none;
         }
     }

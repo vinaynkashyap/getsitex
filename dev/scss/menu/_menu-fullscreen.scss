@@ -1,42 +1,31 @@
     @mixin menu-fullscreen {
         .menu-primary {
-            position: fixed;
-            top: 110%;
-            left: 0;
-            bottom: auto;
+            position: absolute;
+            overflow: hidden;
             height: 100%;
             width: 100%;
-            min-height: 100vh;
             z-index: 99;
-            overflow-y: auto;
-            background: var(--accent);
-            transition: transform 0.65s cubic-bezier(1, 0, 0, 1);
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, .0);
+            transition: all 0.65s cubic-bezier(1, 0, 0, 1);
             .menu-inner {
-                transition: transform 0.65s cubic-bezier(1, 0, 0, 1);
+                position: fixed;
+                top: -100%;
+                left: 0;
+                transition: all 0.65s cubic-bezier(1, 0, 0, 1);
                 padding: 4em;
-                background: var(--dark);
-                min-height: 100%;
-                //     display: flex;
-                //     ul {
-                //         max-width: 200px;
-                //     }
-                // display: flex;
-                // justify-content: center;
-                // align-items: flex-start;
-                display: grid;
-                justify-content: center;
+                background: var(--dark-2);
+                width: min-content;
+                height: 100%;
+                max-height: 100%;
+                overflow-y: auto;
+                z-index: 99;
                 .menu-bar {
-                    // background: aqua;
-                    // padding: 12vh 10vh;
-                    // width: min-content;
-                    // height: min-content;
                     display: flex;
-                    // justify-content: center;
-                    // align-items: center;
-                    flex-direction: column;
-                    //     .parent-menu {
-                    //         position: relative;
-                    //     }
+                    flex-direction: row;
                 }
             }
         }
@@ -64,7 +53,13 @@
     .md-menu-fullscreen,
     .xl-menu-fullscreen {
         .menu-primary.active {
-            top: 0
+            background: rgba(0, 0, 0, .90);
+            transition: all 0.65s cubic-bezier(1, 0, 0, 1);
+            .menu-inner {
+                top: 0;
+                left: 0;
+                transition: all 0.65s cubic-bezier(1, 0, 0, 1);
+            }
         }
     }
     

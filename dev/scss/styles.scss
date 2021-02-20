@@ -1,3 +1,4 @@
+@import "_variables/all";
 @import "config/all";
 @import "base/all";
 @import "skins/all";
@@ -13,7 +14,7 @@
 @import "type/all";
 // }
 * {
-    // outline: 1px solid pink;
+    outline: 1px solid pink;
 }
 
 // Debug code
@@ -40,6 +41,7 @@ body:after {
     background: violet;
     font-weight: 400;
     color: #fff;
+    display: none;
 }
 
 @include media('>=xs') {

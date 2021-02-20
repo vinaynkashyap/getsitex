@@ -31,63 +31,40 @@
 
 // // // ---------------------------------- */
 @mixin dropdown {
-    >.sub-menu {
-        background: var(--accent);
-        .sub-menu {
-            background: var(--dark-1);
-            left: calc(100%);
-            top: -2rem;
-        }
-    }
-    &:hover,
-    &:focus-within {
-        >.sub-menu {
+    .menu-bar {
+        .parent-menu>.sub-menu {
             position: absolute;
+            background: var(--accent);
+            .sub-menu {
+                background: var(--dark-1);
+                left: calc(100%);
+                top: -2rem;
+            }
+        }
+        &>.menu-item:last-child>.sub-menu {
+            right: 0;
+            .sub-menu {
+                left: auto;
+                right: calc(100%);
+            }
         }
     }
 }
 
 @include media('<md') {
     .sm-menu-horizontal {
-        .menu-bar .parent-menu {
-            @include dropdown;
-        }
-        .menu-bar>.menu-item:last-child>.sub-menu {
-            right: 0;
-            .sub-menu {
-                left: auto;
-                right: calc(100%);
-            }
-        }
+        @include dropdown;
     }
 }
 
 @include media('>=md', '<=xl') {
     .md-menu-horizontal {
-        .menu-bar .parent-menu {
-            @include dropdown;
-        }
-        .menu-bar>.menu-item:last-child>.sub-menu {
-            right: 0;
-            .sub-menu {
-                left: auto;
-                right: calc(100%);
-            }
-        }
+        @include dropdown;
     }
 }
 
 @include media('>xl') {
     .xl-menu-horizontal {
-        .menu-bar .parent-menu {
-            @include dropdown;
-        }
-        .menu-bar>.menu-item:last-child>.sub-menu {
-            right: 0;
-            .sub-menu {
-                left: auto;
-                right: calc(100%);
-            }
-        }
+        @include dropdown;
     }
 }
