@@ -31,27 +31,3 @@
 .parent-menu.active>a::after {
     transform: rotate(90deg);
 }
-
-// .parent-menu-active > a:after {
-//     content: var(--icon-chevron-right) !important;
-//     transform: rotate(90deg);
-//     text-indent: 0!important;
-//     @include indicator;
-// }
-
-/* //  Custom indicator
-// // --------------------------------------- */
-
-// @mixin custom-indicator {
-//         .parent-menu-active > a:after {
-//         display: none;
-//     }
-//     .parent-menu-active > a:before {
-//         transition: transform .45s cubic-bezier(1,0,0,1) .5s;
-//         font-size: .55em;
-//         content: var(--icon-chevron-right) !important;
-//         transform: rotate(0deg);
-//         text-indent: -16px!important;
-//         @include indicator;
-//     }
-// }

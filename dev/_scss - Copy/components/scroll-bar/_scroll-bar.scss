@@ -1,0 +1,114 @@
+/* 
+-------------------------------------------
+Scrollbar
+-------------------------------------------
+*/
+
+
+
+::-webkit-scrollbar {
+  -webkit-appearance: var(--dark);
+}
+
+// ::-webkit-scrollbar:vertical {
+//   width: 8px;
+// }
+
+// ::-webkit-scrollbar:horizontal {
+//   height: 3px;
+// }
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--dark);
+  border: 12px solid var(--accent);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;  
+  background-color: var(--dark-1x); 
+}
+
+
+
+
+// Firefox scrollbar
+.scrollbar-light {
+  overflow: auto;
+  scrollbar-color: var(--light) transparent;
+  scrollbar-width: thin;
+}
+
+//  Chrome Scrollbar
+  .scrollbar-light::-webkit-scrollbar,  
+  .scrollbar-light::-webkit-scrollbar-track {
+    width: 6px;
+    background: transparent;
+}
+.scrollbar-light::-webkit-scrollbar-thumb {
+  background-color: var(--light);
+  border: 0rem solid var(--dark);
+}
+/* I effect changing the red background color when hovering */
+.scrollbar-light::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+  }
+
+
+
+
+
+  // --------------------------------------------
+
+
+  // Firefox scrollbar
+.scrollbar-accent {
+  overflow: auto;
+  scrollbar-color: var(--dark) var(--accent);
+  scrollbar-width: thin;
+}
+
+//  Chrome Scrollbar
+  .scrollbar-accent::-webkit-scrollbar,  
+  .scrollbar-accent::-webkit-scrollbar-track {
+    width: 6px;
+    background: transparent;
+}
+.scrollbar-accent::-webkit-scrollbar-thumb {
+  background-color: var(--accent);
+  border: 0 solid var(--accent);
+}
+/* I effect changing the red background color when hovering */
+.scrollbar-accent::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+  }
+
+
+
+  
+  // --------------------------------------------
+  
+  
+// Firefox scrollbar
+.scrollbar-dark {
+  overflow: auto;
+  scrollbar-color: var(--dark) transparent;
+  scrollbar-width: thin;
+}
+
+//  Chrome Scrollbar
+  .scrollbar-dark::-webkit-scrollbar,  
+  .scrollbar-dark::-webkit-scrollbar-track {
+    width: 6px;
+    background: transparent;
+  }
+  .scrollbar-dark::-webkit-scrollbar-thumb {
+    background-color: var(--dark);
+    border: 0px solid var(--base);  
+  }
+  /* I effect changing the red background color when hovering */
+  .scrollbar-dark::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
+  }
+  
+  
+  // --------------------------------------------

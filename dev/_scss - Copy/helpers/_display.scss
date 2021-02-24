@@ -1,0 +1,46 @@
+
+
+/* 
+-------------------------------------------
+Display 
+-------------------------------------------
+*/
+
+
+$displayArray: (
+    block           block,
+    flex            flex,
+    inline-flex     inline-flex,
+    grid            grid,
+    inline-grid     inline-grid,
+    inline          inline,
+    inline-block    inline-block,
+    table           table,
+    flow-root       flow-root,
+    hide            none    
+  );
+  
+
+    .invisible           {visibility: hidden;}
+    .visible             {visibility: visible;}
+    .appearance-none     {appearance: none;}
+    @each $i in $displayArray {.#{nth($i, 1)} {display: #{nth($i, 2)};}}
+
+@include media('>=sm') {
+    .sm-invisible           {visibility: hidden;}
+    .sm-visible             {visibility: visible;}
+    .sm-appearance-none     {appearance: none;}
+    @each $i in $displayArray {.sm-#{nth($i, 1)} {display: #{nth($i, 2)};}}
+}
+@include media('>=md') {
+    .md-invisible           {visibility: hidden;}
+    .md-visible             {visibility: visible;}
+    .md-appearance-none     {appearance: none;}
+    @each $i in $displayArray {.md-#{nth($i, 1)} {display: #{nth($i, 2)};}}
+}
+@include media('>=xl') {
+    .xl-invisible           {visibility: hidden;}
+    .xl-visible             {visibility: visible;}
+    .xl-appearance-none     {appearance: none;}
+    @each $i in $displayArray {.xl-#{nth($i, 1)} {display: #{nth($i, 2)};}}
+}

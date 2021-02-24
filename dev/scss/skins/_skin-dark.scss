@@ -7,3 +7,23 @@
 .skin-dark a {
     color: currentColor;
 }
+
+
+.skin-dark-1 {
+    color: var(--light);
+    background-color: var(--dark-1);
+}
+
+.skin-dark-1 a {
+    color: currentColor;
+}
+
+
+.skin-dark-2 {
+    color: var(--light);
+    background-color: var(--dark-2);
+}
+
+.skin-dark-2 a {
+    color: currentColor;
+}

@@ -1,0 +1,142 @@
+/* 
+------------------------------------
+Flex classes
+------------------------------------
+*/
+
+/* FLEX */
+
+$flex: (
+    //  Flex
+    flex-none           "flex" "none",
+    flex-1              "flex" "1",
+    // flex-initial        "flex" "0 1 auto",
+    // flex-auto           "flex" "1 1 auto",
+    flex-grow           "flex-grow" "1",
+    flex-shrink         "flex-shrink" "1",
+    //  Flex Basis
+    flex-fill           "flex-basis" "fill",
+    flex-max-content    "flex-basis" "max-content",
+    flex-min-content    "flex-basis" "min-content",
+    flex-fit-content    "flex-basis" "fit-content",
+    flex-content        "flex-basis" "content",
+    //  Direction
+    flex-row            "flex-direction" "row",
+    flex-row-reverse    "flex-direction" "row-reverse",
+    flex-col            "flex-direction" "column",
+    flex-col-reverse    "flex-direction" "column-reverse",
+    // Wrap
+    flex-wrap           "flex-wrap" "wrap",
+    flex-nowrap         "flex-wrap" "nowrap",
+    flex-wrap-reverse   "flex-wrap" "wrap-reverse",
+    // Horizontal alignment
+    justify-start       "justify-content" "flex-start",
+    justify-end         "justify-content" "flex-end",
+    justify-center      "justify-content" "center",
+    justify-between     "justify-content" "space-between",
+    justify-around      "justify-content" "space-around",
+    justify-evenly      "justify-content" "space-evenly",
+    //  Align Content
+    content-center      "align-content" "center",
+    content-start       "align-content" "flex-start",
+    content-end         "align-content" "flex-end",
+    content-between     "align-content" "space-between",
+    content-around      "align-content" "space-around",
+    content-stretch     "align-content" "space-stretch",
+    // Align items
+    align-start         "align-items" "flex-start",
+    align-end           "align-items" "flex-end",
+    align-center        "align-items" "center",
+    align-baseline      "align-items" "baseline",
+    align-stretch       "align-items" "stretch",
+    //  Align self
+    self-baseline       "align-self" "baseline",
+    self-auto           "align-self" "auto",
+    self-start          "align-self" "flex-start",
+    self-end            "align-self" "flex-end",
+    self-center         "align-self" "center",
+    self-stretch        "align-self" "stretch"
+);
+
+/* Flex Classes*/
+@each $i in $flex {.#{nth($i, 1)} {#{nth($i, 2)}: #{nth($i, 3)};}}
+
+
+/* Create equal columns */
+.flex-col-fill > .col,
+.flex-col-equal > .col {
+    flex: 1;
+}
+.flex-col-auto > .col {
+    flex: 1 1 auto;
+}
+
+$colCount: 12;
+
+/* Flex Columns */
+@for $i from 1 through $colCount {.col-#{$i} {flex: 0 0 100% / $colCount * $i;}}
+
+/* Flex Column Offset */
+@for $i from 1 through $colCount {.off-left-#{$i} {margin-left: 100% / $colCount * $i;}}
+@for $i from 1 through $colCount {.off-right-#{$i} {margin-right: 100% / $colCount * $i;}}
+
+/* Order */
+.order-0 {order: 0;}
+.order-first {order: -1;}
+.order-last {order: $colCount + 1;}
+@for $i from 1 through $colCount {.order-#{$i} {order: $i;}}
+
+/* Flex Grow */
+.flex-grow {flex-grow: 1;}
+.flex-grow-0 {flex-grow: 0;}
+@for $i from 1 through $colCount {.flex-grow-#{$i} {flex-grow: $i;}}
+
+/* Flex Shrink */
+.flex-shrink {flex-shrink: 1;}
+.flex-shrink-0 {flex-shrink: 0;}
+@for $i from 1 through $colCount {.flex-shrink-#{$i} {flex-shrink: $i;}}
+
+// ---------------------------------------------------
+//  Flex classes for mobile device
+// ---------------------------------------------------
+
+@include media('>md'){
+    
+/* Flex Classes for mobile device */
+@each $i in $flex {.md-#{nth($i, 1)} {#{nth($i, 2)}: #{nth($i, 3)};}}
+
+
+/* Create equal columns  */
+.md-flex-col-fill > .col,
+.md-flex-col-equal > .col {
+    flex: 1;
+}
+.md-flex-col-auto > .col {
+    flex: 1 1 auto;
+}
+
+$colCount: 12;
+
+/* Flex Columns */
+@for $i from 1 through $colCount {.md-col-#{$i} {flex: 0 0 100% / $colCount * $i;}}
+
+/* Flex Column Offset */
+@for $i from 1 through $colCount {.md-off-left-#{$i} {margin-left: 100% / $colCount * $i;}}
+@for $i from 1 through $colCount {.md-off-right-#{$i} {margin-right: 100% / $colCount * $i;}}
+
+/* Order */
+.md-order-0 {order: 0;}
+.md-order-first {order: -1;}
+.md-order-last {order: $colCount + 1;}
+@for $i from 1 through $colCount {.md-order-#{$i} {order: $i;}}
+
+/* Flex Grow */
+.md-flex-grow {flex-grow: 1;}
+.md-flex-grow-0 {flex-grow: 0;}
+@for $i from 1 through $colCount {.md-flex-grow-#{$i} {flex-grow: $i;}}
+
+/* Flex Shrink */
+.md-flex-shrink {flex-shrink: 1;}
+.md-flex-shrink-0 {flex-shrink: 0;}
+@for $i from 1 through $colCount {.md-flex-shrink-#{$i} {flex-shrink: $i;}}
+}

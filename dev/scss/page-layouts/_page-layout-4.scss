@@ -1,0 +1,28 @@
+//  Page layout with a Vertical header 
+
+.page-layout-4 {
+    display: grid;
+    grid-template-rows: auto 1fr auto auto;
+}
+
+@include media('>lg') {
+    .page-layout-4 {
+        display:grid;
+        grid-template-columns: repeat(12, 1fr);    
+        grid-template-rows: 1fr auto auto;
+        .header-main{
+            grid-column: 1 / span 3;
+            grid-row: 1 / -1;
+        }
+        .content-main {
+            grid-column: 4 / span 9;
+            grid-row: 1fr;
+            height: 100%;
+        }
+        .footer-main {
+            grid-column: 4 / span 9;
+            grid-row: auto;
+        }
+    }
+
+} 

@@ -4,13 +4,7 @@ Font Colors
 -------------------------------------------
 */
 
-/*
----------------------------------
-Font Colors
----------------------------------
-*/
-
 @each $i in $colors {.font-color-#{nth($i, 1)} {color: #{nth($i, 2)};}}
-@include media('>=sm') {@each $i in $colors {.sm-font-color-#{nth($i, 1)} {color: #{nth($i, 2)};}}}
+// @include media('>=sm') {@each $i in $colors {.sm-font-color-#{nth($i, 1)} {color: #{nth($i, 2)};}}}
 @include media('>=md') {@each $i in $colors {.md-font-color-#{nth($i, 1)} {color: #{nth($i, 2)};}}}
 @include media('>=xl') {@each $i in $colors {.xl-font-color-#{nth($i, 1)} {color: #{nth($i, 2)};}}}

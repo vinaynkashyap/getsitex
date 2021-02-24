@@ -1,0 +1,10 @@
+// Stacked header content and footer 
+
+.page-layout-1 {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+
+

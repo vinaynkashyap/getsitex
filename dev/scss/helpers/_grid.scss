@@ -1,0 +1,258 @@
+
+$gridParentClass: (
+
+  grid-row        'grid-auto-flow' 'row',
+  grid-col        'grid-auto-flow' 'column',
+  grid-dense      'grid-auto-flow' 'dense',
+  grid-row-dense  'grid-auto-flow' 'row dense',
+  grid-col-dense  'grid-auto-flow' 'column dense',
+  grid-unset      'grid-auto-flow' 'unset',
+  
+  justify-items-auto     'justify-items' 'auto',
+  justify-items-start    'justify-items' 'start',
+  justify-items-end      'justify-items' 'end',
+  justify-items-center   'justify-items' 'center',
+  justify-items-stretch  'justify-items' 'stretch',
+  
+  justify-content-center	'place-content' 'center',
+  justify-content-start	  'place-content' 'start',
+  justify-content-end	    'place-content' 'end',
+  justify-content-between	'place-content' 'space-between',
+  justify-content-around	'place-content' 'space-around',
+  justify-content-evenly	'place-content' 'space-evenly',
+  justify-content-stretch	'place-content' 'stretch',
+  
+  align-items-auto     'align-items' 'auto',
+  align-items-start    'align-items' 'start',
+  align-items-end      'align-items' 'end',
+  align-items-center   'align-items' 'center',
+  align-items-stretch  'align-items' 'stretch',
+  
+  align-self-auto	    'align-self' 'auto',
+  align-self-start	  'align-self' 'start',
+  align-self-end	    'align-self' 'end',
+  align-self-center	  'align-self' 'center',
+  align-self-stretch	'align-self' 'stretch',
+  
+  align-content-center	'place-content' 'center',
+  align-content-start	  'place-content' 'start',
+  align-content-end	    'place-content' 'end',
+  align-content-between	'place-content' 'space-between',
+  align-content-around	'place-content' 'space-around',
+  align-content-evenly	'place-content' 'space-evenly',
+  align-content-stretch	'place-content' 'stretch',
+  
+  // place-content-center	  'place-content' 'center',
+  // place-content-start	  'place-content' 'start',
+  // place-content-end	    'place-content' 'end',
+  // place-content-between	'place-content' 'space-between',
+  // place-content-around	  'place-content' 'space-around',
+  // place-content-evenly	  'place-content' 'space-evenly',
+  // place-content-stretch	'place-content' 'stretch',
+  
+  
+  place-xstart          'place-content' 'start',
+  place-xstart-ycenter  'place-content' 'start center',
+  place-xstart-yend     'place-content' 'start end',
+  place-center-start    'place-content' 'center start',
+  place-center	        'place-content' 'center',
+  place-center-end      'place-content' 'center end',
+  place-end-start       'place-content' 'end center',
+  place-end-center      'place-content' 'end center',
+  place-end	            'place-content' 'end',
+  
+  place-items-auto	  'place-items' 'auto',
+  place-items-start	  'place-items' 'start',
+  place-items-end	    'place-items' 'end',
+  place-items-center	'place-items' 'center',
+  place-items-stretch	'place-items' 'stretch',
+  
+  place-self-auto	    'place-self' 'auto',
+  place-self-start	  'place-self' 'start',
+  place-self-end	    'place-self' 'end',
+  place-self-center	  'place-self' 'center',
+  place-self-stretch	'place-self' 'stretch',
+  
+  );
+  
+
+/* 
+-------------------------------------------
+ Grid Classes
+-------------------------------------------
+*/
+
+@each $i in $gridParentClass {.#{nth($i, 1)} { #{nth($i, 2)}:#{nth($i, 3)};}}
+
+
+/* 
+-------------------------------------------
+Repeat Columns
+-------------------------------------------
+*/
+
+$gridCol : 14;
+$gridRow : 14;
+
+@for $i from 1 through $gridCol {.grid-col-#{$i}{grid-template-columns: repeat($i, minmax(auto, 1fr));}}
+@for $i from 1 through $gridRow {.grid-row-#{$i}{grid-template-rows: repeat($i, minmax(auto, 1fr));}}
+
+
+
+/* 
+-------------------------------------------
+Column Start
+-------------------------------------------
+*/
+
+$count14 : 14;
+
+@for $i from 1 through $count14{ .col-start-#{$i}{ grid-column-start: $i;} }
+@for $i from 1 through $count14{ .col-end-#{$i}{ grid-column-end: $i;} }
+
+@for $i from 1 through $count14{ .row-start-#{$i}{ grid-row-start: $i;} }
+@for $i from 1 through $count14{ .row-end-#{$i}{ grid-row-end: $i;} }
+// span
+@for $i from 1 through $count14{ .col-span-#{$i}{ grid-column: span $i;} }
+@for $i from 1 through $count14{ .row-span-#{$i}{ grid-row: span $i;} }
+.col-span-full {grid-column: 1 / -1;}
+.row-span-full {grid-row: 1 / -1;}
+
+
+/* 
+-------------------------------------------
+Gap
+-------------------------------------------
+*/
+
+$gapCounter : 10;
+$unit : 0px;
+
+.gap-0 { column-gap:0; }
+.gap-col-0 { column-gap:0; }
+.gap-row-0 { row-gap:0; }
+.gap-a { column-gap:auto; }
+.gap-col-a { column-gap:auto; }
+.gap-row-a { row-gap:auto; }
+
+// Multiple of from 1 - 10 (1*10), 10 - 50 (5*10) , 60 - 100 (6*10)
+
+// Gap
+@for $i from 1 through $gapCounter {.gap-#{$i} { gap:( $i + $unit); }}
+@for $i from 3 through $gapCounter {.gap-#{$i*5} { gap:( $i*5 + $unit); }}
+@for $i from 6 through $gapCounter {.gap-#{$i*10} { gap:( $i*10 + $unit); }}
+
+// Row Gap
+@for $i from 1 through $gapCounter {.gap-row-#{$i} { row-gap:( $i + $unit); }}
+@for $i from 3 through $gapCounter {.gap-row-#{$i*5} { row-gap:( $i*5 + $unit); }}
+@for $i from 6 through $gapCounter {.gap-row-#{$i*10} { row-gap:( $i*10 + $unit); }}
+
+// Column Gap
+@for $i from 1 through $gapCounter {.gap-col-#{$i} { column-gap:( $i + $unit); }}
+@for $i from 3 through $gapCounter {.gap-col-#{$i*5} { column-gap:( $i*5 + $unit); }}
+@for $i from 6 through $gapCounter {.gap-col-#{$i*10} { column-gap:( $i*10 + $unit); }}
+
+
+/*
+
+
+*/ 
+
+
+@include media('>md') {
+
+/* 
+-------------------------------------------
+ Grid Classes
+-------------------------------------------
+*/
+
+@each $i in $gridParentClass {.md-#{nth($i, 1)} { #{nth($i, 2)}:#{nth($i, 3)};}}
+
+
+/* 
+-------------------------------------------
+Repeat Columns
+-------------------------------------------
+*/
+
+$gridCol : 14;
+$gridRow : 14;
+
+@for $i from 1 through $gridCol {.grid-col-#{$i}{grid-template-columns: repeat($i, minmax(auto, 1fr));}}
+@for $i from 1 through $gridRow {.grid-row-#{$i}{grid-template-rows: repeat($i, minmax(auto, 1fr));}}
+
+
+
+/* 
+-------------------------------------------
+Column Start
+-------------------------------------------
+*/
+
+$count14 : 14;
+
+@for $i from 1 through $count14{ .md-col-start-#{$i}{ grid-column-start: $i;} }
+@for $i from 1 through $count14{ .md-col-end-#{$i}{ grid-column-end: $i;} }
+
+@for $i from 1 through $count14{ .md-row-start-#{$i}{ grid-row-start: $i;} }
+@for $i from 1 through $count14{ .md-row-end-#{$i}{ grid-row-end: $i;} }
+// span
+@for $i from 1 through $count14{ .md-col-span-#{$i}{ grid-column: span $i;} }
+@for $i from 1 through $count14{ .md-row-span-#{$i}{ grid-row: span $i;} }
+.md-col-span-full {grid-column: 1 / -1;}
+.md-row-span-full {grid-row: 1 / -1;}
+
+
+.md-gap-0 { column-gap:0; }
+.md-gap-col-0 { column-gap:0; }
+.md-gap-row-0 { row-gap:0; }
+.md-gap-a { column-gap:auto; }
+.md-gap-col-a { column-gap:auto; }
+.md-gap-row-a { row-gap:auto; }
+
+// Multiple of from 1 - 10 (1*10), 10 - 50 (5*10) , 60 - 100 (6*10)
+
+// Gap
+@for $i from 1 through $gapCounter {.md-gap-#{$i} { gap:( $i + $unit); }}
+@for $i from 3 through $gapCounter {.md-gap-#{$i*5} { gap:( $i*5 + $unit); }}
+@for $i from 6 through $gapCounter {.md-gap-#{$i*10} { gap:( $i*10 + $unit); }}
+
+// Row Gap
+@for $i from 1 through $gapCounter {.md-gap-row-#{$i} { row-gap:( $i + $unit); }}
+@for $i from 3 through $gapCounter {.md-gap-row-#{$i*5} { row-gap:( $i*5 + $unit); }}
+@for $i from 6 through $gapCounter {.md-gap-row-#{$i*10} { row-gap:( $i*10 + $unit); }}
+
+// Column Gap
+@for $i from 1 through $gapCounter {.md-gap-col-#{$i} { column-gap:( $i + $unit); }}
+@for $i from 3 through $gapCounter {.md-gap-col-#{$i*5} { column-gap:( $i*5 + $unit); }}
+@for $i from 6 through $gapCounter {.md-gap-col-#{$i*10} { column-gap:( $i*10 + $unit); }}
+}
+
+
+
+@include media('>xl') {
+  .xl-gap-0 { column-gap:0; }
+  .xl-gap-col-0 { column-gap:0; }
+  .xl-gap-row-0 { row-gap:0; }
+  .xl-gap-a { column-gap:auto; }
+  .xl-gap-col-a { column-gap:auto; }
+  .xl-gap-row-a { row-gap:auto; }
+  
+  // Multiple of from 1 - 10 (1*10), 10 - 50 (5*10) , 60 - 100 (6*10)
+  
+  // Gap
+  @for $i from 1 through $gapCounter {.xl-gap-#{$i} { gap:( $i + $unit); }}
+  @for $i from 3 through $gapCounter {.xl-gap-#{$i*5} { gap:( $i*5 + $unit); }}
+  @for $i from 6 through $gapCounter {.xl-gap-#{$i*10} { gap:( $i*10 + $unit); }}
+  
+  // Row Gap
+  @for $i from 1 through $gapCounter {.xl-gap-row-#{$i} { row-gap:( $i + $unit); }}
+  @for $i from 3 through $gapCounter {.xl-gap-row-#{$i*5} { row-gap:( $i*5 + $unit); }}
+  @for $i from 6 through $gapCounter {.xl-gap-row-#{$i*10} { row-gap:( $i*10 + $unit); }}
+  
+  // Column Gap
+  @for $i from 1 through $gapCounter {.xl-gap-col-#{$i} { column-gap:( $i + $unit); }}
+  @for $i from 3 through $gapCounter {.xl-gap-col-#{$i*5} { column-gap:( $i*5 + $unit); }}
+  @for $i from 6 through $gapCounter {.xl-gap-col-#{$i*10} { column-gap:( $i*10 + $unit); }}
+  }

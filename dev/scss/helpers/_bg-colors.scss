@@ -1,0 +1,10 @@
+/* 
+-------------------------------------------
+Background Colors
+-------------------------------------------
+*/ 
+
+@each $i in $colors {.bg-#{nth($i, 1)} {background: #{nth($i, 2)};}}
+// @include media('>=sm') {@each $i in $colors {.sm-bg-#{nth($i, 1)} {background: #{nth($i, 2)};}}}
+@include media('>=md') {@each $i in $colors {.md-bg-#{nth($i, 1)} {background: #{nth($i, 2)};}}}
+@include media('>=xl') {@each $i in $colors {.xl-bg-#{nth($i, 1)} {background: #{nth($i, 2)};}}}

@@ -1,20 +1,17 @@
 @import "_variables/all";
-@import "config/all";
 @import "base/all";
+@import "global-settings/all";
 @import "skins/all";
-@import "layout/all";
-@import "blog/all";
+@import "helpers/all";
+@import "page-layouts/all";
 @import "components/all";
+@import "type/all";
 @import 'header/all';
 @import 'menu/all';
-@import 'docs';
-// .global-helpers {
-@import "helpers/all";
 @import "helpers/display";
-@import "type/all";
-// }
+
 * {
-    outline: 1px solid pink;
+    // outline: 1px solid pink;
 }
 
 // Debug code
@@ -28,6 +25,9 @@
 // .body {
 // position:relative;
 //   }
+body {
+    position: relative;
+}
 body:after {
     content: "gl";
     position: fixed;

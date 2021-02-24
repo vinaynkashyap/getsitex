@@ -23,5 +23,3 @@ $brSpacer: .1rem;
 .border-b-#{$i} { border-bottom: ( $brSpacer * $i ); }
 .border-l-#{$i} { border-left: ( $brSpacer * $i ); }
 }
-
-

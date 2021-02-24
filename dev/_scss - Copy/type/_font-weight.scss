@@ -1,0 +1,12 @@
+/* 
+-------------------------------------------
+Font Weight
+-------------------------------------------
+*/
+
+$fontWCount : 9;
+
+@for $i from 0 through $fontWCount {.font-w-#{$i*100}{font-weight: $i*100} }
+@include media('>=sm'){@for $i from 0 through $fontWCount {.sm-font-w-#{$i*100}{font-weight: $i*100} }}
+@include media('>=md'){@for $i from 0 through $fontWCount {.md-font-w-#{$i*100}{font-weight: $i*100} }}
+@include media('>=xl'){@for $i from 0 through $fontWCount {.xl-font-w-#{$i*100}{font-weight: $i*100} }}

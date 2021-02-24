@@ -1,0 +1,62 @@
+// Text shadow
+.font-shadow {
+  text-shadow: 2px 2px 0px;
+}
+
+/* 
+
+Text Spacing
+
+*/
+.font-italic {
+  font-style: italic;
+}
+.font-normal {
+  font-style: normal;
+}
+.font-nowrap {
+  white-space: nowrap;
+}
+.font-pre {
+  white-space: pre;
+}
+.font-break {
+  word-break: break-all;
+}
+.font-wrap {
+  word-wrap: break-word;
+}
+.word-space {
+  word-spacing: 1em;
+}
+
+
+// Text Decoration
+.font-strike {
+  text-decoration: line-through;
+}
+.font-overline {
+  text-decoration: overline;
+}
+.font-underline {
+  text-decoration: underline;
+}
+
+
+
+/* Start a new line */
+.new-line {
+  display:block;
+  &::before {
+    content: "\A";
+  }
+}
+
+@include media('>=desktop') {
+  .xl-new-line {
+    display:block;
+    &::before {
+      content: "\A";
+    }
+  }
+}

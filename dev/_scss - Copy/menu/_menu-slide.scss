@@ -1,0 +1,17 @@
+@include media('<md') {
+    #header-main.sm-menu-slide:after {
+        content: "SM SL";
+    }
+}
+
+@include media('>=md', '<=xl') {
+    #header-main.md-menu-slide:after {
+        content: "MD SL";
+    }
+}
+
+@include media('>xl') {
+    #header-main.xl-menu-slide:after {
+        content: "xl SL";
+    }
+}

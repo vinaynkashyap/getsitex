@@ -1,0 +1,97 @@
+// TODO - Combination of fixed font size + fluid fonts
+//  How It Works - In small screen fixed font size and fluid size in big screen.
+
+
+
+/* 
+-------------------------------------------
+Font Size
+-------------------------------------------
+*/
+
+
+$fontSizeCounter : 30;
+
+$fontSizeCustom  : .25rem;
+// $fontSizeRem     : 1rem;
+// $fontSizePX      : 10px;
+// $fontSizeP       : 10%;
+// $fontSizeVW      : 10vw;
+// $fontSizeVH      : 10vh;
+
+
+// Custom
+.font-size-0{ font-size:0; line-height:0;}
+@for $i from 1 through $fontSizeCounter {.font-size-#{$i} { 
+  font-size:( $fontSizeCustom * $i ); 
+  line-height:( $fontSizeCustom * $i+.85 ); 
+}}
+
+
+@include media('>=sm'){  
+  .sm-font-size-0{ font-size:0; line-height:0;}
+  @for $i from 1 through $fontSizeCounter {.sm-font-size-#{$i} { 
+    font-size:( $fontSizeCustom * $i ); 
+    line-height:( $fontSizeCustom * $i+.85 ); 
+}}}
+
+@include media('>=md'){
+  .md-font-size-0{ font-size:0; line-height:0;}
+  @for $i from 1 through $fontSizeCounter {.md-font-size-#{$i} { 
+    font-size:( $fontSizeCustom * $i ); 
+    line-height:( $fontSizeCustom * $i+.85 ); 
+}}}
+
+@include media('>=xl'){
+  .xl-font-size-0{ font-size:0; line-height:0;}
+  @for $i from 1 through $fontSizeCounter {.xl-font-size-#{$i} { 
+    font-size:( $fontSizeCustom * $i ); 
+    line-height:( $fontSizeCustom * $i+.85 ); 
+}}}
+
+
+
+/*
+-------------------------------
+Fluid Type
+-------------------------------
+*/
+:root {
+  --font-size-fluid-0: clamp(0.875rem, 0.7287rem + 0.7317vw, 1.25rem);
+  --font-size-fluid-1: clamp(1.05rem, 0.8095rem + 1.2024vw, 1.6663rem);
+  --font-size-fluid-2: clamp(1.26rem, 0.8849rem + 1.8756vw, 2.2213rem);
+  --font-size-fluid-3: clamp(1.5119rem, 0.9465rem + 2.8268vw, 2.9606rem);
+  --font-size-fluid-4: clamp(1.8144rem, 0.9822rem + 4.161vw, 3.9469rem);
+  --font-size-fluid-5: clamp(2.1775rem, 0.9743rem + 6.0159vw, 5.2606rem);
+  --font-size-fluid-6: clamp(2.6125rem, 0.8954rem + 8.5854vw, 7.0125rem);
+  --font-size-fluid-7: clamp(3.135rem, 0.7104rem + 12.1232vw, 9.3481rem);
+  --font-size-fluid-8: clamp(3.7625rem, 0.3679rem + 16.9732vw, 12.4613rem);
+  --font-size-fluid-9: clamp(4.515rem, -0.2052rem + 23.6012vw, 16.6106rem);
+  --font-size-fluid-10: clamp(5.4175rem, -1.1091rem + 32.6329vw, 22.1419rem);
+}
+
+
+@for $i from 0 through 10 {  .font-size-fluid-#{$i} {
+  font-size: var(--font-size-fluid-#{$i});
+  line-height: calc(var(--font-size-fluid-#{$i}) + 1rem);}
+}
+
+@include media('>=sm'){ 
+  @for $i from 0 through 10 {  .sm-font-size-fluid-#{$i} {
+  font-size: var(--font-size-fluid-#{$i});
+  line-height: calc(var(--font-size-fluid-#{$i}) + 1rem);}
+}
+ }
+@include media('>=md'){ 
+  @for $i from 0 through 10 {  .md-font-size-fluid-#{$i} {
+  font-size: var(--font-size-fluid-#{$i});
+  line-height: calc(var(--font-size-fluid-#{$i}) + 1rem);}
+}
+ }
+@include media('>=xl'){ 
+  @for $i from 0 through 10 {  .xl-font-size-fluid-#{$i} {
+  font-size: var(--font-size-fluid-#{$i});
+  line-height: calc(var(--font-size-fluid-#{$i}) + 1rem);}
+}
+ }
+

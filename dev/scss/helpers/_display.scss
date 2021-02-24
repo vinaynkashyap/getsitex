@@ -19,19 +19,12 @@ $displayArray: (
     flow-root       flow-root,
     hide            none    
   );
-  
 
     .invisible           {visibility: hidden;}
     .visible             {visibility: visible;}
     .appearance-none     {appearance: none;}
     @each $i in $displayArray {.#{nth($i, 1)} {display: #{nth($i, 2)};}}
 
-@include media('>=sm') {
-    .sm-invisible           {visibility: hidden;}
-    .sm-visible             {visibility: visible;}
-    .sm-appearance-none     {appearance: none;}
-    @each $i in $displayArray {.sm-#{nth($i, 1)} {display: #{nth($i, 2)};}}
-}
 @include media('>=md') {
     .md-invisible           {visibility: hidden;}
     .md-visible             {visibility: visible;}

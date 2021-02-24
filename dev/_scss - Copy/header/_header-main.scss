@@ -1,0 +1,71 @@
+
+/* 
+-------------------------------------------
+Header Mobile
+-------------------------------------------
+*/
+
+
+// #header-main {
+//   display: flex;  
+//   justify-content: space-between;
+//   align-items: center;
+//   flex-direction: row;
+//   padding: .8rem 1.2rem;
+//   min-height: 80px;
+// }
+
+// .next-section {
+//   display: none;
+// }
+
+/* 
+-------------------------------------------
+Header for Large Device
+-------------------------------------------
+*/
+
+
+// @include media('>desktopxxl') {
+ 
+//   #header-main {
+//     padding: 2rem .2rem;
+//     min-width:74px;
+//     min-height: 100vh;
+//     position: absolute;
+//     z-index: 1;
+//     flex-direction: column;
+//     left: 0px;
+//     top: 0;
+//   }
+
+//   .next-section {
+//     display: block;
+//     color: white;
+//     writing-mode: vertical-rl;
+//     transform: rotate(180deg);
+//     font-size: 11px;
+//     text-transform: uppercase;
+//     text-decoration: none;
+//    font-size: 32px; 
+//    width: 34px;   
+//   }
+
+//   .inner-page {
+//     .icon-bottom{
+//       display: none;
+//     }
+//     #header-main {
+//       padding: .2rem 2rem;
+//       min-width:100%;
+//       min-height: 74px;
+//       max-height: 74px;
+//       position: absolute;
+//       flex-direction: row;
+//       z-index: 100;
+//       left: 0px;
+//       top: 0;
+//   }
+//   }
+
+// }

@@ -1,0 +1,93 @@
+/* 
+-------------------------------------------
+Colors
+-------------------------------------------
+*/
+
+:root {
+    --white: white;
+    --black: black;
+    --transparent: transparent;
+    --warning: #febe34;
+    --success: #07a142;
+    --info: #deeb2b;
+    --error: #ca0b2b;
+    --light: #ebebeb;
+    --light-1: #eee;
+    --light-2: #aaa;
+    --light-3: #9e9e9e;
+    --light-4: #7e7d7d;
+    --light-5: #838080;
+    --dark: #0f0f0f;
+    --dark-1: #181818;
+    --dark-2: #282828;
+    --dark-3: #4b4b4b;
+    --dark-4:#222;
+    --dark-5:#111;
+    --accent: #e50015;
+    --accent-1: #00cae5;
+    --accent-2: #0050e5;
+    --accent-3: #8900e5;
+    --accent-4:#f6d644;  
+    --accent-5:#1a904f;  
+    --base: #ebebeb;
+    --base-1: #d6d1d1;
+    --base-2: #f0eaea;
+    --base-3: #ebebebd5;
+    --base-4  :#ebebeb;  
+    --base-5  :#ebebeb;  
+    --highlight: #fff7df;
+    --highlight-1: #ebffdf;
+    --highlight-2: #dffff2;
+    --highlight-3: #dfe5ff;
+    --highlight-4  :#fff7df;
+    --highlight-5  :#fff7df;
+}
+
+
+$colors: (
+  white   var(--white  ),
+  black   var(--black  ),
+  transparent var(--transparent),
+
+  warning  var(--warning),
+  success  var(--success),
+  info     var(--info   ),
+  error    var(--error  ),
+  
+  light  var(--light),
+  light-1  var(--light-1),
+  light-2  var(--light-2),
+  light-3  var(--light-3),
+  light-4  var(--light-4),
+  light-5  var(--light-5),
+  
+  dark  var(--dark),
+  dark-1  var(--dark-1),
+  dark-2  var(--dark-2),
+  dark-3  var(--dark-3),
+  dark-4  var(--dark-4),
+  dark-5  var(--dark-5),
+  
+  accent  var(--accent),
+  accent-1  var(--accent-1),
+  accent-2  var(--accent-2),
+  accent-3  var(--accent-3),
+  accent-4  var(--accent-4),
+  accent-5  var(--accent-5),
+  
+  base    var(--base  ),
+  base-1    var(--base-1  ),
+  base-2    var(--base-2  ),
+  base-3    var(--base-3  ),
+  base-4    var(--base-4  ),
+  base-5    var(--base-5  ),
+  
+  highlight    var(--highlight  ),
+  highlight-1    var(--highlight-1  ),
+  highlight-2    var(--highlight-2  ),
+  highlight-3    var(--highlight-3  ),
+  highlight-4    var(--highlight-4  ),
+  highlight-5    var(--highlight-5  ),
+
+);

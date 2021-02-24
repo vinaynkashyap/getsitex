@@ -1,21 +1,10 @@
-
 /* 
 -------------------------------------------
 Font Aline
 -------------------------------------------
 */
 
-
-
-
-// :root{
-//     --left      :left;
-//     --right     :right;
-//     --center    :center;
-//     --justify   :justify;
-//   }
-  
-  $textAlign: (
+$textAlign: (
     left        left,
     right       right,
     center      center,
@@ -29,6 +18,5 @@ Font Aline
   */ 
   
 @each $i in $textAlign {.text-align-#{nth($i, 1)} {text-align: #{nth($i, 2)};}}
-@include media('>=sm') {@each $i in $textAlign {.sm-text-align-#{nth($i, 1)} {text-align: #{nth($i, 2)};}}}
-@include media('>=md') {@each $i in $textAlign {.md-text-align-#{nth($i, 1)} {text-align: #{nth($i, 2)};}}}
-@include media('>=xl') {@each $i in $textAlign {.xl-text-align-#{nth($i, 1)} {text-align: #{nth($i, 2)};}}}
+@include media('>md') {@each $i in $textAlign {.md-text-align-#{nth($i, 1)} {text-align: #{nth($i, 2)};}}}
+@include media('>xl') {@each $i in $textAlign {.xl-text-align-#{nth($i, 1)} {text-align: #{nth($i, 2)};}}}

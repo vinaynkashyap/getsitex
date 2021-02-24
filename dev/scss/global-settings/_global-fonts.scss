@@ -1,0 +1,29 @@
+:root {
+    --font-family-h1: Times, Times New Roman, Georgia, serif;
+    --font-family-heading: 'Poppins', sans-serif;
+    --font-family-body: 'Poppins', sans-serif;
+    --font-size-h1: 2.625rem;
+    --font-size-h2: 1.7411rem;
+    --font-size-h3: 1.5157rem;
+    --font-size-h4: 1.3195rem;
+    --font-size-h5: 1.1487rem;
+    --font-size-h6: 1rem;
+    --font-size-p: .8706rem;
+    --font-color-default: #444;
+    --font-weight-body: 200;
+}
+
+
+.global-fonts {
+    // Bootstrap icons
+    // @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+    // Fontawesome
+    @import url('https://use.fontawesome.com/releases/v5.15.2/css/all.css');
+    // Google Fonts
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;800;900&display=swap');
+    font-family: var(--font-family-body);
+    color: var(--font-color-default);
+    font-weight: var(--font-weight-body);
+    line-height: 1.75;
+    
+}

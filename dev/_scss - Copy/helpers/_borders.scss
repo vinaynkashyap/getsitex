@@ -1,0 +1,31 @@
+/*---------------------------------
+Border
+---------------------------------*/
+
+// .border-transparent	border-color: transparent;	
+// .border-current	border-color: currentColor;	
+// .border-black	border-color: #000;	
+// .border-white
+
+
+$brCounter : 5;
+$brSpacer: .1rem;
+
+.border-0 { border: none;}
+.border-solid { border-style: solid;}
+.border-dashed { border-style: dashed;}
+.border-dotted { border-style: dotted;}
+.border-double { border-style: double;}
+
+@for $i from 0 through $brCounter {    
+.border-#{$i} { border: ( $brSpacer * $i ); }
+.border-t-#{$i} { border-top: ( $brSpacer * $i ); }
+.border-r-#{$i} { border-right: ( $brSpacer * $i ); }
+.border-b-#{$i} { border-bottom: ( $brSpacer * $i ); }
+.border-l-#{$i} { border-left: ( $brSpacer * $i ); }
+}
+
+
+@each $i in $colors {.border-#{nth($i, 1)} {border-color: #{nth($i, 2)};}}
+@include media('>=md') {@each $i in $colors {.md-border-#{nth($i, 1)} {border-color: #{nth($i, 2)};}}}
+@include media('>=xl') {@each $i in $colors {.xl-border-#{nth($i, 1)} {border-color: #{nth($i, 2)};}}}

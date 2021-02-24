@@ -1,0 +1,16 @@
+.headline-block.scale-col-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: stretch;
+    .headline{
+        width: 100%;
+        grid-column: 1 / auto;
+        justify-self: stretch;
+    }
+    .description-1,
+    .description-2 {
+        grid-column: span 1;
+        grid-column: 2 / min-content;
+    }
+
+}

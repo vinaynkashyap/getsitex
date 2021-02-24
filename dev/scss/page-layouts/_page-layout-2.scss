@@ -1,0 +1,25 @@
+//  Page layout with sidebar
+
+.page-layout-2 {
+    display: grid;
+    grid-template-rows: auto 1fr auto auto;
+}
+
+@include media('>lg') {
+    .page-layout-2 {
+        grid-template-columns: repeat(12, 1fr);
+        .header-main{
+            grid-column: 1 / span 12;
+        }
+        .content-main {
+            grid-column: 1 / span 9;
+        }
+        .sidebar-main {
+            grid-column: 10 / span 3;
+        }
+        .footer-main {
+            grid-column: 1 / span 12;
+        }
+    }
+
+}

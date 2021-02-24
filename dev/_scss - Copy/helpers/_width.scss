@@ -1,0 +1,76 @@
+
+/* 
+-------------------------------------------
+Width Variables
+-------------------------------------------
+*/
+
+
+$wCount14: 14;
+$wCount10: 10;
+
+// $wCustom  : .3rem;
+// $wRem     : 1rem;
+$w10PX    : 10px;
+$wPX      : 100px;
+$wP       : 10%;
+$wVW      : 10vw;
+
+
+
+.w-0 { width: 0; }
+.w-a { width: auto; }
+@for $i from 1 through $wCount14 {.w-#{($i*10px)} { width: ($i*$w10PX) }}
+@for $i from 1 through $wCount14 {.w-#{($i*100px)} { width: ($i*$wPX) }}
+@for $i from 1 through $wCount10 {.w-#{($i*10p)} { width: ($i*$wP) }}
+@for $i from 1 through $wCount10 {.w-#{($i*10vw)} { width: ($i*$wVW) }}
+@for $i from 1 through $wCount14 {.min-w-#{($i*100px)} { min-width: ($i*$wPX) }}
+@for $i from 1 through $wCount10 {.min-w-#{($i*10p)} { min-width: ($i*$wP) }}
+@for $i from 1 through $wCount10 {.min-w-#{($i*10vw)} { min-width: ($i*$wVW) }}
+@for $i from 1 through $wCount14 {.max-w-#{($i*100px)} { max-width: ($i*$wPX) }}
+@for $i from 1 through $wCount10 {.max-w-#{($i*10p)} { max-width: ($i*$wP) }}
+@for $i from 1 through $wCount10 {.max-w-#{($i*10vw)} { max-width: ($i*$wVW) }}
+
+
+// @include media('>=sm'){
+//     .sm-w-0 { width: 0; }
+//     .sm-w-a { width: auto; }
+//     @for $i from 1 through $wCount14 {.sm-w-#{($i*10px)} { width: ($i*$w10PX) }}
+//     @for $i from 1 through $wCount14 {.sm-w-#{($i*100px)} { width: ($i*$wPX) }}
+//     @for $i from 1 through $wCount10 {.sm-w-#{($i*10p)} { width: ($i*$wP) }}
+//     @for $i from 1 through $wCount10 {.sm-w-#{($i*10vw)} { width: ($i*$wVW) }}
+//     @for $i from 1 through $wCount14 {.sm-min-w-#{($i*100px)} { min-width: ($i*$wPX) }}
+//     @for $i from 1 through $wCount10 {.sm-min-w-#{($i*10p)} { min-width: ($i*$wP) }}
+//     @for $i from 1 through $wCount10 {.sm-min-w-#{($i*10vw)} { min-width: ($i*$wVW) }}
+//     @for $i from 1 through $wCount14 {.sm-max-w-#{($i*100px)} { max-width: ($i*$wPX) }}
+//     @for $i from 1 through $wCount10 {.sm-max-w-#{($i*10p)} { max-width: ($i*$wP) }}
+//     @for $i from 1 through $wCount10 {.sm-max-w-#{($i*10vw)} { max-width: ($i*$wVW) }}
+// }
+// @include media('>=md'){
+//     .md-w-0 { width: 0; }
+//     .md-w-a { width: auto; }
+//     @for $i from 1 through $wCount14 {.md-w-#{($i*10px)} { width: ($i*$w10PX) }}
+//     @for $i from 1 through $wCount14 {.md-w-#{($i*100px)} { width: ($i*$wPX) }}
+//     @for $i from 1 through $wCount10 {.md-w-#{($i*10p)} { width: ($i*$wP) }}
+//     @for $i from 1 through $wCount10 {.md-w-#{($i*10vw)} { width: ($i*$wVW) }}
+//     @for $i from 1 through $wCount14 {.md-min-w-#{($i*100px)} { min-width: ($i*$wPX) }}
+//     @for $i from 1 through $wCount10 {.md-min-w-#{($i*10p)} { min-width: ($i*$wP) }}
+//     @for $i from 1 through $wCount10 {.md-min-w-#{($i*10vw)} { min-width: ($i*$wVW) }}
+//     @for $i from 1 through $wCount14 {.md-max-w-#{($i*100px)} { max-width: ($i*$wPX) }}
+//     @for $i from 1 through $wCount10 {.md-max-w-#{($i*10p)} { max-width: ($i*$wP) }}
+//     @for $i from 1 through $wCount10 {.md-max-w-#{($i*10vw)} { max-width: ($i*$wVW) }}
+// }
+// @include media('>=xl'){
+//     .xl-w-0 { width: 0; }
+//     .xl-w-a { width: auto; }
+//     @for $i from 1 through $wCount14 {.xl-w-#{($i*10px)} { width: ($i*$w10PX) }}
+//     @for $i from 1 through $wCount14 {.xl-w-#{($i*100px)} { width: ($i*$wPX) }}
+//     @for $i from 1 through $wCount10 {.xl-w-#{($i*10p)} { width: ($i*$wP) }}
+//     @for $i from 1 through $wCount10 {.xl-w-#{($i*10vw)} { width: ($i*$wVW) }}
+//     @for $i from 1 through $wCount14 {.xl-min-w-#{($i*100px)} { min-width: ($i*$wPX) }}
+//     @for $i from 1 through $wCount10 {.xl-min-w-#{($i*10p)} { min-width: ($i*$wP) }}
+//     @for $i from 1 through $wCount10 {.xl-min-w-#{($i*10vw)} { min-width: ($i*$wVW) }}
+//     @for $i from 1 through $wCount14 {.xl-max-w-#{($i*100px)} { max-width: ($i*$wPX) }}
+//     @for $i from 1 through $wCount10 {.xl-max-w-#{($i*10p)} { max-width: ($i*$wP) }}
+//     @for $i from 1 through $wCount10 {.xl-max-w-#{($i*10vw)} { max-width: ($i*$wVW) }}
+// }

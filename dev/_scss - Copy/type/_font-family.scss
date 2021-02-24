@@ -1,0 +1,56 @@
+// /* A font family name and a generic family name */
+// font-family: Gill Sans Extrabold, sans-serif;
+// font-family: "Goudy Bookletter 1911", sans-serif;
+
+// /* A generic family name only */
+// font-family: serif;
+// font-family: sans-serif;
+// font-family: monospace;
+// font-family: cursive;
+// font-family: fantasy;
+// font-family: system-ui;
+// font-family: ui-serif;
+// font-family: ui-sans-serif;
+// font-family: ui-monospace;
+// font-family: ui-rounded;
+// font-family: emoji;
+// font-family: math;
+// font-family: fangsong;
+
+// /* Global values */
+// font-family: inherit;
+// font-family: initial;
+// font-family: unset;
+
+
+
+
+
+/* A font family name and a generic family name */
+.font-family-georgia  { font-family: Georgia, serif; }
+
+/* A generic family name only */
+.font-family-serif { font-family: Times, Times New Roman, Georgia, serif; }
+.font-family-sans-serif { font-family: Verdana, Arial, Helvetica, sans-serif; }
+.font-family-monospace { font-family:  Lucida Console, Courier, monospace; }
+.font-family-cursive { font-family: cursiveGeorgia, serif;; }
+.font-family-fantasy { font-family: fantasy; }
+.font-family-system-ui { font-family: system-ui; }
+.font-family-ui-serif { font-family: ui-serif; }
+.font-family-ui-sans-serif { font-family: ui-sans-serif; }
+.font-family-ui-monospace { font-family: ui-monospace; }
+.font-family-ui-rounded { font-family: ui-rounded; }
+.font-family-emoji { font-family: emoji; }
+.font-family-math { font-family: math; }
+.font-family-fangsong { font-family: fangsong; }
+
+/* Global values */
+.font-family-inherit { font-family: inherit; }
+.font-family-initial { font-family: initial; }
+.font-family-unset { font-family: unset; }
+
+/* Font Family */
+.font-family-heading {  font-family:var(--font-family-heading); }
+.font-family-body { font-family: var(--font-family-body); }
+// .font-family-link { font-family: var(--font-family-link); }
+// .font-family-hero { font-family: var(--font-family-hero); }

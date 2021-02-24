@@ -1,0 +1,27 @@
+// @include media('<md'){ #header-main.sm-menu-push:after { content:"SM PU"; }}
+// @include media('>md','<xl'){ #header-main.md-menu-push:after { content:"MD PU"; }}
+// @include media('>xl'){ #header-main.xl-menu-push:after { content:"xl PU"; }}
+@mixin menu-push {
+    .main-menu .menu-bar {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@include media('<md') {
+    #header-main.sm-menu-push {
+        @include menu-push;
+    }
+}
+
+@include media('>=md', '<=xl') {
+    #header-main.md-menu-push {
+        @include menu-push;
+    }
+}
+
+@include media('>xl') {
+    #header-main.xl-menu-push {
+        @include menu-push;
+    }
+}
