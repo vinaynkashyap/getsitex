@@ -1,0 +1,44 @@
+/* -------------------------------------------------
+// Spaced out grid gallery
+// -----------------------------------------------*/
+
+.ui-gallery-9 {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+	grid-template-rows: auto dense;
+	grid-auto-flow: row dense;
+	grid-gap: 10vw;
+	align-items: center;
+	> figure {
+	  background: var(--black);
+	  padding: 1rem;
+	  position: relative;
+	  overflow: hidden;
+	  width: 100%;
+	  height: auto;
+	//   &::before {
+	// 	// for apsect ratio
+	// 	content: "";
+	// 	display: block;
+	// 	padding-bottom: 100%;
+	//   }
+	  img {
+		position: relative;
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+	  }
+	}
+  }
+
+  @include media('>md') {
+	.ui-gallery-9 {
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	}
+  }
+
+  @include media('>xl') {
+	.ui-gallery-9 {
+		grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+	}
+  }

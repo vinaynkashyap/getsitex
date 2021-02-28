@@ -1,68 +1,60 @@
 /* -------------------------------------------------
-// Spaced out grid gallery
+// Masonry grid gallery
 // -----------------------------------------------*/
 
 
-// .ui-gallery-7 {
-// 	display: grid;
-// 	grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-// 	grid-template-rows: auto dense;
-// 	grid-template-rows: masonry;
-// 	grid-auto-flow: row dense;
-// 	grid-gap: 1rem;
-// 	align-items: start;
-// 	> figure {
-// 	  background: var(--black);
-// 	  padding: 1rem;
-// 	  position: relative;
-// 	  overflow: hidden;
-// 	  width: 100%;
-// 	  height: auto;
-// 	//   &::before {
-// 	// 	// for apsect ratio
-// 	// 	content: "";
-// 	// 	display: block;
-// 	// 	padding-bottom: 100%;
-// 	//   }
-// 	  img {
-// 		position: relative;
-// 		width: 100%;
-// 		height: auto;		
-// 		object-fit: cover;	
-// 	  }
-// 	}
-//   }
-  
-
-//   @include media('>md') {
-// 	.ui-gallery-7 {
-// 		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-// 	}
-//   }
-
-
-// ---------------------------
-
 .ui-gallery-7 {
-	display: flex;
-	flex-wrap: wrap;
-	> figure {
-	  height: 150px;
-	  line-height: 150px;
-	  background: #EC985A;
-	  color: white;
-	  margin: 0 1rem 1rem 0;
-	  text-align: center;
-	  font-family: system-ui;
-	  font-weight: 900;
-	  font-size: 2rem;
-	  flex: 1 0 auto;
-	} 
-	@for $i from 1 through 36 { 
-	  figure:nth-child(#{$i}) {
-		$h: (random(100) + 70) + px;
-		width: $h;
-	  }
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+	// grid-gap: 1px;
+	grid-auto-rows: minmax(180px, auto);
+	grid-auto-flow: dense;
+	&:before {
+		content: "";
+		height: 0;
+		width: 100%;
+		padding-bottom: 100%;
+		grid-column: 1 / 1;
+		grid-row: 1 / 1;
 	}
-  }
-  
+	> figure {
+		position: relative;
+		&:first-child {
+			grid-column: 1 / 1;
+			grid-row: 1 / 1;
+		}
+		&:nth-child(3n) {
+			grid-row: span 2;
+		}
+
+		/**
+			every 4th and 7th item takes up only 1 block (1 x 1),
+			to overwrite the previous 3n rule
+		  **/
+		&:nth-child(4n),
+		&:nth-child(7n) {
+			grid-column: span 1;
+			grid-row: span 1;
+		}
+
+		/**
+			every 5th item takes up 2 blocks vertically (1 x 2),
+			also every 15th block will be a big one (2 x 2)
+		  **/
+		&:nth-child(5n) {
+			grid-column: span 2;
+			grid-row: span 2;
+		}
+		img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+@include media(">xl") {
+	.ui-gallery-7 {
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	}
+}

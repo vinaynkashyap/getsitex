@@ -8255,94 +8255,142 @@ figcaption {
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); } }
 
 /* -------------------------------------------------
-// Spaced out grid gallery
+// Masonry grid gallery
 // -----------------------------------------------*/
 .ui-gallery-7 {
-  display: flex;
-  flex-wrap: wrap; }
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-auto-rows: minmax(180px, auto);
+  grid-auto-flow: dense; }
+  .ui-gallery-7:before {
+    content: "";
+    height: 0;
+    width: 100%;
+    padding-bottom: 100%;
+    grid-column: 1 / 1;
+    grid-row: 1 / 1; }
   .ui-gallery-7 > figure {
-    height: 150px;
-    line-height: 150px;
-    background: #EC985A;
-    color: white;
-    margin: 0 1rem 1rem 0;
-    text-align: center;
-    font-family: system-ui;
-    font-weight: 900;
-    font-size: 2rem;
-    flex: 1 0 auto; }
-  .ui-gallery-7 figure:nth-child(1) {
-    width: 128px; }
-  .ui-gallery-7 figure:nth-child(2) {
-    width: 156px; }
-  .ui-gallery-7 figure:nth-child(3) {
-    width: 89px; }
-  .ui-gallery-7 figure:nth-child(4) {
-    width: 115px; }
-  .ui-gallery-7 figure:nth-child(5) {
-    width: 88px; }
-  .ui-gallery-7 figure:nth-child(6) {
-    width: 123px; }
-  .ui-gallery-7 figure:nth-child(7) {
-    width: 80px; }
-  .ui-gallery-7 figure:nth-child(8) {
-    width: 92px; }
-  .ui-gallery-7 figure:nth-child(9) {
-    width: 73px; }
-  .ui-gallery-7 figure:nth-child(10) {
-    width: 155px; }
-  .ui-gallery-7 figure:nth-child(11) {
-    width: 90px; }
-  .ui-gallery-7 figure:nth-child(12) {
-    width: 88px; }
-  .ui-gallery-7 figure:nth-child(13) {
-    width: 88px; }
-  .ui-gallery-7 figure:nth-child(14) {
-    width: 149px; }
-  .ui-gallery-7 figure:nth-child(15) {
-    width: 157px; }
-  .ui-gallery-7 figure:nth-child(16) {
-    width: 131px; }
-  .ui-gallery-7 figure:nth-child(17) {
-    width: 152px; }
-  .ui-gallery-7 figure:nth-child(18) {
-    width: 161px; }
-  .ui-gallery-7 figure:nth-child(19) {
-    width: 132px; }
-  .ui-gallery-7 figure:nth-child(20) {
-    width: 89px; }
-  .ui-gallery-7 figure:nth-child(21) {
-    width: 167px; }
-  .ui-gallery-7 figure:nth-child(22) {
-    width: 121px; }
-  .ui-gallery-7 figure:nth-child(23) {
-    width: 102px; }
-  .ui-gallery-7 figure:nth-child(24) {
-    width: 94px; }
-  .ui-gallery-7 figure:nth-child(25) {
-    width: 116px; }
-  .ui-gallery-7 figure:nth-child(26) {
-    width: 142px; }
-  .ui-gallery-7 figure:nth-child(27) {
-    width: 102px; }
-  .ui-gallery-7 figure:nth-child(28) {
-    width: 170px; }
-  .ui-gallery-7 figure:nth-child(29) {
-    width: 128px; }
-  .ui-gallery-7 figure:nth-child(30) {
-    width: 85px; }
-  .ui-gallery-7 figure:nth-child(31) {
-    width: 74px; }
-  .ui-gallery-7 figure:nth-child(32) {
-    width: 87px; }
-  .ui-gallery-7 figure:nth-child(33) {
-    width: 84px; }
-  .ui-gallery-7 figure:nth-child(34) {
-    width: 127px; }
-  .ui-gallery-7 figure:nth-child(35) {
-    width: 78px; }
-  .ui-gallery-7 figure:nth-child(36) {
-    width: 73px; }
+    position: relative;
+    /**
+			every 4th and 7th item takes up only 1 block (1 x 1),
+			to overwrite the previous 3n rule
+		  **/
+    /**
+			every 5th item takes up 2 blocks vertically (1 x 2),
+			also every 15th block will be a big one (2 x 2)
+		  **/ }
+    .ui-gallery-7 > figure:first-child {
+      grid-column: 1 / 1;
+      grid-row: 1 / 1; }
+    .ui-gallery-7 > figure:nth-child(3n) {
+      grid-row: span 2; }
+    .ui-gallery-7 > figure:nth-child(4n), .ui-gallery-7 > figure:nth-child(7n) {
+      grid-column: span 1;
+      grid-row: span 1; }
+    .ui-gallery-7 > figure:nth-child(5n) {
+      grid-column: span 2;
+      grid-row: span 2; }
+    .ui-gallery-7 > figure img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+
+@media (min-width: 1201px) {
+  .ui-gallery-7 {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); } }
+
+/* -------------------------------------------------
+// Artisic gallery
+// -----------------------------------------------*/
+.ui-gallery-8 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  grid-template-rows: auto dense;
+  grid-auto-flow: row dense;
+  grid-gap: 1rem;
+  align-items: center; }
+  .ui-gallery-8 > figure {
+    background: var(--black);
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto; }
+    .ui-gallery-8 > figure img {
+      position: relative;
+      width: 100%;
+      height: auto;
+      object-fit: cover; }
+
+@media (min-width: 769px) {
+  .ui-gallery-8 {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); } }
+
+@media (min-width: 1201px) {
+  .ui-gallery-8 {
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); } }
+
+/* -------------------------------------------------
+// Spaced out grid gallery
+// -----------------------------------------------*/
+.ui-gallery-9 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  grid-template-rows: auto dense;
+  grid-auto-flow: row dense;
+  grid-gap: 10vw;
+  align-items: center; }
+  .ui-gallery-9 > figure {
+    background: var(--black);
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto; }
+    .ui-gallery-9 > figure img {
+      position: relative;
+      width: 100%;
+      height: auto;
+      object-fit: cover; }
+
+@media (min-width: 769px) {
+  .ui-gallery-9 {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); } }
+
+@media (min-width: 1201px) {
+  .ui-gallery-9 {
+    grid-template-columns: repeat(auto-fill, minmax(460px, 1fr)); } }
+
+/* -------------------------------------------------
+// Grid gallery
+// -----------------------------------------------*/
+.ui-gallery-10 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-auto-rows: minmax(220px, auto);
+  grid-auto-flow: dense; }
+  .ui-gallery-10:before {
+    content: "";
+    height: 0;
+    width: 100%;
+    padding-bottom: 100%;
+    grid-column: 1 / 1;
+    grid-row: 1 / 1; }
+  .ui-gallery-10 > figure {
+    position: relative; }
+    .ui-gallery-10 > figure:first-child {
+      grid-column: 1 / 1;
+      grid-row: 1 / 1; }
+    .ui-gallery-10 > figure img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+
+@media (min-width: 1201px) {
+  .ui-gallery-10 {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); } }
 
 .preloader-style-circle-gradient {
   user-select: none;
