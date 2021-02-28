@@ -1,0 +1,18 @@
+.tab-layout-4 {
+    display: grid;
+}
+
+@include media('>md') {
+    .tab-layout-4 {
+        // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));   
+        grid-template-columns: auto 1fr; 
+        .tab-content.active {
+            grid-column-start: 1 ;
+            grid-column-end: -1 ;
+            height: 100%;
+        }
+        .tab-button {
+         
+        }        
+    }
+}

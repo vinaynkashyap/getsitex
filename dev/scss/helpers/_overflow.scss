@@ -1,0 +1,29 @@
+/* 
+-------------------------------------------
+Overflow
+-------------------------------------------
+*/
+
+.overflow-h	{
+    overflow: hidden !important;
+    &::-webkit-scrollbar {
+        display: none;
+        width: 0;
+        background: transparent;
+}}
+
+.overflow-x-h	{overflow-x: hidden;}
+.overflow-y-h	{overflow-y: hidden;}
+
+.overflow-a     {overflow: auto;}
+.overflow-x-a	{overflow-x: auto;}
+.overflow-y-a	{overflow-y: auto;}
+
+.overflow-v	    {overflow: visible;}
+.overflow-x-v	{overflow-x: visible;}
+.overflow-y-v	{overflow-y: visible;}
+
+.overflow-s	    {overflow: scroll;}
+.overflow-x-s	{overflow-x: scroll;}
+.overflow-y-s	{overflow-y: scroll;}
+

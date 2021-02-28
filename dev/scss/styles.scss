@@ -1,6 +1,5 @@
 @import "_variables/all";
 @import "base/all";
-@import "global-settings/all";
 @import "skins/all";
 @import "helpers/all";
 @import "page-layouts/all";
@@ -13,6 +12,12 @@
 * {
     // outline: 1px solid pink;
 }
+
+.outline * {
+    outline: 1px solid pink;
+}
+
+
 
 // Debug code
 // -------------------

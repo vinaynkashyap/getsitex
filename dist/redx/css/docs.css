@@ -1,10 +1,111 @@
+/*------------------------------------------------------------------
+
+ Theme Name: Redx - Multi-Purpose HTML Website Template 
+ Theme URI: http://graphitivity.com/templates/redx
+ Author: Vinay Kashyap
+ Author URI: http://graphitivity.com
+ Description: Launch and scale your website with the most flexible Multi-Purpose template.
+ Version: 1.0
+ License: Themeforest Split Licence
+ License URI: - 
+ Tags: MultiPurpose Theme
+ Text Domain: Multi-Purpose Theme
+
+ ------------------------------------------------------------------*/
+/* 
+-------------------------------------------
+Reset Browser Defaults
+-------------------------------------------
+*/
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-rendering: optimizeLegibility;
+  -webkit-font-kerning: none;
+  font-kerning: none; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0; }
+
+body {
+  display: grid;
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  font-size: 100%;
+  line-height: 2;
+  word-wrap: break-word; }
+
+ul,
+ol {
+  list-style: none; }
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+figure,
+blockquote,
+dl,
+dd,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr {
+  margin: 0;
+  padding: 0; }
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  margin: 0; }
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto; }
+
 .example {
   margin: 50px 0;
-  gap: 20px; }
+  border: 1px solid var(--light-4);
+  background: var(--light-1);
+  padding: 1rem;
+  border-radius: 6px; }
 
 .example > * {
-  border: 4px solid tomato;
-  padding: 1rem; }
+  border-radius: 6px; }
 
 hr {
-  margin: 4rem 0; }
+  margin: 6rem 0 4rem 0; }
+
+h2 {
+  margin-bottom: .5rem; }

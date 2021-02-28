@@ -1,12 +1,12 @@
 
 $gridParentClass: (
 
-  grid-row        'grid-auto-flow' 'row',
-  grid-col        'grid-auto-flow' 'column',
-  grid-dense      'grid-auto-flow' 'dense',
-  grid-row-dense  'grid-auto-flow' 'row dense',
-  grid-col-dense  'grid-auto-flow' 'column dense',
-  grid-unset      'grid-auto-flow' 'unset',
+  grid-flow-row        'grid-auto-flow' 'row',
+  grid-flow-col        'grid-auto-flow' 'column',
+  grid-flow-dense      'grid-auto-flow' 'dense',
+  grid-flow-row-dense  'grid-auto-flow' 'row dense',
+  grid-flow-col-dense  'grid-auto-flow' 'column dense',
+  grid-flow-unset      'grid-auto-flow' 'unset',
   
   justify-items-auto     'justify-items' 'auto',
   justify-items-start    'justify-items' 'start',
@@ -75,6 +75,13 @@ $gridParentClass: (
   
   );
   
+  $gridCol : 14;
+  $gridRow : 14;
+  $count14 : 14;
+  $gapCounter : 10;
+  $px : 0px;
+
+  
 
 /* 
 -------------------------------------------
@@ -91,8 +98,7 @@ Repeat Columns
 -------------------------------------------
 */
 
-$gridCol : 14;
-$gridRow : 14;
+
 
 @for $i from 1 through $gridCol {.grid-col-#{$i}{grid-template-columns: repeat($i, minmax(auto, 1fr));}}
 @for $i from 1 through $gridRow {.grid-row-#{$i}{grid-template-rows: repeat($i, minmax(auto, 1fr));}}
@@ -105,19 +111,28 @@ Column Start
 -------------------------------------------
 */
 
-$count14 : 14;
 
-@for $i from 1 through $count14{ .col-start-#{$i}{ grid-column-start: $i;} }
-@for $i from 1 through $count14{ .col-end-#{$i}{ grid-column-end: $i;} }
-
-@for $i from 1 through $count14{ .row-start-#{$i}{ grid-row-start: $i;} }
-@for $i from 1 through $count14{ .row-end-#{$i}{ grid-row-end: $i;} }
 // span
 @for $i from 1 through $count14{ .col-span-#{$i}{ grid-column: span $i;} }
 @for $i from 1 through $count14{ .row-span-#{$i}{ grid-row: span $i;} }
 .col-span-full {grid-column: 1 / -1;}
 .row-span-full {grid-row: 1 / -1;}
+// start
+@for $i from 1 through $count14{ .col-start-#{$i}{ grid-column-start: $i;} }
+@for $i from 1 through $count14{ .col-end-#{$i}{ grid-column-end: $i;} }
+// end
+@for $i from 1 through $count14{ .row-start-#{$i}{ grid-row-start: $i;} }
+@for $i from 1 through $count14{ .row-end-#{$i}{ grid-row-end: $i;} }
 
+/* 
+-------------------------------------------
+Column Fit and Fill
+-------------------------------------------
+*/
+
+
+@for $i from 10 through 35 {.col-fit-#{$i*10}{grid-template-columns: repeat(auto-fit, minmax($i*10px, 1fr));}}
+@for $i from 10 through 35 {.col-fill-#{$i*10}{grid-template-columns: repeat(auto-fill, minmax($i*10px, 1fr));}}
 
 /* 
 -------------------------------------------
@@ -125,8 +140,7 @@ Gap
 -------------------------------------------
 */
 
-$gapCounter : 10;
-$unit : 0px;
+
 
 .gap-0 { column-gap:0; }
 .gap-col-0 { column-gap:0; }
@@ -138,28 +152,31 @@ $unit : 0px;
 // Multiple of from 1 - 10 (1*10), 10 - 50 (5*10) , 60 - 100 (6*10)
 
 // Gap
-@for $i from 1 through $gapCounter {.gap-#{$i} { gap:( $i + $unit); }}
-@for $i from 3 through $gapCounter {.gap-#{$i*5} { gap:( $i*5 + $unit); }}
-@for $i from 6 through $gapCounter {.gap-#{$i*10} { gap:( $i*10 + $unit); }}
+@for $i from 1 through $gapCounter {.gap-#{$i} { gap:( $i + $px); }}
+@for $i from 3 through $gapCounter {.gap-#{$i*5} { gap:( $i*5 + $px); }}
+@for $i from 6 through $gapCounter {.gap-#{$i*10} { gap:( $i*10 + $px); }}
 
 // Row Gap
-@for $i from 1 through $gapCounter {.gap-row-#{$i} { row-gap:( $i + $unit); }}
-@for $i from 3 through $gapCounter {.gap-row-#{$i*5} { row-gap:( $i*5 + $unit); }}
-@for $i from 6 through $gapCounter {.gap-row-#{$i*10} { row-gap:( $i*10 + $unit); }}
+@for $i from 1 through $gapCounter {.gap-y-#{$i} { row-gap:( $i + $px); }}
+@for $i from 3 through $gapCounter {.gap-y-#{$i*5} { row-gap:( $i*5 + $px); }}
+@for $i from 6 through $gapCounter {.gap-y-#{$i*10} { row-gap:( $i*10 + $px); }}
 
 // Column Gap
-@for $i from 1 through $gapCounter {.gap-col-#{$i} { column-gap:( $i + $unit); }}
-@for $i from 3 through $gapCounter {.gap-col-#{$i*5} { column-gap:( $i*5 + $unit); }}
-@for $i from 6 through $gapCounter {.gap-col-#{$i*10} { column-gap:( $i*10 + $unit); }}
+@for $i from 1 through $gapCounter {.gap-x-#{$i} { column-gap:( $i + $px); }}
+@for $i from 3 through $gapCounter {.gap-x-#{$i*5} { column-gap:( $i*5 + $px); }}
+@for $i from 6 through $gapCounter {.gap-x-#{$i*10} { column-gap:( $i*10 + $px); }}
 
 
 /*
-
-
+-------------------------------------------
+Grid classes for mobile devices
+-------------------------------------------
 */ 
 
 
 @include media('>md') {
+
+
 
 /* 
 -------------------------------------------
@@ -176,11 +193,9 @@ Repeat Columns
 -------------------------------------------
 */
 
-$gridCol : 14;
-$gridRow : 14;
 
-@for $i from 1 through $gridCol {.grid-col-#{$i}{grid-template-columns: repeat($i, minmax(auto, 1fr));}}
-@for $i from 1 through $gridRow {.grid-row-#{$i}{grid-template-rows: repeat($i, minmax(auto, 1fr));}}
+@for $i from 1 through $gridCol {.md-grid-col-#{$i}{grid-template-columns: repeat($i, minmax(auto, 1fr));}}
+@for $i from 1 through $gridRow {.md-grid-row-#{$i}{grid-template-rows: repeat($i, minmax(auto, 1fr));}}
 
 
 
@@ -190,18 +205,33 @@ Column Start
 -------------------------------------------
 */
 
-$count14 : 14;
-
-@for $i from 1 through $count14{ .md-col-start-#{$i}{ grid-column-start: $i;} }
-@for $i from 1 through $count14{ .md-col-end-#{$i}{ grid-column-end: $i;} }
-
-@for $i from 1 through $count14{ .md-row-start-#{$i}{ grid-row-start: $i;} }
-@for $i from 1 through $count14{ .md-row-end-#{$i}{ grid-row-end: $i;} }
 // span
 @for $i from 1 through $count14{ .md-col-span-#{$i}{ grid-column: span $i;} }
 @for $i from 1 through $count14{ .md-row-span-#{$i}{ grid-row: span $i;} }
 .md-col-span-full {grid-column: 1 / -1;}
 .md-row-span-full {grid-row: 1 / -1;}
+// start
+@for $i from 1 through $count14{ .md-col-start-#{$i}{ grid-column-start: $i;} }
+@for $i from 1 through $count14{ .md-col-end-#{$i}{ grid-column-end: $i;} }
+// end
+@for $i from 1 through $count14{ .md-row-start-#{$i}{ grid-row-start: $i;} }
+@for $i from 1 through $count14{ .md-row-end-#{$i}{ grid-row-end: $i;} }
+
+/* 
+-------------------------------------------
+Column Fit and Fill
+-------------------------------------------
+*/
+
+
+@for $i from 10 through 35 {.md-col-fit-#{$i*10}{grid-template-columns: repeat(auto-fit, minmax($i*10px, 1fr));}}
+@for $i from 10 through 35 {.md-col-fill-#{$i*10}{grid-template-columns: repeat(auto-fill, minmax($i*10px, 1fr));}}
+
+/* 
+-------------------------------------------
+Gap
+-------------------------------------------
+*/
 
 
 .md-gap-0 { column-gap:0; }
@@ -214,24 +244,91 @@ $count14 : 14;
 // Multiple of from 1 - 10 (1*10), 10 - 50 (5*10) , 60 - 100 (6*10)
 
 // Gap
-@for $i from 1 through $gapCounter {.md-gap-#{$i} { gap:( $i + $unit); }}
-@for $i from 3 through $gapCounter {.md-gap-#{$i*5} { gap:( $i*5 + $unit); }}
-@for $i from 6 through $gapCounter {.md-gap-#{$i*10} { gap:( $i*10 + $unit); }}
+@for $i from 1 through $gapCounter {.md-gap-#{$i} { gap:( $i + $px); }}
+@for $i from 3 through $gapCounter {.md-gap-#{$i*5} { gap:( $i*5 + $px); }}
+@for $i from 6 through $gapCounter {.md-gap-#{$i*10} { gap:( $i*10 + $px); }}
 
 // Row Gap
-@for $i from 1 through $gapCounter {.md-gap-row-#{$i} { row-gap:( $i + $unit); }}
-@for $i from 3 through $gapCounter {.md-gap-row-#{$i*5} { row-gap:( $i*5 + $unit); }}
-@for $i from 6 through $gapCounter {.md-gap-row-#{$i*10} { row-gap:( $i*10 + $unit); }}
+@for $i from 1 through $gapCounter {.md-gap-y-#{$i} { row-gap:( $i + $px); }}
+@for $i from 3 through $gapCounter {.md-gap-y-#{$i*5} { row-gap:( $i*5 + $px); }}
+@for $i from 6 through $gapCounter {.md-gap-y-#{$i*10} { row-gap:( $i*10 + $px); }}
 
 // Column Gap
-@for $i from 1 through $gapCounter {.md-gap-col-#{$i} { column-gap:( $i + $unit); }}
-@for $i from 3 through $gapCounter {.md-gap-col-#{$i*5} { column-gap:( $i*5 + $unit); }}
-@for $i from 6 through $gapCounter {.md-gap-col-#{$i*10} { column-gap:( $i*10 + $unit); }}
+@for $i from 1 through $gapCounter {.md-gap-x-#{$i} { column-gap:( $i + $px); }}
+@for $i from 3 through $gapCounter {.md-gap-x-#{$i*5} { column-gap:( $i*5 + $px); }}
+@for $i from 6 through $gapCounter {.md-gap-x-#{$i*10} { column-gap:( $i*10 + $px); }}
 }
 
 
 
+
+/*
+-------------------------------------------
+Grid classes for large screen
+-------------------------------------------
+*/ 
+
+
 @include media('>xl') {
+
+
+
+  /* 
+  -------------------------------------------
+   Grid Classes
+  -------------------------------------------
+  */
+  
+  @each $i in $gridParentClass {.xl-#{nth($i, 1)} { #{nth($i, 2)}:#{nth($i, 3)};}}
+  
+  
+  /* 
+  -------------------------------------------
+  Repeat Columns
+  -------------------------------------------
+  */
+  
+  
+  @for $i from 1 through $gridCol {.xl-grid-col-#{$i}{grid-template-columns: repeat($i, minmax(auto, 1fr));}}
+  @for $i from 1 through $gridRow {.xl-grid-row-#{$i}{grid-template-rows: repeat($i, minmax(auto, 1fr));}}
+  
+  
+  
+  /* 
+  -------------------------------------------
+  Column Start
+  -------------------------------------------
+  */
+  
+  // span
+  @for $i from 1 through $count14{ .xl-col-span-#{$i}{ grid-column: span $i;} }
+  @for $i from 1 through $count14{ .xl-row-span-#{$i}{ grid-row: span $i;} }
+  .xl-col-span-full {grid-column: 1 / -1;}
+  .xl-row-span-full {grid-row: 1 / -1;}
+  // start
+  @for $i from 1 through $count14{ .xl-col-start-#{$i}{ grid-column-start: $i;} }
+  @for $i from 1 through $count14{ .xl-col-end-#{$i}{ grid-column-end: $i;} }
+  // end
+  @for $i from 1 through $count14{ .xl-row-start-#{$i}{ grid-row-start: $i;} }
+  @for $i from 1 through $count14{ .xl-row-end-#{$i}{ grid-row-end: $i;} }
+  
+  /* 
+  -------------------------------------------
+  Column Fit and Fill
+  -------------------------------------------
+  */
+  
+  
+  @for $i from 10 through 35 {.xl-col-fit-#{$i*10}{grid-template-columns: repeat(auto-fit, minmax($i*10px, 1fr));}}
+  @for $i from 10 through 35 {.xl-col-fill-#{$i*10}{grid-template-columns: repeat(auto-fill, minmax($i*10px, 1fr));}}
+  
+  /* 
+  -------------------------------------------
+  Gap
+  -------------------------------------------
+  */
+  
+  
   .xl-gap-0 { column-gap:0; }
   .xl-gap-col-0 { column-gap:0; }
   .xl-gap-row-0 { row-gap:0; }
@@ -242,17 +339,17 @@ $count14 : 14;
   // Multiple of from 1 - 10 (1*10), 10 - 50 (5*10) , 60 - 100 (6*10)
   
   // Gap
-  @for $i from 1 through $gapCounter {.xl-gap-#{$i} { gap:( $i + $unit); }}
-  @for $i from 3 through $gapCounter {.xl-gap-#{$i*5} { gap:( $i*5 + $unit); }}
-  @for $i from 6 through $gapCounter {.xl-gap-#{$i*10} { gap:( $i*10 + $unit); }}
+  @for $i from 1 through $gapCounter {.xl-gap-#{$i} { gap:( $i + $px); }}
+  @for $i from 3 through $gapCounter {.xl-gap-#{$i*5} { gap:( $i*5 + $px); }}
+  @for $i from 6 through $gapCounter {.xl-gap-#{$i*10} { gap:( $i*10 + $px); }}
   
   // Row Gap
-  @for $i from 1 through $gapCounter {.xl-gap-row-#{$i} { row-gap:( $i + $unit); }}
-  @for $i from 3 through $gapCounter {.xl-gap-row-#{$i*5} { row-gap:( $i*5 + $unit); }}
-  @for $i from 6 through $gapCounter {.xl-gap-row-#{$i*10} { row-gap:( $i*10 + $unit); }}
+  @for $i from 1 through $gapCounter {.xl-gap-y-#{$i} { row-gap:( $i + $px); }}
+  @for $i from 3 through $gapCounter {.xl-gap-y-#{$i*5} { row-gap:( $i*5 + $px); }}
+  @for $i from 6 through $gapCounter {.xl-gap-y-#{$i*10} { row-gap:( $i*10 + $px); }}
   
   // Column Gap
-  @for $i from 1 through $gapCounter {.xl-gap-col-#{$i} { column-gap:( $i + $unit); }}
-  @for $i from 3 through $gapCounter {.xl-gap-col-#{$i*5} { column-gap:( $i*5 + $unit); }}
-  @for $i from 6 through $gapCounter {.xl-gap-col-#{$i*10} { column-gap:( $i*10 + $unit); }}
+  @for $i from 1 through $gapCounter {.xl-gap-x-#{$i} { column-gap:( $i + $px); }}
+  @for $i from 3 through $gapCounter {.xl-gap-x-#{$i*5} { column-gap:( $i*5 + $px); }}
+  @for $i from 6 through $gapCounter {.xl-gap-x-#{$i*10} { column-gap:( $i*10 + $px); }}
   }

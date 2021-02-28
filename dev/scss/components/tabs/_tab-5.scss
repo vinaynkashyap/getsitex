@@ -1,0 +1,45 @@
+// .tab-layout-5 {
+//     display: grid;
+// }
+
+// @include media('>md') {
+//     .tab-layout-5 {
+//         // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));   
+//         grid-template-columns: auto 1fr; 
+//         .tab-content.active {
+//             grid-column-start: 1 ;
+//             grid-column-end: -1 ;
+//             height: 100%;
+//         }
+//         .tab-button {
+         
+//         }        
+//     }
+// }
+
+
+.tab-layout-5 {
+    display: grid;
+}
+
+@include media('>md') {
+    .tab-layout-5 {
+        // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));   
+        grid-template-columns: repeat(12,1fr); 
+        grid-row: 1 / -1;
+        .tab-content.active {
+            // display: none;
+            grid-column-start: 5 ;
+            grid-column-end: -1 ;
+            grid-row-start: 1;
+            grid-row-end: 12;
+            height: 100%;
+        }
+        .tab-button {
+            // display: none;
+            grid-column-start: 1 ;
+            grid-column-end: 5 ;
+            grid-row: auto ;
+        }        
+    }
+}

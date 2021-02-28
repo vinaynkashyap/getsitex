@@ -1,0 +1,34 @@
+/* -------------------------------------------------
+// Square grid gallery
+// -----------------------------------------------*/
+
+.ui-gallery-2 {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+	grid-gap: 1rem;
+	> figure {
+	  background: var(--accent);
+	  padding: 1rem;
+	  position: relative;
+	  overflow: hidden;
+	  &::before {
+		// for apsect ratio
+		content: "";
+		display: block;
+		padding-bottom: 100%;
+	  }
+	  img {
+		position: absolute;
+		width: 100%;
+		height: 100%;		
+		object-fit: cover;	
+	  }
+	}
+  }
+  
+
+  @include media('>xl') {
+	.ui-gallery-2 {
+		grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+	}
+  }

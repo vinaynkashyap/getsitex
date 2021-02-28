@@ -14,8 +14,8 @@
     <!-- <link rel="stylesheet" href="css/vendors/font-awesome.min.css" /> -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" /> -->
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/docs.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <style>
 
     </style>
@@ -44,31 +44,31 @@
             <section id="section-2" class="skin-light">
                 <div class="container mx-a ">
 
-                    <h2>Grid Columns</h2>
+                    <h2>Auto Width Columns</h2>
 
-                    <p> <b>Auto Width Columns:</b> Add class "grid grid-col" to the parent element. The child elements is automatically arranged next to each other in the grid system and the width is automatically assigned by the CSS grid system.</p>
+                    <p> <b>Auto Width Columns:</b> Add class "grid grid-flow-col" to the parent element. The child elements is automatically arranged next to each other in the grid system and the width is automatically assigned by the CSS grid system.</p>
 
-                    <div class="example grid md-grid-col">
-                        <div  class="">
-                            <p> <b>Div takes the content width.</b> </p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <div class="example gap-20 grid md-grid-flow-col">
+                        <div  class="bg-white p-20">
+                            <p class=""> <b>Div takes the content width.</b> </p>
+                            <p class="">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet conse ctetur adipi sicing elit Fuga, blan ditiis?</p>
                         </div>
-                        <div class=" "> First Div </div>
-                        <div  class=" "> I'm another Div </div>
+                        <div class="bg-white p-20"> Div with some text</div>
+                        <div class="bg-white p-20"> I'm another Div </div>
                     </div>
 
                     <hr>
 
-                    <!-- <h2 class="font-color-dark">Equal Width Columns</h2>
+                    <h2 class="font-color-dark">Equal Width Columns</h2>
 
-                    <p> Add class "grid repeat-col-(x)" to the parent element. The child elements is automatically arranged next to each other in the grid system and the width is automatically assigned by the CSS grid system.</p>
+                    <p> Add class "grid grid-col-(x)" to the parent element. The child elements is automatically arranged next to each other in the grid system and the width is automatically assigned by the CSS grid system.</p>
 
                     <p>The child elements will take up 3 columns and repeat itself.</p>
 
-                    <div class="example grid repeat-col-3 ">
-                        <div> First Div </div>
-                        <div> I'm another Div </div>
-                        <div>
+                    <div class="example gap-20 grid md-grid-col-3 ">
+                        <div class="bg-white p-20"> First Div </div>
+                        <div class="bg-white p-20"> I'm another Div </div>
+                        <div class="bg-white p-20">
                             <p> <b>Div width is same as other children.</b> </p>
 
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -78,10 +78,75 @@
 
 
                     <hr>
-                    <h2>Grid Rows</h2>
+
+                    <h2 class="font-color-dark">Equal Width Dynamic Cols.</h2>
+
+                    <p> Add class "grid col-fit-(x)" to the parent element. The child elements scale to equal width columns and the space get's divided equally when new cells are added.</p>
+
+                    <p>The child elements will take up 3 columns and repeat itself.</p>
+
+                    <div class="example gap-20 grid col-fit-100 ">
+                        <div class="bg-white p-20"> First Div </div>
+                        <div class="bg-white p-20"> I'm another Div </div>
+                        <div class="bg-white p-20"> I'm another Div </div>
+                        <div class="bg-white p-20">
+                            <p> <b>Div width is same as other children.</b> </p>
+
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        </div>
+                    </div>
+
+
+
+                    <hr>
+
+                    <h2 class="font-color-dark">Column width.</h2>
+
+                    <p> Add class "grid grid-col-(x)" to the parent element. The child elements can span from col-span-1 to col-span-12.</p>
+                    <p><b>NOTE:</b> To offset the columns use start-col-(x) and end-col-(x) instead of col-span(x)</p>
+
+                    <div class="example gap-20 grid grid-col-12 ">
+                        <div class="bg-white p-20 col-span-full"> col-span-12</div>
+                        <div class="bg-white p-20 col-span-6"> col-span-6 </div>
+                        <div class="bg-white p-20 col-span-6"> col-span-6 </div>
+                        
+                        <div class="bg-white p-20 col-span-8">
+                            <p> <b>col-span-8</b> </p>
+                            
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        </div>
+                        <div class="bg-white p-20 col-span-4"> .col-span-4 </div>
+                        <div class="bg-white p-20 col-span-6 md-col-start-3 md-col-end-7"> Responsive offset cols with  col-start-x/col-end-x</div>
+                        <div class="bg-white p-20 col-span-6 md-col-span-4"> col-span-4 </div>
+                    </div>
+
+                    <!-- Grid Columns -->
+                    <hr>
+
+                    <h2 class="font-color-dark">Grid Columns.</h2>
+
+                    <p> Add class "grid grid-col-(x)" to the parent element. The child elements can span from col-span-1 to col-span-12.</p>
+
+                    <div class="example gap-20 grid grid-col-6 grid-row-4 grid-flow-col-dense">
+                        <div class="bg-white p-20 col-span-2"> col  </div>
+                        <div class="p-20 col-start-2 md-col-start-1 md-col-end-3 md-row-span-full skin-accent"> col </div>
+                        <div class="bg-white p-20 col-span-4"> col  </div>
+                        <div class="bg-white p-20 col-span-2"> col  </div>
+                        <div class="bg-white p-20 col-span-1"> col  </div>
+                        <div class="bg-white p-20 col-span-2"> col  </div>
+                        <div class="bg-white p-20 col-span-3"> col  </div>
+                        <div class="bg-white p-20 col-span-2"> col  </div>
+                        <div class="bg-white p-20 col-span-2"> col  </div>
+                        <div class="bg-white p-20 col-span-2"> col  </div>
+                        <div class="bg-white p-20 col-span-3"> col  </div>
+                        <div class="bg-white p-20 col-span-3"> col  </div>
+                        
+                    </div>
+
+                   <!--  <h2>Grid Rows</h2>
                     <p>Add class " grid grid-row" to the parent element to stack it's children.</p>
 
-                    <div class="example grid grid-row">
+                    <div class="example gap-20 grid grid-row">
                         <div class=""> Div </div>
                         <div class=""> Div </div>
                         <div class=""> Div </div>
@@ -94,7 +159,7 @@
                     <h2>Inline Grid Rows</h2>
                     <p> <b> Take Content Width :</b> Here the parent div is set to "inline-grid".</p>
 
-                    <div class="example inline-grid ">
+                    <div class="example gap-20 inline-grid ">
                         <div> Div </div>
                         <div> I'm another Div. </div>
                         <div class="mb-4"> Div with a margin bottom. </div>
@@ -104,7 +169,23 @@
                     </div>
                     <p> <b> Note :</b> Grid gap dose not work with inline grid if column span is not specified.</p>
                     <hr> -->
-
+<hr>
+<hr>
+<div class="example gap-20 grid grid-col-12 grid-row-12 grid-flow-col-dense">
+    <div class="bg-white p-20 col-span-4"> col  </div>
+    <div class="p-20 col-start-2 md-col-start-5 md-col-end-13 md-row-span-full skin-accent"> col </div>
+    <div class="bg-white p-20 md-col-span-4"> col  </div>
+    <div class="bg-white p-20 md-col-span-4"> col  </div>
+    <div class="bg-white p-20 md-col-span-4"> col  </div>
+    <div class="bg-white p-20 md-col-span-4"> col  </div>
+    <div class="bg-white p-20 md-col-span-4"> col  </div>
+    <div class="bg-white p-20 md-col-span-4"> col  </div>
+    <div class="bg-white p-20 md-col-span-4"> col  </div>
+    <div class="bg-white p-20 md-col-span-4"> col  </div>
+    <div class="bg-white p-20 md-col-span-4"> col  </div>
+    <div class="bg-white p-20 md-col-span-4"> col  </div>
+    
+</div>
 
                     <!-- / Container -->
                 </div>

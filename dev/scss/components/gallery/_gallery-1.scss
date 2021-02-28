@@ -1,0 +1,43 @@
+/* -------------------------------------------------
+// Metro grid gallery
+// -----------------------------------------------*/
+
+
+.ui-gallery-1 {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    grid-auto-flow: row dense;
+	> figure {
+	  background: var(--accent);
+	  padding: 2rem;
+	  position: relative;
+	  overflow: hidden;
+	  &::before {
+		// for apsect ratio
+		content: "";
+		display: block;
+		padding-bottom: 100%;
+	  }
+	  img {
+		position: absolute;
+		width: 100%;
+		height: 100%;		
+		object-fit: cover;
+	  }
+	}
+  }
+
+  @include media('>md') {
+	.ui-gallery-1 {
+		grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+	}
+  }
+
+
+  @include media('>xl') {
+	.ui-gallery-1 {
+		grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+	}
+}
+
+

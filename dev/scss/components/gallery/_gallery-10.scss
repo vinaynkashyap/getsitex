@@ -1,0 +1,49 @@
+//  Square grid
+// 3:2 4:3  1:1  16:9
+figcaption {
+    display: none;
+}
+
+
+/* -------------------------------------------------
+// Metro 
+// -----------------------------------------------*/
+
+
+.ui-gallery-1 {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+	grid-gap: 0;
+    grid-auto-flow: row dense;
+	> figure {
+	  background: var(--accent);
+	  padding: 2rem;
+	  position: relative;
+	  overflow: hidden;
+	//   display: grid;
+	  &::before {
+		// for apsect ratio
+		content: "";
+		display: block;
+		padding-bottom: 100%;
+	  }
+	  .ui-gallery-img {
+		position: absolute;
+		max-width: 100%;
+		height: 100%;		
+	  }
+	}
+  }
+  @include media('>md') {
+	.ui-gallery-1 {
+		grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+	}
+  }
+
+
+  @include media('>xl') {
+	.ui-gallery-1 {
+		grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+	}
+  }
+

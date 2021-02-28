@@ -18,16 +18,19 @@ $vh : 0vh;
 @for $i from 1 through $heightCounter {.h-#{$i} { height:( $i + $px); }}
 @for $i from 3 through $heightCounter {.h-#{$i*5} { height:( $i*5 + $px); }}
 @for $i from 6 through $heightCounter {.h-#{$i*10} { height:( $i*10 + $px); }}
+@for $i from 2 through $heightCounter {.h-#{$i*100} { height:( $i*100 + $px); }}
 
 // Min Height
 @for $i from 1 through $heightCounter {.min-h-#{$i} { min-height:( $i + $px); }}
 @for $i from 3 through $heightCounter {.min-h-#{$i*5} { min-height:( $i*5 + $px); }}
 @for $i from 6 through $heightCounter {.min-h-#{$i*10} { min-height:( $i*10 + $px); }}
+@for $i from 2 through $heightCounter {.min-h-#{$i*100} { min-height:( $i*100 + $px); }}
 
 // Max Height
 @for $i from 1 through $heightCounter {.max-h-#{$i} { max-height:( $i + $px); }}
 @for $i from 3 through $heightCounter {.max-h-#{$i*5} { max-height:( $i*5 + $px); }}
 @for $i from 6 through $heightCounter {.max-h-#{$i*10} { max-height:( $i*10 + $px); }}
+@for $i from 2 through $heightCounter {.max-h-#{$i*100} { max-height:( $i*100 + $px); }}
 
 
 

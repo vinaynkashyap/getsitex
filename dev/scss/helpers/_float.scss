@@ -1,0 +1,31 @@
+/* 
+-------------------------------------------
+Floats
+-------------------------------------------
+*/
+
+
+:root {
+    --float-right:	right;
+    --float-left:	left;
+    --float-none:	none;
+}
+
+$float: (
+
+    float-r	var(--float-right),
+    float-l	var(--float-left),
+    float-n	var(--float-none)
+);
+
+
+@each $i in $float {.#{nth($i, 1)} {
+    float: #{nth($i, 2)};
+  }}
+  @include media('>=md') {@each $i in $float {.md-#{nth($i, 1)} {
+    float: #{nth($i, 2)};
+  
+  }}}
+  @include media('>=xl') {@each $i in $float {.xl-#{nth($i, 1)} {
+    float: #{nth($i, 2)};
+  }}}

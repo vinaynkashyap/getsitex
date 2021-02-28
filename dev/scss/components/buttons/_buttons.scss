@@ -13,11 +13,8 @@
     cursor: pointer;
     a {
         line-height: inherit;
-        color: currentColor;
+        // color: currentColor;
         font-weight: 400;
         text-decoration: none;
-    }
-    &.btn-rounded {
-        border-radius: 4px;
     }
 }

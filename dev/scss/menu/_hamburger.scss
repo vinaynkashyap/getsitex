@@ -20,6 +20,10 @@ button.hamburger {
     cursor: pointer;
 }
 
+.hamburger:focus {
+    outline: none;
+}
+
 .hamburger span {
     display: block;
     background: var(--white);

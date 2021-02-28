@@ -1,0 +1,11 @@
+// Needs latest Compass, add '@import "compass"' to your scss
+// Permalink - use to edit and share this gradient:
+// https://colorzilla.com/gradient-editor/#ed102f+0,fa4299+34,001be8+63
+@mixin gradient-1{
+    background: linear-gradient(to right,  rgba(237,16,47,1) 0%,rgba(250,66,153,1) 34%,rgba(71,0,232,1) 79%,rgba(0,27,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed102f', endColorstr='#001be8',GradientType=1 ); /* IE6-9 */
+}
+
+.gradient-1 {
+    @include gradient-1;
+}

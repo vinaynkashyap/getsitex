@@ -1,0 +1,15 @@
+.tab-layout-3 {
+    display: grid;        
+}
+
+@include media('>md') {
+    .tab-layout-3 {
+        // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));    
+        grid-template-columns: 1fr 1fr;
+        .tab-content.active {
+            grid-column-start: 1 ;
+            grid-column-end: -1 ;
+            order: 99;
+        }
+    }
+}

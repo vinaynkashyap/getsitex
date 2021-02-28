@@ -43,23 +43,3 @@
   }
   
   
-  
-  /* Start a new line */
-  .new-line {
-    display:block;
-    &::before { content: "\A";}
-  }
-  
-  @include media('>md') {
-    .md-new-line {
-      display:block;
-      &::before { content: "\A"; }
-    }
-  }
-
-  @include media('>xl') {
-    .xl-new-line {
-      display:block;
-      &::before { content: "\A"; }
-    }
-  }

@@ -1,0 +1,13 @@
+
+@include media(">md") {
+    .tab-layout-2 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+         .tab-button {
+             grid-column: 2/ -1;
+         }
+         .tab-content {
+             grid-column: 1/ -1;
+         }
+    }
+}

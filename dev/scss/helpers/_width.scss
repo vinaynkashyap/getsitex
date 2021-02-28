@@ -5,62 +5,67 @@ Width
 -------------------------------------------
 */
 
-$heightCounter : 10;
+$WidthCounter : 10;
 $px : 0px;
 $pc : 0%;
-$vh : 0vw;
+$vw : 0vw;
 .w-0 { width:0; }
 .w-a { width:auto; }
+.w-minc { width:min-content; }
+.w-maxc { width:max-content; }
+.w-fitc { width:fit-content; }
 
 // Units from 1 - 10 (1*10), 10 - 50 (5*10) , 60 - 100 (6*10)
 
-// Height
-@for $i from 1 through $heightCounter {.w-#{$i} { width:( $i + $px); }}
-@for $i from 3 through $heightCounter {.w-#{$i*5} { width:( $i*5 + $px); }}
-@for $i from 6 through $heightCounter {.w-#{$i*10} { width:( $i*10 + $px); }}
+// Width
+@for $i from 1 through $WidthCounter {.w-#{$i} { width:( $i + $px); }}
+@for $i from 3 through $WidthCounter {.w-#{$i*5} { width:( $i*5 + $px); }}
+@for $i from 6 through $WidthCounter {.w-#{$i*10} { width:( $i*10 + $px); }}
+@for $i from 3 through 20 {.w-#{$i*50} { width:( $i*50 + $px); }}
 
-// Min Height
-@for $i from 1 through $heightCounter {.min-w-#{$i} { min-width:( $i + $px); }}
-@for $i from 3 through $heightCounter {.min-w-#{$i*5} { min-width:( $i*5 + $px); }}
-@for $i from 6 through $heightCounter {.min-w-#{$i*10} { min-width:( $i*10 + $px); }}
+// Min Width
+@for $i from 1 through $WidthCounter {.min-w-#{$i} { min-width:( $i + $px); }}
+@for $i from 3 through $WidthCounter {.min-w-#{$i*5} { min-width:( $i*5 + $px); }}
+@for $i from 6 through $WidthCounter {.min-w-#{$i*10} { min-width:( $i*10 + $px); }}
+@for $i from 3 through 20 {.min-w-#{$i*50} { min-width:( $i*50 + $px); }}
 
-// Max Height
-@for $i from 1 through $heightCounter {.max-w-#{$i} { max-width:( $i + $px); }}
-@for $i from 3 through $heightCounter {.max-w-#{$i*5} { max-width:( $i*5 + $px); }}
-@for $i from 6 through $heightCounter {.max-w-#{$i*10} { max-width:( $i*10 + $px); }}
-
-
-
-
-// Height in %
-@for $i from 1 through $heightCounter {.w-#{$i}p { width:( $i + $pc); }}
-@for $i from 3 through $heightCounter {.w-#{$i*5}p { width:( $i*5 + $pc); }}
-@for $i from 6 through $heightCounter {.w-#{$i*10}p { width:( $i*10 + $pc); }}
-
-// Min Height in %
-@for $i from 1 through $heightCounter {.min-w-#{$i}p { min-width:( $i + $pc); }}
-@for $i from 3 through $heightCounter {.min-w-#{$i*5}p { min-width:( $i*5 + $pc); }}
-@for $i from 6 through $heightCounter {.min-w-#{$i*10}p { min-width:( $i*10 + $pc); }}
-
-// Max Height in %
-@for $i from 1 through $heightCounter {.max-w-#{$i}p { max-width:( $i + $pc); }}
-@for $i from 3 through $heightCounter {.max-w-#{$i*5}p { max-width:( $i*5 + $pc); }}
-@for $i from 6 through $heightCounter {.max-w-#{$i*10}p { max-width:( $i*10 + $pc); }}
+// Max Width
+@for $i from 1 through $WidthCounter {.max-w-#{$i} { max-width:( $i + $px); }}
+@for $i from 3 through $WidthCounter {.max-w-#{$i*5} { max-width:( $i*5 + $px); }}
+@for $i from 6 through $WidthCounter {.max-w-#{$i*10} { max-width:( $i*10 + $px); }}
+@for $i from 3 through 20 {.max-w-#{$i*50} { max-width:( $i*50 + $px); }}
 
 
 
+// Width in %
+@for $i from 1 through $WidthCounter {.w-#{$i}p { width:( $i + $pc); }}
+@for $i from 3 through $WidthCounter {.w-#{$i*5}p { width:( $i*5 + $pc); }}
+@for $i from 6 through $WidthCounter {.w-#{$i*10}p { width:( $i*10 + $pc); }}
 
-// Height in VH
-@for $i from 1 through $heightCounter {.w-#{$i}vh { width:( $i + $vh); }}
-@for $i from 3 through $heightCounter {.w-#{$i*5}vh { width:( $i*5 + $vh); }}
-@for $i from 6 through $heightCounter {.w-#{$i*10}vh { width:( $i*10 + $vh); }}
+// Min Width in %
+@for $i from 1 through $WidthCounter {.min-w-#{$i}p { min-width:( $i + $pc); }}
+@for $i from 3 through $WidthCounter {.min-w-#{$i*5}p { min-width:( $i*5 + $pc); }}
+@for $i from 6 through $WidthCounter {.min-w-#{$i*10}p { min-width:( $i*10 + $pc); }}
 
-// Min Height in VH
-@for $i from 1 through $heightCounter {.min-w-#{$i}vh { min-width:( $i + $vh); }}
-@for $i from 3 through $heightCounter {.min-w-#{$i*5}vh { min-width:( $i*5 + $vh); }}
-@for $i from 6 through $heightCounter {.min-w-#{$i*10}vh { min-width:( $i*10 + $vh); }}
+// Max Width in %
+@for $i from 1 through $WidthCounter {.max-w-#{$i}p { max-width:( $i + $pc); }}
+@for $i from 3 through $WidthCounter {.max-w-#{$i*5}p { max-width:( $i*5 + $pc); }}
+@for $i from 6 through $WidthCounter {.max-w-#{$i*10}p { max-width:( $i*10 + $pc); }}
 
-// Max Height in VH
-@for $i from 1 through $heightCounter {.max-w-#{$i}vh { max-width:( $i + $vh); }}
-@for $i from 3 through $heightCounter {.max-w-#{$i*5}vh { max-width:( $i*5 + $vh); }}
-@for $i from 6 through $heightCounter {.max-w-#{$i*10}vh { max-width:( $i*10 + $vh); }}
+
+
+
+// Width in vw
+@for $i from 1 through $WidthCounter {.w-#{$i}vw { width:( $i + $vw); }}
+@for $i from 3 through $WidthCounter {.w-#{$i*5}vw { width:( $i*5 + $vw); }}
+@for $i from 6 through $WidthCounter {.w-#{$i*10}vw { width:( $i*10 + $vw); }}
+
+// Min Width in vw
+@for $i from 1 through $WidthCounter {.min-w-#{$i}vw { min-width:( $i + $vw); }}
+@for $i from 3 through $WidthCounter {.min-w-#{$i*5}vw { min-width:( $i*5 + $vw); }}
+@for $i from 6 through $WidthCounter {.min-w-#{$i*10}vw { min-width:( $i*10 + $vw); }}
+
+// Max Width in vw
+@for $i from 1 through $WidthCounter {.max-w-#{$i}vw { max-width:( $i + $vw); }}
+@for $i from 3 through $WidthCounter {.max-w-#{$i*5}vw { max-width:( $i*5 + $vw); }}
+@for $i from 6 through $WidthCounter {.max-w-#{$i*10}vw { max-width:( $i*10 + $vw); }}

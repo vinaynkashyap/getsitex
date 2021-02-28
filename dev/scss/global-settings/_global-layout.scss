@@ -1,14 +1,11 @@
-section .container {
-    padding: 1rem;
-}
+// section .container {
+//     padding: 1rem 3rem;
+// }
 
-.boxed{
-    section {
+.container-boxed {
        display:grid;
        grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
-       .container{
+       .container {
            grid-column: 2 / 3;
        }
-
-    }
 }

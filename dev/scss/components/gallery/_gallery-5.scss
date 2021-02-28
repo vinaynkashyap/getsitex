@@ -1,0 +1,33 @@
+/* -------------------------------------------------
+// Full Width
+// ------------------------------------------------*/
+
+
+.ui-gallery-5 {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+	// grid-template-rows: repeat(auto-fit, minmax(180px, 1fr));
+	grid-template-rows: auto;
+	grid-gap: 1rem;
+	grid-auto-flow:row dense;
+	> figure {
+	  background: var(--accent);
+	  padding: 1rem;
+	  position: relative;
+	  max-height: 180px;
+	//   overflow: hidden;
+	  &::before {
+		// for apsect ratio
+		content: "";
+		display: block;
+		padding-bottom: 40%; /* Adjust Padding to change the height of grid image */
+	  }
+	  img {
+		position: absolute;
+		width: 100%;
+		height: 100%;		
+		object-fit: cover;	
+	  }
+	}
+  }
+  

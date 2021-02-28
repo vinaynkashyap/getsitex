@@ -1,0 +1,38 @@
+// .tab-area.tab-style-1 {
+//     // display: grid;
+//     background: var(--dark-1);
+//     .tab-button {
+//         background: #000;
+//         border-bottom: 1px solid var(--dark-2);
+//         a {
+//             display: block;
+//             padding: 1rem 2rem;
+//             text-decoration: none;
+//             font-size: 24px;
+//             color: #8f908b;
+//             font-weight: 400;
+//         }
+//     }
+//     .tab-content {
+//         display: none;
+//         background: var(--dark-2);
+//         padding: 2rem;
+//     }
+//     .tab-content.active {
+//         display: block;
+//     }
+// }
+
+// @include media(">md") {
+//     .tab-style-1 {
+//         .tab-panel {
+//             grid-template-columns: repeat(4, 1fr);
+//         }
+//         .tab-button {
+//             grid-column: 3/ -1;
+//         }
+//         .tab-content {
+//             grid-column: 1/ -1;
+//         }
+//     }
+// }
