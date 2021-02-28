@@ -8367,7 +8367,7 @@ figcaption {
 // -----------------------------------------------*/
 .ui-gallery-10 {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   grid-auto-rows: minmax(220px, auto);
   grid-auto-flow: dense; }
   .ui-gallery-10:before {
@@ -8388,7 +8388,15 @@ figcaption {
       height: 100%;
       object-fit: cover; }
 
+@media (min-width: 769px) {
+  .ui-gallery-10 {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); } }
+
 @media (min-width: 1201px) {
+  .ui-gallery-10 {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); } }
+
+@media (min-width: 1401px) {
   .ui-gallery-10 {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); } }
 

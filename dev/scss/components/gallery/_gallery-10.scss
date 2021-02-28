@@ -5,7 +5,7 @@
 
 .ui-gallery-10 {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
 	// grid-gap: 1px;
 	grid-auto-rows: minmax(220px, auto);
 	grid-auto-flow: dense;
@@ -31,7 +31,17 @@
 		}
 	}
 }
+@include media(">md") {
+	.ui-gallery-10 {
+		grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+	}
+}
 @include media(">xl") {
+	.ui-gallery-10 {
+		grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+	}
+}
+@include media(">xxl") {
 	.ui-gallery-10 {
 		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	}
