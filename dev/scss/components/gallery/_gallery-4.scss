@@ -4,33 +4,36 @@
 
 .ui-gallery-4 {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-	grid-template-rows: repeat(auto-fit, minmax(290px, 1fr));
-	grid-gap: 1rem;
-	grid-auto-flow:row dense;
+	grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+	grid-auto-rows: 264px;
 	> figure {
-	  background: var(--accent);
+	  background: black;
 	  padding: 1rem;
 	  position: relative;
-	//   overflow: hidden;
-	  &::before {
-		// for apsect ratio
-		content: "";
-		display: block;
-		padding-bottom: 150%; /* Adjust Padding to change the height of grid image */
-	  }
+	  overflow: hidden;
 	  img {
 		position: absolute;
-		width: 100%;
-		height: 100%;		
-		object-fit: cover;	
+		width: 100%;  
+		height: 100%;
+		object-fit: cover;		
 	  }
-	}
+	  figcaption {
+		  display: none;
+	  }
+	}	
   }
   
+  
+  @include media('>md') {
+	.ui-gallery-4 {
+		grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+		grid-auto-rows: 350px;
+	}
+  }
 
   @include media('>xl') {
 	.ui-gallery-4 {
-		grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		grid-auto-rows: 512px;
 	}
   }

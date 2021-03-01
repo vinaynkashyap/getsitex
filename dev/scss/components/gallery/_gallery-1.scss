@@ -1,10 +1,10 @@
-/* -------------------------------------------------
-// Metro grid gallery
-// -----------------------------------------------*/
-
+/* 
+-------------------------------------------------
+Metro grid gallery
+-----------------------------------------------
+*/
 
 .ui-gallery-1 {
-	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     grid-auto-flow: row dense;
 	> figure {
@@ -24,6 +24,10 @@
 		height: 100%;		
 		object-fit: cover;
 	  }
+	  figcaption {
+		  display: none;
+		
+	}
 	}
   }
 
@@ -32,7 +36,6 @@
 		grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
 	}
   }
-
 
   @include media('>xl') {
 	.ui-gallery-1 {

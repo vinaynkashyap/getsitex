@@ -1,0 +1,70 @@
+/* -------------------------------------------------
+// Grid gallery
+// -----------------------------------------------*/
+
+
+
+.ui-gallery-11 {	
+	display: grid;
+	grid-gap: 50px;
+	grid-column: repeat(12, 1fr) / repeat(12, 1fr);
+	// grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+	grid-auto-rows: minmax(180px, auto);
+	grid-auto-flow: dense;
+	position: relative;
+	&:before {
+		// position: absolute;
+		// content: "";
+		// height: 0;
+		// width: calc(100% - 30vw );
+		// height: calc(100% + 100px);
+		// margin: -50px 0 -50px 0;
+		// justify-self: center;
+		// grid-column: 1 / -1;
+		// grid-row: 1 / -1;
+		background-color: var(--accent);
+		z-index: 1;
+	}
+	> figure {
+		z-index: 10;
+		position: relative;
+		// &:first-child {
+		// 	grid-column: 1 / 1;
+		// 	grid-row: 1 / 1;
+		// }
+		&:nth-child(3n) {
+			grid-row: span 2;
+		}
+		/**
+			every 4th and 7th item takes up only 1 block (1 x 1),
+			to overwrite the previous 3n rule
+		  **/
+		// &:nth-child(4n),
+		// &:nth-child(7n) {
+		// 	grid-column: span 1;
+		// 	grid-row: span 1;
+		// }
+		/**
+			every 5th item takes up 2 blocks vertically (1 x 2),
+			also every 15th block will be a big one (2 x 2)
+		  **/
+		// &:nth-child(5n) {
+		// 	grid-column: span 2;
+		// 	grid-row: span 2;
+		// }
+		img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+		figcaption {
+			display: none;
+		}
+	}
+}
+@include media(">xl") {
+	.ui-gallery-11 {
+		// grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	}
+}

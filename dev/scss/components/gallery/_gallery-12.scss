@@ -1,0 +1,86 @@
+/* 
+-------------------------------------------------
+Metro grid gallery
+-----------------------------------------------
+*/
+
+.ui-gallery-12 {
+	display: grid;
+	// grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+	// grid-template-rows: repeat(auto-fit, minmax(90px, 1fr));
+	grid-auto-flow:  dense;
+	> figure {
+	  background: var(--dark);
+	  padding: 1rem;
+	  position: relative;
+	//   overflow: hidden;
+	//   &::before {
+	// 	// for apsect ratio
+	// 	content: "";
+	// 	display: block;
+	// 	padding-bottom: 100%; 
+	//   }
+	  img {
+		// position: absolute;
+		width: 100%;
+		height: 100%;		
+		object-fit: contain;	
+	  }
+      figcaption {
+                  display:none;
+      }
+	}
+  }
+
+  @include media('>md') {
+	.ui-gallery-12 {
+    row-gap:180px;
+    grid-template-columns: repeat(6, auto);
+    grid-auto-rows: minmax(200px, max-content);
+    justify-content: space-between;
+    align-items: start;    
+	> figure {
+	    background: var(--dark-1);
+	    padding: 2rem;
+	    position: relative; 
+      &::before {
+		// for apsect ratio
+		content: "";
+		display: block;
+		padding-bottom: 65%;
+	  }      
+	  img {
+        z-index: 10;
+		position: absolute;
+		width: 100%;
+		height: 100%;		
+		object-fit: cover;
+	  }
+      &:nth-child(2n) {
+        img {
+            width: auto;
+            height:auto;
+            object-fit: cover;
+        }
+    }
+}
+    }
+}
+
+//   @include media('>xl') {
+// 	.ui-gallery-12 {
+//         max-width: 900px;
+//         margin: 0 auto;
+// 		> figure {
+//             &:nth-child(2n) {
+              
+              
+//               img {
+//                   width: 100%;
+//               }
+//             }
+//         }
+// 	}
+// }
+
+

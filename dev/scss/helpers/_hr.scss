@@ -2,7 +2,7 @@
     width: 70%;
     border: 0;
     height: 2px;
-    margin-top: -2px;
+    // transform: translateY(-2px);
     position: relative;
     @include gradient-1;
 }

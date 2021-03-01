@@ -4,32 +4,36 @@
 
 .ui-gallery-3 {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-	grid-gap: 1rem;
-	grid-auto-flow:row dense;
+	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+	grid-auto-rows: 136px;
 	> figure {
-	  background: var(--accent);
+	  background: black;
 	  padding: 1rem;
 	  position: relative;
-	//   overflow: hidden;
-	  &::before {
-		// for apsect ratio
-		content: "";
-		display: block;
-		padding-bottom: 60%; /* Adjust Padding to change the height of grid image */
-	  }
+	  overflow: hidden;
 	  img {
 		position: absolute;
-		width: 100%;
-		height: 100%;		
-		object-fit: cover;	
+		width: 100%;  
+		height: 100%;
+		object-fit: cover;		
 	  }
-	}
+	  figcaption {
+		  display: none;
+	  }
+	}	
   }
   
+  
+  @include media('>md') {
+	.ui-gallery-3 {
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		grid-auto-rows: 180px;
+	}
+  }
 
   @include media('>xl') {
 	.ui-gallery-3 {
-		grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+		grid-auto-rows: 280px;
 	}
   }

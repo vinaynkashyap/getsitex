@@ -1,13 +1,14 @@
-/* -------------------------------------------------
-// Square grid gallery
-// -----------------------------------------------*/
+/* 
+-------------------------------------------------
+Square grid gallery
+-----------------------------------------------
+*/
 
 .ui-gallery-2 {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-	grid-gap: 1rem;
+	grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
 	> figure {
-	  background: var(--accent);
+	  background: black;
 	  padding: 1rem;
 	  position: relative;
 	  overflow: hidden;
@@ -16,19 +17,29 @@
 		content: "";
 		display: block;
 		padding-bottom: 100%;
+		grid-column: 1 / -1;
+		grid-row: 1 / -1;
 	  }
 	  img {
 		position: absolute;
-		width: 100%;
-		height: 100%;		
-		object-fit: cover;	
+		width: 100%;  
+		height: 100%;
+		object-fit: cover;		
 	  }
+	  figcaption {
+		  display: none;
+	  }
+	}	
+  }
+
+  @include media('>md') {
+	.ui-gallery-2 {
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 	}
   }
   
-
   @include media('>xl') {
 	.ui-gallery-2 {
-		grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-	}
-  }
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	} 
+}

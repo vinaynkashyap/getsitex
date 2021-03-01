@@ -26,7 +26,6 @@
 		&:nth-child(3n) {
 			grid-row: span 2;
 		}
-
 		/**
 			every 4th and 7th item takes up only 1 block (1 x 1),
 			to overwrite the previous 3n rule
@@ -36,7 +35,6 @@
 			grid-column: span 1;
 			grid-row: span 1;
 		}
-
 		/**
 			every 5th item takes up 2 blocks vertically (1 x 2),
 			also every 15th block will be a big one (2 x 2)

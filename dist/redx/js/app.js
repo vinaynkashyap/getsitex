@@ -19,9 +19,60 @@
 let navMain = document.getElementById('main-menu')
 let toggleButtonPrimary = document.getElementById('toggle-btn-primary')
 toggleButtonPrimary.addEventListener('click', () => {
-    toggleButtonPrimary.classList.toggle('active')
-    navMain.classList.toggle('active')
+  toggleButtonPrimary.classList.toggle('active')
+  navMain.classList.toggle('active')
 })
+
+
+// -----------------------------------------------
+// Swiper Sliders
+// -----------------------------------------------
+
+
+// Slider 1 -  Fullscreen
+// -----------------------------------------------
+
+const swiper = new Swiper('.ui-slider-1', {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  // using "ratio" endpoints
+  breakpoints: {
+    '@0.75': {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    '@1.00': {
+      slidesPerView: 1,
+      spaceBetween: 40,
+    },
+    '@1.50': {
+      slidesPerView: 1,
+      spaceBetween: 50,
+    },
+  },
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+
+
 
 
 // -----------------------------------------------

@@ -1,0 +1,43 @@
+// -----------------------------
+//  Troubleshoot CSS 
+// -----------------------------
+// The below code is not required for your site to function.
+
+.outline * {
+    outline: 1px solid pink;
+}
+
+// Debug Breakpoints
+// -------------------
+// 'xs': 480x,
+// 'sm': 576px,
+// 'md': 768px,
+// 'lg': 992px,
+// 'xl': 1200px,
+// '2xl': 1400px,
+
+// body {
+//     position: relative;
+// }
+// body:after {
+//     content: "gl";
+//     position: fixed;
+//     top: 0;
+//     right: 80px;
+//     font-size: 14px !important;
+//     font-weight: bolder;
+//     padding: 20px 10px !important;
+//     line-height: 0;
+//     z-index: 9999;
+//     background: violet;
+//     font-weight: 400;
+//     color: #fff;
+//     display: none;
+// }
+
+// @include media('>=xs') {body:after {content: "xs"; background: blueviolet;}}
+// @include media('>=sm') {body:after {content: "sm"; background: royalblue;}}
+// @include media('>=md') {body:after {content: "md"; background: gold;}}
+// @include media('>=lg') {body:after {content: "lg"; background: sandybrown;}}
+// @include media('>=xl') {body:after {content: "xl"; background: tomato;}}
+// @include media('>=xxl') {body:after {content: "2xl"; background: crimson;}}

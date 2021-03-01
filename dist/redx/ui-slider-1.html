@@ -11,6 +11,7 @@
     <link rel="icon" type="image/ico" href="favicon.ico" />
     <!-- Vendors CSS -->
     <!-- <link rel="stylesheet" href="css/vendors/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/demo-1.css" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -100,100 +101,32 @@
             <!-- Section 1 -->
             <section id="section-1" class="h-100p container-boxed">
                 <div class="container px-40 py-100">
-
-
-                    <div class="headline-block mt-100 mb-60">
-                        <h2> Metro Grid 1</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="#"> Repellendus</a> atque?</p>
-                    </div>
-
-                       <!-- Gallery -->
-                <div class="ui-gallery-7 grid gap-10 grid-col-12">
-
-                    <figure class="grid ">
-                        <img src="img/gallery/1.jpg" alt="Image 1">
-                        <figcaption>Image Caption</figcaption>
-                    </figure>
-                    <figure class="grid ">
-                        <img src="img/gallery/2.jpg" alt="Image 2">
-                        <figcaption>Image Caption</figcaption>
-                    </figure>
-                    <figure class="grid ">
-                        <img src="img/gallery/3.jpg" alt="Image 3">
-                        <figcaption>Image Caption</figcaption>
-                    </figure>
-                    <figure class="grid ">
-                        <img src="img/gallery/4.jpg" alt="Image 4">
-                        <figcaption>Image Caption</figcaption>
-                    </figure>
-                    <figure class="grid ">
-                        <img src="img/gallery/5.jpg" alt="Image 5">
-                        <figcaption>Image Caption</figcaption>
-                    </figure>
-                    <figure class="grid ">
-                        <img src="img/gallery/6.jpg" alt="Image 6">
-                        <figcaption>Image Caption</figcaption>
-                    </figure>
-                    <figure class="grid ">
-                        <img src="img/gallery/7.jpg" alt="Image 7">
-                        <figcaption>Image Caption</figcaption>
-                    </figure>
-                  
-                </div> 
-                <!-- /Gallery -->
-
-                <hr class="hr-1 my-100">
-
-
-
-
                     <div class="headline-block mb-60">
-                        <h2> Metro Grid 2</h2>
+                        <h2> Slider </h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="#"> Repellendus</a> atque?</p>
                     </div>
                     
-                    <!-- Gallery -->
-                     <div class="ui-gallery-1 grid grid-col-12 gap-10 mb-100 ">
-
-                        <figure class="grid md-row-span-2 md-col-span-2 ">
-                            <img src="img/gallery/1.jpg" alt="Image 1">
-                            <figcaption> 1 </figcaption>
-                        </figure>
-                        <figure class="grid md-row-start-3 md-col-start-1">
-                            <img src="img/gallery/2.jpg" alt="Image 2">
-                            <figcaption> 2</figcaption>
-                        </figure>
-                        <figure class="grid md-row-start-3 md-col-start-2">
-                            <img src="img/gallery/3.jpg" alt="Image 3">
-                            <figcaption> 3</figcaption>
-                        </figure>
-                        <figure class="grid  md-col-start-3">
-                            <img src="img/gallery/4.jpg" alt="Image 4">
-                            <figcaption> 4 </figcaption>
-                        </figure>
-                        <figure class="grid md-col-start-4 md-row-start-1 md-row-end-2 ">
-                            <img src="img/gallery/5.jpg" alt="Image 5">
-                            <figcaption> 5</figcaption>
-                        </figure>
-                        <figure class="grid md-row-start-2 md-row-end-5 md-col-span-2">
-                            <img src="img/gallery/6.jpg" alt="Image 6">
-                            <figcaption> 6</figcaption>
-                        </figure>
-                        <figure class="grid  md-row-start-1 md-row-end-3 md-col-span-2">
-                            <img src="img/gallery/7.jpg" alt="Image 7">
-                            <figcaption> 7</figcaption>
-                        </figure>
-                        <figure class="grid md-col-start-5 md-row-start-3">
-                            <img src="img/gallery/8.jpg" alt="Image 8">
-                            <figcaption> 8</figcaption>
-                        </figure>
-                        <figure class="grid md-col-start-6 md-row-start-3">
-                            <img src="img/gallery/9.jpg" alt="Image 9">
-                            <figcaption> 9</figcaption>
-                        </figure>               
-                    </div> 
-                    <!-- /Gallery -->
-                 
+                    <!-- Slider -->
+                    <div class="ui-slider-1 swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide bg-dark-2">Slide 1</div>
+                          <div class="swiper-slide bg-dark-2">Slide 2</div>
+                          <div class="swiper-slide bg-dark-2">Slide 3</div>
+                          ...
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                      
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                      
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                      </div>
+                    <!-- /slider -->
 
                 </div>
             </section>
@@ -217,6 +150,7 @@
     </main>
 
     <!-- Vendors JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- <script src="js/vendors/gsap.min.js"></script>
     <script src="js/vendors/ScrollToPlugin3.min.js"></script>
     <script src="js/vendors/swiper-bundle.min.js"></script> -->

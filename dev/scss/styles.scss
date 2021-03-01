@@ -1,4 +1,21 @@
+/*------------------------------------------------------------------
+
+ Theme Name: Redx - Multi-Purpose HTML Website Template 
+ Theme URI: http://graphitivity.com/templates/redx
+ Author: Vinay Kashyap
+ Author URI: http://graphitivity.com
+ Description: Launch and scale your website with the most flexible Multi-Purpose template.
+ Version: 1.0
+ License: Themeforest Split Licence
+ License URI: - 
+ Tags: MultiPurpose Theme
+ Text Domain: Multi-Purpose Theme
+
+ ------------------------------------------------------------------*/
+
+@import "base/reset";
 @import "_variables/all";
+@import "global-settings/all";
 @import "base/all";
 @import "skins/all";
 @import "helpers/all";
@@ -8,85 +25,3 @@
 @import 'header/all';
 @import 'menu/all';
 @import "helpers/display";
-
-* {
-    // outline: 1px solid pink;
-}
-
-.outline * {
-    outline: 1px solid pink;
-}
-
-
-
-// Debug code
-// -------------------
-// 'xs': 480x,
-// 'sm': 576px,
-// 'md': 768px,
-// 'lg': 992px,
-// 'xl': 1200px,
-// '2xl': 1400px,
-// .body {
-// position:relative;
-//   }
-body {
-    position: relative;
-}
-body:after {
-    content: "gl";
-    position: fixed;
-    top: 0;
-    right: 80px;
-    font-size: 14px !important;
-    font-weight: bolder;
-    padding: 20px 10px !important;
-    line-height: 0;
-    z-index: 9999;
-    background: violet;
-    font-weight: 400;
-    color: #fff;
-    display: none;
-}
-
-@include media('>=xs') {
-    body:after {
-        content: "xs";
-        background: blueviolet;
-    }
-}
-
-@include media('>=sm') {
-    body:after {
-        content: "sm";
-        background: royalblue;
-    }
-}
-
-@include media('>=md') {
-    body:after {
-        content: "md";
-        background: gold;
-    }
-}
-
-@include media('>=lg') {
-    body:after {
-        content: "lg";
-        background: sandybrown;
-    }
-}
-
-@include media('>=xl') {
-    body:after {
-        content: "xl";
-        background: tomato;
-    }
-}
-
-@include media('>=xxl') {
-    body:after {
-        content: "2xl";
-        background: crimson;
-    }
-}
