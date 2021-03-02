@@ -29,50 +29,25 @@ toggleButtonPrimary.addEventListener('click', () => {
 // -----------------------------------------------
 
 
-// Slider 1 -  Fullscreen
+// Slider 1 -  Simple boxed slider
 // -----------------------------------------------
 
-const swiper = new Swiper('.ui-slider-1', {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  // using "ratio" endpoints
-  breakpoints: {
-    '@0.75': {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-    '@1.00': {
-      slidesPerView: 1,
-      spaceBetween: 40,
-    },
-    '@1.50': {
-      slidesPerView: 1,
-      spaceBetween: 50,
-    },
-  },
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
+// Slider 2 - Fullscreen slider
+// -----------------------------------------------
 
-  // If we need pagination
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  spaceBetween: 30,
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
-
-  // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
   },
 });
-
-
-
 
 
 // -----------------------------------------------

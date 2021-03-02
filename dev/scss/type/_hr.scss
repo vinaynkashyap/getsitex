@@ -5,6 +5,12 @@
     // transform: translateY(-2px);
     position: relative;
     @include gradient-1;
+    &::before {
+        content: '';
+        width: 100%;
+        display: block;
+        clear: both;
+    }
 }
 
 // .hr-2 {

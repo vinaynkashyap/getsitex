@@ -7,8 +7,23 @@ Sliders
 -------------------------------------------
 */
 
-@import 'slider-1';
-// @import 'slider-2';
+.skin-dark{
+.swiper-button-prev,
+.swiper-pagination,
+.swiper-button-next {
+        color: var(--light-5);
+    }
+.swiper-pagination-bullet {
+background: var(--dark-1)
+} 
+.swiper-pagination-bullet-active {
+background: var(--accent)
+}
+}
+
+
+// @import 'slider-1';
+@import 'slider-2';
 // @import 'slider-3';
 // @import 'slider-4';
 // @import 'slider-5';

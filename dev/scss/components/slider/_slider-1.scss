@@ -1,4 +1,24 @@
+//  Simple Fade Slider
+
 .ui-slider-1 {
-    width: 600px;
-    height: 300px;
+    width: 380px;
+    height: 240px;
+    overflow: hidden;
+
 }
+
+@include media('>md'){
+    .ui-slider-1 {
+    width: 580px;
+    height: 340px;
+    }
+}
+@include media('>xl'){
+    .ui-slider-1 {
+    width: 940px;
+    height: 540px;
+    }
+}
+
+
+
