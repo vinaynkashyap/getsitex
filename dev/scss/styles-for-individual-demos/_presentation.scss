@@ -1,0 +1,11 @@
+.custom-cta-block {
+    padding: 2.5rem 2rem;
+    text-align: center;
+    margin-top: -5rem;
+    padding-top: 6rem;
+        
+    @include media('>md'){
+        margin-top: -7rem;
+        padding-top: 8rem;
+    }
+}

@@ -1,15 +1,27 @@
 .hr-1 {
-    width: 70%;
+    width: 100%;
     border: 0;
     height: 2px;
     // transform: translateY(-2px);
-    position: relative;
-    @include gradient-1;
+    position: relative;    
     &::before {
+        @include gradient-1;
         content: '';
-        width: 100%;
+        width: 70%;
         display: block;
         clear: both;
+        height: 2px;
+        position: absolute;
+    }
+    &.hr-right:before{
+        right: 0;
+    }
+    &.hr-left:before{
+        left: 0;
+    }
+    &.hr-center:before{
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 

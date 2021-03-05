@@ -1,0 +1,36 @@
+//-------------- Cards
+
+
+.ui-card {
+    // display: grid;
+    // justify-content: center;
+    // align-items: center;
+    display: inline-block;
+    text-align: center;
+    &.card-stacked{
+        // flex-direction: column;
+        // grid-auto-flow: row dense;        
+    }
+    
+    .card-media {
+        background-color: var(--white);
+        width: 60px;
+        height: 60px;        
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        border-radius: 4px;
+    }
+    .card-text {
+        // display: inline-block;
+    }
+
+
+    
+    @include media('>md'){
+        // margin-top: -7rem;
+        // padding-top: 8rem;
+    }
+}

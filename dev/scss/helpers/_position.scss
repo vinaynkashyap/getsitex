@@ -1,0 +1,25 @@
+/*
+---------------------------- Position
+*/
+
+.static {  position: static;}
+.sticky {  position: sticky;}
+.relative {  position: relative;}
+.absolute {  position: absolute;}
+.fixed {  position: fixed;}
+
+@include media('>md') {
+    .md-static {  position: static;}
+    .md-sticky {  position: sticky;}
+    .md-relative {  position: relative;}
+    .md-absolute {  position: absolute;}
+    .md-fixed {  position: fixed;}
+}
+
+@include media('>xl') {
+    .xl-static {  position: static;}
+    .xl-sticky {  position: sticky;}
+    .xl-relative {  position: relative;}
+    .xl-absolute {  position: absolute;}
+    .xl-fixed {  position: fixed;}
+}

@@ -69,3 +69,122 @@ $vw : 0vw;
 @for $i from 1 through $WidthCounter {.max-w-#{$i}vw { max-width:( $i + $vw); }}
 @for $i from 3 through $WidthCounter {.max-w-#{$i*5}vw { max-width:( $i*5 + $vw); }}
 @for $i from 6 through $WidthCounter {.max-w-#{$i*10}vw { max-width:( $i*10 + $vw); }}
+
+
+
+@include media('>md') {
+    
+// Width
+@for $i from 1 through $WidthCounter {.md-w-#{$i} { width:( $i + $px); }}
+@for $i from 3 through $WidthCounter {.md-w-#{$i*5} { width:( $i*5 + $px); }}
+@for $i from 6 through $WidthCounter {.md-w-#{$i*10} { width:( $i*10 + $px); }}
+@for $i from 3 through 20 {.md-w-#{$i*50} { width:( $i*50 + $px); }}
+
+// Min Width
+@for $i from 1 through $WidthCounter {.md-min-w-#{$i} { min-width:( $i + $px); }}
+@for $i from 3 through $WidthCounter {.md-min-w-#{$i*5} { min-width:( $i*5 + $px); }}
+@for $i from 6 through $WidthCounter {.md-min-w-#{$i*10} { min-width:( $i*10 + $px); }}
+@for $i from 3 through 20 {.md-min-w-#{$i*50} { min-width:( $i*50 + $px); }}
+
+// Max Width
+@for $i from 1 through $WidthCounter {.md-max-w-#{$i} { max-width:( $i + $px); }}
+@for $i from 3 through $WidthCounter {.md-max-w-#{$i*5} { max-width:( $i*5 + $px); }}
+@for $i from 6 through $WidthCounter {.md-max-w-#{$i*10} { max-width:( $i*10 + $px); }}
+@for $i from 3 through 20 {.md-max-w-#{$i*50} { max-width:( $i*50 + $px); }}
+
+
+
+// Width in %
+@for $i from 1 through $WidthCounter {.md-w-#{$i}p { width:( $i + $pc); }}
+@for $i from 3 through $WidthCounter {.md-w-#{$i*5}p { width:( $i*5 + $pc); }}
+@for $i from 6 through $WidthCounter {.md-w-#{$i*10}p { width:( $i*10 + $pc); }}
+
+// Min Width in %
+@for $i from 1 through $WidthCounter {.md-min-w-#{$i}p { min-width:( $i + $pc); }}
+@for $i from 3 through $WidthCounter {.md-min-w-#{$i*5}p { min-width:( $i*5 + $pc); }}
+@for $i from 6 through $WidthCounter {.md-min-w-#{$i*10}p { min-width:( $i*10 + $pc); }}
+
+// Max Width in %
+@for $i from 1 through $WidthCounter {.md-max-w-#{$i}p { max-width:( $i + $pc); }}
+@for $i from 3 through $WidthCounter {.md-max-w-#{$i*5}p { max-width:( $i*5 + $pc); }}
+@for $i from 6 through $WidthCounter {.md-max-w-#{$i*10}p { max-width:( $i*10 + $pc); }}
+
+
+
+
+// Width in vw
+@for $i from 1 through $WidthCounter {.md-w-#{$i}vw { width:( $i + $vw); }}
+@for $i from 3 through $WidthCounter {.md-w-#{$i*5}vw { width:( $i*5 + $vw); }}
+@for $i from 6 through $WidthCounter {.md-w-#{$i*10}vw { width:( $i*10 + $vw); }}
+
+// Min Width in vw
+@for $i from 1 through $WidthCounter {.md-min-w-#{$i}vw { min-width:( $i + $vw); }}
+@for $i from 3 through $WidthCounter {.md-min-w-#{$i*5}vw { min-width:( $i*5 + $vw); }}
+@for $i from 6 through $WidthCounter {.md-min-w-#{$i*10}vw { min-width:( $i*10 + $vw); }}
+
+// Max Width in vw
+@for $i from 1 through $WidthCounter {.md-max-w-#{$i}vw { max-width:( $i + $vw); }}
+@for $i from 3 through $WidthCounter {.md-max-w-#{$i*5}vw { max-width:( $i*5 + $vw); }}
+@for $i from 6 through $WidthCounter {.md-max-w-#{$i*10}vw { max-width:( $i*10 + $vw); }}
+
+}
+
+
+
+
+@include media('>xl') {
+    
+    // Width
+    @for $i from 1 through $WidthCounter {.xl-w-#{$i} { width:( $i + $px); }}
+    @for $i from 3 through $WidthCounter {.xl-w-#{$i*5} { width:( $i*5 + $px); }}
+    @for $i from 6 through $WidthCounter {.xl-w-#{$i*10} { width:( $i*10 + $px); }}
+    @for $i from 3 through 20 {.xl-w-#{$i*50} { width:( $i*50 + $px); }}
+    
+    // Min Width
+    @for $i from 1 through $WidthCounter {.xl-min-w-#{$i} { min-width:( $i + $px); }}
+    @for $i from 3 through $WidthCounter {.xl-min-w-#{$i*5} { min-width:( $i*5 + $px); }}
+    @for $i from 6 through $WidthCounter {.xl-min-w-#{$i*10} { min-width:( $i*10 + $px); }}
+    @for $i from 3 through 20 {.xl-min-w-#{$i*50} { min-width:( $i*50 + $px); }}
+    
+    // Max Width
+    @for $i from 1 through $WidthCounter {.xl-max-w-#{$i} { max-width:( $i + $px); }}
+    @for $i from 3 through $WidthCounter {.xl-max-w-#{$i*5} { max-width:( $i*5 + $px); }}
+    @for $i from 6 through $WidthCounter {.xl-max-w-#{$i*10} { max-width:( $i*10 + $px); }}
+    @for $i from 3 through 20 {.xl-max-w-#{$i*50} { max-width:( $i*50 + $px); }}
+    
+    
+    
+    // Width in %
+    @for $i from 1 through $WidthCounter {.xl-w-#{$i}p { width:( $i + $pc); }}
+    @for $i from 3 through $WidthCounter {.xl-w-#{$i*5}p { width:( $i*5 + $pc); }}
+    @for $i from 6 through $WidthCounter {.xl-w-#{$i*10}p { width:( $i*10 + $pc); }}
+    
+    // Min Width in %
+    @for $i from 1 through $WidthCounter {.xl-min-w-#{$i}p { min-width:( $i + $pc); }}
+    @for $i from 3 through $WidthCounter {.xl-min-w-#{$i*5}p { min-width:( $i*5 + $pc); }}
+    @for $i from 6 through $WidthCounter {.xl-min-w-#{$i*10}p { min-width:( $i*10 + $pc); }}
+    
+    // Max Width in %
+    @for $i from 1 through $WidthCounter {.xl-max-w-#{$i}p { max-width:( $i + $pc); }}
+    @for $i from 3 through $WidthCounter {.xl-max-w-#{$i*5}p { max-width:( $i*5 + $pc); }}
+    @for $i from 6 through $WidthCounter {.xl-max-w-#{$i*10}p { max-width:( $i*10 + $pc); }}
+    
+    
+    
+    
+    // Width in vw
+    @for $i from 1 through $WidthCounter {.xl-w-#{$i}vw { width:( $i + $vw); }}
+    @for $i from 3 through $WidthCounter {.xl-w-#{$i*5}vw { width:( $i*5 + $vw); }}
+    @for $i from 6 through $WidthCounter {.xl-w-#{$i*10}vw { width:( $i*10 + $vw); }}
+    
+    // Min Width in vw
+    @for $i from 1 through $WidthCounter {.xl-min-w-#{$i}vw { min-width:( $i + $vw); }}
+    @for $i from 3 through $WidthCounter {.xl-min-w-#{$i*5}vw { min-width:( $i*5 + $vw); }}
+    @for $i from 6 through $WidthCounter {.xl-min-w-#{$i*10}vw { min-width:( $i*10 + $vw); }}
+    
+    // Max Width in vw
+    @for $i from 1 through $WidthCounter {.xl-max-w-#{$i}vw { max-width:( $i + $vw); }}
+    @for $i from 3 through $WidthCounter {.xl-max-w-#{$i*5}vw { max-width:( $i*5 + $vw); }}
+    @for $i from 6 through $WidthCounter {.xl-max-w-#{$i*10}vw { max-width:( $i*10 + $vw); }}
+    
+    }

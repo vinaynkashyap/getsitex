@@ -5,7 +5,10 @@ margin
 -------------------------------------------
 */
 $marginCounter : 10;
-$unit : 0px;
+$px : 0px;
+$p : 0%;
+
+
 .m-0 { margin:0; }
 .mt-0 { margin-top:0; }
 .mr-0 { margin-right:0; }
@@ -30,7 +33,7 @@ Margin Classes
 ------------------------------------
 
 
----------------- 1 * 10
+---------------- 1 - 10 (x1)
 .m-1 
 .m-2 
 .m-3 
@@ -41,7 +44,7 @@ Margin Classes
 .m-8 
 .m-9 
 .m-10
----------------- 5 * 10
+---------------- 15 - 50 (x5)
 .m-15
 .m-20
 .m-25
@@ -50,7 +53,7 @@ Margin Classes
 .m-40
 .m-45
 .m-50
----------------- 6 * 10
+---------------- 60 - 100 (x10)
 .m-60
 .m-70
 .m-80
@@ -60,35 +63,89 @@ Margin Classes
 */
 
 // margin
-@for $i from 1 through $marginCounter {.m-#{$i} { margin:( $i + $unit); }}
-@for $i from 3 through $marginCounter {.m-#{$i*5} { margin:( $i*5 + $unit); }}
-@for $i from 6 through $marginCounter {.m-#{$i*10} { margin:( $i*10 + $unit); }}
+@for $i from 1 through $marginCounter {.m-#{$i} { margin:( $i + $px); }}
+@for $i from 3 through $marginCounter {.m-#{$i*5} { margin:( $i*5 + $px); }}
+@for $i from 6 through $marginCounter {.m-#{$i*10} { margin:( $i*10 + $px); }}
 // margin Top
-@for $i from 1 through $marginCounter {.mt-#{$i} { margin-top:( $i + $unit); }}
-@for $i from 3 through $marginCounter {.mt-#{$i*5} { margin-top:( 5 * $i + $unit); }}
-@for $i from 6 through $marginCounter {.mt-#{$i*10} { margin-top:( 10 * $i + $unit); }}
+@for $i from 1 through $marginCounter {.mt-#{$i} { margin-top:( $i + $px); }}
+@for $i from 3 through $marginCounter {.mt-#{$i*5} { margin-top:( 5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.mt-#{$i*10} { margin-top:( 10 * $i + $px); }}
 // //  margin Right
-@for $i from 1 through $marginCounter {.mr-#{$i} { margin-right:( $i + $unit); }}
-@for $i from 3 through $marginCounter {.mr-#{$i*5} { margin-right:( 5 * $i + $unit); }}
-@for $i from 6 through $marginCounter {.mr-#{$i*10} { margin-right:( 10 * $i + $unit); }}
+@for $i from 1 through $marginCounter {.mr-#{$i} { margin-right:( $i + $px); }}
+@for $i from 3 through $marginCounter {.mr-#{$i*5} { margin-right:( 5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.mr-#{$i*10} { margin-right:( 10 * $i + $px); }}
 // //  margin Bottom
-@for $i from 1 through $marginCounter {.mb-#{$i} { margin-bottom:( $i + $unit); }}
-@for $i from 3 through $marginCounter {.mb-#{$i*5} { margin-bottom:( 5 * $i + $unit); }}
-@for $i from 6 through $marginCounter {.mb-#{$i*10} { margin-bottom:( 10 * $i + $unit); }}
+@for $i from 1 through $marginCounter {.mb-#{$i} { margin-bottom:( $i + $px); }}
+@for $i from 3 through $marginCounter {.mb-#{$i*5} { margin-bottom:( 5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.mb-#{$i*10} { margin-bottom:( 10 * $i + $px); }}
 // //  margin Left
-@for $i from 1 through $marginCounter {.ml-#{$i} { margin-left:( $i + $unit); }}
-@for $i from 3 through $marginCounter {.ml-#{$i*5} { margin-left:( 5 * $i + $unit); }}
-@for $i from 6 through $marginCounter {.ml-#{$i*10} { margin-left:( 10 * $i + $unit); }}
+@for $i from 1 through $marginCounter {.ml-#{$i} { margin-left:( $i + $px); }}
+@for $i from 3 through $marginCounter {.ml-#{$i*5} { margin-left:( 5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.ml-#{$i*10} { margin-left:( 10 * $i + $px); }}
 // //  margin X-axis
-@for $i from 1 through $marginCounter {.mx-#{$i} { margin-left:( $i + $unit); margin-right:( $i + $unit); }}
-@for $i from 3 through $marginCounter {.mx-#{$i*5} { margin-left:( 5 * $i + $unit); margin-right:( 5 * $i + $unit); }}
-@for $i from 6 through $marginCounter {.mx-#{$i*10} { margin-left:( 10 * $i + $unit); margin-right:( 10 * $i + $unit);}}
+@for $i from 1 through $marginCounter {.mx-#{$i} { margin-left:( $i + $px); margin-right:( $i + $px); }}
+@for $i from 3 through $marginCounter {.mx-#{$i*5} { margin-left:( 5 * $i + $px); margin-right:( 5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.mx-#{$i*10} { margin-left:( 10 * $i + $px); margin-right:( 10 * $i + $px);}}
 // //  margin Y-axis
-@for $i from 1 through $marginCounter {.my-#{$i} { margin-top:( $i + $unit); margin-bottom:( $i + $unit); }}
-@for $i from 3 through $marginCounter {.my-#{$i*5} { margin-top:( 5 * $i + $unit); margin-bottom:( 5 * $i + $unit); }}
-@for $i from 6 through $marginCounter {.my-#{$i*10} { margin-top:( 10 * $i + $unit); margin-bottom:( 10 * $i + $unit);}}
+@for $i from 1 through $marginCounter {.my-#{$i} { margin-top:( $i + $px); margin-bottom:( $i + $px); }}
+@for $i from 3 through $marginCounter {.my-#{$i*5} { margin-top:( 5 * $i + $px); margin-bottom:( 5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.my-#{$i*10} { margin-top:( 10 * $i + $px); margin-bottom:( 10 * $i + $px);}}
 
-//  Margins for mobile device
+
+
+
+//------------- Negative Margins
+@for $i from 1 through $marginCounter {.mt-minus-#{$i} { margin-top:( -$i + $px); }}
+@for $i from 3 through $marginCounter {.mt-minus-#{$i*5} { margin-top:( -5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.mt-minus-#{$i*10} { margin-top:( -10 * $i + $px); }}
+// //  margin Right
+@for $i from 1 through $marginCounter {.mr-minus-#{$i} { margin-right:( -$i + $px); }}
+@for $i from 3 through $marginCounter {.mr-minus-#{$i*5} { margin-right:( -5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.mr-minus-#{$i*10} { margin-right:( -10 * $i + $px); }}
+// //  margin Bottom
+@for $i from 1 through $marginCounter {.mb-minus-#{$i} { margin-bottom:( -$i + $px); }}
+@for $i from 3 through $marginCounter {.mb-minus-#{$i*5} { margin-bottom:( -5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.mb-minus-#{$i*10} { margin-bottom:( -10 * $i + $px); }}
+// //  margin Left
+@for $i from 1 through $marginCounter {.ml-minus-#{$i} { margin-left:( -$i + $px); }}
+@for $i from 3 through $marginCounter {.ml-minus-#{$i*5} { margin-left:( -5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.ml-minus-#{$i*10} { margin-left:( -10 * $i + $px); }}
+
+
+//------------- Negative Margins
+@for $i from 1 through $marginCounter {.mt-minus-#{$i+p} { margin-top:( -$i + $p); }}
+@for $i from 3 through $marginCounter {.mt-minus-#{$i*5+p} { margin-top:( -5 * $i + $p); }}
+@for $i from 6 through $marginCounter {.mt-minus-#{$i*10+p} { margin-top:( -10 * $i + $p); }}
+
+
+// //  margin Right
+@for $i from 1 through $marginCounter {.mr-minus-#{$i+p} { margin-right:( -$i + $p); }}
+@for $i from 3 through $marginCounter {.mr-minus-#{$i*5+p} { margin-right:( -5 * $i + $p); }}
+@for $i from 6 through $marginCounter {.mr-minus-#{$i*10+p} { margin-right:( -10 * $i + $p); }}
+// //  margin Bottom
+@for $i from 1 through $marginCounter {.mb-minus-#{$i+p} { margin-bottom:( -$i + $p); }}
+@for $i from 3 through $marginCounter {.mb-minus-#{$i*5+p} { margin-bottom:( -5 * $i + $p); }}
+@for $i from 6 through $marginCounter {.mb-minus-#{$i*10+p} { margin-bottom:( -10 * $i + $p); }}
+// //  margin Left
+@for $i from 1 through $marginCounter {.ml-minus-#{$i+p} { margin-left:( -$i + $p); }}
+@for $i from 3 through $marginCounter {.ml-minus-#{$i*5+p} { margin-left:( -5 * $i + $p); }}
+@for $i from 6 through $marginCounter {.ml-minus-#{$i*10+p} { margin-left:( -10 * $i + $p); }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//------------  Margins for mobile device
 @include media('>md'){
 .md-m-0 { margin:0; }
 .md-mt-0 { margin-top:0; }
@@ -109,33 +166,73 @@ Margin Classes
 // margin from 1 - 10 (1*10), 10 - 50 (5*10) , 60 - 100 (6*10)
 
 // margin
-@for $i from 1 through $marginCounter {.md-m-#{$i} { margin:( $i + $unit); }}
-@for $i from 3 through $marginCounter {.md-m-#{$i*5} { margin:( $i*5 + $unit); }}
-@for $i from 6 through $marginCounter {.md-m-#{$i*10} { margin:( $i*10 + $unit); }}
+@for $i from 1 through $marginCounter {.md-m-#{$i} { margin:( $i + $px); }}
+@for $i from 3 through $marginCounter {.md-m-#{$i*5} { margin:( $i*5 + $px); }}
+@for $i from 6 through $marginCounter {.md-m-#{$i*10} { margin:( $i*10 + $px); }}
 // margin Top
-@for $i from 1 through $marginCounter {.md-mt-#{$i} { margin-top:( $i + $unit); }}
-@for $i from 3 through $marginCounter {.md-mt-#{$i*5} { margin-top:( 5 * $i + $unit); }}
-@for $i from 6 through $marginCounter {.md-mt-#{$i*10} { margin-top:( 10 * $i + $unit); }}
+@for $i from 1 through $marginCounter {.md-mt-#{$i} { margin-top:( $i + $px); }}
+@for $i from 3 through $marginCounter {.md-mt-#{$i*5} { margin-top:( 5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.md-mt-#{$i*10} { margin-top:( 10 * $i + $px); }}
 // //  margin Right
-@for $i from 1 through $marginCounter {.md-mr-#{$i} { margin-right:( $i + $unit); }}
-@for $i from 3 through $marginCounter {.md-mr-#{$i*5} { margin-right:( 5 * $i + $unit); }}
-@for $i from 6 through $marginCounter {.md-mr-#{$i*10} { margin-right:( 10 * $i + $unit); }}
+@for $i from 1 through $marginCounter {.md-mr-#{$i} { margin-right:( $i + $px); }}
+@for $i from 3 through $marginCounter {.md-mr-#{$i*5} { margin-right:( 5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.md-mr-#{$i*10} { margin-right:( 10 * $i + $px); }}
 // //  margin Bottom
-@for $i from 1 through $marginCounter {.md-mb-#{$i} { margin-bottom:( $i + $unit); }}
-@for $i from 3 through $marginCounter {.md-mb-#{$i*5} { margin-bottom:( 5 * $i + $unit); }}
-@for $i from 6 through $marginCounter {.md-mb-#{$i*10} { margin-bottom:( 10 * $i + $unit); }}
+@for $i from 1 through $marginCounter {.md-mb-#{$i} { margin-bottom:( $i + $px); }}
+@for $i from 3 through $marginCounter {.md-mb-#{$i*5} { margin-bottom:( 5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.md-mb-#{$i*10} { margin-bottom:( 10 * $i + $px); }}
 // //  margin Left
-@for $i from 1 through $marginCounter {.md-ml-#{$i} { margin-left:( $i + $unit); }}
-@for $i from 3 through $marginCounter {.md-ml-#{$i*5} { margin-left:( 5 * $i + $unit); }}
-@for $i from 6 through $marginCounter {.md-ml-#{$i*10} { margin-left:( 10 * $i + $unit); }}
+@for $i from 1 through $marginCounter {.md-ml-#{$i} { margin-left:( $i + $px); }}
+@for $i from 3 through $marginCounter {.md-ml-#{$i*5} { margin-left:( 5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.md-ml-#{$i*10} { margin-left:( 10 * $i + $px); }}
 // //  margin X-axis
-@for $i from 1 through $marginCounter {.md-mx-#{$i} { margin-left:( $i + $unit); margin-right:( $i + $unit); }}
-@for $i from 3 through $marginCounter {.md-mx-#{$i*5} { margin-left:( 5 * $i + $unit); margin-right:( 5 * $i + $unit); }}
-@for $i from 6 through $marginCounter {.md-mx-#{$i*10} { margin-left:( 10 * $i + $unit); margin-right:( 10 * $i + $unit);}}
+@for $i from 1 through $marginCounter {.md-mx-#{$i} { margin-left:( $i + $px); margin-right:( $i + $px); }}
+@for $i from 3 through $marginCounter {.md-mx-#{$i*5} { margin-left:( 5 * $i + $px); margin-right:( 5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.md-mx-#{$i*10} { margin-left:( 10 * $i + $px); margin-right:( 10 * $i + $px);}}
 // //  margin Y-axis
-@for $i from 1 through $marginCounter {.md-my-#{$i} { margin-top:( $i + $unit); margin-bottom:( $i + $unit); }}
-@for $i from 3 through $marginCounter {.md-my-#{$i*5} { margin-top:( 5 * $i + $unit); margin-bottom:( 5 * $i + $unit); }}
-@for $i from 6 through $marginCounter {.md-my-#{$i*10} { margin-top:( 10 * $i + $unit); margin-bottom:( 10 * $i + $unit);}}
+@for $i from 1 through $marginCounter {.md-my-#{$i} { margin-top:( $i + $px); margin-bottom:( $i + $px); }}
+@for $i from 3 through $marginCounter {.md-my-#{$i*5} { margin-top:( 5 * $i + $px); margin-bottom:( 5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.md-my-#{$i*10} { margin-top:( 10 * $i + $px); margin-bottom:( 10 * $i + $px);}}
+
+
+
+//------------- Negative Margins
+@for $i from 1 through $marginCounter {.md-mt-minus-#{$i} { margin-top:( -$i + $px); }}
+@for $i from 3 through $marginCounter {.md-mt-minus-#{$i*5} { margin-top:( -5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.md-mt-minus-#{$i*10} { margin-top:( -10 * $i + $px); }}
+// //  margin Right
+@for $i from 1 through $marginCounter {.md-mr-minus-#{$i} { margin-right:( -$i + $px); }}
+@for $i from 3 through $marginCounter {.md-mr-minus-#{$i*5} { margin-right:( -5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.md-mr-minus-#{$i*10} { margin-right:( -10 * $i + $px); }}
+// //  margin Bottom
+@for $i from 1 through $marginCounter {.md-mb-minus-#{$i} { margin-bottom:( -$i + $px); }}
+@for $i from 3 through $marginCounter {.md-mb-minus-#{$i*5} { margin-bottom:( -5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.md-mb-minus-#{$i*10} { margin-bottom:( -10 * $i + $px); }}
+// //  margin Left
+@for $i from 1 through $marginCounter {.md-ml-minus-#{$i} { margin-left:( -$i + $px); }}
+@for $i from 3 through $marginCounter {.md-ml-minus-#{$i*5} { margin-left:( -5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.md-ml-minus-#{$i*10} { margin-left:( -10 * $i + $px); }}
+
+
+//------------- Negative Margins
+@for $i from 1 through $marginCounter {.md-mt-minus-#{$i+p} { margin-top:( -$i + $p); }}
+@for $i from 3 through $marginCounter {.md-mt-minus-#{$i*5+p} { margin-top:( -5 * $i + $p); }}
+@for $i from 6 through $marginCounter {.md-mt-minus-#{$i*10+p} { margin-top:( -10 * $i + $p); }}
+// //  margin Right
+@for $i from 1 through $marginCounter {.md-mr-minus-#{$i+p} { margin-right:( -$i + $p); }}
+@for $i from 3 through $marginCounter {.md-mr-minus-#{$i*5+p} { margin-right:( -5 * $i + $p); }}
+@for $i from 6 through $marginCounter {.md-mr-minus-#{$i*10+p} { margin-right:( -10 * $i + $p); }}
+// //  margin Bottom
+@for $i from 1 through $marginCounter {.md-mb-minus-#{$i+p} { margin-bottom:( -$i + $p); }}
+@for $i from 3 through $marginCounter {.md-mb-minus-#{$i*5+p} { margin-bottom:( -5 * $i + $p); }}
+@for $i from 6 through $marginCounter {.md-mb-minus-#{$i*10+p} { margin-bottom:( -10 * $i + $p); }}
+// //  margin Left
+@for $i from 1 through $marginCounter {.md-ml-minus-#{$i+p} { margin-left:( -$i + $p); }}
+@for $i from 3 through $marginCounter {.md-ml-minus-#{$i*5+p} { margin-left:( -5 * $i + $p); }}
+@for $i from 6 through $marginCounter {.md-ml-minus-#{$i*10+p} { margin-left:( -10 * $i + $p); }}
+
+
+
 }
 
 
@@ -160,31 +257,70 @@ Margin Classes
 // margin from 1 - 10 (1*10), 10 - 50 (5*10) , 60 - 100 (6*10)
 
 // margin
-@for $i from 1 through $marginCounter {.xl-m-#{$i} { margin:( $i + $unit); }}
-@for $i from 3 through $marginCounter {.xl-m-#{$i*5} { margin:( $i*5 + $unit); }}
-@for $i from 6 through $marginCounter {.xl-m-#{$i*10} { margin:( $i*10 + $unit); }}
+@for $i from 1 through $marginCounter {.xl-m-#{$i} { margin:( $i + $px); }}
+@for $i from 3 through $marginCounter {.xl-m-#{$i*5} { margin:( $i*5 + $px); }}
+@for $i from 6 through $marginCounter {.xl-m-#{$i*10} { margin:( $i*10 + $px); }}
 // margin Top
-@for $i from 1 through $marginCounter {.xl-mt-#{$i} { margin-top:( $i + $unit); }}
-@for $i from 3 through $marginCounter {.xl-mt-#{$i*5} { margin-top:( 5 * $i + $unit); }}
-@for $i from 6 through $marginCounter {.xl-mt-#{$i*10} { margin-top:( 10 * $i + $unit); }}
+@for $i from 1 through $marginCounter {.xl-mt-#{$i} { margin-top:( $i + $px); }}
+@for $i from 3 through $marginCounter {.xl-mt-#{$i*5} { margin-top:( 5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.xl-mt-#{$i*10} { margin-top:( 10 * $i + $px); }}
 // //  margin Right
-@for $i from 1 through $marginCounter {.xl-mr-#{$i} { margin-right:( $i + $unit); }}
-@for $i from 3 through $marginCounter {.xl-mr-#{$i*5} { margin-right:( 5 * $i + $unit); }}
-@for $i from 6 through $marginCounter {.xl-mr-#{$i*10} { margin-right:( 10 * $i + $unit); }}
+@for $i from 1 through $marginCounter {.xl-mr-#{$i} { margin-right:( $i + $px); }}
+@for $i from 3 through $marginCounter {.xl-mr-#{$i*5} { margin-right:( 5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.xl-mr-#{$i*10} { margin-right:( 10 * $i + $px); }}
 // //  margin Bottom
-@for $i from 1 through $marginCounter {.xl-mb-#{$i} { margin-bottom:( $i + $unit); }}
-@for $i from 3 through $marginCounter {.xl-mb-#{$i*5} { margin-bottom:( 5 * $i + $unit); }}
-@for $i from 6 through $marginCounter {.xl-mb-#{$i*10} { margin-bottom:( 10 * $i + $unit); }}
+@for $i from 1 through $marginCounter {.xl-mb-#{$i} { margin-bottom:( $i + $px); }}
+@for $i from 3 through $marginCounter {.xl-mb-#{$i*5} { margin-bottom:( 5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.xl-mb-#{$i*10} { margin-bottom:( 10 * $i + $px); }}
 // //  margin Left
-@for $i from 1 through $marginCounter {.xl-ml-#{$i} { margin-left:( $i + $unit); }}
-@for $i from 3 through $marginCounter {.xl-ml-#{$i*5} { margin-left:( 5 * $i + $unit); }}
-@for $i from 6 through $marginCounter {.xl-ml-#{$i*10} { margin-left:( 10 * $i + $unit); }}
+@for $i from 1 through $marginCounter {.xl-ml-#{$i} { margin-left:( $i + $px); }}
+@for $i from 3 through $marginCounter {.xl-ml-#{$i*5} { margin-left:( 5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.xl-ml-#{$i*10} { margin-left:( 10 * $i + $px); }}
 // //  margin X-axis
-@for $i from 1 through $marginCounter {.xl-mx-#{$i} { margin-left:( $i + $unit); margin-right:( $i + $unit); }}
-@for $i from 3 through $marginCounter {.xl-mx-#{$i*5} { margin-left:( 5 * $i + $unit); margin-right:( 5 * $i + $unit); }}
-@for $i from 6 through $marginCounter {.xl-mx-#{$i*10} { margin-left:( 10 * $i + $unit); margin-right:( 10 * $i + $unit);}}
+@for $i from 1 through $marginCounter {.xl-mx-#{$i} { margin-left:( $i + $px); margin-right:( $i + $px); }}
+@for $i from 3 through $marginCounter {.xl-mx-#{$i*5} { margin-left:( 5 * $i + $px); margin-right:( 5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.xl-mx-#{$i*10} { margin-left:( 10 * $i + $px); margin-right:( 10 * $i + $px);}}
 // //  margin Y-axis
-@for $i from 1 through $marginCounter {.xl-my-#{$i} { margin-top:( $i + $unit); margin-bottom:( $i + $unit); }}
-@for $i from 3 through $marginCounter {.xl-my-#{$i*5} { margin-top:( 5 * $i + $unit); margin-bottom:( 5 * $i + $unit); }}
-@for $i from 6 through $marginCounter {.xl-my-#{$i*10} { margin-top:( 10 * $i + $unit); margin-bottom:( 10 * $i + $unit);}}
+@for $i from 1 through $marginCounter {.xl-my-#{$i} { margin-top:( $i + $px); margin-bottom:( $i + $px); }}
+@for $i from 3 through $marginCounter {.xl-my-#{$i*5} { margin-top:( 5 * $i + $px); margin-bottom:( 5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.xl-my-#{$i*10} { margin-top:( 10 * $i + $px); margin-bottom:( 10 * $i + $px);}}
+
+
+//------------- Negative Margins
+@for $i from 1 through $marginCounter {.xl-mt-minus-#{$i+p} { margin-top:( -$i + $px); }}
+@for $i from 3 through $marginCounter {.xl-mt-minus-#{$i*5+p} { margin-top:( -5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.xl-mt-minus-#{$i*10+p} { margin-top:( -10 * $i + $px); }}
+// //  margin Right
+@for $i from 1 through $marginCounter {.xl-mr-minus-#{$i+p} { margin-right:( -$i + $px); }}
+@for $i from 3 through $marginCounter {.xl-mr-minus-#{$i*5+p} { margin-right:( -5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.xl-mr-minus-#{$i*10+p} { margin-right:( -10 * $i + $px); }}
+// //  margin Bottom
+@for $i from 1 through $marginCounter {.xl-mb-minus-#{$i+p} { margin-bottom:( -$i + $px); }}
+@for $i from 3 through $marginCounter {.xl-mb-minus-#{$i*5+p} { margin-bottom:( -5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.xl-mb-minus-#{$i*10+p} { margin-bottom:( -10 * $i + $px); }}
+// //  margin Left
+@for $i from 1 through $marginCounter {.xl-ml-minus-#{$i+p} { margin-left:( -$i + $px); }}
+@for $i from 3 through $marginCounter {.xl-ml-minus-#{$i*5+p} { margin-left:( -5 * $i + $px); }}
+@for $i from 6 through $marginCounter {.xl-ml-minus-#{$i*10+p} { margin-left:( -10 * $i + $px); }}
+
+
+//------------- Negative Margins
+@for $i from 1 through $marginCounter {.xl-mt-minus-#{$i+p} { margin-top:( -$i + $p); }}
+@for $i from 3 through $marginCounter {.xl-mt-minus-#{$i*5+p} { margin-top:( -5 * $i + $p); }}
+@for $i from 6 through $marginCounter {.xl-mt-minus-#{$i*10+p} { margin-top:( -10 * $i + $p); }}
+// //  margin Right
+@for $i from 1 through $marginCounter {.xl-mr-minus-#{$i+p} { margin-right:( -$i + $p); }}
+@for $i from 3 through $marginCounter {.xl-mr-minus-#{$i*5+p} { margin-right:( -5 * $i + $p); }}
+@for $i from 6 through $marginCounter {.xl-mr-minus-#{$i*10+p} { margin-right:( -10 * $i + $p); }}
+// //  margin Bottom
+@for $i from 1 through $marginCounter {.xl-mb-minus-#{$i+p} { margin-bottom:( -$i + $p); }}
+@for $i from 3 through $marginCounter {.xl-mb-minus-#{$i*5+p} { margin-bottom:( -5 * $i + $p); }}
+@for $i from 6 through $marginCounter {.xl-mb-minus-#{$i*10+p} { margin-bottom:( -10 * $i + $p); }}
+// //  margin Left
+@for $i from 1 through $marginCounter {.xl-ml-minus-#{$i+p} { margin-left:( -$i + $p); }}
+@for $i from 3 through $marginCounter {.xl-ml-minus-#{$i*5+p} { margin-left:( -5 * $i + $p); }}
+@for $i from 6 through $marginCounter {.xl-ml-minus-#{$i*10+p} { margin-left:( -10 * $i + $p); }}
+
+
 }
+

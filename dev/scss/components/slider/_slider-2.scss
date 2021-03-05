@@ -21,18 +21,10 @@
     align-items: center;
     width: 80%;
     height: 100%;
-    // background: var(--accent);
-
+    max-height: 60vh;    
  
   }
 
-  // .swiper-slide:nth-child(2n) {
-  //   width: 40%;
-  // }
-
-  // .swiper-slide:nth-child(3n) {
-  //   width: 20%;
-  // }
 
   @include media('>md'){
     

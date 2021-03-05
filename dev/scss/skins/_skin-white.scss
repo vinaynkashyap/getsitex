@@ -1,0 +1,9 @@
+.skin-white {
+    color: var(--dark);
+    background-color: var(--white);
+}
+
+.skin-white a {
+    color: currentColor;
+    // color: var(--dark);
+}
