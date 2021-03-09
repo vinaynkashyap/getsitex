@@ -3,3 +3,75 @@
 Line Height
 -------------------------------------------
 */
+
+:root {
+    --line-height-0: 0;
+    --line-height-1: 4px;
+    --line-height-2: 8px;
+    --line-height-3: 12px;
+    --line-height-4: 16px;
+    --line-height-5: 20px;
+    --line-height-6: 24px;
+    --line-height-7: 28px;
+    --line-height-8: 32px;
+    --line-height-9: 36px;
+    --line-height-10: 40px;
+    --line-height-11: 44px;
+    --line-height-12: 48px;
+    --line-height-13: 52px;
+    --line-height-14: 56px;
+    --line-height-15: 60px;
+    --line-height-16: 64px;
+    --line-height-17: 68px;
+    --line-height-18: 72px;
+    --line-height-19: 76px;
+    --line-height-20: 80px;
+    --line-height-21: 84px;
+    --line-height-22: 88px;
+    --line-height-23: 92px;
+    --line-height-24: 96px;
+  }
+  
+  $line-height: (
+    line-height-0 var(--line-height-0), 
+    line-height-1 var(--line-height-1), 
+    line-height-2 var(--line-height-2), 
+    line-height-3 var(--line-height-3), 
+    line-height-4 var(--line-height-4), 
+    line-height-5 var(--line-height-5), 
+    line-height-6 var(--line-height-6), 
+    line-height-7 var(--line-height-7), 
+    line-height-8 var(--line-height-8), 
+    line-height-9 var(--line-height-9), 
+    line-height-10 var(--line-height-10), 
+    line-height-11 var(--line-height-11), 
+    line-height-12 var(--line-height-12), 
+    line-height-13 var(--line-height-13), 
+    line-height-14 var(--line-height-14), 
+    line-height-15 var(--line-height-15), 
+    line-height-16 var(--line-height-16), 
+    line-height-17 var(--line-height-17), 
+    line-height-18 var(--line-height-18), 
+    line-height-19 var(--line-height-19), 
+    line-height-20 var(--line-height-20), 
+    line-height-21 var(--line-height-21), 
+    line-height-22 var(--line-height-22), 
+    line-height-23 var(--line-height-23), 
+    line-height-24 var(--line-height-24), 
+    line-height-25 var(--line-height-25), 
+    line-height-26 var(--line-height-26), 
+  );
+  
+  @each $i in $line-height {.#{nth($i, 1)} {
+    line-height: #{nth($i, 2)};
+    line-height: calc( #{nth($i,2)} + 1rem);
+  }}
+  @include media('>=md') {@each $i in $line-height {.md-#{nth($i, 1)} {
+    line-height: #{nth($i, 2)};
+    line-height: calc( #{nth($i,2)} + 1rem);
+  
+  }}}
+  @include media('>=xl') {@each $i in $line-height {.xl-#{nth($i, 1)} {
+    line-height: #{nth($i, 2)};
+    line-height: calc( #{nth($i,2)} + 1rem);
+  }}}

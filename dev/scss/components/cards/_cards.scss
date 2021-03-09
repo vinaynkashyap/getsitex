@@ -6,7 +6,7 @@
     // justify-content: center;
     // align-items: center;
     display: inline-block;
-    text-align: center;
+    // text-align: center;
     &.card-stacked{
         // flex-direction: column;
         // grid-auto-flow: row dense;        
@@ -21,14 +21,12 @@
         justify-content: center;
         align-items: center;
         margin: 0 auto;
+        margin-bottom: 10px;
         border-radius: 4px;
     }
     .card-text {
         // display: inline-block;
     }
-
-
-    
     @include media('>md'){
         // margin-top: -7rem;
         // padding-top: 8rem;

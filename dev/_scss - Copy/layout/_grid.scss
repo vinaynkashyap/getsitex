@@ -4,7 +4,7 @@
 
 /* FLEX */
 
-$grid: (
+$gridHelpers: (
 
   // //  Flex Basis
   // flex-fill         'flex-basis' 'fill',
@@ -32,21 +32,21 @@ $grid: (
 // row-auto-fill 'grid-template-rows' 'repeat(auto-fill, 1fr)',
 // row-auto-fit 'grid-template-rows' 'repeat(auto-fit, 1fr)',
 
-col-min-content 'grid-template-columns' '1fr min-content',
-col-max-content 'grid-template-columns' '1fr max-content',
+// col-min-content 'grid-template-columns' '1fr min-content',
+// col-max-content 'grid-template-columns' '1fr max-content',
 
-grid-row        'grid-auto-flow' 'row',
-grid-col        'grid-auto-flow' 'column',
-grid-dense      'grid-auto-flow' 'dense',
-grid-row-dense  'grid-auto-flow' 'row dense',
-grid-col-dense  'grid-auto-flow' 'column dense',
-grid-unset      'grid-auto-flow' 'unset',
+// grid-row        'grid-auto-flow' 'row',
+// grid-col        'grid-auto-flow' 'column',
+// grid-dense      'grid-auto-flow' 'dense',
+// grid-row-dense  'grid-auto-flow' 'row dense',
+// grid-col-dense  'grid-auto-flow' 'column dense',
+// grid-unset      'grid-auto-flow' 'unset',
 
-justify-items-auto     'justify-items' 'auto',
-justify-items-start    'justify-items' 'start',
-justify-items-end      'justify-items' 'end',
-justify-items-center   'justify-items' 'center',
-justify-items-stretch  'justify-items' 'stretch',
+// justify-items-auto     'justify-items' 'auto',
+// justify-items-start    'justify-items' 'start',
+// justify-items-end      'justify-items' 'end',
+// justify-items-center   'justify-items' 'center',
+// justify-items-stretch  'justify-items' 'stretch',
 
 justify-self-auto	    'justify-self' 'auto',
 justify-self-start	  'justify-self' 'start',
@@ -54,33 +54,33 @@ justify-self-end	    'justify-self' 'end',
 justify-self-center	  'justify-self' 'center',
 justify-self-stretch	'justify-self' 'stretch',
 
-justify-content-center	'place-content' 'center',
-justify-content-start	  'place-content' 'start',
-justify-content-end	    'place-content' 'end',
-justify-content-between	'place-content' 'space-between',
-justify-content-around	'place-content' 'space-around',
-justify-content-evenly	'place-content' 'space-evenly',
-justify-content-stretch	'place-content' 'stretch',
+// justify-content-center	'place-content' 'center',
+// justify-content-start	  'place-content' 'start',
+// justify-content-end	    'place-content' 'end',
+// justify-content-between	'place-content' 'space-between',
+// justify-content-around	'place-content' 'space-around',
+// justify-content-evenly	'place-content' 'space-evenly',
+// justify-content-stretch	'place-content' 'stretch',
 
-align-items-auto     'align-items' 'auto',
-align-items-start    'align-items' 'start',
-align-items-end      'align-items' 'end',
-align-items-center   'align-items' 'center',
-align-items-stretch  'align-items' 'stretch',
+// align-items-auto     'align-items' 'auto',
+// align-items-start    'align-items' 'start',
+// align-items-end      'align-items' 'end',
+// align-items-center   'align-items' 'center',
+// align-items-stretch  'align-items' 'stretch',
 
-align-self-auto	    'align-self' 'auto',
-align-self-start	  'align-self' 'start',
-align-self-end	    'align-self' 'end',
-align-self-center	  'align-self' 'center',
-align-self-stretch	'align-self' 'stretch',
+// align-self-auto	    'align-self' 'auto',
+// align-self-start	  'align-self' 'start',
+// align-self-end	    'align-self' 'end',
+// align-self-center	  'align-self' 'center',
+// align-self-stretch	'align-self' 'stretch',
 
-align-content-center	'place-content' 'center',
-align-content-start	  'place-content' 'start',
-align-content-end	    'place-content' 'end',
-align-content-between	'place-content' 'space-between',
-align-content-around	'place-content' 'space-around',
-align-content-evenly	'place-content' 'space-evenly',
-align-content-stretch	'place-content' 'stretch',
+// align-content-center	'place-content' 'center',
+// align-content-start	  'place-content' 'start',
+// align-content-end	    'place-content' 'end',
+// align-content-between	'place-content' 'space-between',
+// align-content-around	'place-content' 'space-around',
+// align-content-evenly	'place-content' 'space-evenly',
+// align-content-stretch	'place-content' 'stretch',
 
 // place-content-center	'place-content' 'center',
 // place-content-start	  'place-content' 'start',
@@ -91,27 +91,27 @@ align-content-stretch	'place-content' 'stretch',
 // place-content-stretch	'place-content' 'stretch',
 
 
-place-xstart          'place-content' 'start',
-place-xstart-ycenter  'place-content' 'start center',
-place-xstart-yend     'place-content' 'start end',
-place-center-start  'place-content' 'center start',
-place-center	      'place-content' 'center',
-place-center-end    'place-content' 'center end',
-place-end-start     'place-content' 'end center',
-place-end-center    'place-content' 'end center',
-place-end	          'place-content' 'end',
+// place-xstart          'place-content' 'start',
+// place-xstart-ycenter  'place-content' 'start center',
+// place-xstart-yend     'place-content' 'start end',
+// place-center-start  'place-content' 'center start',
+// place-center	      'place-content' 'center',
+// place-center-end    'place-content' 'center end',
+// place-end-start     'place-content' 'end center',
+// place-end-center    'place-content' 'end center',
+// place-end	          'place-content' 'end',
 
-place-items-auto	  'place-items' 'auto',
-place-items-start	  'place-items' 'start',
-place-items-end	    'place-items' 'end',
-place-items-center	'place-items' 'center',
-place-items-stretch	'place-items' 'stretch',
+// place-items-auto	  'place-items' 'auto',
+// place-items-start	  'place-items' 'start',
+// place-items-end	    'place-items' 'end',
+// place-items-center	'place-items' 'center',
+// place-items-stretch	'place-items' 'stretch',
 
-place-self-auto	    'place-self' 'auto',
-place-self-start	  'place-self' 'start',
-place-self-end	    'place-self' 'end',
-place-self-center	  'place-self' 'center',
-place-self-stretch	'place-self' 'stretch',
+// place-self-auto	    'place-self' 'auto',
+// place-self-start	  'place-self' 'start',
+// place-self-end	    'place-self' 'end',
+// place-self-center	  'place-self' 'center',
+// place-self-stretch	'place-self' 'stretch',
 
 );
 
@@ -212,8 +212,8 @@ Grid
 */
 
 
-/* Grid Classes*/
-@each $i in $grid {.#{nth($i, 1)} { #{nth($i, 2)}:#{nth($i, 3)};}}
+/* Grid Classes */
+@each $i in $gridHelpers {.#{nth($i, 1)} { #{nth($i, 2)}:#{nth($i, 3)};}}
 
 
 
