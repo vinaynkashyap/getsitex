@@ -1,7 +1,7 @@
 
 /* 
 -------------------------------------------
-Width
+Width Classes
 -------------------------------------------
 */
 
@@ -11,9 +11,9 @@ $pc : 0%;
 $vw : 0vw;
 .w-0 { width:0; }
 .w-a { width:auto; }
-.w-minc { width:min-content; }
-.w-maxc { width:max-content; }
-.w-fitc { width:fit-content; }
+.w-min-content { width:min-content; }
+.w-max-content { width:max-content; }
+.w-fit-content { width:fit-content; }
 
 // Units from 1 - 10 (1*10), 10 - 50 (5*10) , 60 - 100 (6*10)
 
@@ -21,19 +21,19 @@ $vw : 0vw;
 @for $i from 1 through $WidthCounter {.w-#{$i} { width:( $i + $px); }}
 @for $i from 3 through $WidthCounter {.w-#{$i*5} { width:( $i*5 + $px); }}
 @for $i from 6 through $WidthCounter {.w-#{$i*10} { width:( $i*10 + $px); }}
-@for $i from 3 through 20 {.w-#{$i*50} { width:( $i*50 + $px); }}
+@for $i from 3 through 40 {.w-#{$i*50} { width:( $i*50 + $px); }}
 
-// Min Width
+// // Min Width
 @for $i from 1 through $WidthCounter {.min-w-#{$i} { min-width:( $i + $px); }}
 @for $i from 3 through $WidthCounter {.min-w-#{$i*5} { min-width:( $i*5 + $px); }}
 @for $i from 6 through $WidthCounter {.min-w-#{$i*10} { min-width:( $i*10 + $px); }}
-@for $i from 3 through 20 {.min-w-#{$i*50} { min-width:( $i*50 + $px); }}
+@for $i from 3 through 40 {.min-w-#{$i*50} { min-width:( $i*50 + $px); }}
 
-// Max Width
+// // Max Width
 @for $i from 1 through $WidthCounter {.max-w-#{$i} { max-width:( $i + $px); }}
 @for $i from 3 through $WidthCounter {.max-w-#{$i*5} { max-width:( $i*5 + $px); }}
 @for $i from 6 through $WidthCounter {.max-w-#{$i*10} { max-width:( $i*10 + $px); }}
-@for $i from 3 through 20 {.max-w-#{$i*50} { max-width:( $i*50 + $px); }}
+@for $i from 3 through 40 {.max-w-#{$i*50} { max-width:( $i*50 + $px); }}
 
 
 
@@ -55,7 +55,7 @@ $vw : 0vw;
 
 
 
-// Width in vw
+// // Width in vw
 @for $i from 1 through $WidthCounter {.w-#{$i}vw { width:( $i + $vw); }}
 @for $i from 3 through $WidthCounter {.w-#{$i*5}vw { width:( $i*5 + $vw); }}
 @for $i from 6 through $WidthCounter {.w-#{$i*10}vw { width:( $i*10 + $vw); }}
@@ -78,19 +78,19 @@ $vw : 0vw;
 @for $i from 1 through $WidthCounter {.md-w-#{$i} { width:( $i + $px); }}
 @for $i from 3 through $WidthCounter {.md-w-#{$i*5} { width:( $i*5 + $px); }}
 @for $i from 6 through $WidthCounter {.md-w-#{$i*10} { width:( $i*10 + $px); }}
-@for $i from 3 through 20 {.md-w-#{$i*50} { width:( $i*50 + $px); }}
+@for $i from 3 through 40 {.md-w-#{$i*50} { width:( $i*50 + $px); }}
 
 // Min Width
 @for $i from 1 through $WidthCounter {.md-min-w-#{$i} { min-width:( $i + $px); }}
 @for $i from 3 through $WidthCounter {.md-min-w-#{$i*5} { min-width:( $i*5 + $px); }}
 @for $i from 6 through $WidthCounter {.md-min-w-#{$i*10} { min-width:( $i*10 + $px); }}
-@for $i from 3 through 20 {.md-min-w-#{$i*50} { min-width:( $i*50 + $px); }}
+@for $i from 3 through 40 {.md-min-w-#{$i*50} { min-width:( $i*50 + $px); }}
 
 // Max Width
 @for $i from 1 through $WidthCounter {.md-max-w-#{$i} { max-width:( $i + $px); }}
 @for $i from 3 through $WidthCounter {.md-max-w-#{$i*5} { max-width:( $i*5 + $px); }}
 @for $i from 6 through $WidthCounter {.md-max-w-#{$i*10} { max-width:( $i*10 + $px); }}
-@for $i from 3 through 20 {.md-max-w-#{$i*50} { max-width:( $i*50 + $px); }}
+@for $i from 3 through 40 {.md-max-w-#{$i*50} { max-width:( $i*50 + $px); }}
 
 
 
@@ -138,19 +138,19 @@ $vw : 0vw;
     @for $i from 1 through $WidthCounter {.xl-w-#{$i} { width:( $i + $px); }}
     @for $i from 3 through $WidthCounter {.xl-w-#{$i*5} { width:( $i*5 + $px); }}
     @for $i from 6 through $WidthCounter {.xl-w-#{$i*10} { width:( $i*10 + $px); }}
-    @for $i from 3 through 20 {.xl-w-#{$i*50} { width:( $i*50 + $px); }}
+    @for $i from 3 through 40 {.xl-w-#{$i*50} { width:( $i*50 + $px); }}
     
     // Min Width
     @for $i from 1 through $WidthCounter {.xl-min-w-#{$i} { min-width:( $i + $px); }}
     @for $i from 3 through $WidthCounter {.xl-min-w-#{$i*5} { min-width:( $i*5 + $px); }}
     @for $i from 6 through $WidthCounter {.xl-min-w-#{$i*10} { min-width:( $i*10 + $px); }}
-    @for $i from 3 through 20 {.xl-min-w-#{$i*50} { min-width:( $i*50 + $px); }}
+    @for $i from 3 through 40 {.xl-min-w-#{$i*50} { min-width:( $i*50 + $px); }}
     
     // Max Width
     @for $i from 1 through $WidthCounter {.xl-max-w-#{$i} { max-width:( $i + $px); }}
     @for $i from 3 through $WidthCounter {.xl-max-w-#{$i*5} { max-width:( $i*5 + $px); }}
     @for $i from 6 through $WidthCounter {.xl-max-w-#{$i*10} { max-width:( $i*10 + $px); }}
-    @for $i from 3 through 20 {.xl-max-w-#{$i*50} { max-width:( $i*50 + $px); }}
+    @for $i from 3 through 40 {.xl-max-w-#{$i*50} { max-width:( $i*50 + $px); }}
     
     
     

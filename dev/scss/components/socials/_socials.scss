@@ -1,0 +1,10 @@
+.ui-socials{
+    a {
+        text-decoration: none;
+        &:hover{
+            color: var(--accent);
+            border-bottom: 2px solid var(--accent);
+        }
+    }
+}
+

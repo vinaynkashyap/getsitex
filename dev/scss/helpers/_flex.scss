@@ -162,12 +162,11 @@ $colCount: 12;
 
 /* 
 ------------------------------------
-Flex classes for small screen
+Flex classes for mobile devices
 ------------------------------------
 */
 
 @include media(">md") {
-    /* Flex Classes for Small Screen  */
     .md-flex-container {
         box-sizing: border-box;
         display: flex;
@@ -216,6 +215,67 @@ Flex classes for small screen
         }
     }
     .md-order-last {
+        order: $colCount + 1;
+    }
+}
+
+
+
+/* 
+------------------------------------
+Flex classes for Large Screen
+------------------------------------
+*/
+
+@include media(">xl") {
+    .xl-flex-container {
+        box-sizing: border-box;
+        display: flex;
+    }
+    /* Create equal columns */
+    .xl-flex-fill > .col,
+    .xl-flex-equal > .col {
+        flex: 1;
+    }
+    .xl-flex-auto > .col {
+        flex: 1 1 auto;
+    }
+    /* Flex Columns */
+    @for $i from 1 through $colCount {
+        .xl-col-#{$i} {
+            flex: 0 0 100% / $colCount * $i;
+        }
+    }
+    /* Flex Column Offset */
+    @for $i from 1 through $colCount {
+        .xl-off-left-#{$i} {
+            margin-left: 100% / $colCount * $i;
+        }
+    }
+    @for $i from 1 through $colCount {
+        .xl-off-right-#{$i} {
+            margin-right: 100% / $colCount * $i;
+        }
+    }
+    /* Flex Classes*/
+    @each $i in $flex {
+        .xl-#{nth($i, 1)} {
+            #{nth($i, 2)}: #{nth($i, 3)};
+        }
+    }
+    /* Order */
+    .xl-order-first {
+        order: -1;
+    }
+    .xl-order-0 {
+        order: 0;
+    }
+    @for $i from 1 through $colCount {
+        .xl-order-#{$i} {
+            order: $i;
+        }
+    }
+    .xl-order-last {
         order: $colCount + 1;
     }
 }

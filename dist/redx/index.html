@@ -25,7 +25,7 @@
         <main id="wrap-all" class="page-layout-1 skin-dark">
             <!-- Header -->
             <header id="header" class="header-area">
-                <div class="header-container p-10 px-15 flex justify-end align-items-center sm-menu-fullscreen md-menu-fullscreen xl-menu-fullscreen">
+                <div class="header-container p-10 px-15 flex justify-end align-items-center sm-menu-fullscreen md-menu-fullscreen xl-menu-horizontal">
                     <!--  Logo -->
                     <div class="header-module logo mr-a">
                         <h2 class="mb-0 font-size-fluid-3 font-w-800 logo-text">
@@ -33,80 +33,30 @@
                             </a>
                         </h2>
                     </div>
-                    <!-- Hamburger -->
-                    <button type="button" id="toggle-btn-primary" class="header-module toggle-btn-primary hamburger ">
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
-                    </button>
+                    
                     <!-- Menu -->
-                    <nav id="main-menu" class="header-module menu-primary mr-4 ">
-                        <div class="menu-inner flex">
-                            <ul class="menu-module menu-bar menu-style">
+                    <nav id="main-menu" class="header-module menu-primary mr-4">
+                        <div class="menu-inner">
+                            <ul class="menu-module menu-bar flex flex-col xl-flex-row text-align-center font-w-400">
                                 <li class="menu-item">
-                                    <a href="#section-5">Demos</a>
-                                </li>
-                                <li class="menu-item parent-menu">
-                                    <a href="#section-7">Pages</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item">
-                                            <a href="#">Pages</a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="#">About</a>
-                                        </li>
-                                        <li class="menu-item parent-menu">
-                                            <a href="#">Services</a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item">
-                                                    <a href="#">Services 1</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="#">Services 2</a>
-                                                </li>
-                                                <li class="menu-item parent-menu">
-                                                    <a href="#">Services 3</a>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item">
-                                                            <a href="#">Services 1</a>
-                                                        </li>
-                                                        <li class="menu-item">
-                                                            <a href="#">Services 2</a>
-                                                        </li>
-                                                        <li class="menu-item">
-                                                            <a href="#">Services 3</a>
-                                                        </li>
-                                                        <li class="menu-item">
-                                                            <a href="#">Services 4</a>
-                                                        </li>
-                                                        <li class="menu-item">
-                                                            <a href="#">Services 5</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="#">Archive</a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="#">Review</a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="#">Contact</a>
-                                        </li>
-                                    </ul>
+                                    <a class="py-10 px-20 xl-py-0 block font-size-6 xl-font-size-4  text-decoration-none" href="#section-5">Demos</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#section-10">Elements</a>
+                                    <a class="py-10 px-20 xl-py-0 block font-size-6 xl-font-size-4  text-decoration-none" href="#section-7">Page Layouts </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#section-10">Support</a>
+                                    <a class="py-10 px-20 xl-py-0 block font-size-6 xl-font-size-4  text-decoration-none" href="#section-10">UI Elements</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="py-10 px-20 xl-py-0 block font-size-6 xl-font-size-4  text-decoration-none" href="#section-10">Content Blocks</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="py-10 px-20 xl-py-0 block font-size-6 xl-font-size-4  text-decoration-none" href="#section-10">Support</a>
                                 </li>
                             </ul>
                             <!-- Overlay Menu CTA Button -->
                             <div class="menu-module xl-hide">
-                                <div class="btn radius-2 bg-accent ml-20">
+                                <div class="btn radius-2 bg-accent block mx-a mt-20">
                                     <a class="font-color-white" href="#">Buy Now</a>
                                 </div>
                             </div>
@@ -114,11 +64,18 @@
                         </div>
                     </nav>
                     <!-- Header CTA Button -->
-                    <div class="header-module">
+                    <div class="header-module mr-20">
                         <div class="btn font-color-white radius-2 bg-accent ml-20">
                             <a class="" href="#">Buy Now</a>
                         </div>
                     </div>
+
+                    <!-- Hamburger -->
+                    <button type="button" id="toggle-btn-primary" class="header-module toggle-btn-primary hamburger xl-hide">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </button>
                     <!-- /.header-container -->
                 </div>
                 <!-- /Header -->
@@ -134,10 +91,13 @@
                             </h1>
                         </div>
                         <img class="h-a  max-h-50vh max-w-70vw md-max-w-70p xl-max-w-800 mx-a relative z-20" src="img/mockup/png/1.png" alt="">
-                        <div class="relative z-10 max-w-100p md-max-w-70vw xl-max-w-60vw mx-a skin-white radius-2 mb-0 md-mb-minus-20p xl-mb-minus-15p pb-50 pt-80 px-30 md-px-50 text-align-center mt-minus-60 md-mt-minus-100 ">
-                            <h2 class="font-w-600 md-mt-40">Get Your Copy For
+                        <div class="relative z-10 max-w-100p md-max-w-70vw xl-max-w-1000 mx-a skin-white radius-2 mb-0 md-mb-minus-20p xl-mb-minus-15p pb-50 pt-80 px-30 md-px-50 text-align-center mt-minus-60 md-mt-minus-100 
+                        
+                        
+                        ">
+                            <h2 class="font-w-600 md-mt-40">Download Today! for 
                                 <span class=""> $14</span>
-                                <span class="text-strike font-color-accent">$24</span> Today!
+                                <span class="text-strike font-size-4 font-color-accent">$24</span>
                             </h2>
                             <p>Build your site with RedX for ultimate developer experience. Buy now and get
                                 <span class="font-w-600">FREE lifetime
@@ -198,7 +158,7 @@
                             </li>
                             <li class="ui-card ">
                                 <i class="card-media font-color-dark-3 bi bi-palette "></i>
-                                <p class="font-w-400 font-size-3 line-height-1 "> Color Swatches</p>
+                                <p class="font-w-400 font-size-3 line-height-1 "> Content Blocks</p>
                             </li>
                             <li class="ui-card ">
                                 <i class="card-media font-color-dark-3 bi bi-circle-half "></i>
@@ -226,12 +186,34 @@
                     <div class="container px-40 py-100">
                         <!-- Headline -->
                         <div class="headline-block text-align-center">
-                            <h2 class=" font-w-600 font-size-6 md-font-size-fluid-3 mb-20">RedX is
-                                <span class="font-color-accent"> Flexible</span> and
-                                <span class="md-line-break"></span>
-                                <span class="font-color-accent"> Simple</span> to use.
-                            </h2>
-                            <p class="font-color-light-4">List of core RedX features added to make it easy and fast to build and customize your site.</p>
+                            <h2 class=" font-w-600 font-size-6 md-font-size-fluid-3 mb-20">What you get?</h2>
+                                <p class="text-align-center">Buy now and get access to a growing library of UI elements <span class="md-line-break"></span> and beautiful demos with <span class="font-w-600">FREE lifetime Updates</span>.
+                                </p>
+                            
+                        </div>
+                         <!-- CTA Block -->
+                         <div class="md-max-w-70vw xl-max-w-60vw mx-a mt-50">
+                                
+                            <ul class="my-20 grid md-gap-x-50 grid-col-3 text-align-center">
+                                <li class="ui-card grid text-align-left md-justify-content-end">
+                                    <h3 class="font-size-fluid-4 font-w-400">12
+                                        <span class="font-size-4 font-color-accent font-w-600 ml-minus-10">/ 35+</span>
+                                    </h3>
+                                    <p class="font-w-400 font-size-3 line-height-1">Full Site Demos</p>
+                                </li>
+                                <li class="ui-card grid text-align-left md-justify-content-center">
+                                    <h3 class="font-size-fluid-4 font-w-400">18
+                                        <span class="font-size-4 font-color-accent font-w-600 ml-minus-10">/ 100+</span>
+                                    </h3>
+                                    <p class="font-w-400 font-size-3 line-height-1">Page Layouts</p>
+                                </li>
+                                <li class="ui-card grid text-align-left md-justify-content-start">
+                                    <h3 class="font-size-fluid-4 font-w-400">89
+                                        <span class="font-size-4 font-color-accent font-w-600 ml-minus-10">/ 100+</span>
+                                    </h3>
+                                    <p class="font-w-400 font-size-3 line-height-1 "> UI Elements</p>
+                                </li>
+                            </ul>
                         </div>
                         <!-- Container -->
                     </div>
@@ -252,48 +234,56 @@
                                 <li class="">Sports</li>
                             </ul>
                         </div>
+
+                        
+
                         <!-- Gallery -->
-                        <div class="ui-gallery-3 gap-10 xl-max-w-70p mt-100 mx-a px-40">
-                            <figure class="ui-gallery-item grid ">
-                                <img src="img/gallery/1.jpg" alt="Image 1">
+                        <div class="ui-gallery-13 gap-25 md-gap-50 xl-max-w-90p mt-100 mx-a px-40 grid-col-12">
+                            
+                            <figure class="grid col-span-6 md-col-span-4">
+                                <img src="img/demos/demo-1.jpg" alt="Image 1">
                                 <figcaption>Image Caption</figcaption>
                             </figure>
-                            <figure class="ui-gallery-item grid ">
-                                <img src="img/gallery/2.jpg" alt="Image 2">
+                            <figure class="grid col-span-6 md-col-span-4">
+                                <img src="img/demos/demo-2.jpg" alt="Image 2">
                                 <figcaption>Image Caption</figcaption>
                             </figure>
-                            <figure class="ui-gallery-item grid ">
-                                <img src="img/gallery/3.jpg" alt="Image 3">
+                            <figure class="grid col-span-6 md-col-span-4">
+                                <img src="img/demos/demo-3.jpg" alt="Image 3">
                                 <figcaption>Image Caption</figcaption>
                             </figure>
-                            <figure class="ui-gallery-item grid ">
-                                <img src="img/gallery/4.jpg" alt="Image 4">
+                            <figure class="grid col-span-6 md-col-span-4">
+                                <img src="img/demos/demo-4.jpg" alt="Image 4">
                                 <figcaption>Image Caption</figcaption>
                             </figure>
-                            <figure class="ui-gallery-item grid ">
-                                <img src="img/gallery/5.jpg" alt="Image 5">
+                            <figure class="grid col-span-6 md-col-span-4">
+                                <img src="img/demos/demo-5.jpg" alt="Image 5">
                                 <figcaption>Image Caption</figcaption>
                             </figure>
-                            <figure class="ui-gallery-item grid ">
-                                <img src="img/gallery/6.jpg" alt="Image 6">
+                            <figure class="grid col-span-6 md-col-span-4">
+                                <img src="img/demos/demo-6.jpg" alt="Image 6">
                                 <figcaption>Image Caption</figcaption>
                             </figure>
                         </div>
                         <!-- /Gallery -->
-                        <div class="headline-block text-align-center">
-                            <h3 class=" font-w-600 font-size-6 md-font-size-fluid-1 mt-50">What do you like to see next?</h3>
-                            <p class="">Request any layout of your choice to be added to the RedX demos.</p>
+                        <div class="text-align-center px-40 max-w-800 mx-a">
+                            <h4 class=" font-w-600 font-size-5 mt-50">What do you like to see next?</h4>
+                            <p class="">Request any layout of your choice to be added to the RedX demos. Tweet your choice with #RedXTheme to @graphitivity</p>
                         </div>
                         <!-- Container -->
                     </div>
                 </section>
                 <!-- Section 5 -->
-                <section id="section-5" class=" container-boxed skin-dark z-1 ">
-                    <div class="container px-40 py-100">
+                <section id="section-5" class=" container-boxed skin-dark px-40  py-100">
+                    <div class="container ">
                         <!-- Headline -->
-                        <div class="headline-block text-align-center">
-                            <h2 class=" font-w-600 font-size-6 md-font-size-fluid-3 mb-20">How to use
-                                <span class="font-color-accent"> RedX</span>?
+                        <div class="text-align-center">
+                            <h4 class=" font-w-600 font-color-accent mb-20">How to use <span class="font-color-accent"> RedX</span>?
+                            </h4>
+                            <h2 class=" font-w-600 font-size-6 md-font-size-fluid-3 mb-20">RedX is
+                                <span class="font-color-accent"> Flexible</span> and
+                                <span class="line-break"></span>
+                                <span class="font-color-accent"> Simple</span> to use.
                             </h2>
                             <p class="font-color-light-4">Find the list of helpful resources to build and manage your websites with RedX.</p>
                         </div>
@@ -313,12 +303,17 @@
                         </ul>
                         <!-- Container -->
                     </div>
+                    
+                    <div class="background-media opacity-1">
+                        <img class="h-100p w-100p obj-cover " src="img/gallery/3.jpg" alt="">
+                    </div>
+
                 </section>
                 <!-- Section 5 -->
-                <section id="section-5" class=" container-boxed skin-light z-1 ">
-                    <div class="container px-40 py-100">
+                <section id="section-5" class="container-boxed skin-light z-1">                    
+                    <div class="container px-40 py-100 grid">
                         <!-- Headline -->
-                        <div class="headline-block bg-base md-grid grid-col-12 grid-col-auto grid-col-dense gap-x-50">
+                        <div class=" md-grid grid-col-12 grid-col-auto grid-col-dense gap-x-50">
                             <!-- <h4 class="headline-sub font-color-accent col-span-2">Welcome 7</h4> -->
                             <div class=" col-span-4">
                                 <h2 class="headline-sub">Core Features</h2>
@@ -328,7 +323,7 @@
                                 <ul class="mb-20 text-align-center grid gap-y-50 grid-col-3">
                                     <li class="ui-card">
                                         <i class="card-media font-color-dark-3 bi bi-speedometer2"></i>
-                                        <p class="font-w-400 font-size-3 line-height-1"> Performance</p>
+                                        <p class="font-w-400 font-size-3 line-height-1"> Utility Classes</p>
                                     </li>
                                     <li class="ui-card">
                                         <i class="card-media font-color-dark-3 bi bi-columns"></i>
@@ -336,19 +331,19 @@
                                     </li>
                                     <li class="ui-card ">
                                         <i class="card-media font-color-dark-3 bi bi-type-h1"></i>
-                                        <p class="font-w-400 font-size-3 line-height-1 "> Headings</p>
+                                        <p class="font-w-400 font-size-3 line-height-1 "> Fluid Typography</p>
                                     </li>
                                     <li class="ui-card ">
                                         <i class="card-media font-color-dark-3 bi bi-menu-app"></i>
-                                        <p class="font-w-400 font-size-3 line-height-1 "> Menus</p>
+                                        <p class="font-w-400 font-size-3 line-height-1 "> Powerful Menus</p>
                                     </li>
                                     <li class="ui-card ">
                                         <i class="card-media font-color-dark-3 bi bi-card-heading"></i>
-                                        <p class="font-w-400 font-size-3 line-height-1 "> Headers</p>
+                                        <p class="font-w-400 font-size-3 line-height-1 "> Multiple Headers </p>
                                     </li>
                                     <li class="ui-card ">
                                         <i class="card-media font-color-dark-3 bi bi-fonts"></i>
-                                        <p class="font-w-400 font-size-3 line-height-1 "> Typography</p>
+                                        <p class="font-w-400 font-size-3 line-height-1 "> Fully Customizable</p>
                                     </li>
                                 </ul>
                             </div>
@@ -386,10 +381,13 @@
                         </div>
                         <!-- Container -->
                     </div>
+
+                    
+
                 </section>
                 <!-- Section 6 -->
-                <section id="section-6" class="container-boxed skin-dark ">
-                    <div class="container px-40 py-100">
+                <section id="section-6" class="container-boxed skin-dark">
+                    <div class="container px-40 py-100 grid align-content-center">
                         <!-- Headline -->
                         <div class="headline-block md-grid grid-col-12 grid-col-auto grid-col-dense md-mt-50">
                             <h2 class="font-w-600 mb-10 col-span-4">FAQ</h2>
@@ -454,30 +452,76 @@
                 </div>
             </section>
             <!-- Section 7 -->
-            <section id="section-7" class="container-boxed skin-accent ">
-                <div class="container grid px-40 py-100">
+            <section id="section-7" class="container-boxed skin-accent xl-h-100vh">
+                <div class="container grid px-40 py-100 align-content-center">
                     <!-- Headline -->
                     <div class="headline-block text-align-center z-10">
-                        <h2 class=" font-w-600 font-size-6 md-font-size-fluid-3 mb-20"> Build your site with RedX for a
-                            <span class="md-line-break"></span> delightful dev experience.
+                        <h2 class=" font-w-600 font-size-6 md-font-size-fluid-3 mb-10">Download now for a <span class="md-line-break"></span> delightful dev experience.
                         </h2>
-                        <p class="font-color-light-4">List of core RedX features added to make it easy and fast to build and customize your site.</p>
-                        <span class="btn bg-dark mt-20 radius-2 font-color-white">
+                        <p class="font-w-400">Download now for intro price and get Free lifetime updates.</p>
+                        <span class="btn bg-dark mt-30 radius-2 font-color-white">
                             <a href="#">Download REDX</a>
                         </span>
                     </div>
-                    <div class="bg-image">
-                        <img src="img/bg/bg-1.jpg" alt="">
-                    </div>
                     <!-- Container -->
+                </div>
+                <div class="background-media opacity- blend-multiply">
+                    <img class="h-100p w-100p obj-cover " src="img/bg/bg-1.jpg" alt="">
                 </div>
             </section>
             <!-- /.content-wrapper -->
         </div>
         <!-- Footer -->
-        <footer id="footer" class="footer-area p-20 bg-black">
-            <div class="footer-container">
-                <p> © Graphitivity 2020. All rights reserved. Privacy Policy</p>
+        <footer id="footer" class="footer-area skin-dark">
+            <div class="footer-container ">
+                <div class="widget-area grid md-grid-col-12 relative px-40 py-100 max-w-1200 mx-a">
+
+                <!-- Newsletter -->
+                <div class="widget md-mb-0 mb-40 md-col-span-4">
+                    <h4 class="mb-20">Signup for our <span class="font-color-accent">newsletter</span> </h4>
+                    <form class="mb-10" action="">
+                        <input class="mb-10" type="Email">
+                        <p class="font-size-3 mb-20 font-color-light-5 line-height-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, dignissimos?</p>
+                        <button>Submit</button>
+                    </form>                    
+                </div>
+
+                <!-- Menu -->
+                <div class="widget md-mb-0 mb-40 md-col-span-4 md-justify-self-center">
+                    <ul>
+                        <li> <a class="text-decoration-none line-height-6" href="#"> Demos </a></li>
+                        <li> <a class="text-decoration-none line-height-6" href="#"> Page Layouts </a></li>
+                        <li> <a class="text-decoration-none line-height-6" href="#"> UI Elements </a></li>
+                        <li> <a class="text-decoration-none line-height-6" href="#"> Content Blocks</a></li>
+                        <li> <a class="text-decoration-none line-height-6" href="#"> Support </a></li>
+                    </ul>
+                </div>
+                
+                
+                <!-- Info -->
+                <div class="widget md-col-span-4">
+                    <h4 class="font-color-accent mb-20" >Get in touch</h4>
+                    <ul>
+                        <li class="font-w-600">+1.809.876.5678</li>
+                        <li class="font-w-600">@email</li>
+                    </ul>
+                    <ul class="ui-socials flex flex-row my-20">
+                        <li class=" pr-20 "> <a class=" font-w-600" href="#"> Fb </a></li>
+                        <li class=" pr-20"> <a class=" font-w-600" href="#"> Tw </a></li>
+                        <li class=" pr-20 "> <a class=" font-w-600" href="#"> In </a></li>
+                    </ul>
+                    <div class="btn radius-2 bg-accent block mt-20">
+                        <a class="font-color-white" href="#">Download RedX</a>
+                    </div>                    
+                </div>
+                <!-- Footer Widget Area -->
+            </div>
+            
+              <!-- Footer bar -->
+              <div class="footer-bar bg-black">
+                <p class="font-size-3 text-align-center font-color-light-5"> © Graphitivity 2020. All rights reserved. Privacy Policy</p>
+            </div>
+          
                 <!-- /.footer-container -->
             </div>
         </footer>

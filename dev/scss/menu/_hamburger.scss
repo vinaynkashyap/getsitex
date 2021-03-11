@@ -40,7 +40,7 @@ button.hamburger {
 @include media('<=xl') {
     .hamburger {
         // position: fixed;
-        margin-left: auto;
+        // margin-left: auto;
     }
 }
 
@@ -65,8 +65,10 @@ button.hamburger {
     background: var(--white);
 }
 
-.hamburger-inner.active {
-    display: block;
-    position: absolute;
-    right: 0;
-}
+// .hamburger-inner.active {
+//     display: block;
+//     position: absolute;
+//     right: 0;
+//     transition: right 5s linear;
+//     animation-delay: 2s;
+// }

@@ -1,0 +1,21 @@
+.obj-cover { object-fit:cover ; }
+.obj-contain { object-fit:contain ; }
+.obj-scale-down { object-fit:scale-down ; }
+.obj-fill { object-fit:fill ; }
+.obj-none { object-fit:none ; }
+
+@include media('>md') {
+    .md-obj-cover { object-fit:cover ; }
+    .md-obj-contain { object-fit:contain ; }
+    .md-obj-scale-down { object-fit:scale-down ; }
+    .md-obj-fill { object-fit:fill ; }
+    .md-obj-none { object-fit:none ; }
+}
+
+@include media('>xl') {
+    .xl-obj-cover { object-fit:cover ; }
+    .xl-obj-contain { object-fit:contain ; }
+    .xl-obj-scale-down { object-fit:scale-down ; }
+    .xl-obj-fill { object-fit:fill ; }
+    .xl-obj-none { object-fit:none ; }
+}

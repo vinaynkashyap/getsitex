@@ -67,3 +67,128 @@ $vh : 0vh;
 @for $i from 1 through $heightCounter {.max-h-#{$i}vh { max-height:( $i + $vh); }}
 @for $i from 3 through $heightCounter {.max-h-#{$i*5}vh { max-height:( $i*5 + $vh); }}
 @for $i from 6 through $heightCounter {.max-h-#{$i*10}vh { max-height:( $i*10 + $vh); }}
+
+
+/*
+------------------------------ Mobile Device
+*/ 
+
+@include media('>md') {
+    
+// Height
+@for $i from 1 through $heightCounter {.md-h-#{$i} { height:( $i + $px); }}
+@for $i from 3 through $heightCounter {.md-h-#{$i*5} { height:( $i*5 + $px); }}
+@for $i from 6 through $heightCounter {.md-h-#{$i*10} { height:( $i*10 + $px); }}
+@for $i from 2 through $heightCounter {.md-h-#{$i*100} { height:( $i*100 + $px); }}
+
+// Min Height
+@for $i from 1 through $heightCounter {.md-min-h-#{$i} { min-height:( $i + $px); }}
+@for $i from 3 through $heightCounter {.md-min-h-#{$i*5} { min-height:( $i*5 + $px); }}
+@for $i from 6 through $heightCounter {.md-min-h-#{$i*10} { min-height:( $i*10 + $px); }}
+@for $i from 2 through $heightCounter {.md-min-h-#{$i*100} { min-height:( $i*100 + $px); }}
+
+// Max Height
+@for $i from 1 through $heightCounter {.md-max-h-#{$i} { max-height:( $i + $px); }}
+@for $i from 3 through $heightCounter {.md-max-h-#{$i*5} { max-height:( $i*5 + $px); }}
+@for $i from 6 through $heightCounter {.md-max-h-#{$i*10} { max-height:( $i*10 + $px); }}
+@for $i from 2 through $heightCounter {.md-max-h-#{$i*100} { max-height:( $i*100 + $px); }}
+
+
+
+
+// Height in %
+@for $i from 1 through $heightCounter {.md-h-#{$i}p { height:( $i + $pc); }}
+@for $i from 3 through $heightCounter {.md-h-#{$i*5}p { height:( $i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.md-h-#{$i*10}p { height:( $i*10 + $pc); }}
+
+// Min Height in %
+@for $i from 1 through $heightCounter {.md-min-h-#{$i}p { min-height:( $i + $pc); }}
+@for $i from 3 through $heightCounter {.md-min-h-#{$i*5}p { min-height:( $i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.md-min-h-#{$i*10}p { min-height:( $i*10 + $pc); }}
+
+// Max Height in %
+@for $i from 1 through $heightCounter {.md-max-h-#{$i}p { max-height:( $i + $pc); }}
+@for $i from 3 through $heightCounter {.md-max-h-#{$i*5}p { max-height:( $i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.md-max-h-#{$i*10}p { max-height:( $i*10 + $pc); }}
+
+
+
+
+// Height in VH
+@for $i from 1 through $heightCounter {.md-h-#{$i}vh { height:( $i + $vh); }}
+@for $i from 3 through $heightCounter {.md-h-#{$i*5}vh { height:( $i*5 + $vh); }}
+@for $i from 6 through $heightCounter {.md-h-#{$i*10}vh { height:( $i*10 + $vh); }}
+
+// Min Height in VH
+@for $i from 1 through $heightCounter {.md-min-h-#{$i}vh { min-height:( $i + $vh); }}
+@for $i from 3 through $heightCounter {.md-min-h-#{$i*5}vh { min-height:( $i*5 + $vh); }}
+@for $i from 6 through $heightCounter {.md-min-h-#{$i*10}vh { min-height:( $i*10 + $vh); }}
+
+// Max Height in VH
+@for $i from 1 through $heightCounter {.md-max-h-#{$i}vh { max-height:( $i + $vh); }}
+@for $i from 3 through $heightCounter {.md-max-h-#{$i*5}vh { max-height:( $i*5 + $vh); }}
+@for $i from 6 through $heightCounter {.md-max-h-#{$i*10}vh { max-height:( $i*10 + $vh); }}
+}
+
+
+
+/*
+------------------------------ large Screen
+*/ 
+
+@include media('>xl') {
+    
+    // Height
+    @for $i from 1 through $heightCounter {.xl-h-#{$i} { height:( $i + $px); }}
+    @for $i from 3 through $heightCounter {.xl-h-#{$i*5} { height:( $i*5 + $px); }}
+    @for $i from 6 through $heightCounter {.xl-h-#{$i*10} { height:( $i*10 + $px); }}
+    @for $i from 2 through $heightCounter {.xl-h-#{$i*100} { height:( $i*100 + $px); }}
+    
+    // Min Height
+    @for $i from 1 through $heightCounter {.xl-min-h-#{$i} { min-height:( $i + $px); }}
+    @for $i from 3 through $heightCounter {.xl-min-h-#{$i*5} { min-height:( $i*5 + $px); }}
+    @for $i from 6 through $heightCounter {.xl-min-h-#{$i*10} { min-height:( $i*10 + $px); }}
+    @for $i from 2 through $heightCounter {.xl-min-h-#{$i*100} { min-height:( $i*100 + $px); }}
+    
+    // Max Height
+    @for $i from 1 through $heightCounter {.xl-max-h-#{$i} { max-height:( $i + $px); }}
+    @for $i from 3 through $heightCounter {.xl-max-h-#{$i*5} { max-height:( $i*5 + $px); }}
+    @for $i from 6 through $heightCounter {.xl-max-h-#{$i*10} { max-height:( $i*10 + $px); }}
+    @for $i from 2 through $heightCounter {.xl-max-h-#{$i*100} { max-height:( $i*100 + $px); }}
+    
+    
+    
+    
+    // Height in %
+    @for $i from 1 through $heightCounter {.xl-h-#{$i}p { height:( $i + $pc); }}
+    @for $i from 3 through $heightCounter {.xl-h-#{$i*5}p { height:( $i*5 + $pc); }}
+    @for $i from 6 through $heightCounter {.xl-h-#{$i*10}p { height:( $i*10 + $pc); }}
+    
+    // Min Height in %
+    @for $i from 1 through $heightCounter {.xl-min-h-#{$i}p { min-height:( $i + $pc); }}
+    @for $i from 3 through $heightCounter {.xl-min-h-#{$i*5}p { min-height:( $i*5 + $pc); }}
+    @for $i from 6 through $heightCounter {.xl-min-h-#{$i*10}p { min-height:( $i*10 + $pc); }}
+    
+    // Max Height in %
+    @for $i from 1 through $heightCounter {.xl-max-h-#{$i}p { max-height:( $i + $pc); }}
+    @for $i from 3 through $heightCounter {.xl-max-h-#{$i*5}p { max-height:( $i*5 + $pc); }}
+    @for $i from 6 through $heightCounter {.xl-max-h-#{$i*10}p { max-height:( $i*10 + $pc); }}
+    
+    
+    
+    
+    // Height in VH
+    @for $i from 1 through $heightCounter {.xl-h-#{$i}vh { height:( $i + $vh); }}
+    @for $i from 3 through $heightCounter {.xl-h-#{$i*5}vh { height:( $i*5 + $vh); }}
+    @for $i from 6 through $heightCounter {.xl-h-#{$i*10}vh { height:( $i*10 + $vh); }}
+    
+    // Min Height in VH
+    @for $i from 1 through $heightCounter {.xl-min-h-#{$i}vh { min-height:( $i + $vh); }}
+    @for $i from 3 through $heightCounter {.xl-min-h-#{$i*5}vh { min-height:( $i*5 + $vh); }}
+    @for $i from 6 through $heightCounter {.xl-min-h-#{$i*10}vh { min-height:( $i*10 + $vh); }}
+    
+    // Max Height in VH
+    @for $i from 1 through $heightCounter {.xl-max-h-#{$i}vh { max-height:( $i + $vh); }}
+    @for $i from 3 through $heightCounter {.xl-max-h-#{$i*5}vh { max-height:( $i*5 + $vh); }}
+    @for $i from 6 through $heightCounter {.xl-max-h-#{$i*10}vh { max-height:( $i*10 + $vh); }}
+    }

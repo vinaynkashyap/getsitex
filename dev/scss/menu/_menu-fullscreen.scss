@@ -9,7 +9,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(0, 0, 0, 1);
+            // background: rgba(0, 0, 0, 1);
             transition: all 0.65s cubic-bezier(1, 0, 0, 1);
             .menu-inner {
                 position: fixed;
@@ -23,10 +23,9 @@
                 max-height: 100%;
                 overflow-y: auto;
                 z-index: 99;
-                .menu-bar {
-                    display: flex;
-                    flex-direction: row;
-                }
+                display: grid;
+                justify-content: center;
+                align-content: center;
             }
         }
     }
@@ -54,7 +53,7 @@
     .xl-menu-fullscreen {
         .menu-primary.active {
             top:0; // hide fullscreen overlay
-            background: rgba(0, 0, 0, .90);
+            // background: rgba(0, 0, 0, .90);
             transition: all 0.65s cubic-bezier(1, 0, 0, 1);
             .menu-inner {
                 top: 0;

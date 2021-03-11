@@ -1,0 +1,23 @@
+/* 
+-------------------------------------------------
+Metro grid gallery
+-----------------------------------------------
+*/
+
+.ui-gallery-13 {
+	display: grid;
+	grid-auto-flow:  dense;
+	> figure {
+	  position: relative;
+	  img {
+		width: 100%;
+		height: auto;		
+		object-fit: contain;	
+	  }
+      figcaption {
+        display:none;
+      }
+	}
+  }
+
+

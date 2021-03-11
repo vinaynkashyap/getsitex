@@ -1,40 +1,31 @@
 @mixin menu-horizontal {
     .menu-primary {
         .menu-bar {
-            >.menu-item {
-                margin-left: 2rem;
-            }
-            display: flex;
-            align-items: center;
-            flex-direction: row;
+            // >.menu-item {
+            //     margin-left: 2rem;
+            // }
+            // display: flex;
+            // align-items: center;
+            // flex-direction: row;
         }
     }
 }
 
 @include media('<md') {
     .sm-menu-horizontal {
-        @include menu-horizontal;
-        .toggle-btn-primary {
-            display: none;
-        }
+        @include menu-horizontal;        
     }
 }
 
 @include media('>=md', '<=xl') {
     .md-menu-horizontal {
         @include menu-horizontal;
-        .toggle-btn-primary {
-            display: none;
-        }
     }
 }
 
 @include media('>xl') {
     .xl-menu-horizontal {
         @include menu-horizontal;
-        .toggle-btn-primary {
-            display: none;
-        }
     }
 }
 

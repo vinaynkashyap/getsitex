@@ -1,0 +1,9 @@
+/* 
+-------------------------------------------
+Opacity
+-------------------------------------------
+*/
+
+$opacityCount: 10;
+
+@for $i from 0 through $opacityCount {.opacity-#{($i)} { opacity: ($i*.1) }}
