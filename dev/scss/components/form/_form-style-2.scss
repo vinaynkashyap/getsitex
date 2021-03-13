@@ -1,0 +1,39 @@
+// Form Stacked
+
+.form-style-2 {
+ 
+    form > div > label,
+    legend {
+      width: 100%;
+      float: none;
+    }
+    form > div > div,
+    form > div > fieldset > div {
+      width: 100%;
+      float: none;
+    }
+    input[type=text],
+    input[type=email],
+    input[type=url],
+    input[type=password],
+    textarea,
+    select {
+      width: 100%; 
+    }
+
+    fieldset {
+            border: 0;
+            padding: 0;
+    }
+
+    @include media('>md'){
+        input[type=text],
+        input[type=email],
+        input[type=url],
+        input[type=password] {
+            width: 50%;
+        }
+    }
+
+}
+

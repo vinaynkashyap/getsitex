@@ -1,9 +1,38 @@
 .skin-light {
     color: var(--dark);
     background-color: var(--light);
+
+    a {
+        color: currentColor;
+        // color: var(--dark);
+    }
+      
 }
 
-.skin-light a {
-    color: currentColor;
-    // color: var(--dark);
+
+
+.form-skin-light {
+    form > div > fieldset label {
+        font-size: 90%;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="password"],
+    textarea {
+        width: 100%;
+        border: 1px solid var(--light-2);
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="url"]:focus,
+    input[type="password"]:focus,
+    textarea:focus {
+        outline: 0;
+        border-color: var(--accent);
+    }
+    button {
+        border: none;
+        cursor: pointer;
+      }
 }

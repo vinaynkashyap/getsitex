@@ -1,0 +1,22 @@
+
+.tab-skin-1 {
+
+    .tab-button {
+        padding: 1rem 2rem 1rem 4rem;
+        background-color: var(--dark);
+        color: var(--light-5);
+        font-weight: 600;
+        position: relative;
+        &.active{
+            color: var(--accent);   
+        }
+        .tab-count {
+            font-size: 14px;
+            color: var(--accent);
+            position: absolute;
+            top: calc(1rem - 7%);
+            left: 2rem;
+        }
+    }
+
+}

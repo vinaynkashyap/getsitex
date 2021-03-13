@@ -1,0 +1,24 @@
+.scrolling-text {
+    --space: 10vw;
+    
+    font-size: 20vw;
+    white-space: nowrap;
+    animation: marquee 50s infinite linear;
+    padding-left: var(--space);
+    position: absolute;
+    
+    &:after{
+      content: attr(data-text);
+      padding-left: var(--space);
+    }
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0)
+    }
+    100% {
+      transform: translateX(-50%)
+    }
+  }
+

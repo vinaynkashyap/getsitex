@@ -34,19 +34,31 @@ toggleButtonPrimary.addEventListener('click', () => {
 // Slider 2 - Fullscreen slider
 // -----------------------------------------------
 
-// const swiper = new Swiper('.swiper-container', {
-//   slidesPerView: 'auto',
-//   centeredSlides: true,
-//   spaceBetween: 30,
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true,
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev"
-//   },
-// });
+const swiper = new Swiper('.swiper-container', {
+
+
+  // autoplay: 500,
+  speed: 1000,
+  // autoplayDisableOnInteraction: true,
+  autoplay: {
+    delay: 3500,
+  },
+  autoplayDisableOnInteraction: true,
+  cubeEffect: {
+    slideShadows: false,
+  },
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  spaceBetween: 100,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+});
 
 // -----------------------------------------------
 // Tabs

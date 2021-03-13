@@ -1,0 +1,64 @@
+// Responsive Form
+
+.form-style-3 {
+
+fieldset {
+	border: 0;
+  padding: 0;
+}
+form > div > label,
+legend {
+  width: 100%;
+  float: none;
+}
+form > div > div,
+form > div > fieldset > div {
+  width: 100%;
+  float: none;
+}
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+textarea,
+select {
+  width: 100%; 
+  padding: 0.65rem 1rem;
+}
+
+@include media('>md'){
+  form > div {
+    clear: both;
+    overflow: hidden;
+    padding: 1px;
+  }
+  form > div > label,
+  legend {
+    width: 25%;
+    float: left;
+    padding-right: 10px;
+  }
+  form > div > div,
+  form > div > fieldset > div {
+    width: 75%;
+    float: right;
+  }
+  select,
+  input[type=text],
+  input[type=email],
+  input[type=url],
+  input[type=password] {
+    width: 50%;
+  }
+}
+
+@include media('>xl'){
+  form > div > label,
+	legend {
+  	text-align: right;
+  }
+}
+
+
+
+}

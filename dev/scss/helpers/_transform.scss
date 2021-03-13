@@ -1,0 +1,28 @@
+/*
+---------------------- Transform XY
+*/ 
+
+//  X
+@for $i from 1 through $heightCounter {.translate-x-#{$i}p { transform: translateX( $i + $pc); }}
+@for $i from 3 through $heightCounter {.translate-x-#{$i*5}p { transform: translateX( $i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.translate-x-#{$i*10}p { transform: translateX( $i*10 + $pc); }}
+@for $i from 1 through $heightCounter {.translate-x-minus-#{$i}p { transform: translateX( -$i + $pc); }}
+@for $i from 3 through $heightCounter {.translate-x-minus-#{$i*5}p { transform: translateX( -$i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.translate-x-minus-#{$i*10}p { transform: translateX( -$i*10 + $pc); }}
+
+
+//  Y
+@for $i from 1 through $heightCounter {.translate-y-#{$i}p { transform: translateY( $i + $pc); }}
+@for $i from 3 through $heightCounter {.translate-y-#{$i*5}p { transform: translateY( $i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.translate-y-#{$i*10}p { transform: translateY( $i*10 + $pc); }}
+@for $i from 1 through $heightCounter {.translate-y-minus-#{$i}p { transform: translateY( -$i + $pc); }}
+@for $i from 3 through $heightCounter {.translate-y-minus-#{$i*5}p { transform: translateY( -$i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.translate-y-minus-#{$i*10}p { transform: translateY( -$i*10 + $pc); }}
+
+//  XY
+@for $i from 1 through $heightCounter {.translate-xy-#{$i}p { transform: translate( $i + $pc, $i + $pc); }}
+@for $i from 3 through $heightCounter {.translate-xy-#{$i*5}p { transform: translate( $i*5 + $pc, $i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.translate-xy-#{$i*10}p { transform: translate( $i*10 + $pc, $i*10 + $pc); }}
+@for $i from 1 through $heightCounter {.translate-xy-minus-#{$i}p { transform: translate( -$i + $pc, -$i + $pc); }}
+@for $i from 3 through $heightCounter {.translate-xy-minus-#{$i*5}p { transform: translate( -$i*5 + $pc, -$i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.translate-xy-minus-#{$i*10}p { transform: translate( -$i*10 + $pc, -$i*10 + $pc); }}

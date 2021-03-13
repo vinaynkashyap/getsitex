@@ -11,40 +11,60 @@
     --white: white;
     --black: black;
     --transparent: transparent;
-    --warning: #febe34;
-    --success: #07a142;
-    --info: #deeb2b;
-    --error: #ca0b2b;
-    --light: #ebebeb;
-    --light-1: #ccc;
-    --light-2: #ddd;
-    --light-3: #eee;
-    --light-4: #f6f6f6;
-    --light-5: #aaa;
+    --warning: #ffab73;
+    --success: #cee6b4;
+    --info: #fff9b0;
+    --error: #ac0d0d;
+
+    --light: #f7f8fa;
+    --light-1: #f3f2f8;
+    --light-2: #e2e2ea;
+    --light-3: #ebebeb;
+    --light-4: #dcdbd9;
+    --light-5: #bebdc3;
+
+    // --light: #FDFDFD;
+    // --light-1: #EBEBEC;
+    // --light-2: #D9D8DA;
+    // --light-3: #C9C6C9;
+    // --light-4: #B7B4B6;
+    // --light-5: #7e7e7e;
+
     --dark: #0f0f0f;
-    --dark-1: #181818;
+    --dark-1: #151515;
     --dark-2: #282828;
-    --dark-3: #4b4b4b;
-    --dark-4:#222;
-    --dark-5:#111;
-    --accent: #e50015;
-    --accent-1: #445fe7;
-    --accent-2: #44e7c8;
-    --accent-3: #9b30d7;
-    --accent-4:#fff128;  
-    --accent-5:#11c801;  
-    --base: #ebebeb;
-    --base-1: #d6d1d1;
-    --base-2: #f0eaea;
-    --base-3: #ebebebd5;
-    --base-4  :#ebebeb;  
-    --base-5  :#ebebeb;  
-    --highlight: #fff7df;
-    --highlight-1: #ebffdf;
-    --highlight-2: #dffff2;
-    --highlight-3: #dfe5ff;
-    --highlight-4  :#fff7df;
-    --highlight-5  :#fff7df;
+    --dark-3: #333335;
+    --dark-4: #3d3e40;
+    --dark-5: #474748;
+
+    // --dark: #070707;
+    // --dark-1: #131415;
+    // --dark-2: #1E2123;
+    // --dark-3: #36383B;
+    // --dark-4: #4b4b4b;
+    // --dark-5: #474A4C;
+    
+    --accent: #eb1c24;
+    --accent-1: #361dd1;
+    --accent-2: #73f89f;
+    --accent-3: #f27c3e;
+    --accent-4:#d22285;  
+    --accent-5:#f8f073;  
+    // --accent-5:#7f33d4;  
+
+    --base: #e1e6e9;
+    --base-1: #d8d8d8;
+    --base-2: #cbcbcb;
+    --base-3: #aaabac;    
+    --base-4  :#9b9b9b;
+    --base-5: #7d7e80;
+
+    --highlight: #fcd1d1;
+    --highlight-1: #edffec;
+    --highlight-2: #edeef7;
+    --highlight-3: #bccbff;
+    --highlight-4  :#fffecc;
+    --highlight-5  :#e4fbff;
 }
 
 

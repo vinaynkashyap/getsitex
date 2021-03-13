@@ -1,32 +1,4 @@
 
-.tab-area {
-    .tab-button {
-        a {
-            display: block;
-            &:focus {
-                outline: none;
-            }
-        }        
-    }
-    .tab-content {
-        display: none;
-    }
-    .tab-content.active {
-        display: block;
-    }
-}
-
-
-
-
-@import 'tab-1';
-@import 'tab-2';
-@import 'tab-3';
-@import 'tab-4';
-@import 'tab-5';
-@import 'tab-6';
-@import 'tab-7';
-@import 'tab-8';
-@import 'tab-9';
-
-
+@import 'tab-visibility.scss';
+@import 'tab-layout/all';
+@import 'tab-skin/all';

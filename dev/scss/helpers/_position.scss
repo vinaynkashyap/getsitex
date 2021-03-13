@@ -8,12 +8,80 @@
 .absolute {  position: absolute;}
 .fixed {  position: fixed;}
 
+//  top
+@for $i from 1 through $heightCounter {.top-#{$i}p { top:( $i + $pc); }}
+@for $i from 3 through $heightCounter {.top-#{$i*5}p { top:( $i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.top-#{$i*10}p { top:( $i*10 + $pc); }}
+@for $i from 1 through $heightCounter {.top-minus-#{$i}p { top:( -$i + $pc); }}
+@for $i from 3 through $heightCounter {.top-minus-#{$i*5}p { top:( -$i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.top-minus-#{$i*10}p { top:( -$i*10 + $pc); }}
+
+//  Right
+@for $i from 1 through $heightCounter {.right-#{$i}p { right:( $i + $pc); }}
+@for $i from 3 through $heightCounter {.right-#{$i*5}p { right:( $i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.right-#{$i*10}p { right:( $i*10 + $pc); }}
+@for $i from 1 through $heightCounter {.right-minus-#{$i}p { right:( -$i + $pc); }}
+@for $i from 3 through $heightCounter {.right-minus-#{$i*5}p { right:( -$i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.right-minus-#{$i*10}p { right:( -$i*10 + $pc); }}
+
+//  Bottom
+@for $i from 1 through $heightCounter {.bottom-#{$i}p { bottom:( $i + $pc); }}
+@for $i from 3 through $heightCounter {.bottom-#{$i*5}p { bottom:( $i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.bottom-#{$i*10}p { bottom:( $i*10 + $pc); }}
+@for $i from 1 through $heightCounter {.bottom-minus-#{$i}p { bottom:( -$i + $pc); }}
+@for $i from 3 through $heightCounter {.bottom-minus-#{$i*5}p { bottom:( -$i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.bottom-minus-#{$i*10}p { bottom:( -$i*10 + $pc); }}
+
+//  Left
+@for $i from 1 through $heightCounter {.left-#{$i}p { left:( $i + $pc); }}
+@for $i from 3 through $heightCounter {.left-#{$i*5}p { left:( $i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.left-#{$i*10}p { left:( $i*10 + $pc); }}
+@for $i from 1 through $heightCounter {.left-minus-#{$i}p { left:( -$i + $pc); }}
+@for $i from 3 through $heightCounter {.left-minus-#{$i*5}p { left:( -$i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.left-minus-#{$i*10}p { left:( -$i*10 + $pc); }}
+
+
+// Mobile device
+
 @include media('>md') {
     .md-static {  position: static;}
     .md-sticky {  position: sticky;}
     .md-relative {  position: relative;}
     .md-absolute {  position: absolute;}
     .md-fixed {  position: fixed;}
+
+    //  top
+@for $i from 1 through $heightCounter {.md-top-#{$i}p { top:( $i + $pc); }}
+@for $i from 3 through $heightCounter {.md-top-#{$i*5}p { top:( $i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.md-top-#{$i*10}p { top:( $i*10 + $pc); }}
+@for $i from 1 through $heightCounter {.md-top-minus-#{$i}p { top:( -$i + $pc); }}
+@for $i from 3 through $heightCounter {.md-top-minus-#{$i*5}p { top:( -$i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.md-top-minus-#{$i*10}p { top:( -$i*10 + $pc); }}
+
+//  Right
+@for $i from 1 through $heightCounter {.md-right-#{$i}p { right:( $i + $pc); }}
+@for $i from 3 through $heightCounter {.md-right-#{$i*5}p { right:( $i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.md-right-#{$i*10}p { right:( $i*10 + $pc); }}
+@for $i from 1 through $heightCounter {.md-right-minus-#{$i}p { right:( -$i + $pc); }}
+@for $i from 3 through $heightCounter {.md-right-minus-#{$i*5}p { right:( -$i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.md-right-minus-#{$i*10}p { right:( -$i*10 + $pc); }}
+
+//  Bottom
+@for $i from 1 through $heightCounter {.md-bottom-#{$i}p { bottom:( $i + $pc); }}
+@for $i from 3 through $heightCounter {.md-bottom-#{$i*5}p { bottom:( $i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.md-bottom-#{$i*10}p { bottom:( $i*10 + $pc); }}
+@for $i from 1 through $heightCounter {.md-bottom-minus-#{$i}p { bottom:( -$i + $pc); }}
+@for $i from 3 through $heightCounter {.md-bottom-minus-#{$i*5}p { bottom:( -$i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.md-bottom-minus-#{$i*10}p { bottom:( -$i*10 + $pc); }}
+
+//  Left
+@for $i from 1 through $heightCounter {.md-left-#{$i}p { left:( $i + $pc); }}
+@for $i from 3 through $heightCounter {.md-left-#{$i*5}p { left:( $i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.md-left-#{$i*10}p { left:( $i*10 + $pc); }}
+@for $i from 1 through $heightCounter {.md-left-minus-#{$i}p { left:( -$i + $pc); }}
+@for $i from 3 through $heightCounter {.md-left-minus-#{$i*5}p { left:( -$i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.md-left-minus-#{$i*10}p { left:( -$i*10 + $pc); }}
+
 }
 
 @include media('>xl') {
@@ -22,4 +90,37 @@
     .xl-relative {  position: relative;}
     .xl-absolute {  position: absolute;}
     .xl-fixed {  position: fixed;}
+
+    
+//  top
+@for $i from 1 through $heightCounter {.xl-top-#{$i}p { top:( $i + $pc); }}
+@for $i from 3 through $heightCounter {.xl-top-#{$i*5}p { top:( $i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.xl-top-#{$i*10}p { top:( $i*10 + $pc); }}
+@for $i from 1 through $heightCounter {.xl-top-minus-#{$i}p { top:( -$i + $pc); }}
+@for $i from 3 through $heightCounter {.xl-top-minus-#{$i*5}p { top:( -$i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.xl-top-minus-#{$i*10}p { top:( -$i*10 + $pc); }}
+
+//  Right
+@for $i from 1 through $heightCounter {.xl-right-#{$i}p { right:( $i + $pc); }}
+@for $i from 3 through $heightCounter {.xl-right-#{$i*5}p { right:( $i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.xl-right-#{$i*10}p { right:( $i*10 + $pc); }}
+@for $i from 1 through $heightCounter {.xl-right-minus-#{$i}p { right:( -$i + $pc); }}
+@for $i from 3 through $heightCounter {.xl-right-minus-#{$i*5}p { right:( -$i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.xl-right-minus-#{$i*10}p { right:( -$i*10 + $pc); }}
+
+//  Bottom
+@for $i from 1 through $heightCounter {.xl-bottom-#{$i}p { bottom:( $i + $pc); }}
+@for $i from 3 through $heightCounter {.xl-bottom-#{$i*5}p { bottom:( $i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.xl-bottom-#{$i*10}p { bottom:( $i*10 + $pc); }}
+@for $i from 1 through $heightCounter {.xl-bottom-minus-#{$i}p { bottom:( -$i + $pc); }}
+@for $i from 3 through $heightCounter {.xl-bottom-minus-#{$i*5}p { bottom:( -$i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.xl-bottom-minus-#{$i*10}p { bottom:( -$i*10 + $pc); }}
+
+//  Left
+@for $i from 1 through $heightCounter {.xl-left-#{$i}p { left:( $i + $pc); }}
+@for $i from 3 through $heightCounter {.xl-left-#{$i*5}p { left:( $i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.xl-left-#{$i*10}p { left:( $i*10 + $pc); }}
+@for $i from 1 through $heightCounter {.xl-left-minus-#{$i}p { left:( -$i + $pc); }}
+@for $i from 3 through $heightCounter {.xl-left-minus-#{$i*5}p { left:( -$i*5 + $pc); }}
+@for $i from 6 through $heightCounter {.xl-left-minus-#{$i*10}p { left:( -$i*10 + $pc); }}
 }

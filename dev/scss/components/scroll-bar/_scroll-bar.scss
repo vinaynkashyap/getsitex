@@ -4,6 +4,9 @@ Scrollbar
 -------------------------------------------
 */
 
+// Demo purposes only, proceed with caution on Windows!
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; }
 
 
 ::-webkit-scrollbar {
