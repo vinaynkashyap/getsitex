@@ -5,6 +5,7 @@
         grid-template-columns: repeat(4, 1fr);
          .tab-button {
              grid-column: 2/ -1;
+             margin-left: 2rem;
          }
          .tab-content {
              grid-column: 1/ -1;

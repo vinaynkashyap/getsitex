@@ -180,7 +180,7 @@ section {
 
 .skin-light {
   color: var(--dark);
-  background-color: var(--light); }
+  background-color: var(--light-3); }
   .skin-light a {
     color: currentColor; }
 
@@ -15634,7 +15634,6 @@ Metro grid gallery
   display: grid;
   grid-auto-flow: dense; }
   .ui-gallery-12 > figure {
-    background: var(--dark);
     padding: 1rem;
     position: relative; }
     .ui-gallery-12 > figure img {
@@ -15652,13 +15651,12 @@ Metro grid gallery
     justify-content: space-between;
     align-items: start; }
     .ui-gallery-12 > figure {
-      background: var(--dark-1);
       padding: 2rem;
       position: relative; }
       .ui-gallery-12 > figure::before {
         content: "";
         display: block;
-        padding-bottom: 65%; }
+        padding-bottom: 100%; }
       .ui-gallery-12 > figure img {
         z-index: 10;
         position: absolute;
@@ -15667,7 +15665,7 @@ Metro grid gallery
         object-fit: cover; }
       .ui-gallery-12 > figure:nth-child(2n) img {
         width: auto;
-        height: auto;
+        height: 100%;
         object-fit: cover; } }
 
 /* 
@@ -15765,6 +15763,79 @@ Sliders
   height: 100vh;
   z-index: 100; }
 
+/* 
+-------------------------------------------
+Scrollbar
+-------------------------------------------
+*/
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; }
+
+::-webkit-scrollbar {
+  -webkit-appearance: var(--dark); }
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--dark);
+  border: 12px solid var(--accent); }
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: var(--dark-1x); }
+
+.scrollbar-light {
+  overflow: auto;
+  scrollbar-color: var(--light) transparent;
+  scrollbar-width: thin; }
+
+.scrollbar-light::-webkit-scrollbar,
+.scrollbar-light::-webkit-scrollbar-track {
+  width: 6px;
+  background: transparent; }
+
+.scrollbar-light::-webkit-scrollbar-thumb {
+  background-color: var(--light);
+  border: 0rem solid var(--dark); }
+
+/* I effect changing the red background color when hovering */
+.scrollbar-light::-webkit-scrollbar-thumb:hover {
+  background: var(--accent); }
+
+.scrollbar-accent {
+  overflow: auto;
+  scrollbar-color: var(--dark) var(--accent);
+  scrollbar-width: thin; }
+
+.scrollbar-accent::-webkit-scrollbar,
+.scrollbar-accent::-webkit-scrollbar-track {
+  width: 6px;
+  background: transparent; }
+
+.scrollbar-accent::-webkit-scrollbar-thumb {
+  background-color: var(--accent);
+  border: 0 solid var(--accent); }
+
+/* I effect changing the red background color when hovering */
+.scrollbar-accent::-webkit-scrollbar-thumb:hover {
+  background: var(--accent); }
+
+.scrollbar-dark {
+  overflow: auto;
+  scrollbar-color: var(--dark) transparent;
+  scrollbar-width: thin; }
+
+.scrollbar-dark::-webkit-scrollbar,
+.scrollbar-dark::-webkit-scrollbar-track {
+  width: 6px;
+  background: transparent; }
+
+.scrollbar-dark::-webkit-scrollbar-thumb {
+  background-color: var(--dark);
+  border: 0px solid var(--base); }
+
+/* I effect changing the red background color when hovering */
+.scrollbar-dark::-webkit-scrollbar-thumb:hover {
+  background: var(--accent); }
+
 .tab-area .tab-content {
   position: absolute;
   z-index: -1;
@@ -15784,7 +15855,8 @@ Sliders
     display: grid;
     grid-template-columns: repeat(4, 1fr); }
     .tab-layout-2 .tab-button {
-      grid-column: 2/ -1; }
+      grid-column: 2/ -1;
+      margin-left: 2rem; }
     .tab-layout-2 .tab-content {
       grid-column: 1/ -1; } }
 
