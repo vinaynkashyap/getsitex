@@ -1,0 +1,12 @@
+// .bg-lightbox-dark {
+//     background: rgba(0,0,0,.99);
+// }
+// .bg-lightbox-light {
+//     background: rgba(235,235,235,.99);
+// }
+.ui-lightbox {
+    display: none;
+}
+.ui-lightbox.active {
+    display: grid;
+}

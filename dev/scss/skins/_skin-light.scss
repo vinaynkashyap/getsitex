@@ -1,38 +1,26 @@
 .skin-light {
+    // Text
     color: var(--dark);
+    //  Background
     background-color: var(--light-3);
-
+    // Links
     a {
         color: currentColor;
-        // color: var(--dark);
     }
-      
-}
-
-
-
-.form-skin-light {
-    form > div > fieldset label {
-        font-size: 90%;
+    // Menu Button
+    .hamburger span {
+        background: currentColor;
     }
-    input[type="text"],
-    input[type="email"],
-    input[type="url"],
-    input[type="password"],
-    textarea {
-        width: 100%;
-        border: 1px solid var(--light-2);
+    //  Slider arrows
+    .swiper-button-prev,
+    .swiper-button-next {
+        background: var(--dark-5);
     }
-    input[type="text"]:focus,
-    input[type="email"]:focus,
-    input[type="url"]:focus,
-    input[type="password"]:focus,
-    textarea:focus {
-        outline: 0;
-        border-color: var(--accent);
+    //  Slider Paginations
+    .swiper-pagination-bullet {
+        background: var(--dark-5);
+        &.swiper-pagination-bullet-active {
+            background: var(--accent);
+        }
     }
-    button {
-        border: none;
-        cursor: pointer;
-      }
 }

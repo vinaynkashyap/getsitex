@@ -1,34 +1,34 @@
 // h1, h2, h3, h4, h5, h6, dl, dd, ol, ul, menu, figure, blockquote, p, pre, form
+
 .skin-dark {
+    //  Text
     color: var(--light);
+
+    //  Background
     background-color: var(--dark);
 
+    // Links
     a {
         color: currentColor;
     }
-}
 
-.skin-dark-1 {
-    color: var(--light);
-    background-color: var(--dark-1);
-
-    a {
-        color: currentColor;
+    // Menu Button
+    .hamburger span {
+        background: currentColor;
     }
-}
-
-.skin-dark-2 {
-    color: var(--light);
-    background-color: var(--dark-2);
-
-    a {
-        color: currentColor;
+    //  Slider arrows
+    .swiper-button-prev,
+    .swiper-button-next {
+        background: var(--base);
     }
-}
-
-
- 
-.form-skin-dark {
+    //  Slider Paginations
+    .swiper-pagination-bullet {
+        background: var(--base-4);
+        &.swiper-pagination-bullet-active {
+            background: var(--accent);
+        }
+    }
+    //  Form
     form > div > fieldset label {
         font-size: 90%;
     }
@@ -51,5 +51,5 @@
     button {
         border: none;
         cursor: pointer;
-      }
-} 
+    }
+}

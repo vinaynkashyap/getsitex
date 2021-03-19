@@ -73,6 +73,12 @@ $vw : 0vw;
 
 
 @include media('>md') {
+
+.md-w-0 { width:0; }
+.md-w-a { width:auto; }
+.md-w-min-content { width:min-content; }
+.md-w-max-content { width:max-content; }
+.md-w-fit-content { width:fit-content; }
     
 // Width
 @for $i from 1 through $WidthCounter {.md-w-#{$i} { width:( $i + $px); }}
@@ -133,6 +139,12 @@ $vw : 0vw;
 
 
 @include media('>xl') {
+
+.xl-w-0 { width:0; }
+.xl-w-a { width:auto; }
+.xl-w-min-content { width:min-content; }
+.xl-w-max-content { width:max-content; }
+.xl-w-fit-content { width:fit-content; }
     
     // Width
     @for $i from 1 through $WidthCounter {.xl-w-#{$i} { width:( $i + $px); }}

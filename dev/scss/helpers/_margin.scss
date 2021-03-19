@@ -113,11 +113,11 @@ Margin Classes
 
 
 //------------- Negative Margins
+
+// //  margin Top
 @for $i from 1 through $marginCounter {.mt-minus-#{$i+p} { margin-top:( -$i + $p); }}
 @for $i from 3 through $marginCounter {.mt-minus-#{$i*5+p} { margin-top:( -5 * $i + $p); }}
 @for $i from 6 through $marginCounter {.mt-minus-#{$i*10+p} { margin-top:( -10 * $i + $p); }}
-
-
 // //  margin Right
 @for $i from 1 through $marginCounter {.mr-minus-#{$i+p} { margin-right:( -$i + $p); }}
 @for $i from 3 through $marginCounter {.mr-minus-#{$i*5+p} { margin-right:( -5 * $i + $p); }}

@@ -12,7 +12,6 @@ section {
     display:grid;
     grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
     .container {
-
            box-sizing: border-box !important;
            grid-column: 2 / 3;
        }

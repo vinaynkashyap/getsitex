@@ -8,6 +8,18 @@
 .absolute {  position: absolute;}
 .fixed {  position: fixed;}
 
+
+.top-0 { top :0}
+.right-0 { right:0}
+.bottom-0 { bottom:0}
+.left-0 { left:0}
+.top-a { top :auto}
+.right-a { right:auto}
+.bottom-a { bottom:auto}
+.left-a { left:auto}
+
+
+
 //  top
 @for $i from 1 through $heightCounter {.top-#{$i}p { top:( $i + $pc); }}
 @for $i from 3 through $heightCounter {.top-#{$i*5}p { top:( $i*5 + $pc); }}
@@ -50,6 +62,16 @@
     .md-absolute {  position: absolute;}
     .md-fixed {  position: fixed;}
 
+
+.md-top-0 { top :0}
+.md-right-0 { right:0}
+.md-bottom-0 { bottom:0}
+.md-left-0 { left:0}
+.md-top-a { top :auto}
+.md-right-a { right:auto}
+.md-bottom-a { bottom:auto}
+.md-left-a { left:auto}
+
     //  top
 @for $i from 1 through $heightCounter {.md-top-#{$i}p { top:( $i + $pc); }}
 @for $i from 3 through $heightCounter {.md-top-#{$i*5}p { top:( $i*5 + $pc); }}
@@ -90,6 +112,16 @@
     .xl-relative {  position: relative;}
     .xl-absolute {  position: absolute;}
     .xl-fixed {  position: fixed;}
+
+
+.xl-top-0 { top :0}
+.xl-right-0 { right:0}
+.xl-bottom-0 { bottom:0}
+.xl-left-0 { left:0}
+.xl-top-a { top :auto}
+.xl-right-a { right:auto}
+.xl-bottom-a { bottom:auto}
+.xl-left-a { left:auto}
 
     
 //  top

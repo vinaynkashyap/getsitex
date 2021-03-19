@@ -51,6 +51,7 @@ $p : 0%;
 @for $i from 1 through $paddingCounter {.py-#{$i} { padding-top:( $i + $px); padding-bottom:( $i + $px); }}
 @for $i from 3 through $paddingCounter {.py-#{$i*5} { padding-top:( 5 * $i + $px); padding-bottom:( 5 * $i + $px); }}
 @for $i from 6 through $paddingCounter {.py-#{$i*10} { padding-top:( 10 * $i + $px); padding-bottom:( 10 * $i + $px);}}
+@for $i from 2 through $paddingCounter {.py-#{$i*100} { padding-top:( 100 * $i + $px); padding-bottom:( 100 * $i + $px);}}
 
 
 

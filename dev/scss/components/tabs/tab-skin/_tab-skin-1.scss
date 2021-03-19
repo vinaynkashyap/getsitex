@@ -5,27 +5,21 @@
     .tab-button {
         box-sizing: border-box;
         padding: 1rem 2rem 1rem 4rem;
-        background-color: var(--dark-1);
-        color: var(--light-5);
         font-weight: 600;
         position: relative;
-        &.active{
-            color: var(--accent);             
+        &.active{            
             @include media('>md'){
                 a {
                     position: relative;
-
                     &::before{
                         content: '\2014';
                         z-index: 20;
                         position: absolute;
-                        left: -0;
+                        left: -0; 
                         transform: translateX(calc(-100% - 1rem));
                         top: 0;
                     }
                 }
-
-
                 .tab-count {
                     font-size: 0;
                     visibility: hidden;                   
@@ -34,7 +28,6 @@
         }
         .tab-count {
             font-size: 14px;
-            color: var(--accent);
             position: absolute;
             top: 50%;
             transform: translateY(-4px);

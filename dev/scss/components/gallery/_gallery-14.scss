@@ -23,7 +23,7 @@ Metro grid gallery
 	  img {
 		// position: absolute;
 		width: 100%;
-		height: auto;		
+		height: 100%;		
 		object-fit: contain;	
 	  }
       figcaption {
@@ -34,15 +34,14 @@ Metro grid gallery
 
   @include media('>md') {
 	.ui-gallery-12 {
-    // row-gap:180px;
-    // column-gap:180px;
-    grid-template-columns: repeat(8, auto);
-    // grid-auto-rows: minmax(200px, max-content);
+    row-gap:180px;
+    grid-template-columns: repeat(6, auto);
+    grid-auto-rows: minmax(200px, max-content);
     justify-content: space-between;
-    align-items: start;
+    align-items: start;    
 	> figure {
-		// background: var(--dark-1);
-	    // padding: 2rem;
+	    // background: var(--dark-1);
+	    padding: 2rem;
 	    position: relative; 
       &::before {
 		// for apsect ratio
@@ -54,14 +53,17 @@ Metro grid gallery
         z-index: 10;
 		position: absolute;
 		width: 100%;
-		object-fit: contain;
+		height: 100%;		
+		object-fit: cover;
 	  }
       &:nth-child(2n) {
-		// img {
-        //     width: auto;
-        //     height:100%;
-        //     object-fit: contain;
-        // }
+		  display: grid;
+		  align-content: start;
+		  img {
+            width: auto;
+            height:100%;
+            object-fit: cover;
+        }
     }
 }
     }

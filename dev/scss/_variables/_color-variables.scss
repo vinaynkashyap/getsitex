@@ -65,6 +65,8 @@
     --highlight-3: #bccbff;
     --highlight-4  :#fffecc;
     --highlight-5  :#e4fbff;
+
+    --current : currentColor;
 }
 
 
@@ -112,5 +114,7 @@ $colors: (
   highlight-3    var(--highlight-3  ),
   highlight-4    var(--highlight-4  ),
   highlight-5    var(--highlight-5  ),
+  
+  current    var(--current  ),
 
 );

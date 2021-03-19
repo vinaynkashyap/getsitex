@@ -1,5 +1,10 @@
-.bg-dots-pattern {
-    background-image: radial-gradient(var(--dark-3) 10%, transparent 25%);
+.bg-dots {
   background-position: 0 0;
-  background-size: 24px 24px;
+  background-size: 21px 20px;
+  &.dots-dark{
+    background-image: radial-gradient(rgba(69,69,69,.54) .02vw, transparent 20%);
+  }
+  &.dots-light{
+  background-image: radial-gradient(rgba(124,124,124,.4) .02vw, transparent 20%);
+  }
 }

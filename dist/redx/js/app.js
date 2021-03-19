@@ -34,9 +34,7 @@ toggleButtonPrimary.addEventListener('click', () => {
 // Slider 2 - Fullscreen slider
 // -----------------------------------------------
 
-const swiper = new Swiper('.swiper-container', {
-
-
+const swiper1 = new Swiper('.ui-slider-1.swiper-container', {
   // autoplay: 500,
   speed: 1000,
   // autoplayDisableOnInteraction: true,
@@ -44,9 +42,6 @@ const swiper = new Swiper('.swiper-container', {
     delay: 3500,
   },
   autoplayDisableOnInteraction: true,
-  cubeEffect: {
-    slideShadows: false,
-  },
   slidesPerView: 'auto',
   centeredSlides: true,
   spaceBetween: 100,
@@ -59,6 +54,53 @@ const swiper = new Swiper('.swiper-container', {
     prevEl: ".swiper-button-prev"
   },
 });
+
+
+
+
+const swiper2 = new Swiper('.ui-slider-2 .swiper-container', {
+  // autoplay: 500,
+  speed: 1500,
+  // autoplayDisableOnInteraction: true,
+  autoplay: {
+    delay: 5000,
+  },
+  slidesPerView: '1',
+  spaceBetween: 100,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+
+const swiper3 = new Swiper('.ui-slider-3 .swiper-container', {
+  // autoplay: 500,
+  speed: 1500,
+  // autoplayDisableOnInteraction: true,
+  autoplay: {
+    delay: 5000,
+  },
+  pagination: '.swiper-pagination',
+  paginationClickable: true,
+  freeMode: false,
+  loop: true,
+  centeredSlides: false,
+  breakpoints: {
+    0: { /* when window >=0px - webflow mobile landscape/portriat */
+      slidesPerView: 2,
+      spaceBetween: 60,
+    },
+    767: { /* when window >= 767px - webflow tablet */
+      slidesPerView: 3,
+      spaceBetween: 120,
+    },
+    988: { /* when window >= 988px - webflow desktop */
+      slidesPerView: 4,
+      spaceBetween: 140,
+    }
+  },
+});
+
 
 // -----------------------------------------------
 // Tabs
@@ -84,6 +126,32 @@ tabs.forEach(tab => {
     target.classList.add('active')
   })
 })
+
+// -----------------------------------------------
+// Gallery Light box
+// -----------------------------------------------
+
+const images = document.querySelectorAll('.ui-lightbox-gallery figure img');
+const lightboxBg = document.querySelector('.ui-lightbox');
+images.forEach(image => {
+  image.addEventListener('click', e => {
+    console.log('Clicked an image')
+    // Activate Lightbox BG
+    lightboxBg.classList.add('active');
+
+    // Add clicked image to lightbox bg
+
+    const lightboxImg = document.querySelector('.ui-lihtbox-image');
+    lightboxImg.src = '';
+    lightboxImg.src = image.src;
+
+    lightboxBg.addEventListener('click', () => {
+      lightboxBg.classList.remove('active');
+    })
+
+  })
+});
+
 
 
 // -----------------------------------------------

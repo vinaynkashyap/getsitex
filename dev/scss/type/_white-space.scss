@@ -1,5 +1,22 @@
-.font-normal	 {white-space: normal; }
-.font-nowrap	 {white-space: nowrap; }
-.font-pre	 {white-space: pre; }
-.font-pre-line	 {white-space: pre-line; }
-.font-pre-wrap	 {white-space: pre-wrap; }
+.white-space-normal	 {white-space: normal; }
+.white-space-nowrap	 {white-space: nowrap; }
+.white-space-pre	     {white-space: pre; }
+.white-space-pre-line	 {white-space: pre-line; }
+.white-space-pre-wrap	 {white-space: pre-wrap; }
+
+@include media('>md') {
+    .md-white-space-normal	 {white-space: normal; }
+    .md-white-space-nowrap	 {white-space: nowrap; }
+    .md-white-space-pre	     {white-space: pre; }
+    .md-white-space-pre-line	 {white-space: pre-line; }
+    .md-white-space-pre-wrap	 {white-space: pre-wrap; }
+}
+
+
+@include media('>xl') {
+    .xl-white-space-normal	 {white-space: normal; }
+    .xl-white-space-nowrap	 {white-space: nowrap; }
+    .xl-white-space-pre	     {white-space: pre; }
+    .xl-white-space-pre-line	 {white-space: pre-line; }
+    .xl-white-space-pre-wrap	 {white-space: pre-wrap; }
+}

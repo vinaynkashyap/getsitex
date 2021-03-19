@@ -1,350 +1,647 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <title>RedX Resume Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Download Modern Resume HTML Template" />
-    <meta name="author" content="Graphitivity" />
-    <meta charset="UTF-8" />
-    <!-- Fevicon -->
-    <link rel="icon" type="image/ico" href="favicon.ico" />
-    <!-- Vendors CSS -->
-    <!-- <link rel="stylesheet" href="css/vendors/swiper-bundle.min.css" /> -->
-    <!-- Bootstrap Icons -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> -->
-    <!-- Fontawesome Icons -->
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous"> -->
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/demo-1.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-</head>
-
-
-<body id="top" class="global-layout global-fonts global-menu global-header">
-    <!-- Preloader -->
-    <div class="preloader bg-dark hide">
-        <div class="absolute-cc">
-            <div class="font-color-white font-upper absolute-cc"> Loading... </div>
-            <div class="preloader-style-circle-gradient w-200px h-200px animation-rotate"></div>
+    <head>
+        <title>RedX Resume Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Download Modern Resume HTML Template">
+        <meta name="author" content="Graphitivity">
+        <meta charset="UTF-8">
+        <!-- Fevicon -->
+        <link rel="icon" type="image/ico" href="favicon.ico">
+        <!-- Vendors CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body id="top" class="global-layout global-fonts global-menu global-header">
+        <!-- Preloader -->
+        <div class="preloader bg-dark hide">
+            <div class="absolute-cc">
+                <div class="font-color-white font-upper absolute-cc"> Loading...</div>
+                <div class="preloader-style-circle-gradient w-200px h-200px animation-rotate"></div>
+            </div>
         </div>
-    </div>
-
-    <main id="wrap-all" class="">
-        <!-- Header -->
-        <header id="header" class="header-main">
-            <!-- Header main -->
-            <div id="header-main" class="header-container skin-dark p-10 px-15 flex justify-end sm-menu-fullscreen md-menu-fullscreen xl-menu-horizontal">
-
-                <!--  Logo -->
-                <div class="header-module logo mr-a">
-                    <h2 class="mb-0 font-size-fluid-3 font-w-800 logo-text"><a href="#">RED<span class="font-color-accent">X</span></a></h2>
+        <main id="wrap-all" class="page-layout-1 skin-light bg-base-5 font-w-400">
+            <!-- Header -->
+            <header id="header" class="header-area">
+                <div class="header-container p-10 px-15 flex justify-end align-items-center sm-menu-fullscreen md-menu-fullscreen xl-menu-horizontal">
+                    <!--  Logo -->
+                    <div class="header-module logo mr-a">
+                        <h2 class="mb-0 font-size-fluid-3 font-w-800">
+                            <a href="#">
+                                RED<span class="font-color-accent-1">X</span>
+                            </a>
+                        </h2>
+                    </div>
+                    <!-- Menu -->
+                    <nav id="main-menu" class="header-module menu-primary mr-4">
+                        <div class="menu-inner">
+                            <ul class="menu-module menu-bar flex flex-col xl-flex-row text-align-center  font-color-light-3">
+                                <li class="menu-item">
+                                    <a class="py-10 px-20 xl-py-0 block font-size-6 xl-font-size-4  text-decoration-none" href="#section-5">Demos</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="py-10 px-20 xl-py-0 block font-size-6 xl-font-size-4  text-decoration-none" href="#section-7">Page Layouts</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="py-10 px-20 xl-py-0 block font-size-6 xl-font-size-4  text-decoration-none" href="#section-10">UI Elements</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="py-10 px-20 xl-py-0 block font-size-6 xl-font-size-4  text-decoration-none" href="#section-10">Content Blocks</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="py-10 px-20 xl-py-0 block font-size-6 xl-font-size-4  text-decoration-none" href="#section-10">Support</a>
+                                </li>
+                            </ul>
+                            <!-- Overlay Menu CTA Button -->
+                            <div class="menu-module xl-hide">
+                                <div class="btn radius-2 bg-accent-1 block mx-a mt-20 font-color-white">
+                                    <a class="" href="#">Buy Now</a>
+                                </div>
+                            </div>
+                            <!-- /.menu-inner -->
+                        </div>
+                    </nav>
+                    <!-- Header CTA Button -->
+                    <div class="header-module mr-20">
+                        <div class="btn font-color-white radius-2 bg-accent-1 ml-20">
+                            <a class="" href="#">Buy Now</a>
+                        </div>
+                    </div>
+                    <!-- Hamburger -->
+                    <button type="button" id="toggle-btn-primary" class="header-module toggle-btn-primary hamburger xl-hide font-color-dark">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </button>
+                    <!-- /.header-container -->
                 </div>
-
-                <!-- Hamburger -->
-                <button type="button" id="toggle-btn-primary" class="header-module toggle-btn-primary hamburger ">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                </button>
-
-               
-                
-
-                <!-- Menu -->
-                <nav id="main-menu" role="navigation" class="header-module menu-primary mr-4 ">
-                    <div class="menu-inner flex">
-                        <ul class="menu-module menu-bar menu-style">
-                            <li class="menu-item"><a href="#section-5">Demos </a></li>
-                            <li class="menu-item parent-menu"><a href="#section-7">Pages </a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item"><a href="#">Pages</a></li>
-                                    <li class="menu-item"><a href="#">About</a></li>
-                                    <li class="menu-item parent-menu"><a href="#">Services </a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item"><a href="#">Services 1</a></li>
-                                            <li class="menu-item"><a href="#">Services 2</a></li>
-                                            <li class="menu-item parent-menu"><a href="#">Services 3</a>
-                                                <ul class="sub-menu">
-                                                    <li class="menu-item"><a href="#">Services 1</a></li>
-                                                    <li class="menu-item"><a href="#">Services 2</a></li>
-                                                    <li class="menu-item"><a href="#">Services 3</a></li>
-                                                    <li class="menu-item"><a href="#">Services 4</a></li>
-                                                    <li class="menu-item"><a href="#">Services 5</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item"><a href="#">Archive</a></li>
-                                    <li class="menu-item"><a href="#">Review</a></li>
-                                    <li class="menu-item"><a href="#">Contact</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item"><a href="#section-10">Elements</a></li>
-                            <li class="menu-item"><a href="#section-10">Support</a></li>
-                            <!-- <li class="menu-item hide"><a class="btn btn-rounded bg-accent" href="#section-10">Buy Now</a> -->
-
-                            </li>
-
-                        </ul>
-
-                        <div class="menu-module xl-hide">
-                            <div class="btn btn-rounded bg-accent ml-20">
-                                <a class="" href="#">Buy Now</a>
+                <!-- /Header -->
+            </header>
+            <!-- Content After Header -->
+            <div id="content" class="content-area">
+                <!-- Section 1 -->
+                <section id="section-1" class=" container-boxed md-min-h-90vh">
+                    <div class="container px-40 py-200 md-pt-0">
+                        <!-- Headline -->
+                        <div class="grid align-content-center h-100p font-color-white">
+                            <h4 class="font-color-dark-5">Welcome</h4>
+                            <h1 class=" font-w-600 font-size-8 md-font-size-fluid-4">
+                                We help
+                                <span class="line-break"></span>
+                                Startups run
+                                <span class="line-break"></span>
+                                the show.
+                            </h1>
+                            <div class="flex-group mt-20">
+                                <span class="btn bg-accent-1 radius-2 font-color-white">
+                                    <a href="#">Get Free Consultation</a>
+                                </span>
                             </div>
                         </div>
-                        
-                        <!-- <div class="menu-module location hide">
-                            <a href="#">Ph: 8762112341</a>
+                    </div>
+                    <div class="bg-media">
+                        <img class="absolute right-minus-60p top-40p translate-y-minus-40p md-w-60p md-right-10p obj-scale-down" src="img/bg/bg-hero.png" alt="">
+                    </div>
+                </section>
+                <hr class="hr-1">
+                <!-- Section 2 -->
+                <section id="section-2" class=" container-boxed">
+                    <div class="container px-40 py-200">
+                        <!-- Headline -->
+                        <div class="md-grid grid-col-12">
+                            <div class="description mt-20 md-mt-0 col-start-5 col-end-12">
+                                <h4 class="font-color-dark-5">Services</h4>
+                                <h2 class=" font-w-600 font-size-8 md-font-size-fluid-4 mb-20 font-color-white">
+                                    We offer the
+                                    <span class="">
+                                        best
+                                        <span class="line-break"></span> growth</span>
+                                    online.
+                                </h2>
+                                <p class="font-size-5  font-color-dark-5 ">List of core RedX features added to make it easy and fast to build and customize your site.</p>
+                            </div>
                         </div>
-                        <div class="menu-module social hide">
-                            <ul>
-                                <li><a href="#">Fb</a></li>
-                                <li><a href="#">Tw</a></li>
+                        <!-- Tab Contents -->
+                        <div class="tab-area bg-dots dots-dark tab-layout-2 tab-skin-1 mt-50">
+                            <!-- <div class="tab-panel"> -->
+                            <div data-tab="#tab-1" class="tab-button active-font-color-accent-1 bg-base-5 font-size-fluid-1">
+                                <a href="#tab-1">
+                                    <span class="tab-count font-color-accent-1">01</span>
+                                    Marketing 
+                                </a>
+                            </div>
+                            <div id="tab-1" data-tab-content class="tab-content bg-white px-30 py-50 md-py-60 md-px-40  md-grid grid-col-12 gap-10 ">
+                                <p class="font-size-fluid-8 font-w-600 col-start-1 col-span-4 md-grid hide"> 01</p>
+                                <div class="col-start-2 col-end-13 md-pl-30 md-font-size-5">
+                                    <p class="mb-40">
+                                        Graduated from the university of Computer Science new
+                                        normal that has evolved from generation towards a cloud
+                                        solution. User content multiple touchpoints.
+                                    </p>
+                                    <span class="btn bg-accent-1 radius-2 font-color-white">
+                                        <a href="#">Get Free Consultation</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div data-tab="#tab-2" class="tab-button active-font-color-accent-1 bg-base-5 font-size-fluid-1 active">
+                                <a href="#tab-2">
+                                    <span class="tab-count font-color-accent-1">02</span>
+                                    Development
+                                </a>
+                            </div>
+                            <div id="tab-2" data-tab-content class="tab-content bg-white px-30 py-50 md-py-60 md-px-40 md-grid grid-col-12 gap-10 active">
+                                <p class="font-size-fluid-8 font-w-600 col-start-1 col-span-4 md-grid hide"> 02</p>
+                                <div class="col-start-2 col-end-13 md-pl-30 md-font-size-5">
+                                    <p class="mb-20">
+                                        Graduated from the university of Computer Science new normal that has evolved from gener nation towards a cloud Lorem, ipsum dolor solution eser touch points.
+                                    </p>
+                                    <p class="mb-40">Lorem ipsum dolor sit amet consectetur adipi Lorem, ipsum dolor. sicing elit Tenetur Lorem hic.</p>
+                                    <span class="btn bg-accent-1 radius-2 font-color-white">
+                                        <a href="#">Get Free Consultation</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div data-tab="#tab-3" class="tab-button active-font-color-accent-1 bg-base-5 font-size-fluid-1">
+                                <a href="#tab-3">
+                                    <span class="tab-count font-color-accent-1">03</span>
+                                    Experience
+                                </a>
+                            </div>
+                            <div id="tab-3" data-tab-content class="tab-content bg-white px-30 py-50 md-py-60 md-px-40 md-grid grid-col-12 gap-10 ">
+                                <p class="font-size-fluid-8 font-w-600 col-start-1 col-span-4 md-grid hide"> 03</p>
+                                <div class="col-start-2 col-end-13 md-pl-30 md-font-size-5">
+                                    <p class="mb-40">
+                                        Graduated from the university of Computer Science new
+                                        normal that has evolved from generation towards a cloud
+                                        solution. User content multiple touchpoints.
+                                    </p>
+                                    <span class="btn bg-accent-1 radius-2 font-color-white">
+                                        <a href="#">Get Free Consultation</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div data-tab="#tab-4" class="tab-button active-font-color-accent-1 bg-base-5 font-size-fluid-1">
+                                <a href="#tab-4">
+                                    <span class="tab-count font-color-accent-1">04</span>
+                                    Straegy
+                                </a>
+                            </div>
+                            <div id="tab-4" data-tab-content class="tab-content bg-white px-30 py-50 md-py-60 md-px-40 md-grid grid-col-12 gap-10 ">
+                                <p class="font-size-fluid-8 font-w-600 col-start-1 col-span-4 md-grid hide"> 04</p>
+                                <div class="col-start-2 col-end-13 md-pl-30 md-font-size-5">
+                                    <p class="mb-40">
+                                        Graduated from the university of Computer Science new
+                                        normal that has evolved from generation towards a cloud
+                                        solution. User content multiple touchpoints.
+                                    </p>
+                                    <span class="btn bg-accent-1 radius-2 font-color-white">
+                                        <a href="#">Get Free Consultation</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div data-tab="#tab-5" class="tab-button active-font-color-accent-1 bg-base-5 font-size-fluid-1">
+                                <a href="#tab-5">
+                                    <span class="tab-count font-color-accent-1">05</span>
+                                    Management
+                                </a>
+                            </div>
+                            <div id="tab-5" data-tab-content class="tab-content bg-white px-30 py-50 md-py-60 md-px-40 md-grid grid-col-12 gap-10 ">
+                                <p class="font-size-fluid-8 font-w-600 col-start-1 col-span-4 md-grid hide"> 05</p>
+                                <div class="col-start-2 col-end-13 md-pl-30 md-font-size-5">
+                                    <p class="mb-40">
+                                        Graduated from the university of Computer Science new
+                                        normal that has evolved from generation towards a cloud
+                                        solution. User content multiple touchpoints.
+                                    </p>
+                                    <span class="btn bg-accent-1 radius-2 font-color-white">
+                                        <a href="#">Get Free Consultation</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- Tab area -->
+                        </div>
+                    </div>
+                </section>
+                <hr class="hr-1 hr-right">
+                <!-- Section 3 -->
+                <section id="section-3" class=" container-boxed">
+                    <div class="container px-40 py-200">
+                        <!-- Headline -->
+                        <div class="w-100p md-max-w-80p mx-a mb-50 font-color-white">
+                            <h4 class=" font-color-dark-5"> Our Work</h4>
+                            <h2 class=" font-w-600 font-size-8 md-font-size-fluid-4 mb-20">
+                                Key projects we love
+                                <span class="md-line-break"></span>
+                                to showcase.
+                            </h2>
+                        </div>
+
+                        <!-- Filter -->
+                        <div class="ui-list w-100p md-max-w-80p mx-a bg-base-4 py-40 md-pb-100">
+                            <ul class="mx-a list-hr list-scroll-x font-color-light">
+                                <li class="">All</li>
+                                <li class="">Agency</li>
+                                <li class="">Resume</li>
+                                <li class="">Blog</li>
+                                <li class="">Portfolio</li>
+                                <li class="">Business</li>
                             </ul>
-                        </div> -->
-                    </div>
-                </nav>
-
-                <div class="header-module">
-                    <div class="btn btn-rounded bg-accent ml-20">
-                        <a class="" href="#">Buy Now</a>
-                    </div>
-                </div>
-
-                
-
-            </div>
-            <!-- /Header -->
-        </header>
-
-        <!-- Content After Header -->
-        <div class="content-wrapper">
-            <section id="section-1" class="skin-dark">
-                <div class="container container-boxed px-40 py-100">
-
-                    <!-- <img src="img/hero.jpg" alt=""> -->
-                    <!-- / Hero Image -->
-
-                    <div class="headline-block mb-20">
-                        <h4 class="font-color-accent">Welcome</h4>
-                        <h1 class=" font-w-600 font-size-8 md-font-size-fluid-4">We help <span class="break-line"></span>Startups run <span class="break-line"></span> the show.  </h1>
-                        <div class="flex-group mt-20">
-                            <span class="btn bg-accent font-color-white"><a href="#">Get Free Consultation</a></span>
                         </div>
+                        <!-- Gallery -->
+                        <div class="ui-gallery-12 ui-lightbox-gallery relative">  
+
+                            <figure class="grid z-10 md-col-span-5">
+                                <img class="cursor-pointer" src="img/device/1.png" alt="Image 1">
+                                <figcaption>1</figcaption>
+                            </figure>
+                            <figure class="grid z-10 md-col-span-3">
+                                <img class="cursor-pointer" class="max-h-300" src="img/device/2.png" alt="Image 2">
+                                <figcaption>2</figcaption>
+                            </figure>
+                            <figure class="grid z-10 md-col-span-3 ">
+                                <img class="cursor-pointer" class="max-h-300" src="img/device/3.png" alt="Image 3">
+                                <figcaption>3</figcaption>
+                            </figure>
+                            <figure class="grid z-10 md-col-span-5">
+                                <img class="cursor-pointer" src="img/device/5.png" alt="Image 4">
+                                <figcaption>4</figcaption>
+                            </figure>
+                            <div class="bg-media mb-minus-100 z-1 ">
+                                <div class="bg-base-4 w-100p md-max-w-80p mx-a h-100p  "></div>
+                            </div>
+                            <!-- /Gallery -->
+
+                            <div class="ui-lightbox fixed top-0 left-0 w-100vw h-100vh bg-dark-5 z-90 hide">
+                                <img class="ui-lihtbox-image cursor-pointer obj-contain z-100 justify-self-center align-self-center max-w-80p max-h-80p" src="" alt="">
+                            </div>
+
+
+                        </div>
+                        <!-- /Container -->
                     </div>
-                    <div class="intro-media hide hidemd-block">
-                        <img src="/img/bg/bg-hero.png" alt="Hero image">
+                    <!-- bg media -->
+                    <div class="bg-media">
+                        <div class="bg-dots dots-dark w-25vw min-w-300 h-40p"></div>
                     </div>
-                    <!-- / Intro -->
+                </section>
+                <hr class="hr-1">
+                <!-- Section 4 -->
+                <section id="section-4" class=" container-boxed">
+                    <div class="container px-40 py-200 md-py-200 relative">
+                        <!-- Headline -->
+                        <div class="z-10 mb-20 relative font-color-white">
+                            <h4 class="font-color-dark-5"> Testimonials</h4>
+                            <h2 class=" font-w-600 font-size-8 md-font-size-fluid-4 mb-20">
+                                Our Clients love                                
+                                    <span class="line-break"></span> what we do.
+                            </h2>
+                        </div>
+                        <!-- Slider -->
+                        <div class="ui-slider-2 mt-50 grid col-start-1 col-end-13">
+                            <div class="swiper-container relative z-20">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper  ">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide ">
+                                        <div class="py-50 md-py-60 md-px-40 md-grid grid-col-12 ">
+                                            <p class="font-size-fluid-8 font-w-600 col-start-1 col-span-4 md-grid hide"> 01</p>
+                                            <div class="col-start-2 col-end-13 md-pl-30 md-font-size-5">
+                                                <img class="mb-20" src="img/logos/logo-1.png" alt="">
+                                                <p class="mb-40">
+                                                    Graduated from the university of Computer Science new
+                                            normal that has evolved from generation towards a cloud
+                                            solution.
+                                                    <hr class="hr-1 hr-left max-w-100 mb-20">
+                                                    <p class="font-size-3">- Bryan Traversy.</p>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="py-50 md-py-60 md-px-40 md-grid grid-col-12  ">
+                                            <p class="font-size-fluid-8 font-w-600 col-start-1 col-span-4 md-grid hide"> 02</p>
+                                            <div class="col-start-2 col-end-13 md-pl-30 md-font-size-5">
+                                                <img class="mb-20" src="img/logos/logo-1.png" alt="">
+                                                <p class="mb-40">
+                                                    Graduated from the university of Computer Science new
+                                        normal that has evolved from generation towards a cloud
+                                        solution.
+                                                    <hr class="hr-1 hr-left max-w-100 mb-20">
+                                                    <p class="font-size-3">- Bryan Traversy.</p>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="py-50 md-py-60 md-px-40 md-grid grid-col-12  ">
+                                            <p class="font-size-fluid-8 font-w-600 col-start-1 col-span-4 md-grid hide"> 03</p>
+                                            <div class="col-start-2 col-end-13 md-pl-30 md-font-size-5">
+                                                <img class="mb-20" src="img/logos/logo-1.png" alt="">
+                                                <p class="mb-40">
+                                                    Graduated from the university of Computer Science new
+                                        normal that has evolved from generation towards a cloud
+                                        solution.
+                                                    <hr class="hr-1 hr-left max-w-100 mb-20">
+                                                    <p class="font-size-3">- Bryan Traversy.</p>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
+
+
+
+                            </div>
+                            <!-- /slider -->
+                        </div>
+                        <!-- /container -->
+                    </div>
+                    <!-- bg media -->
+                    <div class="bg-media z-1 ">
+                        <div class="bg-dots dots-dark w-30vw min-w-300 h-30p absolute right-10p top-10p hide md-block"></div>
+                        <div class="bg-dots dots-dark w-25p h-40p absolute left-5p bottom-10p hide md-block"></div>
+                    </div>
+                </section>
+                <hr class="hr-1 hr-right">
+                <!-- Section 5 -->
+                <section id="section-5" class="">
+                    <div class="container px-40 xl-px-100 py-200 md-grid md-grid-col-12">
+                        <!-- Headline -->
+                        <div class="z-10 md-col-span-full md-row-start-1 xl-col-start-1 xl-col-end-8 xl-justify-self-start ">
+                            <h2 class=" font-w-600 font-size-8 md-font-size-fluid-4 mb-20 xl-text-align-right xl-mt-100 z-10 text-align-center xl-text-align-left font-color-white"> Join the growing <span class="xl-line-break"></span> list of our happy <span class="xl-line-break"></span> customers. </h2>
+                        </div>
+                        <!--  CTA Image -->
+                        <div class="z-1 blend-multiply opacity-8 mt-50 md-col-start-1 md-col-end-3 xl-col-start-3 xl-col-end-8 xl-row-start-1 xl-justify-self-end">
+                            <img class="w-100p md-min-w-450 max-w-600 h-a" src="img/gallery/3.jpg" alt="">
+                        </div>
+                        <!--  Form -->
+                        <div class=" z-10 mt-20 md-ml-20 xl-ml-40 md-mt-50 xl-mt-100 xl-pt-100 xl-max-w-400 md-col-start-8 md-col-end-13 ">
+                            <h4 class="mb-20 font-size-5">Leave your name, email and phone number below to get a free consultation.</h4>
+                            <p class="">Lorem ipsum dolor sit amet consect e tur, adipis icing elit. Quia, dolorem? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, dolorem?</p>
+                            <br>
+                            <p class="">Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quia, dolorem? Lorem ipsum dolor sit amet  Quia, dolorem? Lorem ipsum dolor sit amet, adi pisicing elit. Quia, dolorem?</p>
+                            <span class="btn bg-accent-1 radius-2 font-color-white mt-20">
+                                <a href="#">Get Free Consultation</a>
+                            </span>
+                        </div>
+                        <!-- /Container -->
+                    </div>
+                </section>
+                <hr class="hr-1">
+                <!-- Section 6 -->
+                <section id="section-6" class=" container-boxed">
+                    <div class="container px-40 py-200">
+                        <!-- Headline -->
+                        <div class="mb-20 font-color-white">
+                            <h4 class="font-color-dark-5">Case Study</h4>
+                            <h2 class=" font-w-600 font-size-8 md-font-size-fluid-4 mb-20">
+                                Some of our happy
+                                <span class="line-break"></span> 
+                                customers.
+                            </h2>
+                        </div>
+
+                        <div class="tab-area tab-layout-10 tab-skin-2 mt-50 md-mt-100 ">
+                            <!-- Tab Contents -->
+                            <div class="tab-panel px-20 md-px-40 py-10 md-py-80">
+                                <div data-tab="#tab-11" class="tab-button font-size-4 font-w-600 py-10 md-py-0 flex flex-row md-flex-col ">
+                                    <img class="md-mb-20 max-w-40 md-max-w-70" src="img/logos/logo-1.png" alt="">
+                                    <a href="#tab-11" class="text-decoration-none ml-30 md-ml-0 align-self-center md-align-self-start"> Space Tech </a>
+                                </div>
+                                <div id="tab-11" data-tab-content class="tab-content mt-30 md-mt-0 font-size-4  ">
+                                    <p class="font-size-fluid">
+                                        Years of experience and strategies to ensure proactive. At the end of the day, going forward that has evolved.
+                                    </p>
+                                    <ul class=" grid grid-col-12 mt-20 font-color-white">
+                                        <li class="py-8 col-span-6 ">Product Design</li>
+                                        <li class="py-8 col-span-6 ">UI/UX</li>
+                                        <li class="py-8 col-span-6 ">Web Design</li>
+                                        <li class="py-8 col-span-6 ">Design System</li>
+                                    </ul>
+                                    <div class="btn radius-2 bg-dark block mt-20 font-color-white">
+                                        <a class="" href="#">View Case</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tab Contents -->
+                            <div class="tab-panel bg-gradient-1 px-20 md-px-40 py-10 md-py-80">
+                                <div data-tab="#tab-12" class="tab-button font-size-4 font-w-600 py-10 md-py-0 flex flex-row md-flex-col active">
+                                    <img class="md-mb-20 max-w-40 md-max-w-70" src="img/logos/logo-1.png" alt="">
+                                    <a href="#tab-12" class="text-decoration-none ml-30 md-ml-0 align-self-center md-align-self-start"> Space Tech </a>
+                                </div>
+                                <div id="tab-12" data-tab-content class="tab-content mt-30 md-mt-0 font-size-4  active">
+                                    <p class="font-size-fluid">
+                                        Graduated from the university of Computer Science new normal that has evolved towards a cloud solution.
+                                    </p>
+                                    <ul class="grid grid-col-12 mt-20 font-color-white">
+                                        <li class="py-8 col-span-6 ">Product Design</li>
+                                        <li class="py-8 col-span-6 ">UI/UX</li>
+                                        <li class="py-8 col-span-6 ">Web Design</li>
+                                        <li class="py-8 col-span-6 ">Design System</li>
+                                    </ul>
+                                    <div class="btn radius-2 bg-dark block mt-20 font-color-white">
+                                        <a class="" href="#">View Case</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tab Contents -->
+                            <div class="tab-panel px-20 md-px-40 py-10 md-py-80">
+                                <div data-tab="#tab-13" class="tab-button font-size-4 font-w-600 py-10 md-py-0 flex flex-row md-flex-col ">
+                                    <img class="md-mb-20 max-w-40 md-max-w-70" src="img/logos/logo-1.png" alt="">
+                                    <a href="#tab-13" class="text-decoration-none ml-30 md-ml-0 align-self-center md-align-self-start"> Transport-X </a>
+                                </div>
+                                <div id="tab-13" data-tab-content class="tab-content mt-30 md-mt-0 font-size-4  ">       
+                                    <p class="font-size-fluid">
+                                        Certification course to evolve from of coders towards Lorem, ipsum dolor a new future in cloud solution.
+                                    </p>
+                                    <ul class="grid grid-col-12 mt-20 font-color-white">
+                                        <li class="py-8 col-span-6 ">Product Design</li>
+                                        <li class="py-8 col-span-6 ">UI/UX</li>
+                                        <li class="py-8 col-span-6 ">Web Design</li>
+                                        <li class="py-8 col-span-6 ">Design System</li>
+                                    </ul>
+                                    <div class="btn radius-2 bg-dark block mt-20 font-color-white">
+                                        <a class="" href="#">View Case</a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <!-- /Tab area -->
+                        </div>
+
+                        <!-- /container -->
+                    </div>
+                </section>
+                <hr class="hr-1 hr-right">
+                <!-- Section 7 -->
+                <section id="section-7" class=" container-boxed">
+                    <div class="container px-40 py-200">
+                        <!-- Headline -->
+                        <div class="headline-block mb-20 font-color-white">
+                            <h4 class="font-color-dark-5">Our Team</h4>
+                            <h2 class=" font-w-600 font-size-8 md-font-size-fluid-4 mb-20">
+                                We are a team of
+                                <span class="line-break"></span> creative minds with
+                            <span class="line-break"></span>
+                            passion.
+                        </h2>
+                    </div>
+
+                    <!-- Slider -->
+                    <div class="ui-slider-3 mt-100 ">
+
+                        <div class="swiper-container ">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide relative  "> 
+                              <img src="img/peolpe/1.jpg" alt="">
+                              <p class="font-size-3 font-color-accent-1 absolute top-40p left-minus-15p font-w-600">01</p>
+                              <p class="font-size-4  mt-10">Kristin Mcdonald</p>
+                              <p class="font-size-3 line-height-0 opacity-7"> Founder</p>
+                        </div>
+                          <div class="swiper-slide relative  "> 
+                              <img src="img/peolpe/2.jpg" alt="">
+                              <p class="font-size-3 font-color-accent-1 absolute top-40p left-minus-15p font-w-600">02</p>
+                              <p class="font-size-4  mt-10">Sidney Baldwin</p>
+                              <p class="font-size-3 line-height-0 opacity-7"> Web Developer</p>
+                        </div>
+                          <div class="swiper-slide relative  "> 
+                              <img src="img/peolpe/3.jpg" alt="">
+                              <p class="font-size-3 font-color-accent-1 absolute top-40p left-minus-15p font-w-600">03</p>
+                              <p class="font-size-4  mt-10">Melisa Whittington</p>
+                              <p class="font-size-3 line-height-0 opacity-7"> Product Manager</p>
+                        </div>
+                        <div class="swiper-slide relative  "> 
+                            <img src="img/peolpe/4.jpg" alt="">
+                            <p class="font-size-3 font-color-accent-1 absolute top-40p left-minus-15p font-w-600">04</p>
+                            <p class="font-size-4  mt-10">James Galindo</p>
+                            <p class="font-size-3 line-height-0 opacity-7"> Marketing Ninja</p>
+                      </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <!-- <div class="swiper-pagination"></div> -->
+                      
+                        <!-- If we need navigation buttons -->
+                        <!-- <div class="swiper-button-prev"></div> -->
+                        <!-- <div class="swiper-button-next"></div> -->
+                      
+                        <!-- If we need scrollbar -->
+                        <!-- <div class="swiper-scrollbar"></div> -->
+                    </div>
+                        <!-- /slider -->
+                      </div>
+
+                    <!-- /container -->
+                </div>
+            </section>
+            <hr class="hr-1">
+            <!-- Section 8 -->
+            <section id="section-8" class=" container-boxed">
+                <div class="container px-40 py-200 md-grid md-grid-col-12 ">
+                    <!-- Headline -->
+                    <div class="headline-block mb-20 md-col-span-full font-color-white">
+                        <h4 class="font-color-black">Contact</h4>
+                        <h2 class=" font-w-600 font-size-8 md-font-size-fluid-4 mb-100">
+                            Like to discuss an
+                            <span class="line-break"></span>
+                            interesting project?
+                        </h2>
+                    </div>
+
+                    <div class="bg-accent-1 md-col-span-6 h-400 mb-50">
+                        <div class="responsive-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.7806761080233!2d-93.29138368446431!3d44.96844997909819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32b6ee2c87c91%3A0xc20dff2748d2bd92!2sWalker+Art+Center!5e0!3m2!1sen!2sus!4v1514524647889" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                    </div>
+                    <div class=" md-col-span-6 md-pl-50">
+
+                        <h4 class=" font-w-600 font-size-4 font-color-accent-1">Get in touch</h4>
+                        <p class="font-w-600 font-size-fluid-3">1.809120.6705</p>
+                        <p class="font-w-600">Mon - Fri</p>
+                        <p class="font-w-600">10am to 8pm EST</p>
+                        
+                        <h4 class=" font-w-600 font-size-4 font-color-accent-1 mt-50">Find us</h4>
+                        <p  class="font-w-600">541 Melville Ave, Palo <span class="line-break"></span>
+                        Alto, CA 94301, USA </p>
+
+
+                    </div>
+
+
 
                 </div>
             </section>
-<!-- Section  -->
-<!-- <div class="hr-wrapper flex align-center h-200 bg-dark"> -->
-    <hr class="hr-1">
-<!-- </div> -->
-<section id="section-2" class="skin-dark">
-    <div class="container container-boxed px-40 py-100">
-
-        
-        <div class="headline-block mb-20">
-            <h4 class="font-color-accent">Services</h4>
-            <h1 class=" font-w-600 font-size-8 md-font-size-fluid-4 mb-20">  We offer the <span class="font-color-accent"> best <span class="break-line"></span> growth</span> online.  </h1>
-            <p>List of core RedX features added to make it easy and fast to build and customize your site.</p>
+            <hr class="hr-1 hr-right">
+            <!-- /.content-wrapper -->
         </div>
-
-            
-          
-            <div class="hide">
-
-            Marketing
-
-            Development
-
-            Nanotechnology immersion along the information highway will close the loop on table win rategies to ensure you have a proactive domination. Going forward, a new normal.
-            Live chat  8:00AM • 10:00AM 
-            Get Free Consultation
-
-            Experience
-            
-            Strategy
-            
-            Management
-        </div>
-    </div>
-</section>
-<!-- Section  -->
-<hr class="hr-1">
-<!-- </div> -->
-<section id="section-3" class="skin-dark">
-    <div class="container container-boxed px-40 py-100">
-        
-        <div class="headline-block mb-20">
-            <h4 class="font-color-accent"> Our Work</h4>
-            <h1 class=" font-w-600 font-size-8 md-font-size-fluid-4 mb-20"> Key projects we  <span class="font-color-accent"> love </span>to <span class="font-color-accent">showcase</span> here.  </h1>
-            <p>List of core RedX features added to make it easy and fast to build and customize your site.</p>
-        </div>
-    <div class="hide">
-       
-        love to showcase here
-        
-        Sort Filter
-        
-        <img src="/img/mockup/1.png" alt="">
-        
-    </div>
-</div>
-</section>
-
-<!-- Section  -->
-<section>
-    <div>
-        Testimonial
-        Our clients love the work we do
-
-        01
-        <img src="/img/logo/logo-1.png" alt="">
-        RedX is light and fast. Files are always up to date. It’s easy to edit designs across any platform online.
-        - Bryan Traversy
-
-    </div>
-</section>
-<!-- Section  -->
-<section>
-    <div>
-
-        Join the growing list of our happy customers
-
-        <img src="/img/cta-image.jpg" alt="">
-
-        Leave your name, email address and phone number to get a FREE consultation
-
-        Your Name
-        Email Address
-        Phone number
-
-        If you're a coach or network marketer wants to make or attract with ease, the is for you.
-
-        Subscribe Me
-
-        </div>
-        </section>
-        <!-- Section  -->
-<section>
-    <div>
-
-        Case Study
-        Just some of our success stories
-
-        Farm Fresh
-
-        Nanotechnology immersion along the information highway will close the loop on table win rategies to ensure proactive domination. Going forward, a new normal.
-
-        •   Product Strategy
-        •   Web Design
-        •   UI/UX
-        •   Design System
-
-        View Case
-
-
-
-        </div>
-        </section>
-
-        <!-- Section  -->
-        <section>
-            <div>
-
-                Our Team
-                We are a team of creative minds with passion
-
-                01 
-                Kristin Mcdonald
-                Founder
-
-                02
-                Sidney Baldwin
-                Web Designer
-
-                03
-                Melisa Whittington
-                Product Manager
-
-                04
-                James Galindo
-                Marketing Ninja
-
-
-
-
-            </div>
-        </section>
-             <!-- Section  -->
-             <section>
-                <div>
-
-                    Contact
-                    Like to discuss an interesting project? Get started!
-
-                    <img src="/img/maps.jpg" alt="">
-
-                    Get in touch
-                    +1.809.120.6705
-                    Mon – Fri 
-                    10am to 8 pm EST
-
-
-                    Find us
-                    541 Melville Ave,  Palo Alto, CA 94301, USA
-
-                </div>
-            </section>
-
-
-
-        </div>
-        <!-- / Content Wrapper -->
         <!-- Footer -->
-        <footer id="footer" class="">
-            <div class="container">
+      <!-- Footer -->
+      <footer id="footer" class="footer-area ">
+        <div class="footer-container ">
+            <div class="widget-area grid md-grid-col-12 relative px-40 py-100 max-w-1200 mx-a">
 
-                Fb
-                Tw
-                In
-
-                Signup for our Newsletter
-                Your Email address
-                If you're a coach or network marketer wants to make or attract with ease, the is for you.
-                Subscribe me
-
-                Services
-                Work
-                Case Study
-                Team
-                Contact
-
-                Get in touch
-                +1.809.120.6705
-                @email
-
-
-
-                © Graphitivity 2020. All rights reserved. Privacy Policy
+            <!-- Newsletter -->
+            <div class="widget mb-40 md-mb-0 md-col-span-4 form-style-1 form-skin-dark">
+                <h4 class="mb-20">Signup for our <span class="font-color-accent-1">newsletter</span> </h4>
+                <form class="mb-10" action="">
+                    <div>
+                                              
+                          <input placeholder="Email Address"  id="Field3" name="Field3" type="email" spellcheck="false" value="" maxlength="255" tabindex="3"> 
+                      
+                      </div>
+                    
+                    <p class="font-size-3 mb-20 opacity-5 line-height-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, dignissimos?</p>
+                    <button id="submit" name="submit" type="submit" value="submit" class="btn radius-2 bg-dark-2 font-color-light">Send Message</button>
+                </form>                    
             </div>
-        </footer>
+
+            <!-- Menu -->
+            <div class="widget md-mb-0 mb-40 md-col-span-4 md-justify-self-center">
+                <ul>
+                    <li> <a class="text-decoration-none line-height-6" href="#"> Demos </a></li>
+                    <li> <a class="text-decoration-none line-height-6" href="#"> Page Layouts </a></li>
+                    <li> <a class="text-decoration-none line-height-6" href="#"> UI Elements </a></li>
+                    <li> <a class="text-decoration-none line-height-6" href="#"> Content Blocks</a></li>
+                    <li> <a class="text-decoration-none line-height-6" href="#"> Support </a></li>
+                </ul>
+            </div>
+            
+            
+            <!-- Info -->
+            <div class="widget md-col-span-4">
+                <h4 class="font-color-accent-1 mb-20" >Get in touch</h4>
+                <ul>
+                    <li class="font-w-600">+1.809.876.5678</li>
+                    <li class="font-w-600">@email</li>
+                </ul>
+                <ul class="ui-socials flex flex-row my-20">
+                    <li class=" pr-20 "> <a class=" font-w-600" href="#"> Fb </a></li>
+                    <li class=" pr-20"> <a class=" font-w-600" href="#"> Tw </a></li>
+                    <li class=" pr-20 "> <a class=" font-w-600" href="#"> In </a></li>
+                </ul>                  
+            </div>
+            <!-- Footer Widget Area -->
+        </div>
+        
+          <!-- Footer bar -->
+          <div class="footer-bar bg-black">
+            <p class="font-size-3 text-align-center font-color-light-5"> © Graphitivity 2021. All rights reserved. Privacy Policy</p>
+        </div>
+      
+            <!-- /.footer-container -->
+        </div>
+    </footer>
+        <!-- /main Wrapper -->
     </main>
-    <!-- /main Wrapper -->
-
     <!-- Vendors JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- <script src="js/vendors/gsap.min.js"></script>
-    <script src="js/vendors/ScrollToPlugin3.min.js"></script>
-    <script src="js/vendors/swiper-bundle.min.js"></script> -->
-
+    <script src="js/vendors/ScrollToPlugin3.min.js"></script> -->
     <!-- Custom JS -->
     <script src="js/app.js"></script>
-    <!-- <script src="js/header.js"></script> -->
 </body>
-
 </html>
