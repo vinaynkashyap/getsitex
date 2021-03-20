@@ -4,7 +4,7 @@ Overflow
 -------------------------------------------
 */
 
-.overflow-h	{
+.overflow-hide	{
     overflow: hidden !important;
     &::-webkit-scrollbar {
         display: none;
@@ -12,18 +12,18 @@ Overflow
         background: transparent;
 }}
 
-.overflow-x-h	{overflow-x: hidden;}
-.overflow-y-h	{overflow-y: hidden;}
+.overflow-x-hide	{overflow-x: hidden;}
+.overflow-y-hide	{overflow-y: hidden;}
 
-.overflow-a     {overflow: auto;}
-.overflow-x-a	{overflow-x: auto;}
-.overflow-y-a	{overflow-y: auto;}
+.overflow-auto     {overflow: auto;}
+.overflow-x-auto	{overflow-x: auto;}
+.overflow-y-auto	{overflow-y: auto;}
 
-.overflow-v	    {overflow: visible;}
-.overflow-x-v	{overflow-x: visible;}
-.overflow-y-v	{overflow-y: visible;}
+.overflow-visible	    {overflow: visible;}
+.overflow-x-visible	{overflow-x: visible;}
+.overflow-y-visible	{overflow-y: visible;}
 
-.overflow-s	    {overflow: scroll;}
-.overflow-x-s	{overflow-x: scroll;}
-.overflow-y-s	{overflow-y: scroll;}
+.overflow-scroll	    {overflow: scroll;}
+.overflow-x-scroll	{overflow-x: scroll;}
+.overflow-y-scroll	{overflow-y: scroll;}
 

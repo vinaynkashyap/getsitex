@@ -133,20 +133,25 @@ tabs.forEach(tab => {
 
 const images = document.querySelectorAll('.ui-lightbox-gallery figure img');
 const lightboxBg = document.querySelector('.ui-lightbox');
+var body = document.body;
+
 images.forEach(image => {
   image.addEventListener('click', e => {
-    console.log('Clicked an image')
+
     // Activate Lightbox BG
     lightboxBg.classList.add('active');
-
-    // Add clicked image to lightbox bg
-
+    // Disable Body Scroll
+    body.classList.add('overflow-hide');
+    
+    // Add clicked image to lightbox bg    
     const lightboxImg = document.querySelector('.ui-lihtbox-image');
     lightboxImg.src = '';
     lightboxImg.src = image.src;
-
+    
+    // Reset Lightbox 
     lightboxBg.addEventListener('click', () => {
       lightboxBg.classList.remove('active');
+      body.classList.remove('overflow-hide');
     })
 
   })

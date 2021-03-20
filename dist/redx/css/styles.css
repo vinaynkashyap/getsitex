@@ -121,7 +121,7 @@ object {
   --accent-2: #73f89f;
   --accent-3: #f27c3e;
   --accent-4:#d22285;
-  --accent-5:#f8f073;
+  --accent-5:#fbc410;
   --base: #e1e6e9;
   --base-1: #d8d8d8;
   --base-2: #cbcbcb;
@@ -134,7 +134,15 @@ object {
   --highlight-3: #bccbff;
   --highlight-4:#fffecc;
   --highlight-5:#e4fbff;
-  --current: currentColor; }
+  --current: currentColor;
+  --bg-gradient-1: linear-gradient(45deg, #ff3479, #0319f4);
+  --bg-gradient-2: linear-gradient(45deg, #34ffb1, #03d0f4);
+  --bg-gradient-3: linear-gradient(45deg, #ff3479, #ffc107);
+  --bg-gradient-4: linear-gradient(45deg, #03a9f4, #62ff3b);
+  --bg-gradient-5: linear-gradient(180deg, #fdfdfd, var(--accent));
+  --bg-gradient-6: linear-gradient(180deg, #fdfdfd, var(--black));
+  --bg-gradient-7: linear-gradient(90deg, var(--accent), var(--dark));
+  --bg-gradient-8: linear-gradient(90deg, var(--dark), var(--accent)); }
 
 :root {
   --font-family-h1: Times, Times New Roman, Georgia, serif;
@@ -5714,44 +5722,44 @@ Margin Classes
 Overflow
 -------------------------------------------
 */
-.overflow-h {
+.overflow-hide {
   overflow: hidden !important; }
-  .overflow-h::-webkit-scrollbar {
+  .overflow-hide::-webkit-scrollbar {
     display: none;
     width: 0;
     background: transparent; }
 
-.overflow-x-h {
+.overflow-x-hide {
   overflow-x: hidden; }
 
-.overflow-y-h {
+.overflow-y-hide {
   overflow-y: hidden; }
 
-.overflow-a {
+.overflow-auto {
   overflow: auto; }
 
-.overflow-x-a {
+.overflow-x-auto {
   overflow-x: auto; }
 
-.overflow-y-a {
+.overflow-y-auto {
   overflow-y: auto; }
 
-.overflow-v {
+.overflow-visible {
   overflow: visible; }
 
-.overflow-x-v {
+.overflow-x-visible {
   overflow-x: visible; }
 
-.overflow-y-v {
+.overflow-y-visible {
   overflow-y: visible; }
 
-.overflow-s {
+.overflow-scroll {
   overflow: scroll; }
 
-.overflow-x-s {
+.overflow-x-scroll {
   overflow-x: scroll; }
 
-.overflow-y-s {
+.overflow-y-scroll {
   overflow-y: scroll; }
 
 /* 
@@ -15354,23 +15362,56 @@ Button Styles
   .xl-obj-none {
     object-fit: none; } }
 
+/*
+-------------------------- Gradients
+*/
 .bg-gradient-1 {
-  background-image: linear-gradient(45deg, #ff3479, #0319f4); }
+  background-image: var(--bg-gradient-1); }
 
 .bg-gradient-2 {
-  background-image: linear-gradient(45deg, #34ffb1, #03d0f4); }
+  background-image: var(--bg-gradient-2); }
 
 .bg-gradient-3 {
-  background-image: linear-gradient(45deg, #ff3479, #ffc107); }
+  background-image: var(--bg-gradient-3); }
 
 .bg-gradient-4 {
-  background-image: linear-gradient(45deg, #03a9f4, #62ff3b); }
+  background-image: var(--bg-gradient-4); }
 
 .bg-gradient-5 {
-  background-image: linear-gradient(90deg, #fdfdfd, var(--accent)); }
+  background-image: var(--bg-gradient-5); }
 
 .bg-gradient-6 {
-  background-image: linear-gradient(90deg, #fdfdfd, var(--black)); }
+  background-image: var(--bg-gradient-6); }
+
+.bg-gradient-7 {
+  background-image: var(--bg-gradient-7); }
+
+.bg-gradient-8 {
+  background-image: var(--bg-gradient-8); }
+
+.hover-bg-gradient-1:hover {
+  background-image: var(--bg-gradient-1); }
+
+.hover-bg-gradient-2:hover {
+  background-image: var(--bg-gradient-2); }
+
+.hover-bg-gradient-3:hover {
+  background-image: var(--bg-gradient-3); }
+
+.hover-bg-gradient-4:hover {
+  background-image: var(--bg-gradient-4); }
+
+.hover-bg-gradient-5:hover {
+  background-image: var(--bg-gradient-5); }
+
+.hover-bg-gradient-6:hover {
+  background-image: var(--bg-gradient-6); }
+
+.hover-bg-gradient-7:hover {
+  background-image: var(--bg-gradient-7); }
+
+.hover-bg-gradient-8:hover {
+  background-image: var(--bg-gradient-8); }
 
 .ui-card {
   display: inline-block; }

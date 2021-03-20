@@ -1,18 +1,30 @@
-.bg-gradient-1 {
-    background-image: linear-gradient(45deg, #ff3479, #0319f4);
-}
-.bg-gradient-2 {
-    background-image: linear-gradient(45deg, #34ffb1, #03d0f4);
-}
-.bg-gradient-3 {
-    background-image: linear-gradient(45deg, #ff3479, #ffc107);    
-}
-.bg-gradient-4 {
-    background-image:  linear-gradient(45deg,#03a9f4, #62ff3b);
-}
-.bg-gradient-5 {
-    background-image: linear-gradient(90deg, #fdfdfd, var(--accent));
-}
-.bg-gradient-6 {
-    background-image: linear-gradient(90deg, #fdfdfd, var(--black));
-}
+/*
+-------------------------- Gradients
+*/ 
+
+// .bg-gradient-1 {
+//     background-image: linear-gradient(45deg, #ff3479, #0319f4);
+// }
+// .bg-gradient-2 {
+//     background-image: linear-gradient(45deg, #34ffb1, #03d0f4);
+// }
+// .bg-gradient-3 {
+//     background-image: linear-gradient(45deg, #ff3479, #ffc107);    
+// }
+// .bg-gradient-4 {
+//     background-image:  linear-gradient(45deg,#03a9f4, #62ff3b);
+// }
+// .bg-gradient-5 {
+//     background-image: linear-gradient(90deg, #fdfdfd, var(--accent));
+// }
+// .bg-gradient-6 {
+//     background-image: linear-gradient(90deg, #fdfdfd, var(--black));
+// }
+
+@each $i in $gradients {.#{nth($i, 1)} {background-image: #{nth($i, 2)};}}
+@each $i in $gradients {.hover-#{nth($i, 1)}:hover {background-image: #{nth($i, 2)};}}
+
+// .hover-bg-gradient-1:hover {
+//     background: gold;
+//     background-image: linear-gradient(45deg, #ff3479, #0319f4);
+// }

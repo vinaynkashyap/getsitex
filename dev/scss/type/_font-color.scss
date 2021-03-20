@@ -11,3 +11,4 @@ Font Colors
 
 
 @each $i in $colors {.active.active-font-color-#{nth($i, 1)} {color: #{nth($i, 2)};}}
+// @each $i in $colors {:hover.hover-font-color-#{nth($i, 1)} {color: #{nth($i, 2)};}}

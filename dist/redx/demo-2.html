@@ -23,7 +23,7 @@
         </div>
         <main id="wrap-all" class="page-layout-1 skin-light bg-base-5 font-w-400">
             <!-- Header -->
-            <header id="header" class="header-area">
+            <header id="header" class="header-area w-100p absolute z-20">
                 <div class="header-container p-10 px-15 flex justify-end align-items-center sm-menu-fullscreen md-menu-fullscreen xl-menu-horizontal">
                     <!--  Logo -->
                     <div class="header-module logo mr-a">
@@ -81,28 +81,37 @@
             <!-- Content After Header -->
             <div id="content" class="content-area">
                 <!-- Section 1 -->
-                <section id="section-1" class=" container-boxed md-min-h-90vh">
-                    <div class="container px-40 py-200 md-pt-0">
-                        <!-- Headline -->
-                        <div class="grid align-content-center h-100p font-color-white">
-                            <h4 class="font-color-dark-5">Welcome</h4>
-                            <h1 class=" font-w-600 font-size-8 md-font-size-fluid-4">
-                                We help
-                                <span class="line-break"></span>
-                                Startups run
-                                <span class="line-break"></span>
-                                the show.
-                            </h1>
-                            <div class="flex-group mt-20">
-                                <span class="btn bg-accent-1 radius-2 font-color-white">
-                                    <a href="#">Get Free Consultation</a>
-                                </span>
+                <section id="section-1" class=" container-boxed min-h-100vh">
+                    <div class="container px-40 py-100 h-100p md-grid align-content-center">
+                        
+                        
+                        <!-- Hero Image -->
+                        <div class="col-start-1 col-span-4 row-start-1 row-end-3 justify-self-end mb-20 z-10 relative max-h-500 ">
+                            <img class="blend-multipl w-100p h-100p obj-cover" src="img/gallery/7.jpg" alt="">
+                        </div>
+
+                        <!-- Hero Text -->
+                        <div class="max-w-600 col-start-1 row-end-4 z-10">
+                            <h4 class="font-color-dark-3">Welcome</h4>
+                            <p class="font-size-fluid font-color-white">
+                                Years of experience and strategies to ensure proactive. At the end of the day, going forward that has evolved.
+                            </p>
+                            <span class="btn bg-accent-1 radius-2 font-color-white mt-20">
+                                <a href="#">Get Free Consultation</a>
+                            </span>
+                        </div>
+                        
+                    
+
+                        <!-- /Container -->
+                    </div>
+                        <!-- Scrolling Media -->
+                       
+                    
+                        <div class="bg-media grid align-items-start justify-items-center z-1">
+                            <div class="scrolling-text font-size-fluid-8 font-w-800 font-color-white font-upper top-30p" data-text="We Help You Grow Online">We Help You Grow Online
                             </div>
                         </div>
-                    </div>
-                    <div class="bg-media">
-                        <img class="absolute right-minus-60p top-40p translate-y-minus-40p md-w-60p md-right-10p obj-scale-down" src="img/bg/bg-hero.png" alt="">
-                    </div>
                 </section>
                 <hr class="hr-1">
                 <!-- Section 2 -->
@@ -111,7 +120,7 @@
                         <!-- Headline -->
                         <div class="md-grid grid-col-12">
                             <div class="description mt-20 md-mt-0 col-start-5 col-end-12">
-                                <h4 class="font-color-dark-5">Services</h4>
+                                <h4 class="font-color-dark-3">Services</h4>
                                 <h2 class=" font-w-600 font-size-8 md-font-size-fluid-4 mb-20 font-color-white">
                                     We offer the
                                     <span class="">
@@ -131,7 +140,7 @@
                                     Marketing 
                                 </a>
                             </div>
-                            <div id="tab-1" data-tab-content class="tab-content bg-white px-30 py-50 md-py-60 md-px-40  md-grid grid-col-12 gap-10 ">
+                            <div id="tab-1" data-tab-content class="tab-content bg-base-4 px-30 py-50 md-py-60 md-px-40  md-grid grid-col-12 gap-10 ">
                                 <p class="font-size-fluid-8 font-w-600 col-start-1 col-span-4 md-grid hide"> 01</p>
                                 <div class="col-start-2 col-end-13 md-pl-30 md-font-size-5">
                                     <p class="mb-40">
@@ -150,7 +159,7 @@
                                     Development
                                 </a>
                             </div>
-                            <div id="tab-2" data-tab-content class="tab-content bg-white px-30 py-50 md-py-60 md-px-40 md-grid grid-col-12 gap-10 active">
+                            <div id="tab-2" data-tab-content class="tab-content bg-base-4 px-30 py-50 md-py-60 md-px-40 md-grid grid-col-12 gap-10 active">
                                 <p class="font-size-fluid-8 font-w-600 col-start-1 col-span-4 md-grid hide"> 02</p>
                                 <div class="col-start-2 col-end-13 md-pl-30 md-font-size-5">
                                     <p class="mb-20">
@@ -168,7 +177,7 @@
                                     Experience
                                 </a>
                             </div>
-                            <div id="tab-3" data-tab-content class="tab-content bg-white px-30 py-50 md-py-60 md-px-40 md-grid grid-col-12 gap-10 ">
+                            <div id="tab-3" data-tab-content class="tab-content bg-base-4 px-30 py-50 md-py-60 md-px-40 md-grid grid-col-12 gap-10 ">
                                 <p class="font-size-fluid-8 font-w-600 col-start-1 col-span-4 md-grid hide"> 03</p>
                                 <div class="col-start-2 col-end-13 md-pl-30 md-font-size-5">
                                     <p class="mb-40">
@@ -187,7 +196,7 @@
                                     Straegy
                                 </a>
                             </div>
-                            <div id="tab-4" data-tab-content class="tab-content bg-white px-30 py-50 md-py-60 md-px-40 md-grid grid-col-12 gap-10 ">
+                            <div id="tab-4" data-tab-content class="tab-content bg-base-4 px-30 py-50 md-py-60 md-px-40 md-grid grid-col-12 gap-10 ">
                                 <p class="font-size-fluid-8 font-w-600 col-start-1 col-span-4 md-grid hide"> 04</p>
                                 <div class="col-start-2 col-end-13 md-pl-30 md-font-size-5">
                                     <p class="mb-40">
@@ -206,7 +215,7 @@
                                     Management
                                 </a>
                             </div>
-                            <div id="tab-5" data-tab-content class="tab-content bg-white px-30 py-50 md-py-60 md-px-40 md-grid grid-col-12 gap-10 ">
+                            <div id="tab-5" data-tab-content class="tab-content bg-base-4 px-30 py-50 md-py-60 md-px-40 md-grid grid-col-12 gap-10 ">
                                 <p class="font-size-fluid-8 font-w-600 col-start-1 col-span-4 md-grid hide"> 05</p>
                                 <div class="col-start-2 col-end-13 md-pl-30 md-font-size-5">
                                     <p class="mb-40">
@@ -291,7 +300,7 @@
                     <div class="container px-40 py-200 md-py-200 relative">
                         <!-- Headline -->
                         <div class="z-10 mb-20 relative font-color-white">
-                            <h4 class="font-color-dark-5"> Testimonials</h4>
+                            <h4 class="font-color-dark-3"> Testimonials</h4>
                             <h2 class=" font-w-600 font-size-8 md-font-size-fluid-4 mb-20">
                                 Our Clients love                                
                                     <span class="line-break"></span> what we do.
@@ -396,7 +405,7 @@
                     <div class="container px-40 py-200">
                         <!-- Headline -->
                         <div class="mb-20 font-color-white">
-                            <h4 class="font-color-dark-5">Case Study</h4>
+                            <h4 class="font-color-dark-3">Case Study</h4>
                             <h2 class=" font-w-600 font-size-8 md-font-size-fluid-4 mb-20">
                                 Some of our happy
                                 <span class="line-break"></span> 
@@ -406,7 +415,7 @@
 
                         <div class="tab-area tab-layout-10 tab-skin-2 mt-50 md-mt-100 ">
                             <!-- Tab Contents -->
-                            <div class="tab-panel px-20 md-px-40 py-10 md-py-80">
+                            <div class="tab-panel px-20 md-px-40 py-10 md-py-80 hover-bg-gradient-1">
                                 <div data-tab="#tab-11" class="tab-button font-size-4 font-w-600 py-10 md-py-0 flex flex-row md-flex-col ">
                                     <img class="md-mb-20 max-w-40 md-max-w-70" src="img/logos/logo-1.png" alt="">
                                     <a href="#tab-11" class="text-decoration-none ml-30 md-ml-0 align-self-center md-align-self-start"> Space Tech </a>
@@ -427,7 +436,7 @@
                                 </div>
                             </div>
                             <!-- Tab Contents -->
-                            <div class="tab-panel bg-gradient-1 px-20 md-px-40 py-10 md-py-80">
+                            <div class="tab-panel px-20 md-px-40 py-10 md-py-80 hover-bg-gradient-1">
                                 <div data-tab="#tab-12" class="tab-button font-size-4 font-w-600 py-10 md-py-0 flex flex-row md-flex-col active">
                                     <img class="md-mb-20 max-w-40 md-max-w-70" src="img/logos/logo-1.png" alt="">
                                     <a href="#tab-12" class="text-decoration-none ml-30 md-ml-0 align-self-center md-align-self-start"> Space Tech </a>
@@ -448,7 +457,7 @@
                                 </div>
                             </div>
                             <!-- Tab Contents -->
-                            <div class="tab-panel px-20 md-px-40 py-10 md-py-80">
+                            <div class="tab-panel px-20 md-px-40 py-10 md-py-80 hover-bg-gradient-1">
                                 <div data-tab="#tab-13" class="tab-button font-size-4 font-w-600 py-10 md-py-0 flex flex-row md-flex-col ">
                                     <img class="md-mb-20 max-w-40 md-max-w-70" src="img/logos/logo-1.png" alt="">
                                     <a href="#tab-13" class="text-decoration-none ml-30 md-ml-0 align-self-center md-align-self-start"> Transport-X </a>
@@ -481,7 +490,7 @@
                     <div class="container px-40 py-200">
                         <!-- Headline -->
                         <div class="headline-block mb-20 font-color-white">
-                            <h4 class="font-color-dark-5">Our Team</h4>
+                            <h4 class="font-color-dark-3">Our Team</h4>
                             <h2 class=" font-w-600 font-size-8 md-font-size-fluid-4 mb-20">
                                 We are a team of
                                 <span class="line-break"></span> creative minds with

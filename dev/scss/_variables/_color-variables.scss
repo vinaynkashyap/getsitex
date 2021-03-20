@@ -49,8 +49,9 @@
     --accent-2: #73f89f;
     --accent-3: #f27c3e;
     --accent-4:#d22285;  
-    --accent-5:#f8f073;  
-    // --accent-5:#7f33d4;  
+    --accent-5:#fbc410;  
+    // --accent-6:#f8f073;  
+    // --accent-7:#7f33d4;  
 
     --base: #e1e6e9;
     --base-1: #d8d8d8;
@@ -65,8 +66,19 @@
     --highlight-3: #bccbff;
     --highlight-4  :#fffecc;
     --highlight-5  :#e4fbff;
+    
 
     --current : currentColor;
+
+    --bg-gradient-1 : linear-gradient(45deg, #ff3479, #0319f4);
+    --bg-gradient-2 : linear-gradient(45deg, #34ffb1, #03d0f4);
+    --bg-gradient-3 : linear-gradient(45deg, #ff3479, #ffc107);
+    --bg-gradient-4 : linear-gradient(45deg, #03a9f4, #62ff3b);
+    --bg-gradient-5 : linear-gradient(180deg, #fdfdfd, var(--accent));
+    --bg-gradient-6 : linear-gradient(180deg, #fdfdfd, var(--black));
+    --bg-gradient-7 : linear-gradient(90deg, var(--accent), var(--dark));
+    --bg-gradient-8 : linear-gradient(90deg, var(--dark), var(--accent));
+
 }
 
 
@@ -116,5 +128,19 @@ $colors: (
   highlight-5    var(--highlight-5  ),
   
   current    var(--current  ),
+
+);
+
+
+$gradients: (
+
+bg-gradient-1 var(--bg-gradient-1),
+bg-gradient-2 var(--bg-gradient-2),
+bg-gradient-3 var(--bg-gradient-3),
+bg-gradient-4 var(--bg-gradient-4),
+bg-gradient-5 var(--bg-gradient-5),
+bg-gradient-6 var(--bg-gradient-6),
+bg-gradient-7 var(--bg-gradient-7),
+bg-gradient-8 var(--bg-gradient-8),
 
 );
