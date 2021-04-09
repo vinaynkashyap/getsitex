@@ -21,7 +21,7 @@
                 <div class="preloader-style-circle-gradient w-200px h-200px animation-rotate"></div>
             </div>
         </div>
-        <main id="wrap-all" class="page-layout-1 skin-light font-w-400 ">
+        <main id="wrap-all" class="page-layout-1 skin-light bg-white font-w-400 ">
             <!-- Header -->
             <header id="header" class="header-area absolute w-100p z-10">
                 <div class="header-container p-10 px-15 flex justify-end align-items-center sm-menu-fullscreen md-menu-fullscreen xl-menu-horizontal">
@@ -81,37 +81,67 @@
             <!-- Content After Header -->
             <div id="content" class="content-area">
                 <!-- Section 1 -->
-                <section id="section-1" class=" container-boxed h-100vh">
-                    <div class="container px-40 py-0">
+                <section id="section-1" class=" container-boxed min-h-100vh ">
+                    <div class="container grid grid-col-12 px-40 py-100">
                         <!-- Headline -->
-                        <div class="grid align-content-center h-100p ">
+                        <div class="col-span-full grid md-hide mb-40 row-start-1">
+                            <img class="w-100p h-100p top-0 obj-cover" src="img/hero/5-mobile.jpg" alt="">
+                        </div>
+
+                        <div class=" font-w-400 relative row-start-2 col-start-1 col-end-13 md-col-end-9 md-min-h-90vh grid align-content-center max-w-600">
                             <h4 class="font-color-accent">Welcome</h4>
-                            <h1 class=" font-w-600 font-size-8 md-font-size-fluid-4">
-                                We help
+                            <h1 class=" font-w-600 font-size-6 md-font-size-fluid-3">
+                                We are a <span class="font-color-accent"> digital agency </span>
                                 <span class="line-break"></span>
-                                <span class="font-color-accent">Startups</span>
-                                run
+                                for startups and small
                                 <span class="line-break"></span>
-                                the show.
+                                businesses.
                             </h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ab, eveniet et provident dolor corporis quae voluptatibus ducimus officia eos!</p>
                             <div class="flex-group mt-20">
                                 <span class="btn bg-accent radius-2 font-color-white">
                                     <a href="#">Get Free Consultation</a>
                                 </span>
                             </div>
+                           
                         </div>
+
+                        <!-- Hero Info -->
+
+                        <div class="row-start-3 col-start-1 col-end-13 mt-100 xl-mt-minus-70 xl-grid xl-grid-col-12">                            
+                            
+                            <img class="mb-40 col-start-1 col-end-7" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80" alt="">
+
+                            <div class=" grid-flow-col xl-gap-x-40 xl-grid xl-grid-col-12 col-start-7 col-end-13 xl-mt-100 xl-ml-50">
+                                <h4 class="font-size-5 font-w-600 col-span-full row-start-1 mb-20">Our clients have acchieved an <span class="font-color-accent"> exponentional growth </span> of 996% in organic SEO alone.</h4>
+                                <p class="mb-40 xl-mb-0 col-span-6 row-start-2"> <span class="font-size-fluid-4 font-w-400 block  font-color-accent-2">397
+                                    <span class="font-size-fluid-1 ml-minus-10">%</span>
+                                </span>Lorem ipsum dolor sit amet consec tetur elit at alias explicabo.</p>
+                                <p class="row-start-2 col-span-6"> <span class="font-size-fluid-4 font-w-400 block font-color-accent-2">397
+                                    <span class="font-size-fluid-1 ml-minus-10">%</span>
+                                </span>Lorem ipsum dolor sit amet consec tetur elit at samus at ealias.</p> 
+                            </div>
+                        </div>
+
+
+                     
+
+
+                        <!-- /Container -->
                     </div>
-                    <div class="bg-media grid z-1">
-                        <img class="absolute align-self-center md-justify-self-end md-max-w-70p right-minus-60p  md-right-5p obj-scale-down" src="img/bg/bg-hero.png" alt="">
+
+
+                    <div class="bg-media z-1 max-h-100vh hide md-block">
+                        <img class="absolute w-100p h-100p top-0 obj-cover" src="img/hero/4.jpg" alt="">
                     </div>
                 </section>
-                <hr class="hr-1">
+                <hr class="hr-1 hr-left">
                 <!-- Section 2 -->
                 <section id="section-2" class=" container-boxed">
                     <div class="container px-40 py-200">
                         <!-- Headline -->
                         <div class="md-grid grid-col-12 ">
-                            <div class="description mt-20 md-mt-0 col-start-5 col-end-12">
+                            <div class=" mt-20 md-mt-0 col-start-5 col-end-12">
                                 <h4 class="font-color-accent">Services</h4>
                                 <h2 class=" font-w-600 font-size-8 md-font-size-fluid-4 mb-20">
                                     We offer the
@@ -126,13 +156,13 @@
                         <!-- Tab Contents -->
                         <div class="tab-area bg-dots dots-light tab-layout-2 tab-skin-1 mt-50">
                             <!-- <div class="tab-panel"> -->
-                            <div data-tab="#tab-1" class="tab-button active-font-color-accent bg-light-3 font-size-fluid-1">
+                            <div data-tab="#tab-1" class="tab-button active-font-color-accent bg-white font-size-fluid-1">
                                 <a href="#tab-1">
                                     <span class="tab-count font-color-accent">01</span>
                                     Marketing 
                                 </a>
                             </div>
-                            <div id="tab-1" data-tab-content class="tab-content bg-light-2 px-30 py-50 md-py-60 md-px-40  md-grid grid-col-12 gap-10 ">
+                            <div id="tab-1" data-tab-content class="tab-content bg-light-1 px-30 py-50 md-py-60 md-px-40  md-grid grid-col-12 gap-10 ">
                                 <p class="font-size-fluid-8 font-w-600 col-start-1 col-span-4 md-grid hide"> 01</p>
                                 <div class="col-start-2 col-end-13 md-pl-30 md-font-size-5">
                                     <p class="mb-40">
@@ -145,13 +175,13 @@
                                     </span>
                                 </div>
                             </div>
-                            <div data-tab="#tab-2" class="tab-button active-font-color-accent bg-light-3 font-size-fluid-1 active">
+                            <div data-tab="#tab-2" class="tab-button active-font-color-accent bg-white font-size-fluid-1 active">
                                 <a href="#tab-2">
                                     <span class="tab-count font-color-accent">02</span>
                                     Development
                                 </a>
                             </div>
-                            <div id="tab-2" data-tab-content class="tab-content bg-light-2 px-30 py-50 md-py-60 md-px-40 md-grid grid-col-12 gap-10 active">
+                            <div id="tab-2" data-tab-content class="tab-content bg-light-1 px-30 py-50 md-py-60 md-px-40 md-grid grid-col-12 gap-10 active">
                                 <p class="font-size-fluid-8 font-w-600 col-start-1 col-span-4 md-grid hide"> 02</p>
                                 <div class="col-start-2 col-end-13 md-pl-30 md-font-size-5">
                                     <p class="mb-20">
@@ -163,13 +193,13 @@
                                     </span>
                                 </div>
                             </div>
-                            <div data-tab="#tab-3" class="tab-button active-font-color-accent bg-light-3 font-size-fluid-1">
+                            <div data-tab="#tab-3" class="tab-button active-font-color-accent bg-white font-size-fluid-1">
                                 <a href="#tab-3">
                                     <span class="tab-count font-color-accent">03</span>
                                     Experience
                                 </a>
                             </div>
-                            <div id="tab-3" data-tab-content class="tab-content bg-light-2 px-30 py-50 md-py-60 md-px-40 md-grid grid-col-12 gap-10 ">
+                            <div id="tab-3" data-tab-content class="tab-content bg-light-1 px-30 py-50 md-py-60 md-px-40 md-grid grid-col-12 gap-10 ">
                                 <p class="font-size-fluid-8 font-w-600 col-start-1 col-span-4 md-grid hide"> 03</p>
                                 <div class="col-start-2 col-end-13 md-pl-30 md-font-size-5">
                                     <p class="mb-40">
@@ -182,13 +212,13 @@
                                     </span>
                                 </div>
                             </div>
-                            <div data-tab="#tab-4" class="tab-button active-font-color-accent bg-light-3 font-size-fluid-1">
+                            <div data-tab="#tab-4" class="tab-button active-font-color-accent bg-white font-size-fluid-1">
                                 <a href="#tab-4">
                                     <span class="tab-count font-color-accent">04</span>
                                     Straegy
                                 </a>
                             </div>
-                            <div id="tab-4" data-tab-content class="tab-content bg-light-2 px-30 py-50 md-py-60 md-px-40 md-grid grid-col-12 gap-10 ">
+                            <div id="tab-4" data-tab-content class="tab-content bg-light-1 px-30 py-50 md-py-60 md-px-40 md-grid grid-col-12 gap-10 ">
                                 <p class="font-size-fluid-8 font-w-600 col-start-1 col-span-4 md-grid hide"> 04</p>
                                 <div class="col-start-2 col-end-13 md-pl-30 md-font-size-5">
                                     <p class="mb-40">
@@ -201,13 +231,13 @@
                                     </span>
                                 </div>
                             </div>
-                            <div data-tab="#tab-5" class="tab-button active-font-color-accent bg-light-3 font-size-fluid-1">
+                            <div data-tab="#tab-5" class="tab-button active-font-color-accent bg-white font-size-fluid-1">
                                 <a href="#tab-5">
                                     <span class="tab-count font-color-accent">05</span>
                                     Management
                                 </a>
                             </div>
-                            <div id="tab-5" data-tab-content class="tab-content bg-light-2 px-30 py-50 md-py-60 md-px-40 md-grid grid-col-12 gap-10 ">
+                            <div id="tab-5" data-tab-content class="tab-content bg-light-1 px-30 py-50 md-py-60 md-px-40 md-grid grid-col-12 gap-10 ">
                                 <p class="font-size-fluid-8 font-w-600 col-start-1 col-span-4 md-grid hide"> 05</p>
                                 <div class="col-start-2 col-end-13 md-pl-30 md-font-size-5">
                                     <p class="mb-40">
@@ -222,6 +252,7 @@
                             </div>
                             <!-- Tab area -->
                         </div>
+                        <!-- Container-->
                     </div>
                 </section>
                 <hr class="hr-1 hr-right">
@@ -258,19 +289,19 @@
                         <div class="ui-gallery-12 ui-lightbox-gallery relative">  
 
                             <figure class="grid z-10 md-col-span-5">
-                                <img class="cursor-pointer" src="img/device/1.png" alt="Image 1">
+                                <img class="cursor-pointer" src="img/mockup/1.png" alt="Image 1">
                                 <figcaption>1</figcaption>
                             </figure>
                             <figure class="grid z-10 md-col-span-3">
-                                <img class="cursor-pointer" class="max-h-300" src="img/device/2.png" alt="Image 2">
+                                <img class="cursor-pointer max-h-300" src="img/mockup/2.png" alt="Image 2">
                                 <figcaption>2</figcaption>
                             </figure>
                             <figure class="grid z-10 md-col-span-3 ">
-                                <img class="cursor-pointer" class="max-h-300" src="img/device/3.png" alt="Image 3">
+                                <img class="cursor-pointer max-h-300" src="img/mockup/3.png" alt="Image 3">
                                 <figcaption>3</figcaption>
                             </figure>
                             <figure class="grid z-10 md-col-span-5">
-                                <img class="cursor-pointer" src="img/device/5.png" alt="Image 4">
+                                <img class="cursor-pointer" src="img/mockup/5.png" alt="Image 4">
                                 <figcaption>4</figcaption>
                             </figure>
                             <div class="bg-media mb-minus-100 z-1 ">
@@ -317,13 +348,13 @@
                                             <p class="font-size-fluid-8 font-w-600 col-start-1 col-span-4 md-grid hide"> 01</p>
                                             <div class="col-start-2 col-end-13 md-pl-30 md-font-size-5">
                                                 <img class="mb-20" src="img/logos/logo-1.png" alt="">
-                                                <p class="mb-40">
+                                                <div class="mb-40">
                                                     Graduated from the university of Computer Science new
                                             normal that has evolved from generation towards a cloud
                                             solution.
                                                     <hr class="hr-1 hr-left max-w-100 mb-20">
                                                     <p class="font-size-3 opacity-4">- Bryan Traversy.</p>
-                                                </p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -332,13 +363,13 @@
                                             <p class="font-size-fluid-8 font-w-600 col-start-1 col-span-4 md-grid hide"> 02</p>
                                             <div class="col-start-2 col-end-13 md-pl-30 md-font-size-5">
                                                 <img class="mb-20" src="img/logos/logo-1.png" alt="">
-                                                <p class="mb-40">
+                                                <div class="mb-40">
                                                     Graduated from the university of Computer Science new
                                         normal that has evolved from generation towards a cloud
                                         solution.
                                                     <hr class="hr-1 hr-left max-w-100 mb-20">
                                                     <p class="font-size-3 opacity-4">- Bryan Traversy.</p>
-                                                </p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -347,13 +378,13 @@
                                             <p class="font-size-fluid-8 font-w-600 col-start-1 col-span-4 md-grid hide"> 03</p>
                                             <div class="col-start-2 col-end-13 md-pl-30 md-font-size-5">
                                                 <img class="mb-20" src="img/logos/logo-1.png" alt="">
-                                                <p class="mb-40">
+                                                <div class="mb-40">
                                                     Graduated from the university of Computer Science new
                                         normal that has evolved from generation towards a cloud
                                         solution.
                                                     <hr class="hr-1 hr-left max-w-100 mb-20">
                                                     <p class="font-size-3 opacity-4">- Bryan Traversy.</p>
-                                                </p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -497,7 +528,6 @@
                                 We are a team of
                                 <span class="line-break"></span>
                                 <span class="font-color-accent"> creative minds</span>
-                            </span>
                             with
                             <span class="line-break"></span>
                             passion.

@@ -1,0 +1,8 @@
+.item-tag {
+  background: var(--accent-2);
+  font-weight: 400;
+  padding: 10px 0px;
+  letter-spacing: .05em;
+  font-size: .7rem;
+  text-transform: uppercase;
+  letter-spacing: .08em; }

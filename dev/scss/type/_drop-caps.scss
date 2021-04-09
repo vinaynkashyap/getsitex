@@ -1,0 +1,22 @@
+.drop-caps:first-of-type {
+    &:first-letter {
+      float: left;
+      font-weight: 600;
+      padding: 0.18em 0.1em 0 0;
+      margin: 0 0.12em 0 0;
+      font-size: 3.5rem;
+    }
+  }
+  
+  .font-smallcaps {
+    font-feature-settings: "smcp", "swsh" 2;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+  }
+  
+  .drop-caps::first-letter {
+    -webkit-initial-letter: 8;
+    initial-letter: 8;
+    font-weight: bold;
+    margin-right: 0.5em;
+  }

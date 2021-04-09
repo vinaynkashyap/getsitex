@@ -4,7 +4,7 @@ Metro grid gallery
 -----------------------------------------------
 */
 
-.ui-gallery-12 {
+.ui-gallery-14 {
 	display: grid;
 	// grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 	// grid-template-rows: repeat(auto-fit, minmax(90px, 1fr));
@@ -33,7 +33,7 @@ Metro grid gallery
   }
 
   @include media('>md') {
-	.ui-gallery-12 {
+	.ui-gallery-14 {
     row-gap:180px;
     grid-template-columns: repeat(6, auto);
     grid-auto-rows: minmax(200px, max-content);
@@ -70,7 +70,7 @@ Metro grid gallery
 }
 
 //   @include media('>xl') {
-// 	.ui-gallery-12 {
+// 	.ui-gallery-14 {
 //         max-width: 900px;
 //         margin: 0 auto;
 // 		> figure {

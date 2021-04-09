@@ -156,3 +156,16 @@
 @for $i from 3 through $heightCounter {.xl-left-minus-#{$i*5}p { left:( -$i*5 + $pc); }}
 @for $i from 6 through $heightCounter {.xl-left-minus-#{$i*10}p { left:( -$i*10 + $pc); }}
 }
+
+
+.top-left {
+    position: absolute;
+    top: 0; 
+    left: 0;
+}
+
+.top-right {
+    position: absolute;
+    top: 0; 
+    right: 0;
+}

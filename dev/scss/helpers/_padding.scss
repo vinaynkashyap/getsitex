@@ -21,37 +21,37 @@ $p : 0%;
 @for $i from 1 through $paddingCounter {.p-#{$i} { padding:( $i + $px); }}
 @for $i from 3 through $paddingCounter {.p-#{$i*5} { padding:( $i*5 + $px); }}
 @for $i from 6 through $paddingCounter {.p-#{$i*10} { padding:( $i*10 + $px); }}
-@for $i from 2 through $paddingCounter {.p-#{$i*100} { padding:( $i*100 + $px); }}
+@for $i from 2 through 5 {.p-#{$i*100} { padding:( $i*100 + $px); }}
 // Padding Top
 @for $i from 1 through $paddingCounter {.pt-#{$i} { padding-top:( $i + $px); }}
 @for $i from 3 through $paddingCounter {.pt-#{$i*5} { padding-top:( 5 * $i + $px); }}
 @for $i from 6 through $paddingCounter {.pt-#{$i*10} { padding-top:( 10 * $i + $px); }}
-@for $i from 2 through $paddingCounter {.pt-#{$i*100} { padding-top:( $i*100 + $px); }}
+@for $i from 2 through 5 {.pt-#{$i*100} { padding-top:( $i*100 + $px); }}
 // //  Padding Right
 @for $i from 1 through $paddingCounter {.pr-#{$i} { padding-right:( $i + $px); }}
 @for $i from 3 through $paddingCounter {.pr-#{$i*5} { padding-right:( 5 * $i + $px); }}
 @for $i from 6 through $paddingCounter {.pr-#{$i*10} { padding-right:( 10 * $i + $px); }}
-@for $i from 2 through $paddingCounter {.pr-#{$i*100} { padding-right:( $i*100 + $px); }}
+@for $i from 2 through 5 {.pr-#{$i*100} { padding-right:( $i*100 + $px); }}
 // //  Padding Bottom
 @for $i from 1 through $paddingCounter {.pb-#{$i} { padding-bottom:( $i + $px); }}
 @for $i from 3 through $paddingCounter {.pb-#{$i*5} { padding-bottom:( 5 * $i + $px); }}
 @for $i from 6 through $paddingCounter {.pb-#{$i*10} { padding-bottom:( 10 * $i + $px); }}
-@for $i from 2 through $paddingCounter {.pb-#{$i*100} { padding-bottom:( $i*100 + $px); }}
+@for $i from 2 through 5 {.pb-#{$i*100} { padding-bottom:( $i*100 + $px); }}
 // //  Padding Left
 @for $i from 1 through $paddingCounter {.pl-#{$i} { padding-left:( $i + $px); }}
 @for $i from 3 through $paddingCounter {.pl-#{$i*5} { padding-left:( 5 * $i + $px); }}
 @for $i from 6 through $paddingCounter {.pl-#{$i*10} { padding-left:( 10 * $i + $px); }}
-@for $i from 2 through $paddingCounter {.pl-#{$i*100} { padding-left:( $i*100 + $px); }}
+@for $i from 2 through 5 {.pl-#{$i*100} { padding-left:( $i*100 + $px); }}
 // //  Padding X-axis
 @for $i from 1 through $paddingCounter {.px-#{$i} { padding-left:( $i + $px); padding-right:( $i + $px); }}
 @for $i from 3 through $paddingCounter {.px-#{$i*5} { padding-left:( 5 * $i + $px); padding-right:( 5 * $i + $px); }}
 @for $i from 6 through $paddingCounter {.px-#{$i*10} { padding-left:( 10 * $i + $px); padding-right:( 10 * $i + $px);}}
-@for $i from 2 through $paddingCounter {.px-#{$i*100} { padding-left:( $i*100 + $px);padding-right:( $i*100 + $px); }}
+@for $i from 2 through 5 {.px-#{$i*100} { padding-left:( $i*100 + $px);padding-right:( $i*100 + $px); }}
 // //  Padding Y-axis
 @for $i from 1 through $paddingCounter {.py-#{$i} { padding-top:( $i + $px); padding-bottom:( $i + $px); }}
 @for $i from 3 through $paddingCounter {.py-#{$i*5} { padding-top:( 5 * $i + $px); padding-bottom:( 5 * $i + $px); }}
 @for $i from 6 through $paddingCounter {.py-#{$i*10} { padding-top:( 10 * $i + $px); padding-bottom:( 10 * $i + $px);}}
-@for $i from 2 through $paddingCounter {.py-#{$i*100} { padding-top:( 100 * $i + $px); padding-bottom:( 100 * $i + $px);}}
+@for $i from 2 through 5 {.py-#{$i*100} { padding-top:( 100 * $i + $px); padding-bottom:( 100 * $i + $px);}}
 
 
 
@@ -107,34 +107,42 @@ $p : 0%;
 
 // Padding from 1 - 10 (1*10), 10 - 50 (5*10) , 60 - 100 (6*10)
 
+
 // Padding
 @for $i from 1 through $paddingCounter {.md-p-#{$i} { padding:( $i + $px); }}
 @for $i from 3 through $paddingCounter {.md-p-#{$i*5} { padding:( $i*5 + $px); }}
 @for $i from 6 through $paddingCounter {.md-p-#{$i*10} { padding:( $i*10 + $px); }}
+@for $i from 2 through 5 {.md-p-#{$i*100} { padding:( $i*100 + $px); }}
 // Padding Top
 @for $i from 1 through $paddingCounter {.md-pt-#{$i} { padding-top:( $i + $px); }}
 @for $i from 3 through $paddingCounter {.md-pt-#{$i*5} { padding-top:( 5 * $i + $px); }}
 @for $i from 6 through $paddingCounter {.md-pt-#{$i*10} { padding-top:( 10 * $i + $px); }}
+@for $i from 2 through 5 {.md-pt-#{$i*100} { padding-top:( $i*100 + $px); }}
 // //  Padding Right
 @for $i from 1 through $paddingCounter {.md-pr-#{$i} { padding-right:( $i + $px); }}
 @for $i from 3 through $paddingCounter {.md-pr-#{$i*5} { padding-right:( 5 * $i + $px); }}
 @for $i from 6 through $paddingCounter {.md-pr-#{$i*10} { padding-right:( 10 * $i + $px); }}
+@for $i from 2 through 5 {.md-pr-#{$i*100} { padding-right:( $i*100 + $px); }}
 // //  Padding Bottom
 @for $i from 1 through $paddingCounter {.md-pb-#{$i} { padding-bottom:( $i + $px); }}
 @for $i from 3 through $paddingCounter {.md-pb-#{$i*5} { padding-bottom:( 5 * $i + $px); }}
 @for $i from 6 through $paddingCounter {.md-pb-#{$i*10} { padding-bottom:( 10 * $i + $px); }}
+@for $i from 2 through 5 {.md-pb-#{$i*100} { padding-bottom:( $i*100 + $px); }}
 // //  Padding Left
 @for $i from 1 through $paddingCounter {.md-pl-#{$i} { padding-left:( $i + $px); }}
 @for $i from 3 through $paddingCounter {.md-pl-#{$i*5} { padding-left:( 5 * $i + $px); }}
 @for $i from 6 through $paddingCounter {.md-pl-#{$i*10} { padding-left:( 10 * $i + $px); }}
+@for $i from 2 through 5 {.md-pl-#{$i*100} { padding-left:( $i*100 + $px); }}
 // //  Padding X-axis
 @for $i from 1 through $paddingCounter {.md-px-#{$i} { padding-left:( $i + $px); padding-right:( $i + $px); }}
 @for $i from 3 through $paddingCounter {.md-px-#{$i*5} { padding-left:( 5 * $i + $px); padding-right:( 5 * $i + $px); }}
 @for $i from 6 through $paddingCounter {.md-px-#{$i*10} { padding-left:( 10 * $i + $px); padding-right:( 10 * $i + $px);}}
+@for $i from 2 through 5 {.md-px-#{$i*100} { padding-left:( $i*100 + $px);padding-right:( $i*100 + $px); }}
 // //  Padding Y-axis
 @for $i from 1 through $paddingCounter {.md-py-#{$i} { padding-top:( $i + $px); padding-bottom:( $i + $px); }}
 @for $i from 3 through $paddingCounter {.md-py-#{$i*5} { padding-top:( 5 * $i + $px); padding-bottom:( 5 * $i + $px); }}
 @for $i from 6 through $paddingCounter {.md-py-#{$i*10} { padding-top:( 10 * $i + $px); padding-bottom:( 10 * $i + $px);}}
+@for $i from 2 through 5 {.md-py-#{$i*100} { padding-top:( 100 * $i + $px); padding-bottom:( 100 * $i + $px);}}
 
 
 
@@ -179,34 +187,42 @@ $p : 0%;
 
 // Padding from 1 - 10 (1*10), 10 - 50 (5*10) , 60 - 100 (6*10)
 
+
 // Padding
 @for $i from 1 through $paddingCounter {.xl-p-#{$i} { padding:( $i + $px); }}
 @for $i from 3 through $paddingCounter {.xl-p-#{$i*5} { padding:( $i*5 + $px); }}
 @for $i from 6 through $paddingCounter {.xl-p-#{$i*10} { padding:( $i*10 + $px); }}
+@for $i from 2 through 5 {.xl-p-#{$i*100} { padding:( $i*100 + $px); }}
 // Padding Top
 @for $i from 1 through $paddingCounter {.xl-pt-#{$i} { padding-top:( $i + $px); }}
 @for $i from 3 through $paddingCounter {.xl-pt-#{$i*5} { padding-top:( 5 * $i + $px); }}
 @for $i from 6 through $paddingCounter {.xl-pt-#{$i*10} { padding-top:( 10 * $i + $px); }}
+@for $i from 2 through 5 {.xl-pt-#{$i*100} { padding-top:( $i*100 + $px); }}
 // //  Padding Right
 @for $i from 1 through $paddingCounter {.xl-pr-#{$i} { padding-right:( $i + $px); }}
 @for $i from 3 through $paddingCounter {.xl-pr-#{$i*5} { padding-right:( 5 * $i + $px); }}
 @for $i from 6 through $paddingCounter {.xl-pr-#{$i*10} { padding-right:( 10 * $i + $px); }}
+@for $i from 2 through 5 {.xl-pr-#{$i*100} { padding-right:( $i*100 + $px); }}
 // //  Padding Bottom
 @for $i from 1 through $paddingCounter {.xl-pb-#{$i} { padding-bottom:( $i + $px); }}
 @for $i from 3 through $paddingCounter {.xl-pb-#{$i*5} { padding-bottom:( 5 * $i + $px); }}
 @for $i from 6 through $paddingCounter {.xl-pb-#{$i*10} { padding-bottom:( 10 * $i + $px); }}
+@for $i from 2 through 5 {.xl-pb-#{$i*100} { padding-bottom:( $i*100 + $px); }}
 // //  Padding Left
 @for $i from 1 through $paddingCounter {.xl-pl-#{$i} { padding-left:( $i + $px); }}
 @for $i from 3 through $paddingCounter {.xl-pl-#{$i*5} { padding-left:( 5 * $i + $px); }}
 @for $i from 6 through $paddingCounter {.xl-pl-#{$i*10} { padding-left:( 10 * $i + $px); }}
+@for $i from 2 through 5 {.xl-pl-#{$i*100} { padding-left:( $i*100 + $px); }}
 // //  Padding X-axis
 @for $i from 1 through $paddingCounter {.xl-px-#{$i} { padding-left:( $i + $px); padding-right:( $i + $px); }}
 @for $i from 3 through $paddingCounter {.xl-px-#{$i*5} { padding-left:( 5 * $i + $px); padding-right:( 5 * $i + $px); }}
 @for $i from 6 through $paddingCounter {.xl-px-#{$i*10} { padding-left:( 10 * $i + $px); padding-right:( 10 * $i + $px);}}
+@for $i from 2 through 5 {.xl-px-#{$i*100} { padding-left:( $i*100 + $px);padding-right:( $i*100 + $px); }}
 // //  Padding Y-axis
 @for $i from 1 through $paddingCounter {.xl-py-#{$i} { padding-top:( $i + $px); padding-bottom:( $i + $px); }}
 @for $i from 3 through $paddingCounter {.xl-py-#{$i*5} { padding-top:( 5 * $i + $px); padding-bottom:( 5 * $i + $px); }}
 @for $i from 6 through $paddingCounter {.xl-py-#{$i*10} { padding-top:( 10 * $i + $px); padding-bottom:( 10 * $i + $px);}}
+@for $i from 2 through 5 {.xl-py-#{$i*100} { padding-top:( 100 * $i + $px); padding-bottom:( 100 * $i + $px);}}
 
 
 // ---------------------- Padding in %

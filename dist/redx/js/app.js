@@ -1,4 +1,8 @@
-/* ===================
+// (function () {
+//   "use strict";
+
+
+
 
 
 /* -----------------------------------------------
@@ -92,11 +96,69 @@ const swiper3 = new Swiper('.ui-slider-3 .swiper-container', {
     },
     767: { /* when window >= 767px - webflow tablet */
       slidesPerView: 3,
-      spaceBetween: 120,
+      spaceBetween: 100,
     },
     988: { /* when window >= 988px - webflow desktop */
       slidesPerView: 4,
       spaceBetween: 140,
+    }
+  },
+});
+
+
+const swiper4 = new Swiper('.ui-slider-4 .swiper-container', {
+  // autoplay: 500,
+  speed: 1500,
+  // autoplayDisableOnInteraction: true,
+  autoplay: {
+    delay: 5000,
+  },
+  pagination: '.swiper-pagination',
+  paginationClickable: true,
+  freeMode: false,
+  loop: true,
+  centeredSlides: false,
+  breakpoints: {
+    0: { /* when window >=0px - webflow mobile landscape/portriat */
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    767: { /* when window >= 767px - webflow tablet */
+      slidesPerView: 3,
+      spaceBetween: 60,
+    },
+    988: { /* when window >= 988px - webflow desktop */
+      slidesPerView: 4,
+      spaceBetween: 80,
+    }
+  },
+});
+
+
+const swiper5 = new Swiper('.ui-slider-5 .swiper-container', {
+  // autoplay: 500,
+  speed: 1500,
+  // autoplayDisableOnInteraction: true,
+  autoplay: {
+    delay: 5000,
+  },
+  pagination: '.swiper-pagination',
+  paginationClickable: true,
+  freeMode: false,
+  loop: true,
+  centeredSlides: false,
+  breakpoints: {
+    0: { /* when window >=0px - webflow mobile landscape/portriat */
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    767: { /* when window >= 767px - webflow tablet */
+      slidesPerView: 3,
+      spaceBetween: 60,
+    },
+    988: { /* when window >= 988px - webflow desktop */
+      slidesPerView: 3,
+      spaceBetween: 60,
     }
   },
 });
@@ -245,3 +307,6 @@ images.forEach(image => {
 //   });
 
 // }
+
+// Use strict
+// })();

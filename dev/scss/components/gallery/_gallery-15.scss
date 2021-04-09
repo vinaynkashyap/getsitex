@@ -1,0 +1,30 @@
+/* 
+-------------------------------------------------
+Metro grid gallery
+-----------------------------------------------
+*/
+
+.ui-gallery-15 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-auto-rows: 23vw;
+	@include media('>xl') {
+		grid-auto-rows: 300px;
+	}
+	> figure {
+		padding: 1rem;
+		position: relative;
+		overflow: hidden;
+		img {
+			position: absolute;
+			width: 100%;  
+			height: 100%;
+		object-fit: cover;		
+	  }
+	}	
+  }
+  
+
+
+
+

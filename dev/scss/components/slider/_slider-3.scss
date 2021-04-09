@@ -1,5 +1,6 @@
 //  Fullscreen Slider
 
+.ui-slider-4, 
 .ui-slider-3 {
   display: grid;
   grid-column: 1 / -1;
@@ -21,7 +22,6 @@
   width: 100%;
   height: 300px;
   margin: 20px auto;
-  padding-left: 2rem;
 }
 .swiper-slide {
   

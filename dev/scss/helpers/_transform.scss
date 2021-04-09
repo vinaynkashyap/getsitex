@@ -26,3 +26,11 @@
 @for $i from 1 through $heightCounter {.translate-xy-minus-#{$i}p { transform: translate( -$i + $pc, -$i + $pc); }}
 @for $i from 3 through $heightCounter {.translate-xy-minus-#{$i*5}p { transform: translate( -$i*5 + $pc, -$i*5 + $pc); }}
 @for $i from 6 through $heightCounter {.translate-xy-minus-#{$i*10}p { transform: translate( -$i*10 + $pc, -$i*10 + $pc); }}
+
+
+.translate-x-100 {
+    transform: translateX(100%); 
+}
+.translate-x-minus-100 {
+    transform: translateX(-100%); 
+}
