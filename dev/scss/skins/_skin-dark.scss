@@ -1,6 +1,8 @@
 // h1, h2, h3, h4, h5, h6, dl, dd, ol, ul, menu, figure, blockquote, p, pre, form
 
 .skin-dark {
+    --form-border-color: var(--dark-4);
+    --placeholder-text-color: var(--base-4);
     //  Text
     color: var(--light);
 
@@ -28,28 +30,6 @@
             background: var(--accent);
         }
     }
-    //  Form
-    form > div > fieldset label {
-        font-size: 90%;
-    }
-    input[type="text"],
-    input[type="email"],
-    input[type="url"],
-    input[type="password"],
-    textarea {
-        width: 100%;
-        border: 1px solid var(--light-2);
-    }
-    input[type="text"]:focus,
-    input[type="email"]:focus,
-    input[type="url"]:focus,
-    input[type="password"]:focus,
-    textarea:focus {
-        outline: 0;
-        border-color: var(--accent);
-    }
-    button {
-        border: none;
-        cursor: pointer;
-    }
+
+
 }

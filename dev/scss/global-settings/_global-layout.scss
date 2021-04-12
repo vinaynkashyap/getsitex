@@ -4,6 +4,8 @@ section {
     .container {
         box-sizing: border-box !important;
         z-index: 2;
+        // Overflow fix
+        position: relative;
     }
 }
 

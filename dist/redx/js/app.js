@@ -164,6 +164,41 @@ const swiper5 = new Swiper('.ui-slider-5 .swiper-container', {
 });
 
 
+const swiper6 = new Swiper('.ui-slider-6 .swiper-container', {
+  // // autoplay: 500,
+  // speed: 1000,
+  // // autoplay: {
+  // // delay: 3500,
+  // // },
+  // slidesPerView: 1,
+  // centeredSlides: false,
+  // spaceBetween: 100,
+  // pagination: {
+  //   el: '.swiper-pagination',
+  //   clickable: true,
+  // },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  slidesPerView: 1,
+  autoHeight: false,
+  autoWidth: false,
+  loop: true,
+  preloadImages: true,
+  mousewheel: false,
+  centeredSlides: false,
+  grabCursor: true,
+  initialSlide: 0,
+  direction: "horizontal",
+  spaceBetween: 40,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar",
+  },
+});
+
+
 // -----------------------------------------------
 // Tabs
 // -----------------------------------------------

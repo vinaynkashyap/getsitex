@@ -1,0 +1,60 @@
+//  Fullscreen Slider
+
+.ui-slider-6 {
+  position: relative;
+  &:before {
+      content: "";
+      position: absolute;
+      top: -2rem;
+      left: -2rem;
+      width: 40%;
+      max-width: 8rem;
+      height: 30%;
+      background: var(--accent);
+      z-index: -1;
+    }
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+    .swiper-slide {
+      display: grid;      
+      align-items: center;
+      grid-auto-flow: column;      
+      .profile-pic {
+        width: 100%;
+      }      
+      .description {
+        position: relative;
+      }
+      .description:before {
+        content: " ❝ ";
+        position: absolute;
+        top: 0px;
+        left: 0;
+        font-size: 3rem;
+        color: var(--accent);
+        transform: translateX(-125%);
+      }
+
+    
+    }
+
+    .swiper-pagination-progressbar-fill {
+      background: var(--base);
+      @include media('>md') {
+        max-width: 67%;
+      }
+    }
+    .swiper-pagination-progressbar {
+      background: var(--transparent);       
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+      color: var(--accent);
+      position: absolute;
+      top: 30vh;
+  }
+  }
+
+  
+}

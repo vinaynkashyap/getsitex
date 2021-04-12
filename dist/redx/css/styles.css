@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*------------------------------------------------------------------
 
  Theme Name: Redx - Multi-Purpose HTML Website Template 
@@ -177,7 +178,8 @@ section {
   position: relative; }
   section .container {
     box-sizing: border-box !important;
-    z-index: 2; }
+    z-index: 2;
+    position: relative; }
 
 .container-boxed {
   box-sizing: border-box !important;
@@ -188,6 +190,8 @@ section {
     grid-column: 2 / 3; }
 
 .skin-light {
+  --form-border-color: var(--base-4);
+  --placeholder-text-color: var(--base-3);
   color: var(--dark);
   background-color: var(--light-3); }
   .skin-light a {
@@ -210,6 +214,8 @@ section {
   color: currentColor; }
 
 .skin-dark {
+  --form-border-color: var(--dark-4);
+  --placeholder-text-color: var(--base-4);
   color: var(--light);
   background-color: var(--dark); }
   .skin-dark a {
@@ -223,25 +229,6 @@ section {
     background: var(--base-4); }
     .skin-dark .swiper-pagination-bullet.swiper-pagination-bullet-active {
       background: var(--accent); }
-  .skin-dark form > div > fieldset label {
-    font-size: 90%; }
-  .skin-dark input[type="text"],
-  .skin-dark input[type="email"],
-  .skin-dark input[type="url"],
-  .skin-dark input[type="password"],
-  .skin-dark textarea {
-    width: 100%;
-    border: 1px solid var(--light-2); }
-  .skin-dark input[type="text"]:focus,
-  .skin-dark input[type="email"]:focus,
-  .skin-dark input[type="url"]:focus,
-  .skin-dark input[type="password"]:focus,
-  .skin-dark textarea:focus {
-    outline: 0;
-    border-color: var(--accent); }
-  .skin-dark button {
-    border: none;
-    cursor: pointer; }
 
 .skin-accent {
   color: var(--light);
@@ -16182,11 +16169,35 @@ modal
 .z-minus-1 {
   z-index: -1; }
 
+.z-0 {
+  z-index: 0; }
+
 .z-1 {
   z-index: 1; }
 
-.z-0 {
-  z-index: 0; }
+.z-2 {
+  z-index: 2; }
+
+.z-3 {
+  z-index: 3; }
+
+.z-4 {
+  z-index: 4; }
+
+.z-5 {
+  z-index: 5; }
+
+.z-6 {
+  z-index: 6; }
+
+.z-7 {
+  z-index: 7; }
+
+.z-8 {
+  z-index: 8; }
+
+.z-9 {
+  z-index: 9; }
 
 .z-10 {
   z-index: 10; }
@@ -16217,6 +16228,33 @@ modal
 
 .z-100 {
   z-index: 100; }
+
+.z-200 {
+  z-index: 200; }
+
+.z-300 {
+  z-index: 300; }
+
+.z-400 {
+  z-index: 400; }
+
+.z-500 {
+  z-index: 500; }
+
+.z-600 {
+  z-index: 600; }
+
+.z-700 {
+  z-index: 700; }
+
+.z-800 {
+  z-index: 800; }
+
+.z-900 {
+  z-index: 900; }
+
+.z-1000 {
+  z-index: 1000; }
 
 .page-layout-1 {
   display: grid;
@@ -16995,17 +17033,14 @@ Sliders
     .ui-slider-2 .swiper-slide {
       width: 60%; } }
 
-.ui-slider-4,
 .ui-slider-3 {
   display: grid;
   grid-column: 1 / -1;
   overflow: hidden; }
-  .ui-slider-4 .swiper-container,
   .ui-slider-3 .swiper-container {
     width: 100%;
     height: 300px;
     margin: 20px auto; }
-  .ui-slider-4 .swiper-container,
   .ui-slider-3 .swiper-container {
     height: 100%;
     margin: auto;
@@ -17030,21 +17065,64 @@ Sliders
     justify-content: center;
     align-items: center; }
 
-.ui-slider-4 {
+.ui-slider-5 {
   display: grid;
   grid-column: 1 / -1;
   overflow: hidden; }
-  .ui-slider-4 .swiper-container {
+  .ui-slider-5 .swiper-container {
     width: 100%;
     height: 300px;
     margin: 20px auto; }
-  .ui-slider-4 .swiper-container {
+  .ui-slider-5 .swiper-container {
     height: 100%;
     margin: auto;
     /* Center slide text vertically */
     display: flex;
     justify-content: center;
     align-items: center; }
+
+.ui-slider-6 {
+  position: relative; }
+  .ui-slider-6:before {
+    content: "";
+    position: absolute;
+    top: -2rem;
+    left: -2rem;
+    width: 40%;
+    max-width: 8rem;
+    height: 30%;
+    background: var(--accent);
+    z-index: -1; }
+  .ui-slider-6 .swiper-container {
+    width: 100%;
+    height: 100%; }
+    .ui-slider-6 .swiper-container .swiper-slide {
+      display: grid;
+      align-items: center;
+      grid-auto-flow: column; }
+      .ui-slider-6 .swiper-container .swiper-slide .profile-pic {
+        width: 100%; }
+      .ui-slider-6 .swiper-container .swiper-slide .description {
+        position: relative; }
+      .ui-slider-6 .swiper-container .swiper-slide .description:before {
+        content: " ❝ ";
+        position: absolute;
+        top: 0px;
+        left: 0;
+        font-size: 3rem;
+        color: var(--accent);
+        transform: translateX(-125%); }
+    .ui-slider-6 .swiper-container .swiper-pagination-progressbar-fill {
+      background: var(--base); }
+      @media (min-width: 769px) {
+        .ui-slider-6 .swiper-container .swiper-pagination-progressbar-fill {
+          max-width: 67%; } }
+    .ui-slider-6 .swiper-container .swiper-pagination-progressbar {
+      background: var(--transparent); }
+    .ui-slider-6 .swiper-container .swiper-button-next, .ui-slider-6 .swiper-container .swiper-button-prev {
+      color: var(--accent);
+      position: absolute;
+      top: 30vh; }
 
 .ui-list {
   width: 100%;
@@ -17268,10 +17346,26 @@ Scrollbar
     .tab-layout-8 .tab-content {
       display: block; } }
 
-.tab-layout-9 {
-  display: grid; }
-  .tab-layout-9 .tab-button a {
-    display: block; }
+.tab-layout-9 .tab-content.active {
+  position: absolute;
+  opacity: 0;
+  transform: rotateX(-90deg) translateX(0);
+  visibility: hidden; }
+
+.tab-layout-9 .tab-button {
+  position: relative; }
+
+.tab-layout-9 .tab-button:hover .tab-content {
+  position: static;
+  opacity: 1;
+  transform: rotateX(0) translateX(0);
+  visibility: visible;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+  overflow: hidden;
+  z-index: 99; }
 
 .tab-layout-10 .active.tab-content {
   margin-bottom: 50px; }
@@ -17323,6 +17417,14 @@ Scrollbar
   .tab-skin-1 .tab-content {
     overflow: hidden; }
 
+.tab-skin-2 .tab-button {
+  margin-bottom: 1px; }
+  .tab-skin-2 .tab-button a {
+    padding: 3rem 30px; }
+    .tab-skin-2 .tab-button a .meta-tags {
+      margin-right: auto;
+      margin-left: 10%; }
+
 .item-tag {
   background: var(--accent-2);
   font-weight: 400;
@@ -17337,6 +17439,41 @@ Scrollbar
   .ui-socials a:hover {
     color: var(--accent);
     border-bottom: 2px solid var(--accent); }
+
+form > div > fieldset label {
+  font-size: 90%; }
+
+button {
+  border: none;
+  cursor: pointer; }
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  outline: 0;
+  border-color: var(--accent); }
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+textarea {
+  width: 100%;
+  border: 1px solid var(--transparent); }
+
+form,
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  position: relative; }
+
+input,
+select,
+textarea {
+  color: currentColor; }
 
 .form-style-1 fieldset {
   border: 0;
@@ -17391,7 +17528,155 @@ Scrollbar
 .form-style-1 legend {
   margin: 0 0 5px 0; }
 
+.form-style-2 textarea,
+.form-style-2 input {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: var(--form-border-color); }
+
+.form-style-2 ::placeholder {
+  color: var(--placeholder-text-color); }
+
+.form-style-3 fieldset {
+  border: 0;
+  padding: 0; }
+
+.form-style-3 form > div > label,
+.form-style-3 legend {
+  width: 100%;
+  float: none; }
+
+.form-style-3 form > div > div,
+.form-style-3 form > div > fieldset > div {
+  width: 100%;
+  float: none; }
+
+.form-style-3 input[type=text],
+.form-style-3 input[type=email],
+.form-style-3 input[type=url],
+.form-style-3 input[type=password],
+.form-style-3 textarea,
+.form-style-3 select {
+  width: 100%;
+  padding: 0.65rem 1rem; }
+
+@media (min-width: 769px) {
+  .form-style-3 form > div {
+    clear: both;
+    overflow: hidden;
+    padding: 1px; }
+  .form-style-3 form > div > label,
+  .form-style-3 legend {
+    width: 25%;
+    float: left;
+    padding-right: 10px; }
+  .form-style-3 form > div > div,
+  .form-style-3 form > div > fieldset > div {
+    width: 75%;
+    float: right; }
+  .form-style-3 select,
+  .form-style-3 input[type=text],
+  .form-style-3 input[type=email],
+  .form-style-3 input[type=url],
+  .form-style-3 input[type=password] {
+    width: 50%; } }
+
+@media (min-width: 1201px) {
+  .form-style-3 form > div > label,
+  .form-style-3 legend {
+    text-align: right; } }
+
+.form-style-4 input,
+.form-style-4 select,
+.form-style-4 textarea {
+  display: block;
+  font-family: inherit;
+  width: 100%; }
+
+.form-style-4 input[type="radio"] {
+  display: inline-block;
+  width: auto; }
+
+.form-style-4 input:disabled {
+  background: #ccc; }
+
+.form-style-4 form,
+.form-style-4 fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  position: relative; }
+
+.form-style-4 form:before, .form-style-4 form:after,
+.form-style-4 fieldset:before,
+.form-style-4 fieldset:after {
+  display: block;
+  font-weight: bold; }
+
+.form-style-4 form:before,
+.form-style-4 fieldset:before {
+  color: var(--dark);
+  margin: 0 0 1em; }
+
+.form-style-4 form:after,
+.form-style-4 fieldset:after {
+  color: var(--dark);
+  margin: 1em 0 0; }
+
+.form-style-4 fieldset:invalid {
+  border: dashed 0 transparent; }
+
+.form-style-4 fieldset:valid:before {
+  color: var(--light);
+  left: 0;
+  pointer-events: none; }
+
+.form-style-4 fieldset:valid:after {
+  content: "Thanks! Now do the next section."; }
+
+.form-style-4 fieldset:last-of-type:valid:after {
+  content: "Please complete the form and we will get back to you soon!"; }
+
+.form-style-4 input::-webkit-input-placeholder {
+  color: var(--dark) !important; }
+
+.form-style-4 .form-group-modern {
+  margin: 60px 0 0 0; }
+
+.form-style-4 *:focus {
+  outline: 0; }
+
+.form-style-4 label {
+  display: none; }
+
+.form-style-4 textarea {
+  background: transparent;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #000; }
+
+.form-style-4 input {
+  background: transparent;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #000; }
+
+.form-style-4 input:-internal-autofill-selected {
+  background: transparent; }
+
+.form-style-4 textarea {
+  height: auto;
+  resize: none; }
+
+.form-style-4 input:focus, .form-style-4 textarea:focus, .form-style-4 select:focus {
+  outline: none; }
+
+.form-style-4 textarea::-webkit-input-placeholder,
+.form-style-4 input::-webkit-input-placeholder {
+  color: var(--accent); }
+
 .scrolling-text {
+  overflow: hidden;
   --space: 10vw;
   font-size: 20vw;
   white-space: nowrap;

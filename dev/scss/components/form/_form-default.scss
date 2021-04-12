@@ -1,0 +1,199 @@
+// Responsive Form
+    //  Form
+    form > div > fieldset label {
+        font-size: 90%;
+    }
+
+    button {
+        border: none;
+        cursor: pointer;
+    }
+     input[type="text"]:focus,
+     input[type="email"]:focus,
+     input[type="url"]:focus,
+     input[type="password"]:focus,
+     textarea:focus {
+         outline: 0;
+         border-color: var(--accent);
+     }
+
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="password"],
+    textarea {
+        width: 100%;
+        border: 1px solid var(--transparent);
+    }
+
+    form,
+    fieldset {
+      margin: 0;
+      padding: 0;
+      border: none;
+      position: relative; }
+
+
+      
+input, 
+select, 
+textarea {
+    color: currentColor;
+    }
+
+
+    // fieldset:invalid {
+    //     border: 0 transparent; }
+
+    // input,
+    // select,
+    // textarea {
+    //   display: block;
+    //   font-family: inherit;
+    //   width: 100%; }
+    
+    // input[type="radio"] {
+    //   display: inline-block;
+    //   width: auto; }
+    
+    // // input:disabled {
+    // //   background: #ccc; }
+   
+    
+    // form:before, form:after,
+    // fieldset:before,
+    // fieldset:after {
+    //   display: block;
+    //   font-weight: bold; }
+    
+    // form:before,
+    // fieldset:before {
+    //   color: var(--dark);
+    //   margin: 0 0 1em; }
+    
+    // form:after,
+    // fieldset:after {
+    //   color: var(--dark);
+    //   margin: 1em 0 0; }
+    
+    
+    // fieldset:valid:before {
+    //   color: var(--light);
+    //   left: 0;
+    //   pointer-events: none; }
+    
+    // fieldset:valid:after {
+    //   content: "Thanks! Now do the next section."; }
+    
+    // fieldset:last-of-type:valid:after {
+    //   content: "Please complete the form and we will get back to you soon!"; }
+    
+    // input::-webkit-input-placeholder {
+    //   color: var(--dark) !important; }
+    
+    // .form-group-modern {
+    //   margin: 60px 0 0 0; }
+    
+    // *:focus {
+    //   outline: 0; }
+    
+    // label {
+    //   display: none; }
+    
+    // textarea {
+    //   background: transparent;
+    //   border: 1px solid transparent;
+    //   border-bottom: 1px solid #000; }
+    
+    // input {
+    //   background: transparent;
+    //   border: 1px solid transparent;
+    //   border-bottom: 1px solid #000; }
+    
+    // input:-internal-autofill-selected {
+    //   background: transparent; }
+    
+    // textarea {
+    //   height: auto;
+    //   resize: none; }
+    
+    // input:focus, textarea:focus, select:focus {
+    //   outline: none; }
+    
+    // textarea::-webkit-input-placeholder,
+    // input::-webkit-input-placeholder {
+    //   color: var(--accent); }
+    
+    // button {
+    //   display: block;
+    //   font-size: 22px;
+    //   padding: 1rem 2rem;
+    //   width: 100%;
+    //   border: none;
+    //   cursor: pointer;
+    //   background: var(--dark);
+    //   color: var(--light);
+    //   max-width: 250px;
+    //   border-radius: 50px; }
+
+
+
+    // form:before,
+    // fieldset:before {
+    //   color: var(--dark);
+    //   margin: 0 0 1em; }
+    
+    // form:after,
+    // fieldset:after {
+    //   color: var(--dark);
+    //   margin: 1em 0 0; }
+    
+    // fieldset:invalid {
+    //   border: dashed 0 transparent; }
+    
+    // fieldset:valid:before {
+    //   color: var(--light);
+    //   left: 0;
+    //   pointer-events: none; }
+    
+    // fieldset:valid:after {
+    //   content: "Thanks! Now do the next section."; }
+    
+    // fieldset:last-of-type:valid:after {
+    //   content: "Please complete the form and we will get back to you soon!"; }
+    
+    // input::-webkit-input-placeholder {
+    //   color: var(--dark) !important; }
+    
+    // .form-group-modern {
+    //   margin: 60px 0 0 0; }
+    
+    // *:focus {
+    //   outline: 0; }
+    
+    // label {
+    //   display: none; }
+    
+    // textarea {
+    //   background: transparent;
+    //   border: 1px solid transparent;
+    //   border-bottom: 1px solid #000; }
+    
+    // input {
+    //   background: transparent;
+    //   border: 1px solid transparent;
+    //   border-bottom: 1px solid #000; }
+    
+    // input:-internal-autofill-selected {
+    //   background: transparent; }
+    
+    // textarea {
+    //   height: auto;
+    //   resize: none; }
+    
+  
+    
+    // textarea::-webkit-input-placeholder,
+    // input::-webkit-input-placeholder {
+    //   color: var(--accent); }

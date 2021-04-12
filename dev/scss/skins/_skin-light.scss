@@ -1,4 +1,8 @@
+
 .skin-light {
+    --form-border-color: var(--base-4);
+    --placeholder-text-color: var(--base-3);
+
     // Text
     color: var(--dark);
     //  Background
@@ -23,4 +27,6 @@
             background: var(--accent);
         }
     }
+
+    
 }
